@@ -1,1 +1,4 @@
-subject=success
+subject=disneyworld
+firefox_driver_location=/home/robert/firefox/firefox92.0/
+use_firefox_version=92
+use_mitmproxy_version=30
