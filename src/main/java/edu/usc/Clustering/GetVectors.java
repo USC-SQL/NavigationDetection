@@ -10,11 +10,6 @@ public class GetVectors {
         Map<WebElement, Vector> all_vectors = new HashMap<>();
         for(WebElement each_ele: elements){
             Vector ele_vector = new Vector<>();
-            String ele_ID = each_ele.getAttribute("id");
-            String ele_name = each_ele.getAttribute("name");
-            String ele_class = each_ele.getAttribute("class");
-            String ele_type = each_ele.getAttribute("type");
-            String text = each_ele.getText();
             ele_vector.add(each_ele.getAttribute("id"));
             ele_vector.add(each_ele.getAttribute("name"));
             ele_vector.add(each_ele.getAttribute("class"));

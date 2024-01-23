@@ -27,6 +27,11 @@
             <version>4.16.1</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>weka-dev</artifactId>
+            <version>3.9.6</version>
+        </dependency>
     </dependencies>
 
 </project>
