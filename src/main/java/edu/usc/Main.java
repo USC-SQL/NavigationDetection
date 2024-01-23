@@ -1,9 +1,14 @@
 package edu.usc;
 
-import edu.usc.ChromeTest;
+import java.util.Properties;
+import edu.usc.Utilities.LoadConfig;
+import edu.usc.Clustering.FindClusters;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Properties Configs = LoadConfig.Config();
+        System.out.println("Subject: " + Configs.getProperty("subject_live"));
+        FindClusters cluster = new FindClusters();
+        cluster.Cluster(Configs);
     }
 }
