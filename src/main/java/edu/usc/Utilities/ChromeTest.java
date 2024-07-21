@@ -1,4 +1,4 @@
-package edu.usc;
+package edu.usc.Utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
