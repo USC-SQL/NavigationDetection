@@ -36,7 +36,7 @@ public class LoadConfig {
 
     public String GetSubjectPath(String subject){
         String resourcesDirectory = prop.getProperty("cached_subjects_location");
-        return resourcesDirectory + File.separator;
+        return resourcesDirectory + File.separator + subject;
     }
 
 }

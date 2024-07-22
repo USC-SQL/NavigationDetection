@@ -52,7 +52,7 @@ public class WinnTree {
     public void Load(String subject) throws IOException {
         //Finding and loading JSON file for subject
         System.out.println("Beginning loading W-tree for subject: " + subject);
-        String path = "C:/Users/rober/Documents/research/wtrees/groundtruth/" + subject + "/" + subject + "_2.json";
+        String path = "C:/Users/rober/Documents/research/wtrees/groundtruth/" + subject + File.separator + subject + "_2.json";
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode jsonNode = objectMapper.readTree(new File(path));
 

@@ -18,7 +18,7 @@ public class GetWebDriver {
 
     public GetWebDriver(String subject, String url, LoadConfig config){
         this.proxyPort = 9998;
-        String mitmproxyPath = config.GetmitmPath() + File.separator + "mitmdump";
+        String mitmproxyPath = config.GetmitmPath() + File.separator + "mitmdump.exe";
         String cachePath = config.GetSubjectPath(subject);
         mitmproxy = new MitmproxyJava(mitmproxyPath, cachePath, proxyPort);
         try {
