@@ -28,6 +28,8 @@ public class StylisticScore {
             alignment = 1;
         }
 
+        //divide by 2 becaues both variables have ranges between {0 ... 1}
+        //we need the final similarity value to have range of {0 ... 1} to be consistent with other types
         double stylistic_similarity = (CSS_similarity + alignment) / 2;
         return stylistic_similarity;
     }

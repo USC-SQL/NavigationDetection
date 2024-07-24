@@ -10,6 +10,7 @@ import edu.usc.WinnTree.Construction.ConstructWinnTree;
 import edu.usc.WinnTree.FunctionalArea;
 import edu.usc.WinnTree.WinnTree;
 
+
 public class Main {
     public static void main(String[] args) throws Exception {
         LoadConfig config_obj = new LoadConfig();
@@ -23,8 +24,9 @@ public class Main {
         //test.shutdownWebDriver();
         //System.out.println("Test");
 
-        ConstructWinnTree test = new ConstructWinnTree();
-        Set<FunctionalArea> work_set = new HashSet<>();
-        test.InitializeWorkSet(work_set, config_obj, subject);
+        //ConstructWinnTree test = new ConstructWinnTree();
+        //Set<FunctionalArea> work_set = new HashSet<>();
+        //test.InitializeWorkSet(work_set, config_obj, subject);
+
     }
 }

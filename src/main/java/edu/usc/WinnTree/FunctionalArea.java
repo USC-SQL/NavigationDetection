@@ -13,7 +13,7 @@ public class FunctionalArea {
     public String parent_id;
     public List<FunctionalArea> children;
 
-    //Used for Affinity Calculations
+    //The following are used for Affinity Calculations
     public List<Float> centroid;
     public Map<String, String> thematic_info;
     public HashSet applied_css;

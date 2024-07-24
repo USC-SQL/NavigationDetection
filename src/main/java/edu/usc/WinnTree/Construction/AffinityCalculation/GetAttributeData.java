@@ -12,9 +12,13 @@ public class GetAttributeData {
 
     public ArrayList AttributeData (WebDriver refDriver, WebElement web_ele){
         ArrayList ele_data = new ArrayList();
-        ele_data.add(web_ele.getAttribute("id"));
-        ele_data.add(web_ele.getAttribute("name"));
-        ele_data.add(web_ele.getText());
+
+        String id = web_ele.getAttribute("id");
+        String name = web_ele.getAttribute("name");
+        String text = web_ele.getText();
+        ele_data.add(TransformString(id));
+        ele_data.add(TransformString(name));
+        ele_data.add(TransformString(text));
 
         Point point = web_ele.getLocation();
         int TOP_LEFT_X = point.getX();
@@ -72,6 +76,32 @@ public class GetAttributeData {
             HashSet<FunctionalArea> FA_css = FA.getApplied_css();
             FA_css.removeAll(final_css_set);
         }
+    }
+
+    public String TransformString(String AString){
+        if(AString.equals("")){
+            return AString;
+        }
+        if(CheckCamelCase(AString)){
+            String fixed_string = SplitCamelCase(AString);
+            AString = fixed_string;
+        }
+        return AString;
+    }
+
+    public boolean CheckCamelCase(String AString){
+        String camelCasePattern = "(?:[A-Z])(?:\\S?)+(?:[A-Z])(?:[a-z])+";
+        String camelCasePattern2 = "([a-z]+[A-Z]+\\w+)+"; // 3rd edit, getting better
+        return AString.matches(camelCasePattern) || AString.matches(camelCasePattern2);
+    }
+
+    public String SplitCamelCase(String AString){
+        String new_string = "";
+        for (String w : AString.split("(?<!(^|[A-Z]))(?=[A-Z])|(?<!^)(?=[A-Z][a-z])")) {
+            new_string += w;
+            new_string += " ";
+        }
+        return new_string;
     }
 
 }

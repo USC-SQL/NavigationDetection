@@ -8,22 +8,23 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SentenceComparer {
-    public static void main(String[] args) throws OrtException {
-        long startTime = System.nanoTime();
-        String[] sentences = new String[]{"Robert is handsome","Robert is attractive"};
 
-        HuggingFaceTokenizer tokenizer = HuggingFaceTokenizer.newInstance("sentence-transformers/all-mpnet-base-v2");
+    HuggingFaceTokenizer tokenizer;
+    OrtSession session;
+    OrtEnvironment environment;
 
+    public SentenceComparer() throws OrtException {
+        this.tokenizer = HuggingFaceTokenizer.newInstance("sentence-transformers/all-mpnet-base-v2");
+        this.environment = OrtEnvironment.getEnvironment();
+        this.session = environment.createSession("C:\\Users\\rober\\Documents\\firstpaper\\model.onnx", new OrtSession.SessionOptions());
+    }
+
+    public double CompareSentences(String stringOne, String stringTwo) throws OrtException {
+        String[] sentences = new String[]{stringOne,stringTwo};
+        //HuggingFaceTokenizer tokenizer = HuggingFaceTokenizer.newInstance("sentence-transformers/all-mpnet-base-v2");
         Encoding[] encodings = tokenizer.batchEncode(sentences);
-
-        OrtEnvironment environment = OrtEnvironment.getEnvironment();
-
-        OrtSession session = environment.createSession("C:\\Users\\rober\\Documents\\firstpaper\\model.onnx", new OrtSession.SessionOptions());
-
-        long endTime = System.nanoTime();
-        long executionTime = (endTime - startTime) / 1000000;
-        System.out.println("Takes " + executionTime + "ms");
-        long startTime2 = System.nanoTime();
+        //OrtEnvironment environment = OrtEnvironment.getEnvironment();
+        //OrtSession session = environment.createSession("C:\\Users\\rober\\Documents\\firstpaper\\model.onnx", new OrtSession.SessionOptions());
 
         long[][] input_ids0 = new long[encodings.length][];
         long[][] attention_mask0 = new long[encodings.length][];
@@ -40,7 +41,6 @@ public class SentenceComparer {
         inputs.put("input_ids", inputIds);
         inputs.put("attention_mask", attentionMask);
 
-
         try(OrtSession.Result results = session.run(inputs)){
             OnnxValue lastHiddenState = results.get(0);
             float[][][] tokenEmbeddings = (float[][][]) lastHiddenState.getValue();
@@ -48,13 +48,10 @@ public class SentenceComparer {
             float[] sentence2Embedding = averageEmbeddings(tokenEmbeddings[1]);
 
             double similarity = cosineSimilarity(sentence1Embedding, sentence2Embedding);
-            System.out.println("Similarity: "+ similarity);
+            return similarity;
+        } catch (Error e){
+            return 0.5;
         }
-
-        long endTime2 = System.nanoTime();
-        long executionTime2 = (endTime2 - startTime2) / 1000000;
-        System.out.println("Takes " + executionTime2 + "ms");
-
     }
 
     private static float[] averageEmbeddings(float[][] tokenEmbeddings){
@@ -84,7 +81,6 @@ public class SentenceComparer {
             normB += Math.pow(vectorB[i], 2);
         }
         return dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));
-
     }
 
 

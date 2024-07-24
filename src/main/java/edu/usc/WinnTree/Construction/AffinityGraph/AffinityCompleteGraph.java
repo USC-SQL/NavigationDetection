@@ -1,5 +1,7 @@
 package edu.usc.WinnTree.Construction.AffinityGraph;
 
+import ai.onnxruntime.OrtException;
+import edu.usc.WinnTree.Construction.AffinityCalculation.SentenceComparer;
 import edu.usc.WinnTree.FunctionalArea;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -11,9 +13,12 @@ public class AffinityCompleteGraph {
     public Set<FunctionalArea> vertex_set;
     public Set<ACG_edge> edge_set;
 
-    public AffinityCompleteGraph(){
+    public SentenceComparer sentenceComparer_obj;
+
+    public AffinityCompleteGraph() throws OrtException {
         this.vertex_set = new HashSet<>();
         this.edge_set = new HashSet<>();
+        this.sentenceComparer_obj = new SentenceComparer();
     }
 
     public void AddVertex(FunctionalArea vertex){
@@ -45,7 +50,12 @@ public class AffinityCompleteGraph {
 
     public void AddEdge(FunctionalArea vertexOne, FunctionalArea vertexTwo) {
         ACG_edge new_edge = new ACG_edge(vertexOne, vertexTwo);
-        double affinity_score = CalculateAffinityScore(vertexOne, vertexTwo);
+        double affinity_score = 0;
+        try {
+            affinity_score = CalculateAffinityScore(vertexOne, vertexTwo, sentenceComparer_obj);
+        } catch (OrtException e) {
+            throw new RuntimeException(e);
+        }
         new_edge.setAffinity_Score(affinity_score);
         edge_set.add(new_edge);
     }

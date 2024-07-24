@@ -1,5 +1,6 @@
 package edu.usc.WinnTree.Construction;
 
+import ai.onnxruntime.OrtException;
 import edu.usc.Utilities.LoadConfig;
 import edu.usc.Utilities.ReadJSON;
 import edu.usc.Utilities.mitm.GetWebDriver;
@@ -20,7 +21,7 @@ public class ConstructWinnTree {
 
     ChromeDriver Driver;
 
-    public void Construct(LoadConfig configs, String subject){
+    public void Construct(LoadConfig configs, String subject) throws OrtException {
 
         Set<FunctionalArea> work_set = new HashSet<>();
         InitializeWorkSet(work_set, configs, subject);
