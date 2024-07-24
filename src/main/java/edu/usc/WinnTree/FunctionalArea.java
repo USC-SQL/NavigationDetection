@@ -1,7 +1,9 @@
 package edu.usc.WinnTree;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 
 public class FunctionalArea {
 
@@ -10,6 +12,11 @@ public class FunctionalArea {
     public String ID;
     public String parent_id;
     public List<FunctionalArea> children;
+
+    //Used for Affinity Calculations
+    public List<Float> centroid;
+    public Map<String, String> thematic_info;
+    public HashSet applied_css;
 
     public FunctionalArea(String ID, String xpath, String parent_id, List<Integer> MBR) {
         this.MBR = MBR;
@@ -58,5 +65,32 @@ public class FunctionalArea {
     public void addChild(FunctionalArea child) {
         this.children.add(child);
     }
+
+    ////////////////////////
+    //
+    //The following are used for affinity score calculation
+    //
+    /////////////////////////
+
+    public void setCentroid( List<Float> centroid) {
+        this.centroid = centroid;
+    }
+    public List<Float> getCentroid() {
+        return centroid;
+    };
+
+    public void setThematic_info(Map<String, String> thematic_info) {
+        this.thematic_info = thematic_info;
+    }
+    public Map<String, String> getThematic_info() {
+        return thematic_info;
+    };
+
+    public void setApplied_css(HashSet applied_css) {
+        this.applied_css = applied_css;
+    }
+    public HashSet getApplied_css() {
+        return applied_css;
+    };
 
 }

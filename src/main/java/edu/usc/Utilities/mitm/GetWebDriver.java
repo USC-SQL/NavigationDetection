@@ -53,6 +53,10 @@ public class GetWebDriver {
         return driver;
     }
 
+    public WebDriver getWebDriver(){
+        return this.refDriver;
+    }
+
     public void shutdownWebDriver() {
         refDriver.quit();
     }
