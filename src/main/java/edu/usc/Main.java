@@ -20,13 +20,12 @@ public class Main {
         //WinnTree test = new WinnTree();
         //test.Load(subject);
 
-        //GetWebDriver test = new GetWebDriver("robinhood", "https://robinhood.com/login", config_obj);
-        //test.shutdownWebDriver();
-        //System.out.println("Test");
+        GetWebDriver test = new GetWebDriver("robinhood", "https://robinhood.com/login", config_obj);
+        test.shutdownWebDriver();
+        System.out.println("Test");
 
         //ConstructWinnTree test = new ConstructWinnTree();
         //Set<FunctionalArea> work_set = new HashSet<>();
         //test.InitializeWorkSet(work_set, config_obj, subject);
-
     }
 }

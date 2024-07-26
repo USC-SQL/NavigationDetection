@@ -47,7 +47,7 @@ public class GetWebDriver {
         if (headless) {
             option.addArguments("--headless"); // Enable headless mode
         }
-        WebDriverManager.chromedriver().setup();
+//        WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver(option);
         driver.manage().window().maximize();
         return driver;
