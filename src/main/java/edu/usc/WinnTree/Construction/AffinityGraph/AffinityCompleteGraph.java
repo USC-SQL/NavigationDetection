@@ -3,9 +3,9 @@ package edu.usc.WinnTree.Construction.AffinityGraph;
 import ai.onnxruntime.OrtException;
 import edu.usc.WinnTree.Construction.AffinityCalculation.SentenceComparer;
 import edu.usc.WinnTree.FunctionalArea;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+
+import java.util.*;
+
 import static edu.usc.WinnTree.Construction.AffinityCalculation.AffinityScore.CalculateAffinityScore;
 
 public class AffinityCompleteGraph {
@@ -14,22 +14,24 @@ public class AffinityCompleteGraph {
     public Set<ACG_edge> edge_set;
 
     public SentenceComparer sentenceComparer_obj;
+    public List<ACG_edge> edge_set_sorted;
 
     public AffinityCompleteGraph() throws OrtException {
         this.vertex_set = new HashSet<>();
         this.edge_set = new HashSet<>();
         this.sentenceComparer_obj = new SentenceComparer();
+        this.edge_set_sorted = new ArrayList<>();
     }
 
-    public void AddVertex(FunctionalArea vertex){
-        vertex_set.add(vertex);
+    public void AddVertex(FunctionalArea new_vertex){
+        vertex_set.add(new_vertex);
 
         //updates the Complete Graph with new edges connecting to new vertex
         Iterator<FunctionalArea> setIterator = vertex_set.iterator();
         while(setIterator.hasNext()){
             FunctionalArea check_vertex = setIterator.next();
-            if(!vertex.equals(check_vertex)){
-                AddEdge(vertex, check_vertex);
+            if(!new_vertex.equals(check_vertex)){
+                AddEdge(new_vertex, check_vertex);
             }
         }
     }
@@ -58,6 +60,14 @@ public class AffinityCompleteGraph {
         }
         new_edge.setAffinity_Score(affinity_score);
         edge_set.add(new_edge);
+    }
+
+    public void SortEdgeSet(){
+        Collections.sort(edge_set_sorted, Comparator.comparing(ACG_edge::getAffinity_Score));
+    }
+
+    public List GetSortedEdgeSet(){
+        return this.edge_set_sorted;
     }
 
 }

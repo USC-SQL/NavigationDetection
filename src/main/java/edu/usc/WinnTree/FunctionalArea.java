@@ -14,7 +14,7 @@ public class FunctionalArea {
     public List<FunctionalArea> children;
 
     //The following are used for Affinity Calculations
-    public List<Float> centroid;
+    public List<Double> centroid;
     public Map<String, String> thematic_info;
     public HashSet applied_css;
 
@@ -72,10 +72,10 @@ public class FunctionalArea {
     //
     /////////////////////////
 
-    public void setCentroid( List<Float> centroid) {
+    public void setCentroid( List<Double> centroid) {
         this.centroid = centroid;
     }
-    public List<Float> getCentroid() {
+    public List<Double> getCentroid() {
         return centroid;
     };
 

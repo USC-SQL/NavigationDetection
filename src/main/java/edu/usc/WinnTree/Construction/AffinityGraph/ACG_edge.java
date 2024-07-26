@@ -10,10 +10,10 @@ public class ACG_edge {
 
     public double affinity_score; //ie weight of edge
 
-    public ACG_edge(FunctionalArea vertex1, FunctionalArea vertex2) {
+    public ACG_edge(FunctionalArea vertexOne, FunctionalArea vertexTwo) {
         this.vertex_pair = new HashSet<>();
-        vertex_pair.add(vertex1);
-        vertex_pair.add(vertex2);
+        vertex_pair.add(vertexOne);
+        vertex_pair.add(vertexTwo);
     }
 
     public Set<FunctionalArea> getVertices() {

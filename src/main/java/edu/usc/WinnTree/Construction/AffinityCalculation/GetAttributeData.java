@@ -33,9 +33,9 @@ public class GetAttributeData {
         MBR.add(BOTTOM_RIGHT_X);
         MBR.add(BOTTOM_RIGHT_Y);
 
-        float midX = (TOP_LEFT_X + BOTTOM_RIGHT_X)/2;
-        float midY = (TOP_LEFT_Y + BOTTOM_RIGHT_Y)/2;
-        List<Float> centroid = new ArrayList<Float>();
+        double midX = (TOP_LEFT_X + BOTTOM_RIGHT_X)/2;
+        double midY = (TOP_LEFT_Y + BOTTOM_RIGHT_Y)/2;
+        List<Double> centroid = new ArrayList<Double>();
         centroid.add(midX);
         centroid.add(midY);
 
@@ -71,8 +71,9 @@ public class GetAttributeData {
             }
         }
         //Removes all CSS attributes that are applied to all elements
-        while(setIterator.hasNext()){
-            FunctionalArea FA = setIterator.next();
+        Iterator<FunctionalArea> setIterator2 = work_set.iterator();
+        while(setIterator2.hasNext()){
+            FunctionalArea FA = setIterator2.next();
             HashSet<FunctionalArea> FA_css = FA.getApplied_css();
             FA_css.removeAll(final_css_set);
         }
