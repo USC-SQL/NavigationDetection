@@ -1,0 +1,6 @@
+subject_live=https://bonigarcia.dev/selenium-webdriver-java/
+subject=robinhood
+mitmproxy_folder=mitmproxy-5.3.0
+
+cached_subjects_location=C:\\Users\\rober\\Documents\\firstpaper\\subjects
+KFG_graph_location:C:\\Users\\rober\\Documents\\firstpaper\\LNFdata\\tooloutput
