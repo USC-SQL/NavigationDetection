@@ -44,10 +44,10 @@ public class GetWebDriver {
         option.addArguments("--no-sandbox");
         option.addArguments("--disable-dev-shm-usage");
         option.setCapability(CapabilityType.PROXY, proxy);
-        if (headless) {
-            option.addArguments("--headless"); // Enable headless mode
-        }
-//        WebDriverManager.chromedriver().setup();
+        //if (headless) {
+        //   option.addArguments("--headless"); // Enable headless mode
+        //}
+        //WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver(option);
         driver.manage().window().maximize();
         return driver;
@@ -58,6 +58,7 @@ public class GetWebDriver {
     }
 
     public void shutdownWebDriver() {
+        refDriver.close();
         refDriver.quit();
     }
 

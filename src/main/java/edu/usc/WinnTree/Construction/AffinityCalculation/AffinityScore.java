@@ -12,7 +12,7 @@ public class AffinityScore{
     public static double CalculateAffinityScore(FunctionalArea vertexOne, FunctionalArea vertexTwo, SentenceComparer sentenceComparer_obj) throws OrtException {
 
         double visual_score = CalculateVisualScore(vertexOne, vertexTwo);
-        double thematic_score = CalculateThematicScore(vertexOne, vertexTwo, sentenceComparer_obj);
+        double thematic_score = 1;//CalculateThematicScore(vertexOne, vertexTwo, sentenceComparer_obj);
         double stylistic_score = CalculateStylisticScore(vertexOne, vertexTwo);
 
         double affinity_score = visual_score + thematic_score + stylistic_score;

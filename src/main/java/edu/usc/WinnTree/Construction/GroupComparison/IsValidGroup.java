@@ -33,6 +33,7 @@ public class IsValidGroup {
                 valid_group.addAll(candidates);
             }
         }
+        System.out.println("Valid group: " + valid_group);
         return valid_group;
     }
 

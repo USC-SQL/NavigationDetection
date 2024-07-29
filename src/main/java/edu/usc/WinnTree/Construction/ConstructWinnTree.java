@@ -15,6 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.File;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 import static edu.usc.WinnTree.Construction.ConstructParent.GetNewParent;
 import static edu.usc.WinnTree.Construction.GroupComparison.IsValidGroup.ValidGroup;
@@ -23,28 +24,31 @@ public class ConstructWinnTree {
 
     ChromeDriver Driver;
 
-    public void Construct(LoadConfig configs, String subject) throws OrtException {
+    public void Construct(LoadConfig configs, String subject) throws OrtException, InterruptedException {
         Set<FunctionalArea> work_set = new HashSet<>();
         InitializeWorkSet(work_set, configs, subject);
         AffinityCompleteGraph Affinity_graph = new AffinityCompleteGraph();
         InitializeAffinity_graph(work_set, Affinity_graph);
         Affinity_graph.SortEdgeSet();
         int vertex_count = work_set.size();
-        int x = 0;
         //Loop runs until just the root node is left (ie the full tree is built)
-        while(x < 1){
+        while(work_set.size() > 1){
             Set<FunctionalArea> children = ValidGroup(work_set, Affinity_graph);
-            work_set.removeAll(children); //removing children
+            //removing children from workset & affinity graph
+            work_set.removeAll(children);
+            for(FunctionalArea child: children){
+                Affinity_graph.RemoveVertex(child);
+            }
             vertex_count++; //keeps track of nodes in tree & increments to create a new parent node
             FunctionalArea new_parent = GetNewParent(children, vertex_count);
             work_set.add(new_parent); //adding new parent to work set
             Affinity_graph.AddVertex(new_parent); //adding new parent to affinity graph
             Affinity_graph.SortEdgeSet(); //update graph for next iteration
-            x++;
         }
+        System.out.println("Finished W-tree Construction.");
     }
 
-    public void InitializeWorkSet(Set work_set, LoadConfig configs, String subject){
+    public void InitializeWorkSet(Set work_set, LoadConfig configs, String subject) throws InterruptedException {
         //Finding and getting all xpaths of keyboard-navigable elements
         String subject_path = configs.getProperties().getProperty("KFG_graph_location") + File.separator + subject + File.separator + "KFG.json";
         ReadJSON read_json = new ReadJSON();
@@ -54,6 +58,7 @@ public class ConstructWinnTree {
         //Getting necessary information from all keyboard-navigable elements
         //Turning them into functional areas
         GetWebDriver WebDriverObj = new GetWebDriver(subject, "https://robinhood.com/login", configs);
+        TimeUnit.SECONDS.sleep(10);
         WebDriver refDriver = WebDriverObj.getWebDriver();
         GetAttributeData attribute_obj = new GetAttributeData();
         int ele_count = 1;
@@ -77,11 +82,8 @@ public class ConstructWinnTree {
             work_set.add(leaf);
             ele_count++;
         }
-
         attribute_obj.FilterCSS(work_set);
-        System.out.println("Workset size: " + work_set.size());
         WebDriverObj.shutdownWebDriver();
-
     }
 
     public void InitializeAffinity_graph(Set work_set, AffinityCompleteGraph Affinity_graph){

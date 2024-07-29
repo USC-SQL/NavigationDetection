@@ -9,6 +9,9 @@ import edu.usc.Utilities.mitm.GetWebDriver;
 import edu.usc.WinnTree.Construction.ConstructWinnTree;
 import edu.usc.WinnTree.FunctionalArea;
 import edu.usc.WinnTree.WinnTree;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 
 public class Main {
@@ -20,12 +23,10 @@ public class Main {
         //WinnTree test = new WinnTree();
         //test.Load(subject);
 
-        GetWebDriver test = new GetWebDriver("robinhood", "https://robinhood.com/login", config_obj);
-        test.shutdownWebDriver();
-        System.out.println("Test");
+        ConstructWinnTree test = new ConstructWinnTree();
+        test.Construct(config_obj, subject);
+        System. exit(0);
 
-        //ConstructWinnTree test = new ConstructWinnTree();
-        //Set<FunctionalArea> work_set = new HashSet<>();
-        //test.InitializeWorkSet(work_set, config_obj, subject);
+
     }
 }

@@ -40,14 +40,16 @@ public class AffinityCompleteGraph {
         vertex_set.remove(vertex);
 
         //Updates complete graph to remove all edges containing v
+        Set<ACG_edge> remove_edges = new HashSet<>();
         Iterator<ACG_edge> setIterator = edge_set.iterator();
         while(setIterator.hasNext()){
             ACG_edge edge = setIterator.next();
             Set<FunctionalArea> edge_vertices = edge.getVertices();
             if(edge_vertices.contains(vertex)){
-                edge_set.remove(edge);
+                remove_edges.add(edge);
             }
         }
+        edge_set.removeAll(remove_edges);
     }
 
     public void AddEdge(FunctionalArea vertexOne, FunctionalArea vertexTwo) {
@@ -63,6 +65,8 @@ public class AffinityCompleteGraph {
     }
 
     public void SortEdgeSet(){
+        //only matters on the very first time - from then one it should always have an initialization
+        this.edge_set_sorted = new ArrayList<>(this.edge_set);
         Collections.sort(edge_set_sorted, Comparator.comparing(ACG_edge::getAffinity_Score));
     }
 
