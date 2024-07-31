@@ -2,6 +2,7 @@ package edu.usc.WinnTree.Construction.GroupComparison;
 
 import edu.usc.WinnTree.FunctionalArea;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -53,21 +54,18 @@ public class CheckMBR {
     }
 
     public static boolean OverlappingMBR(List MBR_one, List MBR_two) {
-        int MBR_one_x1 = (int) MBR_one.get(0);
-        int MBR_one_y1 = (int) MBR_one.get(1);
-        int MBR_one_x2 = (int) MBR_one.get(2);
-        int MBR_one_y2 = (int) MBR_one.get(3);
-        int MBR_two_x1 = (int) MBR_two.get(0);
-        int MBR_two_y1 = (int) MBR_two.get(1);
-        int MBR_two_x2 = (int) MBR_two.get(2);
-        int MBR_two_y2 = (int) MBR_two.get(3);
-        if ((MBR_one_x1 > MBR_two_x2) ||
-                (MBR_one_y1 < MBR_two_y2) ||
-                (MBR_two_x1 > MBR_one_x2) ||
-                (MBR_two_y1 < MBR_one_y2)){
-            return false;
-        }
-        return true;
+        //Solved here: https://stackoverflow.com/questions/23302698/java-check-if-two-rectangles-overlap-at-any-point
+        //Keep in mind that for webpages X's are the same but Y is flipped
+        //In other words, webpage (0,0) is at the top left of the screen (not bottom left as for typical graph)
+        int x1 = (int) MBR_one.get(0);
+        int y1 = (int) MBR_one.get(1);
+        int x2 = (int) MBR_one.get(2);
+        int y2 = (int) MBR_one.get(3);
+        int x3 = (int) MBR_two.get(0);
+        int y3 = (int) MBR_two.get(1);
+        int x4 = (int) MBR_two.get(2);
+        int y4 = (int) MBR_two.get(3);
+        return (x1 < x4) && (x3 < x2) && (y1 < y4) && (y3 < y2);
     }
 
 }

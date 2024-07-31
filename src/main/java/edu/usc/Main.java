@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Properties;
 import java.util.Set;
 
+import edu.usc.Detection.RunDetection;
 import edu.usc.Utilities.LoadConfig;
 import edu.usc.Utilities.mitm.GetWebDriver;
 import edu.usc.WinnTree.Construction.ConstructWinnTree;
@@ -12,6 +13,8 @@ import edu.usc.WinnTree.WinnTree;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import static edu.usc.Detection.RunDetection.Test;
 
 
 public class Main {
@@ -22,9 +25,11 @@ public class Main {
         System.out.println("Subject: " + subject);
         //WinnTree test = new WinnTree();
         //test.Load(subject);
+        //ConstructWinnTree test = new ConstructWinnTree();
+        //test.Construct(config_obj, subject);
 
-        ConstructWinnTree test = new ConstructWinnTree();
-        test.Construct(config_obj, subject);
+        Test(config_obj, subject);
+
         System. exit(0);
 
 

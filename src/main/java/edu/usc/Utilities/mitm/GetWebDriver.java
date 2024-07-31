@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 
 import java.io.File;
+import java.io.IOException;
 
 public class GetWebDriver {
 
@@ -60,6 +61,10 @@ public class GetWebDriver {
     public void shutdownWebDriver() {
         refDriver.close();
         refDriver.quit();
+    }
+
+    public void shutdownMitmProxy() throws IOException, InterruptedException {
+        mitmproxy.stop();
     }
 
 }
