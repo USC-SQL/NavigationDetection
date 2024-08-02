@@ -45,6 +45,10 @@ public class WinnTree {
         return explored_vertices;
     }
 
+    public void resetExploredSet() {
+        this.explored_vertices = new HashSet<>();
+    }
+
     public void AddExplored(FunctionalArea FA) {
         explored_vertices.add(FA);
         UpdateExplored();
@@ -52,9 +56,9 @@ public class WinnTree {
 
     public void UpdateExplored(){
         Set<FunctionalArea> update_set = new HashSet<>();
-        for(FunctionalArea FA: vertex_set){
+        for (FunctionalArea FA : vertex_set) {
             Set<FunctionalArea> children = new HashSet<>(FA.getChildren());
-            if(explored_vertices.containsAll(children)){
+            if (explored_vertices.containsAll(children)) {
                 update_set.add(FA);
             }
         }
@@ -134,7 +138,7 @@ public class WinnTree {
     public FunctionalArea FindByXpath(String xpath){
         FunctionalArea temp = new FunctionalArea("", "", "", new ArrayList<>());
         for(FunctionalArea FA: this.getVertexSet()){
-            if(FA.getxpath().equals(xpath)){
+            if(FA.getXpath().equals(xpath)){
                return FA;
             }
         }

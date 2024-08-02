@@ -14,7 +14,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import static edu.usc.Detection.RunDetection.Test;
+import static edu.usc.Detection.RunDetection.Detect;
 
 
 public class Main {
@@ -28,7 +28,7 @@ public class Main {
         //ConstructWinnTree test = new ConstructWinnTree();
         //test.Construct(config_obj, subject);
 
-        Test(config_obj, subject);
+        Detect(config_obj, subject);
 
         System. exit(0);
 

@@ -4,12 +4,12 @@ import edu.usc.WinnTree.FunctionalArea;
 
 import java.util.*;
 
-import static edu.usc.WinnTree.Construction.GroupComparison.CheckMBR.FindMBR;
+import static edu.usc.WinnTree.Construction.GroupComparison.CheckMBR.CalculauteMBR;
 
 public class ConstructParent {
 
     public static FunctionalArea GetNewParent(Set<FunctionalArea> children, int count){
-        List<Integer> parent_mbr = FindMBR(children);
+        List<Integer> parent_mbr = CalculauteMBR(children);
         FunctionalArea parent = new FunctionalArea(String.valueOf(count), "", "", parent_mbr);
         Map<String, String> parent_thematic = new HashMap();
         String parent_theme_id = "";

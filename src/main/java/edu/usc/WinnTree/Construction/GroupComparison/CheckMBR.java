@@ -14,7 +14,7 @@ public class CheckMBR {
     public static boolean ChecktheMBR(Set<FunctionalArea> potential_group, Set<FunctionalArea> workset){
         Set check_set = workset;
         check_set.removeAll(potential_group);
-        List potential_group_mbr = FindMBR(potential_group);
+        List potential_group_mbr = CalculauteMBR(potential_group);
         for(FunctionalArea FA: workset){
             List FA_mbr = FA.getMBR();
             if(OverlappingMBR(potential_group_mbr, FA_mbr)) {
@@ -24,7 +24,7 @@ public class CheckMBR {
         return true;
     }
 
-    public static List FindMBR(Set<FunctionalArea> group){
+    public static List CalculauteMBR(Set<FunctionalArea> group){
         //We want top left to be as small as possible and bot right to be as big as possible
         int top_left_X = 9999;
         int top_left_Y= 9999;
