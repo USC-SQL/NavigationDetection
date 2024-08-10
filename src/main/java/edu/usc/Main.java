@@ -23,14 +23,23 @@ public class Main {
         Properties Configs = config_obj.getProperties();
         String subject = Configs.getProperty("subject");
         System.out.println("Subject: " + subject);
-        //WinnTree test = new WinnTree();
-        //test.Load(subject);
+        System.out.println("Subject URL: " + config_obj.getSubjectURL(subject));
+        /*
+        long startTime = System.nanoTime();
+        WinnTree test = new WinnTree();
+        test.Build(config_obj, subject);
+        test.Save(config_obj, subject);
+        long endTime = System.nanoTime();
+        long duration = ((endTime - startTime) / 1000000 / 1000);
+        //System.out.println("Winn Tree Timing: " + duration);
         //ConstructWinnTree test = new ConstructWinnTree();
         //test.Construct(config_obj, subject);
 
+         */
         Detect(config_obj, subject);
 
-        System. exit(0);
+
+        System.exit(0);
 
 
     }

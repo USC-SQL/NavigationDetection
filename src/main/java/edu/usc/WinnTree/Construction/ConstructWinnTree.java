@@ -47,7 +47,6 @@ public class ConstructWinnTree {
             Affinity_graph.SortEdgeSet(); //update graph for next iteration
         }
         FunctionalArea root_node = work_set.iterator().next();
-        System.out.println("Finished W-tree Construction.");
         return root_node;
     }
 
@@ -60,7 +59,7 @@ public class ConstructWinnTree {
 
         //Getting necessary information from all keyboard-navigable elements
         //Turning them into functional areas
-        GetWebDriver WebDriverObj = new GetWebDriver(subject, "https://robinhood.com/login", configs);
+        GetWebDriver WebDriverObj = new GetWebDriver(subject, configs.getSubjectURL(subject), configs);
         TimeUnit.SECONDS.sleep(10);
         WebDriver refDriver = WebDriverObj.getWebDriver();
         GetAttributeData attribute_obj = new GetAttributeData();

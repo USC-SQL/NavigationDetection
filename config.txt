@@ -1,9 +1,13 @@
-subject=robinhood
+subject=experian
 mitmproxy_folder=mitmproxy-5.3.0
-
 cached_subjects_location=C:\\Users\\rober\\Documents\\firstpaper\\subjects
-KFG_graph_location:C:\\Users\\rober\\Documents\\firstpaper\\LNFdata\\tooloutput
-Wtree_location:C:\\Users\\rober\\Documents\\firstpaper\\LNFdata\\tooloutput
+subject_URLs_location=C:\\Users\\rober\\Documents\\firstpaper\\subjects\\subject_URLs.csv
 
+#Tool output locations:
+KFG_graph_location:C:\\Users\\rober\\Documents\\firstpaper\\LNFdata\\groundtruth
+Wtree_location:C:\\Users\\rober\\Documents\\firstpaper\\LNFdata\\groundtruth
 Detection_output_location:
-Ground_truth_location:
+
+#Ground truth(s) locations:
+GT_Wtree_location:C:\\Users\\rober\\Documents\\firstpaper\\LNFdata\\groundtruth
+GT_LNF_location:C:\\Users\\rober\\Documents\\firstpaper\\LNFdata\\groundtruth

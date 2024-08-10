@@ -108,7 +108,7 @@ public class MitmproxyJava {
       mitmproxyProcess.cancel(true);
     }
     server.stop(1000);
-    Thread.sleep(200); // this pains me. but it seems that it takes a moment for the server to actually relinquish the port it uses.
+    Thread.sleep(1000); // this pains me. but it seems that it takes a moment for the server to actually relinquish the port it uses.
   }
 
   private void waitForPortToBeInUse(int port) throws TimeoutException {

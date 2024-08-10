@@ -6,8 +6,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import edu.usc.Utilities.LoadConfig;
 import edu.usc.WinnTree.Construction.ConstructWinnTree;
+import org.json.JSONArray;
+import org.json.simple.JSONObject;
+
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
@@ -56,19 +60,35 @@ public class WinnTree {
 
     public void UpdateExplored(){
         Set<FunctionalArea> update_set = new HashSet<>();
+        int size = explored_vertices.size();
         for (FunctionalArea FA : vertex_set) {
             Set<FunctionalArea> children = new HashSet<>(FA.getChildren());
-            if (explored_vertices.containsAll(children)) {
+            if (explored_vertices.containsAll(children) && !children.isEmpty()) {
                 update_set.add(FA);
             }
         }
         explored_vertices.addAll(update_set);
+        if(explored_vertices.size() != size){ //handles cascading changes of 'visited' W-tree nodes
+            UpdateExplored();
+        }
     }
 
     public void Build(LoadConfig configs, String subject) throws OrtException, InterruptedException, IOException {
         ConstructWinnTree new_tree = new ConstructWinnTree();
         FunctionalArea root = new_tree.Construct(configs, subject);
         setRoot(root);
+        Set<FunctionalArea> vertices = new HashSet<>();
+        Queue<FunctionalArea> queue = new LinkedList<FunctionalArea>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            FunctionalArea vertex = queue.poll();
+            vertices.add(vertex);
+            for(FunctionalArea child: vertex.getChildren()){
+                queue.add(child);
+            }
+        }
+        setVertex_set(vertices);
+        System.out.println("Finished W-tree Construction.");
     }
 
     public boolean IsHorizontallyAligned(FunctionalArea A, FunctionalArea B){
@@ -86,7 +106,7 @@ public class WinnTree {
     public void Load(LoadConfig configs_obj, String subject) throws IOException {
         //Finding and loading JSON file for subject
         System.out.println("Beginning loading W-tree for subject: " + subject);
-        String path = configs_obj.getProperties().getProperty("KFG_graph_location") + File.separator + subject + File.separator + subject + ".json";
+        String path = configs_obj.getProperties().getProperty("Wtree_location") + File.separator + subject + File.separator + "WTree.json";
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode jsonNode = objectMapper.readTree(new File(path));
 
@@ -133,6 +153,44 @@ public class WinnTree {
         }
         setVertex_set(all_vertices);
         System.out.println("Loading of W-tree has completed.");
+    }
+
+    public void Save(LoadConfig configs_obj, String subject) throws IOException {
+        System.out.println("Beginning saving W-tree via JSON for: " + subject);
+        String path = configs_obj.getProperties().getProperty("Wtree_location") + File.separator + subject + File.separator + "WTree2.json";
+
+        JSONObject root = new JSONObject();
+        Set<JSONObject> all_nodes = new HashSet<>();
+        for(FunctionalArea vertex: vertex_set){
+            JSONObject node = new JSONObject();
+            JSONArray children = new JSONArray();
+            node.put("id", vertex.getID());
+            node.put("MBR", vertex.getMBR());
+            node.put("parent_id", vertex.getParentID());
+            node.put("xpath", vertex.getXpath());
+            node.put("children", children);
+            all_nodes.add(node);
+            if(vertex.getMBR().equals(this.root.getMBR())){
+                root = node;
+            }
+        }
+
+        for(JSONObject node: all_nodes){
+            String ID = (String) node.get("id");
+            JSONArray children = (JSONArray) node.get("children");
+            for(JSONObject other_nodes: all_nodes){
+                String parent_ID = (String) other_nodes.get("parent_id");
+                if(parent_ID.equals(ID)){
+                    children.put(other_nodes);
+                }
+            }
+        }
+
+        FileWriter file = new FileWriter(path);
+        file.write(root.toJSONString());
+        file.flush();
+        file.close();
+        System.out.println("Saving of W-tree has completed.");
     }
 
     public FunctionalArea FindByXpath(String xpath){

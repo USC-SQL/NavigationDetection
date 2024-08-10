@@ -58,7 +58,8 @@ public class GetWebDriver {
         return this.refDriver;
     }
 
-    public void shutdownWebDriver() {
+    public void shutdownWebDriver() throws IOException, InterruptedException {
+        mitmproxy.stop();
         refDriver.close();
         refDriver.quit();
     }

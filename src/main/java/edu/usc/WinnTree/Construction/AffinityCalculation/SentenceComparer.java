@@ -25,7 +25,6 @@ public class SentenceComparer {
         Encoding[] encodings = tokenizer.batchEncode(sentences);
         //OrtEnvironment environment = OrtEnvironment.getEnvironment();
         //OrtSession session = environment.createSession("C:\\Users\\rober\\Documents\\firstpaper\\model.onnx", new OrtSession.SessionOptions());
-
         long[][] input_ids0 = new long[encodings.length][];
         long[][] attention_mask0 = new long[encodings.length][];
 
@@ -40,7 +39,6 @@ public class SentenceComparer {
         Map<String, OnnxTensor> inputs = new HashMap<>();
         inputs.put("input_ids", inputIds);
         inputs.put("attention_mask", attentionMask);
-
         try(OrtSession.Result results = session.run(inputs)){
             OnnxValue lastHiddenState = results.get(0);
             float[][][] tokenEmbeddings = (float[][][]) lastHiddenState.getValue();
@@ -77,8 +75,8 @@ public class SentenceComparer {
         double normB = 0.0;
         for(int i=0; i<vectorA.length; i++){
             dotProduct += vectorA[i] * vectorB[i];
-            normA  += Math.pow(vectorA[i], 2);
-            normB += Math.pow(vectorB[i], 2);
+            normA  += vectorA[i] * vectorA[i];
+            normB += vectorB[i] * vectorB[i];
         }
         return dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));
     }

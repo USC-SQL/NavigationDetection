@@ -19,7 +19,7 @@ import static edu.usc.Detection.LocalizationHeuristics.EdgeIntoAligned.CheckEdge
 
 public class LocalizeFailures {
 
-    public static void Localize(WinnTree Wtree, UIGraphState KFG, Set<UIGraphEdge> LNF_failures){
+    public static Set<UIGraphEdge> Localize(WinnTree Wtree, UIGraphState KFG, Set<UIGraphEdge> LNF_failures){
         Set<UIGraphEdge> localized_edges = new HashSet<>();
         List<UIGraphEdge> nav_order = KFG.getOrder(); //we trace the KFG to find failure edges
         Wtree.resetExploredSet();
@@ -46,6 +46,9 @@ public class LocalizeFailures {
                 }
                 if(CheckEdgeIntoAligned(Wtree, source_path, target_path)){
                     localized_edges.add(edge);
+                    if(edge.getV2().getXpath().equals("/html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/a[1]")){
+                        System.out.println(edge.getV1().getXpath());
+                    }
                 }
             }
             Wtree.AddExplored(Wtree.FindByXpath(edge.getV2().getXpath()));
@@ -58,7 +61,7 @@ public class LocalizeFailures {
             UIGraphEdge edge = new UIGraphEdge(KFG.getV_exit(), KFG.getV_exit(), "exit");
             localized_edges.add(edge);
         }
-        System.out.println(localized_edges.size());
+        return localized_edges;
     }
 
 }

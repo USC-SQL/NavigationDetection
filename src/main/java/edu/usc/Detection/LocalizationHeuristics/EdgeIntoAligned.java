@@ -35,7 +35,7 @@ public class EdgeIntoAligned {
                     if(Wtree.IsHorizontallyAligned(child, other_children)){
                         int child_x = child.getMBR().get(0);
                         int other_child_x = other_children.getMBR().get(0);
-                        if(child_x > other_child_x){
+                        if(child_x > other_child_x && !Wtree.getExploredSet().contains(other_children)){
                             return true;
                         }
                     }

@@ -1,10 +1,14 @@
 package edu.usc.Detection.DetectionHeuristics;
 
 import edu.usc.KFG.UIGraph.UIGraphEdge;
+import edu.usc.KFG.UIGraph.UIGraphNode;
 import edu.usc.KFG.UIGraph.UIGraphState;
+import edu.usc.KFG.UIGraph.misc.KWALIEdge;
+import edu.usc.KFG.UIGraph.misc.KWALIElementWrapper;
 import edu.usc.WinnTree.Construction.AffinityGraph.ACG_edge;
 import edu.usc.WinnTree.FunctionalArea;
 import edu.usc.WinnTree.WinnTree;
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -20,7 +24,6 @@ public class DetectFailures {
     public static Set<UIGraphEdge> FindFailures(WinnTree Wtree, UIGraphState KFG){
         Set<UIGraphEdge> problematic_edges = new HashSet<>();
         List<UIGraphEdge> nav_order = KFG.getOrder(); //we trace the KFG to find failure edges
-
         FunctionalArea start = Wtree.FindByXpath(KFG.getV_entry().getXpath());
         Wtree.AddExplored(start);
         for(UIGraphEdge edge: nav_order){
@@ -33,7 +36,6 @@ public class DetectFailures {
             Collections.reverse(source_path);
             List<FunctionalArea> target_path = Wtree.FindDFSPath(target_FA);
             Collections.reverse(target_path);
-
             if(MBRFailure(Wtree, source_xpath, target_xpath, source_FA, target_FA)){
                 problematic_edges.add(edge);
             }
