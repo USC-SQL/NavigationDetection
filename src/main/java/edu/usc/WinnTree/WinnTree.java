@@ -1,12 +1,17 @@
 package edu.usc.WinnTree;
 
+import ai.onnxruntime.OrtException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.type.TypeFactory;
+import edu.usc.Utilities.LoadConfig;
+import edu.usc.WinnTree.Construction.ConstructWinnTree;
+import org.json.JSONArray;
+import org.json.simple.JSONObject;
 
-import java.io.DataInput;
+
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
@@ -16,9 +21,12 @@ public class WinnTree {
 
     public Set<FunctionalArea> vertex_set;
 
+    public Set<FunctionalArea> explored_vertices;
+
     public WinnTree() {
         this.root = null;
-        this.vertex_set = null;
+        this.vertex_set = new HashSet<>();
+        this.explored_vertices = new HashSet<>();
     }
 
     public FunctionalArea getRoot() {
@@ -33,8 +41,54 @@ public class WinnTree {
         return vertex_set;
     }
 
-    public void setRoot(Set vertex_set) {
+    public void setVertex_set(Set vertex_set) {
         this.vertex_set = vertex_set;
+    }
+
+    public Set<FunctionalArea> getExploredSet() {
+        return explored_vertices;
+    }
+
+    public void resetExploredSet() {
+        this.explored_vertices = new HashSet<>();
+    }
+
+    public void AddExplored(FunctionalArea FA) {
+        explored_vertices.add(FA);
+        UpdateExplored();
+    }
+
+    public void UpdateExplored(){
+        Set<FunctionalArea> update_set = new HashSet<>();
+        int size = explored_vertices.size();
+        for (FunctionalArea FA : vertex_set) {
+            Set<FunctionalArea> children = new HashSet<>(FA.getChildren());
+            if (explored_vertices.containsAll(children) && !children.isEmpty()) {
+                update_set.add(FA);
+            }
+        }
+        explored_vertices.addAll(update_set);
+        if(explored_vertices.size() != size){ //handles cascading changes of 'visited' W-tree nodes
+            UpdateExplored();
+        }
+    }
+
+    public void Build(LoadConfig configs, String subject) throws OrtException, InterruptedException, IOException {
+        ConstructWinnTree new_tree = new ConstructWinnTree();
+        FunctionalArea root = new_tree.Construct(configs, subject);
+        setRoot(root);
+        Set<FunctionalArea> vertices = new HashSet<>();
+        Queue<FunctionalArea> queue = new LinkedList<FunctionalArea>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            FunctionalArea vertex = queue.poll();
+            vertices.add(vertex);
+            for(FunctionalArea child: vertex.getChildren()){
+                queue.add(child);
+            }
+        }
+        setVertex_set(vertices);
+        System.out.println("Finished W-tree Construction.");
     }
 
     public boolean IsHorizontallyAligned(FunctionalArea A, FunctionalArea B){
@@ -49,10 +103,10 @@ public class WinnTree {
         return false;
     }
 
-    public void Load(String subject) throws IOException {
+    public void Load(LoadConfig configs_obj, String subject) throws IOException {
         //Finding and loading JSON file for subject
         System.out.println("Beginning loading W-tree for subject: " + subject);
-        String path = "C:/Users/rober/Documents/research/wtrees/groundtruth/" + subject + File.separator + subject + "_2.json";
+        String path = configs_obj.getProperties().getProperty("Wtree_location") + File.separator + subject + File.separator + "WTree.json";
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode jsonNode = objectMapper.readTree(new File(path));
 
@@ -63,7 +117,7 @@ public class WinnTree {
             root_mbr.add(dataNode.asInt());
         }
         FunctionalArea root = new FunctionalArea(jsonNode.get("id").asText(), "", "", root_mbr);
-        this.root = root;
+        setRoot(root);
 
         //Transforming all JsonNodes into functional areas
         Set<FunctionalArea> all_vertices = new HashSet<>();
@@ -97,8 +151,87 @@ public class WinnTree {
                 }
             }
         }
-        this.vertex_set = all_vertices;
+        setVertex_set(all_vertices);
         System.out.println("Loading of W-tree has completed.");
     }
 
+    public void Save(LoadConfig configs_obj, String subject) throws IOException {
+        System.out.println("Beginning saving W-tree via JSON for: " + subject);
+        String path = configs_obj.getProperties().getProperty("Wtree_location") + File.separator + subject + File.separator + "WTree2.json";
+
+        JSONObject root = new JSONObject();
+        Set<JSONObject> all_nodes = new HashSet<>();
+        for(FunctionalArea vertex: vertex_set){
+            JSONObject node = new JSONObject();
+            JSONArray children = new JSONArray();
+            node.put("id", vertex.getID());
+            node.put("MBR", vertex.getMBR());
+            node.put("parent_id", vertex.getParentID());
+            node.put("xpath", vertex.getXpath());
+            node.put("children", children);
+            all_nodes.add(node);
+            if(vertex.getMBR().equals(this.root.getMBR())){
+                root = node;
+            }
+        }
+
+        for(JSONObject node: all_nodes){
+            String ID = (String) node.get("id");
+            JSONArray children = (JSONArray) node.get("children");
+            for(JSONObject other_nodes: all_nodes){
+                String parent_ID = (String) other_nodes.get("parent_id");
+                if(parent_ID.equals(ID)){
+                    children.put(other_nodes);
+                }
+            }
+        }
+
+        FileWriter file = new FileWriter(path);
+        file.write(root.toJSONString());
+        file.flush();
+        file.close();
+        System.out.println("Saving of W-tree has completed.");
+    }
+
+    public FunctionalArea FindByXpath(String xpath){
+        FunctionalArea temp = new FunctionalArea("", "", "", new ArrayList<>());
+        for(FunctionalArea FA: this.getVertexSet()){
+            if(FA.getXpath().equals(xpath)){
+               return FA;
+            }
+        }
+        System.out.println("Error - couldn't find FA with xpath: " + xpath);
+        return temp;
+    }
+
+    public List FindDFSPath(FunctionalArea goal){
+        Stack<List> stack = new Stack<>();
+        List element = new ArrayList();
+        List path = new ArrayList();
+        path.add(root);
+        element.add(root);
+        element.add(path);
+        stack.add(element);
+        Set<FunctionalArea> visited = new HashSet<>();
+        while(!stack.isEmpty()){
+            List current_element = stack.pop();
+            List current_path = (List) current_element.get(1);
+            FunctionalArea current_FA = (FunctionalArea) current_element.get(0);
+            if(!visited.contains(current_FA)) {
+                if (current_FA.equals(goal)) {
+                    return current_path;
+                }
+                visited.add(current_FA);
+                for (FunctionalArea child : current_FA.getChildren()) {
+                    List new_list = new ArrayList<>(current_path);
+                    new_list.add(child);
+                    List new_element = new ArrayList<>();
+                    new_element.add(child);
+                    new_element.add(new_list);
+                    stack.add(new_element);
+                }
+            }
+        }
+        return path;
+    }
 }

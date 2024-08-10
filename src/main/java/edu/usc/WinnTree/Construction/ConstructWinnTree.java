@@ -14,6 +14,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
@@ -24,7 +25,7 @@ public class ConstructWinnTree {
 
     ChromeDriver Driver;
 
-    public void Construct(LoadConfig configs, String subject) throws OrtException, InterruptedException {
+    public FunctionalArea Construct(LoadConfig configs, String subject) throws OrtException, InterruptedException, IOException {
         Set<FunctionalArea> work_set = new HashSet<>();
         InitializeWorkSet(work_set, configs, subject);
         AffinityCompleteGraph Affinity_graph = new AffinityCompleteGraph();
@@ -45,10 +46,11 @@ public class ConstructWinnTree {
             Affinity_graph.AddVertex(new_parent); //adding new parent to affinity graph
             Affinity_graph.SortEdgeSet(); //update graph for next iteration
         }
-        System.out.println("Finished W-tree Construction.");
+        FunctionalArea root_node = work_set.iterator().next();
+        return root_node;
     }
 
-    public void InitializeWorkSet(Set work_set, LoadConfig configs, String subject) throws InterruptedException {
+    public void InitializeWorkSet(Set work_set, LoadConfig configs, String subject) throws InterruptedException, IOException {
         //Finding and getting all xpaths of keyboard-navigable elements
         String subject_path = configs.getProperties().getProperty("KFG_graph_location") + File.separator + subject + File.separator + "KFG.json";
         ReadJSON read_json = new ReadJSON();
@@ -57,7 +59,7 @@ public class ConstructWinnTree {
 
         //Getting necessary information from all keyboard-navigable elements
         //Turning them into functional areas
-        GetWebDriver WebDriverObj = new GetWebDriver(subject, "https://robinhood.com/login", configs);
+        GetWebDriver WebDriverObj = new GetWebDriver(subject, configs.getSubjectURL(subject), configs);
         TimeUnit.SECONDS.sleep(10);
         WebDriver refDriver = WebDriverObj.getWebDriver();
         GetAttributeData attribute_obj = new GetAttributeData();
@@ -84,6 +86,7 @@ public class ConstructWinnTree {
         }
         attribute_obj.FilterCSS(work_set);
         WebDriverObj.shutdownWebDriver();
+        WebDriverObj.shutdownMitmProxy();
     }
 
     public void InitializeAffinity_graph(Set work_set, AffinityCompleteGraph Affinity_graph){

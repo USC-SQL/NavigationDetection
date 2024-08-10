@@ -34,7 +34,7 @@ public class FunctionalArea {
         this.MBR = MBR;
     }
 
-    public String getxpath() {
+    public String getXpath() {
         return xpath;
     }
 

@@ -80,8 +80,12 @@ public class GetAttributeData {
     }
 
     public String TransformString(String AString){
-        if(AString.equals("")){
-            return AString;
+        try {
+            if (AString.equals("")) {
+                return AString;
+            }
+        } catch (NullPointerException e){
+            return "";
         }
         if(CheckCamelCase(AString)){
             String fixed_string = SplitCamelCase(AString);
