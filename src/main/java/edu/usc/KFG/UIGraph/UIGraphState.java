@@ -8,7 +8,7 @@ import java.util.Set;
 import edu.usc.KFG.KFFG.KFFGNode;
 import edu.usc.KFG.UIGraph.misc.KWALIEdge;
 import edu.usc.KFG.UIGraph.misc.KWALIElementWrapper;
-import edu.usc.KFG.Pair;
+import edu.usc.KFG.KFGUtilities.Pair;
 
 
 public class UIGraphState implements Comparable<UIGraphState> {
@@ -162,13 +162,26 @@ public class UIGraphState implements Comparable<UIGraphState> {
 			}
 		}
 		this.TraversalOrder = order;
+		SetNavOrder();
 	}
 
 	public List<UIGraphEdge> getOrder() {
 		return TraversalOrder;
 	}
 
-
+	public void SetNavOrder(){
+		int count = 1;
+		for(UIGraphEdge edge : this.TraversalOrder){
+			if(count == 1){
+				UIGraphNode start = edge.getV1();
+				start.setOrder(count);
+				count++;
+			}
+			UIGraphNode target = edge.getV2();
+			target.setOrder(count);
+			count++;
+		}
+	}
 
 	public String getUiGraphType() {
 		return uiGraphType;

@@ -2,6 +2,7 @@ package edu.usc.Utilities.mitm;
 
 import edu.usc.Utilities.LoadConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -50,7 +51,9 @@ public class GetWebDriver {
         //}
         //WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver(option);
-        driver.manage().window().maximize();
+        Dimension dimension = new Dimension(1280, 1024);
+        driver.manage().window().setSize(dimension);
+        //driver.manage().window().maximize();
         return driver;
     }
 
