@@ -8,6 +8,7 @@ public class UIGraphNode implements Comparable<UIGraphNode> {
     protected String xpath;
     int x, y, width, height;
 
+    int order;
 
     public UIGraphNode() {
 
@@ -22,6 +23,9 @@ public class UIGraphNode implements Comparable<UIGraphNode> {
         return xpath;
     }
 
+
+    public void setOrder(int order){this.order = order;}
+    public int getOrder(){return order;}
 
     public int getX() {
         return x;
