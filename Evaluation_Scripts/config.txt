@@ -1,0 +1,19 @@
+#configs - setup according to your local machine
+
+#list of subjects
+path_to_subjects=C:\\Users\\TEST\\LNFProject\\related_tools\\subjects.txt
+
+#path to survey result files
+path_to_surveys=C:\Users\\TEST\\LNF_Rating_Survey_Results
+
+#path to ground truth files
+path_to_gt=C:\Users\\TEST\\targetted_gt
+
+#path to processed LYNX results
+path_to_processed_LYNX_results=C:\Users\\TEST\\LYNX_Results\\LYNX_Raw_Results\\LYNX-P
+
+#path to raw related work tools results
+path_to_raw_related_results=C:\Users\\TEST\\Related_Tools_Results\\Related_Raw_Results
+
+#path to processed related work tools results
+path_to_processed_related_results=C:\Users\\TEST\\Related_Tools_Results\\Related_Processed_Results
