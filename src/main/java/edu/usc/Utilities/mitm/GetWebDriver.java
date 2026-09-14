@@ -1,7 +1,6 @@
 package edu.usc.Utilities.mitm;
 
 import edu.usc.Utilities.LoadConfig;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 
-import java.io.File;
 import java.io.IOException;
 
 public class GetWebDriver {
@@ -20,7 +18,7 @@ public class GetWebDriver {
 
     public GetWebDriver(String subject, String url, LoadConfig config){
         this.proxyPort = 9998;
-        String mitmproxyPath = config.GetmitmPath() + File.separator + "mitmdump.exe";
+        String mitmproxyPath = config.GetmitmdumpPath();
         String cachePath = config.GetSubjectPath(subject);
         mitmproxy = new MitmproxyJava(mitmproxyPath, cachePath, proxyPort);
         try {

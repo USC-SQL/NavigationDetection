@@ -21,8 +21,8 @@ public class SaveFiles {
         cell2.setCellValue(duration);
         // Write the output to a file
         String filepath = "";
-        if(Type.equals("WTree")){
-            filepath = configs_obj.getProperties().getProperty("WTree_location") + File.separator + subject + File.separator + "WTree-execTime-" + subject +".xlsx";
+        if(Type.equals("CTree")){
+            filepath = configs_obj.getProperties().getProperty("CTree_location") + File.separator + subject + File.separator + "CTree-execTime-" + subject +".xlsx";
         }
         if(Type.equals("Detection")){
             filepath = configs_obj.getProperties().getProperty("Detection_output_location") + File.separator + subject + File.separator + "Detection-execTime-" + subject +".xlsx";
