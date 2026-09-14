@@ -80,16 +80,16 @@ public class MitmproxyJava {
     if (mode.equals("CACHED_NOINJECTION")) {   // no injection
       System.out.println("MitmproxyJava: mitmproxy CACHED_NOINJECTION mode...");
       System.out.println(mitmproxyPath + " --set " + " upstream_cert=false " + " --set " + " server_replay_kill_extra=true " + " --set " + " server_replay_nopop=true " + " -S " + cachePath + " -p " + proxyPort);
-      mitmproxyProcess = new ProcessExecutor().command(mitmproxyPath, "--set", "upstream_cert=false", "--set", "server_replay_kill_extra=true", "--set", "server_replay_nopop=true", "-S", cachePath, "-p " + proxyPort)/*"--set", "upstream_cert=false", "--set", "server_replay_nopop=true", "-S", "/home/paul-sql/Downloads/mitmproxy-4.0.4-linux/sites_cache/vimeo")"--anticache", "-s", pythonScriptPath)*/.destroyOnExit().start().getFuture();
+      mitmproxyProcess = new ProcessExecutor().command(mitmproxyPath, "--set", "upstream_cert=false", "--set", "server_replay_kill_extra=true", "--set", "server_replay_nopop=true", "-S", cachePath, "-p", String.valueOf(proxyPort))/*"--set", "upstream_cert=false", "--set", "server_replay_nopop=true", "-S", "/home/paul-sql/Downloads/mitmproxy-4.0.4-linux/sites_cache/vimeo")"--anticache", "-s", pythonScriptPath)*/.destroyOnExit().start().getFuture();
     } else if (mode.equals("CACHED_INJECTION")) {   // inject js script to override
       System.out.println("MitmproxyJava: mitmproxy CACHED_INJECTION mode...");
-      mitmproxyProcess = new ProcessExecutor().command(mitmproxyPath, "--set", "upstream_cert=false", "--set", "server_replay_kill_extra=true", "--set", "server_replay_nopop=true", "-S", cachePath, "-p " + proxyPort + "", "-s", pyScriptToWritePath)/*"--set", "upstream_cert=false", "--set", "server_replay_nopop=true", "-S", "/home/paul-sql/Downloads/mitmproxy-4.0.4-linux/sites_cache/vimeo")"--anticache", "-s", pythonScriptPath)*/.destroyOnExit().start().getFuture();
+      mitmproxyProcess = new ProcessExecutor().command(mitmproxyPath, "--set", "upstream_cert=false", "--set", "server_replay_kill_extra=true", "--set", "server_replay_nopop=true", "-S", cachePath, "-p", String.valueOf(proxyPort), "-s", pyScriptToWritePath)/*"--set", "upstream_cert=false", "--set", "server_replay_nopop=true", "-S", "/home/paul-sql/Downloads/mitmproxy-4.0.4-linux/sites_cache/vimeo")"--anticache", "-s", pythonScriptPath)*/.destroyOnExit().start().getFuture();
     } else if (mode.equals("NOCACHED_NOINJECTION")) {   // no injection
       System.out.println("MitmproxyJava: mitmproxy NOCACHED_NOINJECTION mode...");
-      mitmproxyProcess = new ProcessExecutor().command(mitmproxyPath, "-p", proxyPort + "")/*"--set", "upstream_cert=false", "--set", "server_replay_nopop=true", "-S", "/home/paul-sql/Downloads/mitmproxy-4.0.4-linux/sites_cache/vimeo")"--anticache", "-s", pythonScriptPath)*/.destroyOnExit().start().getFuture();
+      mitmproxyProcess = new ProcessExecutor().command(mitmproxyPath, "-p", String.valueOf(proxyPort))/*"--set", "upstream_cert=false", "--set", "server_replay_nopop=true", "-S", "/home/paul-sql/Downloads/mitmproxy-4.0.4-linux/sites_cache/vimeo")"--anticache", "-s", pythonScriptPath)*/.destroyOnExit().start().getFuture();
     } else if (mode.equals("NOCACHED_INJECTION")) {   // inject js script to override
       System.out.println("MitmproxyJava: mitmproxy NOCACHED_INJECTION mode...");
-      mitmproxyProcess = new ProcessExecutor().command(mitmproxyPath, "-p " + proxyPort + "", "-s", pyScriptToWritePath)/*"--set", "upstream_cert=false", "--set", "server_replay_nopop=true", "-S", "/home/paul-sql/Downloads/mitmproxy-4.0.4-linux/sites_cache/vimeo")"--anticache", "-s", pythonScriptPath)*/.destroyOnExit().start().getFuture();
+      mitmproxyProcess = new ProcessExecutor().command(mitmproxyPath, "-p", String.valueOf(proxyPort), "-s", pyScriptToWritePath)/*"--set", "upstream_cert=false", "--set", "server_replay_nopop=true", "-S", "/home/paul-sql/Downloads/mitmproxy-4.0.4-linux/sites_cache/vimeo")"--anticache", "-s", pythonScriptPath)*/.destroyOnExit().start().getFuture();
     }
 
     waitForPortToBeInUse(proxyPort);

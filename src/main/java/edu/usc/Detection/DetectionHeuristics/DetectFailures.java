@@ -18,6 +18,7 @@ import static edu.usc.Detection.DetectionHeuristics.ReEntering.CheckReEnter;
 import static edu.usc.Detection.DetectionHeuristics.VerticalAscent.CheckVerticalAscent;
 import static edu.usc.Detection.DetectionHeuristics.CheckEntryExit.CheckEntryEdge;
 import static edu.usc.Detection.DetectionHeuristics.EdgeIntoAligned.CheckEdgeIntoAligned;
+import static edu.usc.Detection.RunDetection.SaveDetectedFailures;
 
 public class DetectFailures {
 
@@ -27,7 +28,6 @@ public class DetectFailures {
         Set<UIGraphEdge> Backwards_edges = new HashSet<>();
         Set<UIGraphEdge> LeftChoice_edges = new HashSet<>();
         Set<UIGraphEdge> Top_edges = new HashSet<>();
-        Set<UIGraphEdge> Bottom_edges = new HashSet<>();
         Set<UIGraphEdge> Vertical_edges = new HashSet<>();
 
 
@@ -102,14 +102,14 @@ public class DetectFailures {
         /*
         SaveDetectedFailures(Skip_edges, configs_obj, subject, "Skip.txt");
         SaveDetectedFailures(ReEnter_edges, configs_obj, subject, "ReEnter.txt");
-        SaveDetectedFailures(Backwards_edges, configs_obj, subject, "Backwards.txt");
+        SaveDetectedFailures(Backwards_edges, configs_obj, subject, "Opposite.txt");
         SaveDetectedFailures(LeftChoice_edges, configs_obj, subject, "LeftChoice.txt");
         SaveDetectedFailures(Vertical_edges, configs_obj, subject, "VerticalAscent.txt");
         SaveDetectedFailures(Top_edges, configs_obj, subject, "Top.txt");
-         */
+        */
         System.out.println("Skip edges: " + Skip_edges.size());
         System.out.println("Re-enter edges: " + ReEnter_edges.size());
-        System.out.println("Backwards edges: " + Backwards_edges.size());
+        System.out.println("Opposite edges: " + Backwards_edges.size());
         System.out.println("LeftChoice edges: " + LeftChoice_edges.size());
         System.out.println("VerticalAscent edges: " + Vertical_edges.size());
         System.out.println("Top edges: " + Top_edges.size());

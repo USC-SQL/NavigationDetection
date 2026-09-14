@@ -41,9 +41,30 @@ public class LoadConfig {
 
     public String GetmitmPath (){
         String mitmproxyFolderName = prop.getProperty("mitmproxy_folder");
+        String osName = System.getProperty("os.name", "").toLowerCase(Locale.ROOT);
+
+        if (osName.contains("mac")) {
+            mitmproxyFolderName += "-mac";
+        } else if (osName.contains("linux")) {
+            mitmproxyFolderName += "-linux";
+        } else if (!osName.contains("win")) {
+            throw new UnsupportedOperationException("Unsupported operating system for bundled mitmproxy: " + osName);
+        }
+
         String resourcesDirectory = new File("src/main/resources").getAbsolutePath();
         String mitmProxy530Basepath = resourcesDirectory + File.separator + mitmproxyFolderName;
         return mitmProxy530Basepath;
+    }
+
+    public String GetmitmdumpPath() {
+        String osName = System.getProperty("os.name", "").toLowerCase(Locale.ROOT);
+        String executable = osName.contains("win") ? "mitmdump.exe" : "mitmdump";
+        File mitmdump = new File(GetmitmPath(), executable);
+
+        if (!mitmdump.isFile()) {
+            throw new IllegalStateException("Bundled mitmdump executable not found: " + mitmdump.getAbsolutePath());
+        }
+        return mitmdump.getAbsolutePath();
     }
 
     public String GetSubjectPath(String subject){
