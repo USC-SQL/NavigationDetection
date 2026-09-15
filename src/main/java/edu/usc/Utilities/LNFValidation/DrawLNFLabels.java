@@ -107,16 +107,20 @@ public class DrawLNFLabels {
                 "return window.innerHeight;"
         )).longValue();
 
+        System.out.println("Page height: " + pageHeight);
+        System.out.println("Viewport height: " + viewportHeight);
+
         // Need to always start at the top of the webpage
         js.executeScript("window.scrollTo(0, 0);");
         TimeUnit.MILLISECONDS.sleep(500);
 
         int screenshotNumber = 1;
+        long maxScrollPosition = Math.max(0, pageHeight - viewportHeight);
         long scrollPosition = 0;
 
-        while (scrollPosition < pageHeight) {
+        while (true) {
 
-            // Scroll to the next section of the webpage
+            // Scroll to the next section of the webpage using Selenium
             js.executeScript("window.scrollTo(0, arguments[0]);", scrollPosition);
             TimeUnit.MILLISECONDS.sleep(500);
 
@@ -137,7 +141,17 @@ public class DrawLNFLabels {
             System.out.println("Saved screenshot: " + outputPath);
 
             screenshotNumber++;
-            scrollPosition += viewportHeight;
+
+            // Stop once the bottom of the webpage has been captured
+            if (scrollPosition >= maxScrollPosition) {
+                break;
+            }
+
+            // Move down one viewport, but do not scroll past the bottom
+            scrollPosition = Math.min(
+                    scrollPosition + viewportHeight,
+                    maxScrollPosition
+            );
         }
 
         // Return to the top when finished
