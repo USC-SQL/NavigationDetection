@@ -12,9 +12,19 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+// Lance
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
+
+// Lance
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import static edu.usc.KFG.KFGUtilities.UtilityFunctions.LoadTheKFG;
 
@@ -72,8 +82,70 @@ public class DrawLNFLabels {
             count++;
         }
         System.out.println("Total elements: " + count);
+
+        // Take screenshots of the labeled webpage
+        TakeScreenshots(refDriver, subject);
+
         //((JavascriptExecutor) refDriver).executeScript(script, "300px", "300px", "12");
     }
+
+    // Screenshot extension
+    public static void TakeScreenshots(WebDriver refDriver, String subject) throws IOException, InterruptedException {
+
+        JavascriptExecutor js = (JavascriptExecutor) refDriver;
+
+        // Create a separate screenshot directory for given subject
+        Path screenshotDir = Paths.get("screenshots", subject);
+        Files.createDirectories(screenshotDir);
+
+        // Determine the height of the webpage and the visible height of browser
+        long pageHeight = ((Number) js.executeScript(
+                "return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);"
+        )).longValue();
+
+        long viewportHeight = ((Number) js.executeScript(
+                "return window.innerHeight;"
+        )).longValue();
+
+        // Need to always start at the top of the webpage
+        js.executeScript("window.scrollTo(0, 0);");
+        TimeUnit.MILLISECONDS.sleep(500);
+
+        int screenshotNumber = 1;
+        long scrollPosition = 0;
+
+        while (scrollPosition < pageHeight) {
+
+            // Scroll to the next section of the webpage
+            js.executeScript("window.scrollTo(0, arguments[0]);", scrollPosition);
+            TimeUnit.MILLISECONDS.sleep(500);
+
+            // Take a screenshot of the current viewport
+            File screenshot = ((TakesScreenshot) refDriver)
+                    .getScreenshotAs(OutputType.FILE);
+
+            Path outputPath = screenshotDir.resolve(
+                    "screenshot_" + screenshotNumber + ".png"
+            );
+
+            Files.copy(
+                    screenshot.toPath(),
+                    outputPath,
+                    java.nio.file.StandardCopyOption.REPLACE_EXISTING
+            );
+
+            System.out.println("Saved screenshot: " + outputPath);
+
+            screenshotNumber++;
+            scrollPosition += viewportHeight;
+        }
+
+        // Return to the top when finished
+        js.executeScript("window.scrollTo(0, 0);");
+
+        System.out.println("Total screenshots saved: " + (screenshotNumber - 1));
+    }
+
 
     public static String NormalizeXpath(String input_xpath) {
         String xpath = input_xpath.toLowerCase();
