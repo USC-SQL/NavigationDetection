@@ -1,3 +1,6 @@
+strategy=lynx
+lynx_operation=all #all, ctree, detect, draw-mbrs, draw-labels, or print-fns
+
 mitmproxy_folder=mitmproxy-5.3.0
 cached_subjects_location=C:\\Users\\TEST\\subject_caches
 subject_URLs_location=C:\\Users\\TEST\\subject_caches\\subject_URLs.csv

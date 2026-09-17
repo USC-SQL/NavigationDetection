@@ -16,9 +16,11 @@ public class LoadConfig {
     public static List<String> subjects_to_run;
 
     public LoadConfig() {
-        try {
-            File configFile = new File("config.txt");
-            FileReader reader = new FileReader(configFile);
+        this("config.txt");
+    }
+
+    public LoadConfig(String configPath) {
+        try (FileReader reader = new FileReader(configPath)) {
             Properties new_prop = new Properties();
             new_prop.load(reader);
             prop = new_prop;
@@ -26,10 +28,8 @@ public class LoadConfig {
             subjects_to_run = new ArrayList<>();
             GetSubjects();
             MapSubjectURLs();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new IllegalArgumentException("Unable to load configuration from " + configPath, e);
         }
     }
 

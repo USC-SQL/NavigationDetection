@@ -3,13 +3,6 @@ package edu.usc;
 import java.util.*;
 
 import edu.usc.Utilities.LoadConfig;
-import edu.usc.ContextTree.ContextTree;
-
-import static edu.usc.Detection.RunDetection.Detect;
-import static edu.usc.Utilities.ContextTreeValidation.DrawContextTreeProxy.DrawMBRs;
-import static edu.usc.Utilities.LNFValidation.DrawLNFLabels.DrawLabels;
-import static edu.usc.Utilities.LNFValidation.ReviewFN.PrintFNs;
-import static edu.usc.Utilities.SaveFiles.SaveXLSX;
 
 
 public class Main {
