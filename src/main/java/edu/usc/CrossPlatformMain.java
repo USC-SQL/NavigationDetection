@@ -1,7 +1,7 @@
 package edu.usc;
 
 import edu.usc.Strategy.LYNX;
-import edu.usc.Strategy.NewStrategy;
+import edu.usc.Strategy.LLMStrategy;
 import edu.usc.Strategy.NavigationStrategy;
 import edu.usc.Utilities.LoadConfig;
 
@@ -27,7 +27,7 @@ public final class CrossPlatformMain {
         return switch (strategy) {
             case "lynx" -> new LYNX(LYNX.Operation.fromName(
                     properties.getProperty("lynx_operation", "all")));
-            case "new" -> new NewStrategy();
+            case "llm" -> new LLMStrategy();
             default -> throw new IllegalArgumentException(
                     "Unsupported strategy: " + strategy);
         };
