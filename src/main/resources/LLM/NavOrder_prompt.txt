@@ -1,0 +1,39 @@
+You are given annotated screenshots of a website and a list of the said website's identified keyboard-navigable elements from its Keyboard Focus Graph (KFG).
+
+Each keyboard-navigable element (i.e., KFG element) is represented via its XPath and ordered in the same order in which a keyboard-based user would sequentially visit them when interacting with the website. Additionally, each KFG element is assigned a numeric label in the annotated screenshots. The same numeric labels are used in the annotated screenshots to identify the corresponding elements.
+
+Your task is to infer the navigation order of all provided elements from the screenshots and match the elements from the screenshots to their respective XPaths.
+
+Navigation-order rules:
+- Use a reading order of top-to-bottom and left-to-right.
+- Within the same visual row, navigate from left to right before moving down to the next row.
+- Consider the screenshots together as different portions or states of the same webpage.
+- Every KFG element provided must appear exactly once in the final navigation order.
+- Do not invent elements that are not present in the provided KFG element list.
+- Use the numeric labels in the screenshots to associate visible elements with their KFG descriptors.
+
+Important:
+Some elements may not be visible in a screenshot because they require a certain state to be achieved. For example, an element may only become visible when it currently has keyboard focus. If an element's numeric label cannot be found in the provided screenshots, assume that this is the case. Do not omit that element from the navigation order. Infer its most reasonable position using the surrounding labeled elements, its KFG descriptor, and the available screenshots.
+
+Return only valid JSON in this exact structure:
+
+{
+  "navigation_order": [
+    {
+      "position": 1,
+      "label": 1,
+      "xpath": "/html[1]/body[1]/div[1]",
+      "descriptor": "..."
+    }
+  ]
+}
+
+The "position" field is the inferred meaningful navigation position.
+
+The "label" field is the numeric label assigned to the element in the KFG/screenshot data.
+
+The "xpath" field is the associated XPath value for each keyboard-navigable element.
+
+The "descriptor" field must exactly match the descriptor supplied for that numeric label.
+
+Include every supplied KFG element exactly once.
