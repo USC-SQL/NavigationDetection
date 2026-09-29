@@ -2,6 +2,7 @@ package edu.usc.Strategy;
 
 import edu.usc.LLM.KFGElementReader;
 import edu.usc.LLM.NavigationOrderInference;
+import edu.usc.LLM.NavigationOutputSaver;
 import edu.usc.LLM.OpenAIClient;
 import edu.usc.LLM.ScreenshotReader;
 import edu.usc.Utilities.LoadConfig;
@@ -16,12 +17,21 @@ public final class LLMStrategy implements NavigationStrategy {
         String screenshotLocation = config.getProperties()
                 .getProperty("LLM_screenshot_location");
 
+        String navigationOutputLocation = config.getProperties()
+                .getProperty("LLM_navigation_output_location");
+
         if (screenshotLocation == null || screenshotLocation.isBlank()) {
             throw new IllegalArgumentException(
                     "Missing config property: LLM_screenshot_location");
         }
 
+        if (navigationOutputLocation == null || navigationOutputLocation.isBlank()) {
+            throw new IllegalArgumentException(
+                    "Missing config property: LLM_navigation_output_location");
+        }
+
         Path screenshotRoot = Path.of(screenshotLocation);
+        Path navigationOutputRoot = Path.of(navigationOutputLocation);
 
         OpenAIClient openAIClient = new OpenAIClient("gpt-5.4");
         NavigationOrderInference navOrderInference =
@@ -45,9 +55,18 @@ public final class LLMStrategy implements NavigationStrategy {
                     elements,
                     screenshots);
 
+            Path savedOutput = NavigationOutputSaver.save(
+                    navigationOutputRoot,
+                    subject,
+                    navigationOrder);
+
             System.out.println();
             System.out.println("Navigation order result:");
             System.out.println(navigationOrder);
+            System.out.println();
+
+            System.out.println("Saved navigation output to:");
+            System.out.println(savedOutput);
             System.out.println();
         }
     }

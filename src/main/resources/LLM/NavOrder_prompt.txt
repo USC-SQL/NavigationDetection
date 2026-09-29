@@ -34,6 +34,6 @@ The "label" field is the numeric label assigned to the element in the KFG/screen
 
 The "xpath" field is the associated XPath value for each keyboard-navigable element.
 
-The "descriptor" field must exactly match the descriptor supplied for that numeric label.
+The "descriptor" field is a (optional) short and concise natural language descriptor of the rendered element in one of the web page's screenshots.
 
-Include every supplied KFG element exactly once.
+Include every supplied KFG element exactly once
