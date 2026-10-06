@@ -1,0 +1,112 @@
+You are given information about the implemented and meaningful keyboard navigation of a subject website. Your task is to identify Linear Navigation Failures (LNFs) under WCAG Success Criterion 2.4.3.
+
+INPUTS
+
+You will be provided with:
+
+1. Subject name
+The name of the website being evaluated.
+
+2. Navigation order JSON
+This JSON file represents the meaningful navigation order of all keyboard-navigable elements on the subject website. The meaningful navigation order was previously inferred by an LLM using the website's annotated screenshots and Keyboard Focus Graph (KFG) element information.
+
+The JSON has the following high-level structure:
+
+{
+  "navigation_order": [
+    {
+      "position": 1,
+      "label": 1,
+      "xpath": "...",
+      "descriptor": "..."
+    }
+  ]
+}
+
+Each object in "navigation_order" represents one keyboard-navigable element.
+
+The fields have the following meanings:
+
+- "position": The element's inferred position in the meaningful navigation order. This order was determined from the visual layout of the webpage, primarily using a top-to-bottom and left-to-right reading order.
+
+- "label": The numeric label assigned to the element in the annotated screenshots. The labels represent the implemented keyboard navigation order. Label 1 is the first keyboard-navigable element, label 2 is the second, and so on.
+
+- "xpath": The XPath identifying the corresponding keyboard-navigable element in the webpage.
+
+- "descriptor": A short natural-language description of the rendered element based on its appearance and context in the screenshots. The descriptor may help determine the element's visual or semantic role.
+
+The ordering of elements by "position" explicitly represents the inferred meaningful navigation order.
+
+The numeric "label" values represent the implemented keyboard navigation order. Therefore, consecutive labels represent actual keyboard focus transitions. For example, the transition from the element with label 4 to the element with label 5 represents an implemented keyboard navigation transition.
+
+The meaningful navigation order in this JSON was partially derived from the provided annotated screenshots. The screenshots show the visual layout of the webpage and contain numeric labels corresponding to the "label" field of the JSON. Together, the screenshots and JSON provide information about where keyboard-navigable elements appear visually, what they represent, their implemented keyboard navigation order, and their inferred meaningful navigation order.
+
+3. Annotated screenshots
+The screenshots show different portions or states of the subject website. Keyboard-navigable elements are numerically labeled according to the implemented keyboard navigation path. Use these screenshots to understand the visual relationships and context among the elements.
+
+4. Detection instructions
+These instructions define how to evaluate the inputs for Linear Navigation Failures.
+
+WCAG SUCCESS CRITERION 2.4.3 AND LINEAR NAVIGATION FAILURES
+
+WCAG Success Criterion 2.4.3 concerns Focus Order. When a webpage can be navigated sequentially and the navigation sequence affects meaning or operation, focusable components should receive focus in an order that preserves meaning and operability.
+
+For this analysis, a Linear Navigation Failure (LNF) is a keyboard focus transition in the implemented sequential navigation path that violates this requirement by creating a focus order that does not preserve a meaningful and operable navigation sequence.
+
+Assume a keyboard-only user who can see the screen.
+
+Use a visual reading model of top-to-bottom and left-to-right. Within the same visual row, navigate from left to right before moving down to the next row.
+
+The goal is for sequential keyboard navigation to allow the webpage's content and interactive elements to be encountered in a meaningful order consistent with their visual and functional relationships.
+
+LNF DETECTION TASK
+
+Evaluate the implemented keyboard navigation path using the navigation order JSON and annotated screenshots.
+
+Consider transitions between consecutive implemented keyboard navigation elements. Because the "label" field represents implemented navigation order, evaluate transitions from label N to label N+1.
+
+Compare these implemented transitions against the meaningful navigation order represented by the "position" field and against the visual evidence in the screenshots.
+
+Explicitly make a judgment call about which implemented keyboard navigation transitions should be classified as Linear Navigation Failures, or failures of WCAG Success Criterion 2.4.3.
+
+WCAG 2.4.3 evaluation can involve subjective judgment. Use the available visual, structural, and semantic evidence to make reasonable judgments. Do not classify a transition as an LNF solely because two elements have different "position" and "label" values. Determine whether the transition actually disrupts a meaningful or operable navigation sequence.
+
+OUTPUT
+
+For every transition you classify as an LNF, provide:
+
+1. The keyboard navigation sequence using the exact XPaths from the provided JSON in this format:
+
+xpath_1 -> xpath_2
+
+For example:
+
+/html[1]/body[1]/a[1] -> /html[1]/body[1]/a[2]
+
+2. A short paragraph explaining why that specific transition was designated as an LNF. Base the explanation on the navigation order, screenshots, visual relationships, element descriptors, and WCAG Success Criterion 2.4.3.
+
+Only identify transitions that you judge to be LNFs.
+
+Do not invent XPaths, labels, elements, or transitions that are not present in the provided navigation data.
+
+If no implemented keyboard navigation transitions should be classified as LNFs, return an empty "lnf_analysis" list as specified below.
+{
+  "lnf_analysis": [
+    {
+      "transition": "/html[1]/body[1]/a[1] -> /html[1]/body[1]/a[2]",
+      "reasoning": "A short paragraph explaining why this transition is classified as an LNF."
+    }
+  ]
+}
+
+The "transition" field must contain exactly two XPaths from consecutive elements in the implemented keyboard navigation path, separated by " -> ".
+
+The "reasoning" field must contain a short paragraph explaining why the transition is a Linear Navigation Failure under WCAG Success Criterion 2.4.3.
+
+If no LNFs are identified, return:
+
+{
+  "lnf_analysis": []
+}
+
+Do not include any text outside the JSON object.
