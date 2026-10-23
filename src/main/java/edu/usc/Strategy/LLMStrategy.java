@@ -151,10 +151,20 @@ public final class LLMStrategy implements NavigationStrategy {
             System.out.println("Loaded existing navigation order.");
             System.out.println("Detecting Linear Navigation Failures...");
 
-            String lnfResponse = lnfDetection.detect(
-                    subject,
-                    navigationOrderJson,
-                    screenshots);
+            String lnfResponse;
+
+            try {
+                lnfResponse = lnfDetection.detect(
+                        subject,
+                        navigationOrderJson,
+                        screenshots);
+            } catch (Exception e) {
+                System.err.println(
+                        "FAILED LNF detection for subject: " + subject);
+                System.err.println("Reason: " + e.getMessage());
+                System.err.println("Continuing to next subject...");
+                continue;
+            }
 
             Path savedOutput = LNFOutputSaver.save(
                     lnfOutputRoot,
