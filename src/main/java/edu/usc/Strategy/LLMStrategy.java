@@ -5,10 +5,12 @@ import edu.usc.LLM.NavigationOrderInference;
 import edu.usc.LLM.NavigationOutputSaver;
 import edu.usc.LLM.OpenAIClient;
 import edu.usc.LLM.ScreenshotReader;
-import edu.usc.Utilities.LoadConfig;
 import edu.usc.LLM.LNFDetection;
 import edu.usc.LLM.LNFOutputSaver;
 import edu.usc.LLM.NavigationOutputReader;
+import edu.usc.LLM.LNFPatternAnalysis;
+import edu.usc.LLM.LNFAnalysisOutputSaver;
+import edu.usc.Utilities.LoadConfig;
 
 import java.nio.file.Path;
 import java.util.List;
@@ -17,6 +19,7 @@ public final class LLMStrategy implements NavigationStrategy {
 
     @Override
     public void run(LoadConfig config) throws Exception {
+
         String screenshotLocation = config.getProperties()
                 .getProperty("LLM_screenshot_location");
 
@@ -39,11 +42,6 @@ public final class LLMStrategy implements NavigationStrategy {
                     "Missing config property: LLM_navigation_output_location");
         }
 
-        if (lnfOutputLocation == null || lnfOutputLocation.isBlank()) {
-            throw new IllegalArgumentException(
-                    "Missing config property: LLM_lnf_output_location");
-        }
-
         if (llmStage == null || llmStage.isBlank()) {
             throw new IllegalArgumentException(
                     "Missing config property: LLM_stage");
@@ -51,11 +49,11 @@ public final class LLMStrategy implements NavigationStrategy {
 
         Path screenshotRoot = Path.of(screenshotLocation);
         Path navigationOutputRoot = Path.of(navigationOutputLocation);
-        Path lnfOutputRoot = Path.of(lnfOutputLocation);
 
         OpenAIClient openAIClient = new OpenAIClient("gpt-5.4");
 
         if (llmStage.equals("1")) {
+
             runNavigationOrderStage(
                     config,
                     screenshotRoot,
@@ -63,6 +61,14 @@ public final class LLMStrategy implements NavigationStrategy {
                     openAIClient);
 
         } else if (llmStage.equals("2")) {
+
+            if (lnfOutputLocation == null || lnfOutputLocation.isBlank()) {
+                throw new IllegalArgumentException(
+                        "Missing config property: LLM_lnf_output_location");
+            }
+
+            Path lnfOutputRoot = Path.of(lnfOutputLocation);
+
             runLNFDetectionStage(
                     config,
                     screenshotRoot,
@@ -70,13 +76,43 @@ public final class LLMStrategy implements NavigationStrategy {
                     lnfOutputRoot,
                     openAIClient);
 
+        } else if (llmStage.equals("3")) {
+
+            String analysisInputLocation = config.getProperties()
+                    .getProperty("LLM_analysis_input_location");
+
+            String analysisOutputLocation = config.getProperties()
+                    .getProperty("LLM_analysis_output_location");
+
+            if (analysisInputLocation == null ||
+                    analysisInputLocation.isBlank()) {
+                throw new IllegalArgumentException(
+                        "Missing config property: LLM_analysis_input_location");
+            }
+
+            if (analysisOutputLocation == null ||
+                    analysisOutputLocation.isBlank()) {
+                throw new IllegalArgumentException(
+                        "Missing config property: LLM_analysis_output_location");
+            }
+
+            runLNFAnalysisStage(
+                    config,
+                    screenshotRoot,
+                    Path.of(analysisInputLocation),
+                    Path.of(analysisOutputLocation),
+                    openAIClient);
+
         } else {
             throw new IllegalArgumentException(
                     "Invalid LLM_stage: " + llmStage
-                            + ". Expected 1 or 2.");
+                            + ". Expected 1, 2, or 3.");
         }
     }
 
+    /**
+     * Stage 1: Infer meaningful navigation order.
+     */
     private void runNavigationOrderStage(
             LoadConfig config,
             Path screenshotRoot,
@@ -113,17 +149,16 @@ public final class LLMStrategy implements NavigationStrategy {
                     subject,
                     navigationOrder);
 
-            System.out.println();
             System.out.println("Navigation order result:");
             System.out.println(navigationOrder);
-            System.out.println();
-
             System.out.println("Saved navigation output to:");
             System.out.println(savedOutput);
-            System.out.println();
         }
     }
 
+    /**
+     * Stage 2: Detect suspected Linear Navigation Failures.
+     */
     private void runLNFDetectionStage(
             LoadConfig config,
             Path screenshotRoot,
@@ -158,6 +193,7 @@ public final class LLMStrategy implements NavigationStrategy {
                         subject,
                         navigationOrderJson,
                         screenshots);
+
             } catch (Exception e) {
                 System.err.println(
                         "FAILED LNF detection for subject: " + subject);
@@ -171,14 +207,63 @@ public final class LLMStrategy implements NavigationStrategy {
                     subject,
                     lnfResponse);
 
-            System.out.println();
             System.out.println("LNF detection result:");
             System.out.println(lnfResponse);
-            System.out.println();
-
             System.out.println("Saved LNF output to:");
             System.out.println(savedOutput);
-            System.out.println();
+        }
+    }
+
+    /**
+     * Stage 3: Independently analyze TP, FP, and FN transitions.
+     */
+    private void runLNFAnalysisStage(
+            LoadConfig config,
+            Path screenshotRoot,
+            Path analysisInputRoot,
+            Path analysisOutputRoot,
+            OpenAIClient openAIClient) throws Exception {
+
+        LNFPatternAnalysis patternAnalysis =
+                new LNFPatternAnalysis(openAIClient);
+
+        for (String subject : config.getSubjects()) {
+            System.out.println("Subject: " + subject);
+
+            Path analysisInputFile = analysisInputRoot
+                    .resolve(subject)
+                    .resolve(subject + ".json");
+
+            List<Path> screenshots =
+                    ScreenshotReader.readScreenshots(
+                            screenshotRoot,
+                            subject);
+
+            System.out.println("Screenshots: " + screenshots.size());
+            System.out.println("Analyzing TP, FP, and FN patterns...");
+
+            try {
+                String analysisResponse = patternAnalysis.analyze(
+                        subject,
+                        analysisInputFile,
+                        screenshots);
+
+                Path savedOutput = LNFAnalysisOutputSaver.save(
+                        analysisOutputRoot,
+                        subject,
+                        analysisResponse);
+
+                System.out.println(
+                        "Stage 3 analysis completed for: " + subject);
+                System.out.println("Saved analysis to:");
+                System.out.println(savedOutput);
+
+            } catch (Exception e) {
+                System.err.println(
+                        "FAILED Stage 3 analysis for: " + subject);
+                System.err.println("Reason: " + e.getMessage());
+                System.err.println("Continuing to next subject...");
+            }
         }
     }
 }
