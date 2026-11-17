@@ -1,0 +1,6 @@
+{
+  "subject" : "ancestry",
+  "error_analyses" : [ ],
+  "correct_transition_examples" : [ ],
+  "subject_summary" : "No FP or FN transitions are present in the supplied evaluated_transitions. original_predictions and ground_truth are both empty, and every evaluated transition is classified TN. The observed implemented focus order in navigation_order aligns with the stage-1 sequence shown in the KFG for the visible controls on this page, with no reference LNF cases available for error-mechanism analysis on this subject."
+}

@@ -1,0 +1,21 @@
+Pattern: FN01
+Name: Browser-boundary transitions omitted
+Error type: FN
+Subject: mozilla
+
+Summary: Many missed LNFs originate at the virtual Browser boundary rather than a normal DOM element, suggesting special-case under-detection of entry transitions.
+
+Matching criteria: The source is Browser, the destination is a documented entry node or first reached page control, and the case is classified FN.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E035
+Classification: FN
+Transition: Browser -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/a[1]
+Source: Virtual Browser boundary
+Destination: Mozilla logo/home
+Positions:  -> 1
+Supporting evidence: ground_truth includes Browser -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/a[1]. evaluated_transitions marks it FN with browser_boundary=True. In kfg v_special, both v_0 and v_entry are /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/a[1], and visibleCtrlDomSequence begins with that same XPath.
+Confidence: high
+Requires review: False

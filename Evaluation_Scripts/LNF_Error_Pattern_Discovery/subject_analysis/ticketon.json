@@ -1,0 +1,28 @@
+{
+  "subject" : "ticketon",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[2]/li[3]/a[1] -> /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/a[2]",
+    "classification" : "FP",
+    "pattern_hypothesis" : "Adjacent header utility continuation",
+    "observable_characteristics" : "The transition goes from the last link in the header's second navigation list (Ingresar, label 7) to a nearby header control (Language selector English, label 8). In the supplied navigation_order, the implemented focus labels and inferred meaningful positions are consecutive: 7 then 8. The KFG also shows a direct TAB edge between these two elements. In the screenshot, both controls appear in the same top header area, with the language selector visually adjacent above/right of the utility links rather than in a distant or disconnected region.",
+    "matching_criteria" : "A transition matches this pattern when the source is the last item of a header link group, the destination is another focusable header utility control immediately adjacent in the implemented tab sequence, and both source/destination are consecutive in the supplied navigation_order without any intervening focusable controls.",
+    "possible_cause" : "Observed evidence shows no documented LNF: the transition is consecutive in both the Stage 1 navigation order and KFG and remains within the header utility area. A possible detector error is that it overinterpreted the move from a list item inside ul[2] to a sibling anchor outside that list as a structural break or semantic reorder, even though the actual focus order remains coherent. This cause is a hypothesis rather than a verified mechanism.",
+    "supporting_evidence" : "original_predictions contains exactly this transition. ground_truth is empty, so it is not a reference LNF. navigation_order lists /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[2]/li[3]/a[1] at position/label 7 and /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/a[2] at position/label 8. kfg edges include a TAB edge from /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[2]/li[3]/a[1] to /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/a[2]. Screenshot annotations place markers 7 and 8 together in the header region.",
+    "confidence" : "high",
+    "requires_review" : false
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[2]/li[2]/a[1] -> /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[2]/li[3]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Consecutive navigation within the same header utility cluster immediately preceding the FP."
+  }, {
+    "transition" : "/html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/a[2] -> /html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/input[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows that continuing from the language selector into the main form is also treated as coherent sequential navigation."
+  }, {
+    "transition" : "/html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[2]/li[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Another cross-list transition inside the header that is not labeled as an LNF, useful for comparison with the FP's cross-structure move."
+  } ],
+  "subject_summary" : "This subject contains one detection error and no FN cases. The only error is a false positive on a header transition from the last utility link to the language selector. The supplied evidence consistently shows a straightforward sequential tab order with consecutive labels/positions and a direct KFG edge, suggesting the detector likely mistook a DOM/list boundary inside the header for a meaningful navigation failure. Uncertainty is low because the available evidence is internally consistent and ground_truth contains no LNFs for this page."
+}

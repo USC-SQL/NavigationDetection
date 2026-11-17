@@ -1,0 +1,56 @@
+{
+  "subject" : "alibaba",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/select[1] -> /html[1]/body[1]/div[2]/div[2]/div[1]/a[1]",
+    "classification" : "FP",
+    "pattern_hypothesis" : "Adjacent top-to-main progression flagged as jump",
+    "observable_characteristics" : "The transition goes from the header language selector to the next focusable element in the page's main area, described as the main content / sign-in panel link. In navigation_order, these are consecutive meaningful positions 2 -> 3 and implemented labels 5 -> 6. The screenshots show the selector near the logo at top left and the next focus target as a large main-content region/link below, which is a plausible section-to-section progression rather than an obviously disordered jump.",
+    "matching_criteria" : "A transition where source and destination are consecutive in the inferred meaningful order, move from a header control into the main content area, and do not visibly skip intermediate focusable controls within that area.",
+    "possible_cause" : "The detector may have over-weighted spatial distance or region change between header and main content, treating a normal cross-section move as a linear-navigation failure despite consecutive semantic order.",
+    "supporting_evidence" : "evaluated_transitions marks this exact transition FP; navigation_order lists language selector at position 2 and main content / sign-in panel link at position 3; kfg contains the TAB edge /html[1]/body[1]/div[1]/div[2]/select[1] -> /html[1]/body[1]/div[2]/div[2]/div[1]/a[1]; screenshots show no visible intermediate top-level control between them.",
+    "confidence" : "high",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[4]/dl[2]/dt[1]/div[1]/span[1]/a[1] -> /html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[4]/dl[4]/dd[2]/div[1]/input[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Inline recovery link hides skipped primary control",
+    "observable_characteristics" : "Within the sign-in form, focus goes from the \"Forgot Password?\" link to the \"Stay signed in\" checkbox. The inferred meaningful order places these at positions 7 -> 8, but the screenshots show the password input and forgot-password link sharing the password row, with the checkbox below them. The implemented order therefore bypasses the primary password-field sequence and places an auxiliary link before the checkbox. Ground truth labels this transition as an LNF.",
+    "matching_criteria" : "A transition inside a form where an auxiliary inline link associated with a field is focused before lower form controls, and the subsequent move continues downward while a nearby primary field/control in the same field group has been bypassed or reordered.",
+    "possible_cause" : "The detector may have relied heavily on inferred positions and direct adjacency, concluding that 7 -> 8 looked orderly, while missing that the source is an auxiliary link visually tied to the password row and that the implemented path creates a problematic within-form sequence.",
+    "supporting_evidence" : "evaluated_transitions marks this exact transition FN; navigation_order identifies the source as \"Forgot Password? link\" and destination as \"Stay signed in checkbox\"; kfg contains the TAB edge from the forgot-password link to the checkbox; screenshots show the forgot-password link on the password row and the checkbox below, indicating a local form-order irregularity rather than a simple adjacent progression.",
+    "confidence" : "medium",
+    "requires_review" : true
+  }, {
+    "transition" : "Browser -> /html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[4]/dl[1]/dd[1]/div[1]/input[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Virtual entry lands inside form before preceding page controls",
+    "observable_characteristics" : "The browser boundary is modeled as entering directly on the account email/member ID input. Navigation_order places that input at meaningful position 5, after the logo, language selector, main content/sign-in panel link, and sign-in heading. The kfg special nodes designate this input as both v_0 and v_entry. Ground truth labels Browser -> input as an LNF, but the Browser boundary is virtual rather than an ordinary DOM element.",
+    "matching_criteria" : "A browser-entry transition where the first focused page element is a deep form control while several earlier page-level controls are present in the documented meaningful order.",
+    "possible_cause" : "The detector may have excluded or de-prioritized browser-boundary transitions, or treated v_entry as a special case rather than evaluating it against the rest of the page order. Because browser-entry behavior is virtual/model-based, the exact mechanism remains uncertain.",
+    "supporting_evidence" : "evaluated_transitions marks this exact transition FN with browser_boundary=True; ground_truth includes the same transition; navigation_order places the destination at position 5; kfg v_special lists /html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[4]/dl[1]/dd[1]/div[1]/input[1] as v_0 and v_entry.",
+    "confidence" : "medium",
+    "requires_review" : true
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[2]/div[2]/div[1]/a[1] -> /html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/h2[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful contrast with the FP because it is another main-region progression that was correctly treated as an LNF in the reference data."
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/h2[1] -> /html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[4]/dl[2]/dt[1]/div[1]/span[1]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Comparable within the same sign-in form because focus skips from a heading to an auxiliary link, showing detector sensitivity to some local sequencing problems."
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[4]/dl[4]/dd[2]/div[1]/input[1] -> /html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[6]/div[1]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Comparable to the FN inside the form because it also reflects a nonstandard jump from a core form control to a secondary link area and was correctly flagged."
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[4]/dl[1]/dd[1]/div[1]/input[1] -> /html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[4]/dl[2]/dd[1]/div[1]/input[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful normal-control baseline inside the form: consecutive email-to-password progression was not labeled as an LNF."
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[6]/div[2]/a[1] -> /html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[7]/span[2]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison for acceptable movement between adjacent lower-page groups, contrasting with the FP where region change alone should not imply failure."
+  } ],
+  "subject_summary" : "This subject shows two recurring error tendencies: over-flagging normal section-to-section progression when focus moves from the header into main content, and under-detecting special-case transitions that involve either the virtual browser entry point or a locally confusing form sequence around the inline forgot-password link. The strongest uncertainty is the browser-boundary FN, because the evidence models entry behavior virtually rather than documenting a conventional DOM predecessor."
+}

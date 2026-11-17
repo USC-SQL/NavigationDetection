@@ -1,0 +1,31 @@
+Pattern: FN06
+Name: Backward local reversals within forms or content clusters missed
+Error type: FN
+Subject: disneyworld
+
+Summary: The detector also misses short backward moves where TAB lands on an earlier meaningful control within the same local form row, option cluster, or content block.
+
+Matching criteria: The implemented TAB edge goes from a later meaningful position to an earlier one, the move stays within the same local page module, and the case is classified FN.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E016
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/span[1]/span[2]
+Source: Cancel link
+Destination: Remember Me checkbox
+Positions: 7 -> 6
+Supporting evidence: KFG edge TAB exists from /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/a[1] to /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/span[1]/span[2]. navigation_order gives Cancel link position 7 and Remember Me checkbox position 6. The screenshot shows Cancel near the Sign In action row and Remember Me above-left in the same form area.
+Confidence: medium
+Requires review: False
+
+Case ID: E017
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/button[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/a[1]
+Source: Sign In button
+Destination: Cancel link
+Positions: 8 -> 7
+Supporting evidence: KFG edge TAB exists from /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/button[1] to /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/a[1]. navigation_order gives Sign In button position 8 and Cancel link position 7. The screenshot labels Sign In as 3 and Cancel as 4, showing them side-by-side in the same action area.
+Confidence: medium
+Requires review: False

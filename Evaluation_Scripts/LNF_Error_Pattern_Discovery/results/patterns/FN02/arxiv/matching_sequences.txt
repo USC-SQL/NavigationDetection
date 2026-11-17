@@ -1,0 +1,21 @@
+Pattern: FN02
+Name: Consecutive cross-group transitions missed
+Error type: FN
+Subject: arxiv
+
+Summary: The detector often misses ground-truth LNFs when the implemented move is immediately consecutive but crosses a visual or functional subgroup boundary.
+
+Matching criteria: The transition is consecutive in the implemented order and typically also consecutive in inferred positions, no intermediate focus target is documented, but the endpoints belong to visibly or functionally distinct subgroups such as adjacent panels, header subareas, footer subclusters, or separate content units.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E004
+Classification: FN
+Transition: /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1]
+Source: Search input
+Destination: Help link
+Positions: 4 -> 5
+Supporting evidence: navigation_order places the Search input at position 4 and the Help link at position 5 with matching labels 4 and 5. evaluated_transitions marks this exact transition as FN and observed_in_stage1=True. KFG visibleCtrlDomSequence indexes the same order as input -> Help -> Advanced Search -> dropdown -> Search button. Screenshot markers 4, 5, 6, 7, 8 show these controls grouped tightly in the header search area.
+Confidence: low
+Requires review: True

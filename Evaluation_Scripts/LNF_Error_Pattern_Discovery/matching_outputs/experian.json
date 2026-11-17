@@ -1,0 +1,100 @@
+{
+  "subject" : "experian",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG contains a direct TAB edge from the Learn more about our services link to the Terms of Use Agreement link. The navigation positions are 6 -> 7, which are consecutive. Screenshot and DOM descriptors support a region boundary from main page content below the sign-in card to the footer."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition between distinct functional subgroups: the main-content promotional/service link and the footer legal-links group. The destination position is exactly one greater than the source (6 -> 7)."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P07",
+      "evidence" : "KFG shows a direct TAB edge from the Forgot username link to the Learn more about our services link. The source is a recovery/helper link. In inferred meaningful order, primary workflow controls Password input (position 4) and Sign In button (position 5) lie between source position 3 and destination position 6."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is clearly a recovery link, but the destination Learn more about our services link appears promotional/informational rather than clearly a secondary support/utility control within the same local functional group."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG verifies a direct TAB edge from Password input to Sign In button. Their navigation positions are consecutive (4 -> 5), and they are visually/functionally distinct subgroups within the sign-in module: an input field followed by the form's primary action button."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "KFG contains a direct TAB edge from the Sign In button (position 5) to the Experian logo link in the header (position 1), moving from a later control back to an earlier top-of-page control, which is a wraparound/cyclic focus edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "KFG verifies a direct TAB transition from Username input to Password input. A separate focusable helper/recovery link is visually associated with the destination field group: the Forgot password link appears adjacent to the password field in the screenshot and is represented in the KFG as /form/div[3]/div[2]/a[1]."
+    }, {
+      "pattern_id" : "P08",
+      "evidence" : "KFG shows a direct TAB edge from the primary Username input to the later Password input within the sign-in module. A separate visible focusable control occupies the intermediate position: the Forgot username link is navigation position 3, visually placed near the username field, between Username input (position 2) and Password input (position 4)."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG contains a direct TAB edge from Terms of Use Agreement to Privacy Policy. Both are nearby footer links serving secondary/legal/support functions within the same local footer link group, and the screenshot shows them adjacent."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition with consecutive meaningful positions 7 -> 8 between two clearly distinct but adjacent footer link items in the same footer subgrouping."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Privacy Policy is a secondary footer/legal link, but the destination McAfee Secure link appears to be a trust badge/security link. The evidence does not clearly establish that both endpoints serve the same local auxiliary/support role required by the pattern."
+    }, {
+      "pattern_id" : "P05",
+      "reason" : "The transition is direct and consecutive in navigation order (8 -> 9), but the evidence is insufficient to establish that Privacy Policy and McAfee Secure are clearly distinct adjacent functional subgroups rather than just neighboring items within the same footer area."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "McAfee Secure and Licenses and Disclosures are both footer items, but the evidence does not clearly show that both are genuinely secondary utility/support controls within the same local functional group rather than separate footer sections."
+    }, {
+      "pattern_id" : "P05",
+      "reason" : "The KFG verifies a direct TAB edge and the positions are consecutive (9 -> 10), but the screenshot/DOM evidence does not clearly establish distinct adjacent visual or functional subgroups between the McAfee badge link area and the Licenses and Disclosures link."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a Browser boundary transition. The KFG v_special marks the Username input as both v_0 and v_entry, and the candidate transition is Browser -> Username input."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed patterns include browser entry to the username field, wraparound from the Sign In button to the header logo, a helper-link-to-later-content transition crossing primary workflow controls, a field-to-field jump over an intermediate helper link, and a clear main-to-footer adjacent cross-region transition. Footer legal-link progression is supported for Terms of Use -> Privacy Policy, while some later footer transitions remain ambiguous about subgroup or auxiliary-role boundaries."
+}

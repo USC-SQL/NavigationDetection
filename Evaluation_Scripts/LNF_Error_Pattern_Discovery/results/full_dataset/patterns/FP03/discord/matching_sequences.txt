@@ -1,0 +1,2 @@
+/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[2]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[3]/a[1]
+/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[3]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[4]/a[1]

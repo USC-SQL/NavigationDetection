@@ -1,0 +1,177 @@
+{
+  "subject" : "researchgate",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Continue with Google button (/div[2]/div[1]/div[1]/a[1], position 8) to Sign up link (/div[3]/div[1]/div[1]/a[1], position 9). The controls are adjacent in inferred meaningful order and appear as distinct subgroups in the login module: a social-login action followed by a separate account-creation prompt."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from Sign up link (position 9) to App Store download link (position 10). The screenshot places Sign up in the main login content area and the App Store link below near the footer/promotional section, indicating a transition between distinct page regions with destination position exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "KFG shows a direct TAB edge from Email input (position 3) to Password input (position 5). The password field group has a separate focusable recovery/helper link, Forgot password (position 4), visually associated with that destination field group in the screenshot."
+    }, {
+      "pattern_id" : "P08",
+      "evidence" : "KFG verifies a direct TAB transition from the primary Email input to the later Password input within the same login form. A separate visible focusable control, the Forgot password link (position 4), sits between them in meaningful order and is shown next to the password field group in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P09",
+      "evidence" : "KFG shows a direct TAB edge from Forgot password link (position 4) back to Email field label (position 2). Both controls are within the same localized login form cluster, and the move is backward in inferred meaningful order rather than a page-wide wraparound."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is a recovery link, but the destination is an email field label rather than a clearly secondary utility/support control, so the endpoint roles do not satisfy the auxiliary-control requirement."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Password input (position 5) to Keep me logged in checkbox (position 6). These are adjacent in meaningful order and are distinct functional subgroups within the login form: credential entry followed by a session-preference option."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Keep me logged in checkbox (position 6) to Log in button (position 7). The controls are adjacent in meaningful order and represent distinct subgroups in the login workflow: a preference option followed by the submit action."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Log in button (position 7) to Continue with Google button (position 8). They are adjacent in meaningful order and appear as separate action subgroups in the login area: primary credential submission followed by a distinct social sign-in option."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from App Store download link (position 10) to About us link (position 11). The screenshot shows the App Store link above the lower footer link columns, so this is an adjacent transition between distinct page regions with destination position exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Careers link (position 13) to Help Center link (position 14). The screenshot places Careers under the Company column and Help Center under the Support column, indicating adjacent distinct footer subgroups with destination position exactly one greater."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "The endpoints are visibly in different footer columns, but the evidence is ambiguous whether these should be treated as separate page regions or as subgroups within one larger footer region."
+    }, {
+      "pattern_id" : "P03",
+      "reason" : "Help Center is a support control, but Careers appears to be a regular company navigation link rather than a clearly secondary utility/support control, so both endpoints do not clearly satisfy the auxiliary-role requirement."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Help Center link (position 14) to Advertising link (position 15). The screenshot places these in adjacent footer columns, Support and Business solutions, so this is an adjacent transition between distinct visual/functional subgroups."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "Although the controls are in different footer columns, the available evidence does not clearly establish them as separate page regions rather than subgroups of the same footer region."
+    }, {
+      "pattern_id" : "P03",
+      "reason" : "Help Center is a support link, but Advertising is a business-navigation link rather than a clearly secondary utility/support control, so both endpoints are not clearly auxiliary."
+    }, {
+      "pattern_id" : "P07",
+      "reason" : "The source is a support link, but there is no evidence of one or more primary workflow controls located between Help Center and Advertising in either inferred order or the local visual sequence."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Recruiting link (position 16) to Terms link (position 17). The screenshot places Recruiting in the Business solutions footer column and Terms in the bottom legal links row, showing adjacent distinct footer subgroups with consecutive meaningful positions."
+    }, {
+      "pattern_id" : "P01",
+      "evidence" : "KFG verifies a direct TAB move from Recruiting (position 16) to Terms (position 17). The screenshot supports a boundary from the upper footer link columns to the lower legal footer row, so this is an adjacent cross-region continuation."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Terms link (position 17) to Privacy link (position 18). Both are nearby legal/support-type footer links within the same local legal-links group shown together in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Privacy link (position 18) to Copyright link (position 19). Both are adjacent footer legal/support links within the same local legal-links cluster in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Copyright link (position 19) to Imprint link (position 20). Both are nearby secondary legal/footer links in the same local legal-links group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "KFG shows a direct TAB edge from Imprint link at position 20, the last item in the footer legal row, to the ResearchGate logo link at position 1 near the top of the page. This is a later-to-earlier wraparound edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly marked as a browser-boundary transition ('browser_boundary': 'True') from Browser to Forgot password link. The KFG special nodes also mark the Forgot password link as v_entry, identifying it as the documented first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed patterns include several verified adjacent cross-subgroup transitions within the login area and footer, cross-region continuations from main content into lower page sections, a field-to-field transition that bypasses a helper link near the password field, local legal-link auxiliary progressions, one backward local transition within the login form, a page wraparound from the last footer link to the top logo, and a modeled Browser-to-page entry to the Forgot password link."
+}

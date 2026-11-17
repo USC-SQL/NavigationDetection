@@ -1,0 +1,324 @@
+{
+  "subject" : "papajohns",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG contains a direct TAB edge from /footer/section[1]/div[1]/ul/li[3]/a ('Careers', position 19) to /footer/section[1]/div[2]/h4/button ('Our Pizza section toggle', position 20). The screenshot shows these as adjacent footer columns/subgroups: the last link in the 'Our Company' subgroup followed by the heading control of the distinct 'Our Pizza' subgroup. Destination position is exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from /footer/section[1]/div[2]/ul/li[4]/a ('Quality Guarantee', position 24) to /footer/section[1]/div[3]/h4/button ('Help section toggle', position 25). Screenshots show movement between adjacent footer columns/subgroups from 'Our Pizza' to 'Help'. Positions are consecutive."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG contains a direct TAB edge from /footer/section[1]/div[3]/ul/li[4]/a ('Store List', position 29) to /footer/section[1]/div[4]/h4/button ('Careers section toggle', position 30). The footer screenshots show these as neighboring subgroups/columns, moving from the final 'Help' link into the distinct 'Careers' subgroup heading. Destination position is source+1."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from /footer/section[1]/div[4]/ul/li[3]/a ('Become a Driver', position 33) to /footer/section[1]/div[5]/a ('Open A Franchise', position 34). The screenshots show 'Open A Franchise' as a separate adjacent promotional card/panel to the right of the 'Careers' column, so this is a consecutive move across distinct local subgroups. Positions are consecutive."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG contains a direct TAB edge from /footer/section[1]/div[5]/a ('Open A Franchise', position 34) to /footer/section[2]/div[1]/form/div/select ('International Sites dropdown', position 35). Screenshots place these in distinct adjacent footer subgroups/rows: the franchise promo card and then the lower footer utility area with the country selector. Destination position is exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0021",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /footer/section[2]/div[1]/ul[1]/li[1]/a ('Privacy', position 36) to /footer/section[2]/div[1]/ul[1]/li[2]/a ('Cookies', position 37). In the screenshot these are nearby footer utility/legal links within the same local functional group, and both serve secondary/supportive site-policy functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0022",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG contains a direct TAB edge from /footer/section[2]/div[1]/ul[1]/li[2]/a ('Cookies', position 37) to /footer/section[2]/div[1]/ul[1]/li[3]/a ('Terms of Use', position 38). Screenshot and footer DOM show both are adjacent legal/utility links in the same footer policy list, so both endpoints are secondary auxiliary controls."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0023",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /footer/section[2]/div[1]/ul[1]/li[3]/a ('Terms of Use', position 38) to /footer/section[2]/div[1]/ul[1]/li[4]/a ('Site Map', position 39). These appear in the same footer utility/legal link row and both are secondary site-navigation/support links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0024",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "'Site Map' is clearly a secondary utility link, but 'Text & Email Offers' may function as a promotional/marketing action rather than a support or utility control. The available evidence does not clearly establish that both endpoints are genuinely auxiliary as required."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0025",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "'Text & Email Offers' and 'Pizza Deals & Specials' are adjacent footer links, but the evidence suggests marketing/promotional functions rather than clearly secondary help/recovery/support utilities. Endpoint roles are not clearly both auxiliary."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0026",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "'Pizza Deals & Specials' is promotional, while 'Facebook' is a social link. They are nearby in the footer, but the evidence does not establish both endpoints as genuinely secondary utility/help/support controls under the pattern definition."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0027",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Facebook and Twitter/X are nearby social media links within the same footer group, but the pattern definition emphasizes secondary utility/help/recovery/support roles. The evidence does not clearly establish social links as qualifying auxiliary controls here."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0028",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Twitter/X and YouTube are adjacent social links in one footer cluster, but the available evidence does not clearly show that both should be treated as the kind of utility/help/support controls required by P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0029",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "YouTube and Instagram are adjacent social links in the footer, but their qualification as genuinely secondary utility/support controls is not established by the supplied evidence."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0030",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Instagram and 'Click here' are both footer links, but 'Click here' is an inline link in SMS terms text and Instagram is a social icon. The evidence does not clearly establish a shared local auxiliary/support group with both endpoints qualifying under P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0031",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /footer/section[2]/div[2]/p[2]/a ('Click here', position 46) to /footer/section[2]/div[2]/p[3]/a ('Contact Us', position 47). In the screenshot both are nearby inline footer support/terms contacts within the same local text block, and both serve secondary support/information functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0032",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0033",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0034",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0035",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0036",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG contains a direct TAB edge from /header/section[2]/nav/ul/li[3]/a ('Papa Rewards', position 5) to /main/section[1]/div/div[2]/a ('Buy eGift Card', position 6). The screenshots show a clear page-region boundary from the header navigation into the main content hero section, and the destination position is exactly one greater than the source."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0037",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from /main/div/p/a ('consumer_services@papajohns.com', position 15) to /footer/section[1]/div[1]/h4/button ('Our Company section toggle', position 16). Screenshots indicate a distinct transition from main-page content ('Gift Card Terms & Conditions' area) into the footer region. Positions are consecutive."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0038",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG contains a direct TAB edge from /main/section[1]/div/div[2]/a ('Buy eGift Card', position 6) to /main/section[2]/div[1]/div[1]/div[2]/a ('Check Card Balance', position 7). Screenshots show these belong to distinct adjacent main-content modules: the hero eGift card panel and the first card in the next gift-card information grid. Destination position is source+1."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0039",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from /main/section[2]/div[1]/div[1]/div[2]/a ('Check Card Balance', position 7) to /main/section[2]/div[1]/div[2]/div[2]/p[1]/a[1] ('Download Corporate Sales Information', position 8). In the screenshot these are adjacent content cards/subgroups within the same three-column section: first card to second card. Positions are consecutive and the subgroups are visually distinct."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0040",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG contains a direct TAB edge from /main/section[2]/div[1]/div[2]/div[2]/p[1]/a[1] ('Download Corporate Sales Information', position 8) to sibling link /a[2] ('Download Corporate Order Form', position 9). The screenshot shows both are nearby document-download links under 'Corporate Sales Information' within one local support/information group, and both serve secondary informational/utility functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0041",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from /main/section[2]/div[1]/div[2]/div[2]/p[1]/a[2] ('Download Corporate Order Form', position 9) to /main/section[2]/div[1]/div[3]/div[2]/p[1]/a[1] ('Learn More', position 10). The screenshot places these in adjacent columns/cards within the same section: from the second corporate-sales card to the third fundraising card. Positions are consecutive and the visual subgroups are distinct."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0042",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG contains a direct TAB edge from /main/section[2]/div[1]/div[3]/div[2]/p[1]/a[1] ('Learn More', position 10) to /main/section[3]/div[1]/div[1]/p[1]/a[1] ('Customer Service phone number', position 11). Screenshots show a move from the fundraising card subgroup to the separate 'Contact Us' module below, with destination position exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0043",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /main/section[3]/div[1]/div[1]/p[1]/a[1] ('Customer Service phone number', position 11) to /a[2] ('FAQs', position 12). In the 'Contact Us' area these are nearby support/help controls within the same local customer-service group, and both serve secondary support functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0044",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source 'FAQs' is a support link, but the destination is a phone number for a separate 'Large Order Inquiries' contact group. The evidence does not clearly establish that both endpoints are nearby controls within the same local auxiliary group, or that the destination should be treated as the same kind of secondary utility progression required by P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0045",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG contains a direct TAB edge from /main/section[3]/div[1]/div[2]/p[1]/a[1] ('Large Order Inquiries phone number', position 13) to /a[2] ('giftcards@papajohns.com', position 14). Screenshot shows both are adjacent contact/support controls within the same 'Large Order Inquiries' group in the Contact Us section, and both are secondary support contacts."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0046",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are contact links, but they appear in different local content blocks: the 'Large Order Inquiries' contact group and a separate email link inside the terms-and-conditions paragraph below. The evidence does not clearly support a same-group local auxiliary progression."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0047",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly modeled as Browser -> /html/body/div/header/a ('Skip to main content'). The candidate marks browser_boundary=True, and the destination is the documented first focused webpage control at position 1."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed direct TAB patterns mainly follow sequential navigation within header, main content cards, contact links, and footer groups. Confirmed matches include browser-to-page entry (P04), clear header-to-main and main-to-footer region boundaries (P01), several consecutive moves between distinct adjacent subgroups/cards or footer columns (P05), and local utility/support progressions among legal links, download links, and contact/support links (P03). No supplied candidate showed evidence of wraparound/cyclic focus, field/helper-link form patterns, workflow-skipping auxiliary transitions, primary-control bypass over local controls, or backward local TAB transitions."
+}

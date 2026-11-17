@@ -1,0 +1,1048 @@
+{
+  "subject": "disneyguest",
+  "navigation_order": {
+    "navigation_order": [
+      {
+        "position": 1,
+        "label": 1,
+        "xpath": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Top nav Disney logo/home"
+      },
+      {
+        "position": 2,
+        "label": 2,
+        "xpath": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Top nav Disney+"
+      },
+      {
+        "position": 3,
+        "label": 3,
+        "xpath": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "Top nav Shop"
+      },
+      {
+        "position": 4,
+        "label": 4,
+        "xpath": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[4]/a[1]",
+        "descriptor": "Top nav Parks & Travel"
+      },
+      {
+        "position": 5,
+        "label": 5,
+        "xpath": "/html[1]/body[1]/div[5]/a[1]",
+        "descriptor": "Skip to Main Content"
+      },
+      {
+        "position": 6,
+        "label": 6,
+        "xpath": "/html[1]/body[1]/main[1]/header[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Disney Guest Services breadcrumb/link"
+      },
+      {
+        "position": 7,
+        "label": 7,
+        "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[1]/a[1]",
+        "descriptor": "Category Disney+"
+      },
+      {
+        "position": 8,
+        "label": 8,
+        "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+        "descriptor": "Category Parks & Resorts"
+      },
+      {
+        "position": 9,
+        "label": 9,
+        "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[3]/a[1]",
+        "descriptor": "Category Shop"
+      },
+      {
+        "position": 10,
+        "label": 10,
+        "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[4]/a[1]",
+        "descriptor": "Category Star Wars"
+      },
+      {
+        "position": 11,
+        "label": 11,
+        "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[5]/a[1]",
+        "descriptor": "Category Games and Apps"
+      },
+      {
+        "position": 12,
+        "label": 12,
+        "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[6]/a[1]",
+        "descriptor": "Category MyDisney"
+      },
+      {
+        "position": 13,
+        "label": 13,
+        "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[7]/a[1]",
+        "descriptor": "Category Accessibility"
+      },
+      {
+        "position": 14,
+        "label": 14,
+        "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[8]/a[1]",
+        "descriptor": "Category Other Questions"
+      },
+      {
+        "position": 15,
+        "label": 15,
+        "xpath": "/html[1]/body[1]/div[7]/div[1]/div[1]/button[1]",
+        "descriptor": "Language selector English (US)"
+      },
+      {
+        "position": 16,
+        "label": 16,
+        "xpath": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Footer nav Disney logo/home"
+      },
+      {
+        "position": 17,
+        "label": 17,
+        "xpath": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Footer nav Disney+"
+      },
+      {
+        "position": 18,
+        "label": 18,
+        "xpath": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "Footer nav Shop"
+      },
+      {
+        "position": 19,
+        "label": 19,
+        "xpath": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[4]/a[1]",
+        "descriptor": "Footer nav Parks & Travel"
+      },
+      {
+        "position": 20,
+        "label": 20,
+        "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Footer legal About Disney"
+      },
+      {
+        "position": 21,
+        "label": 21,
+        "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Footer legal Help"
+      },
+      {
+        "position": 22,
+        "label": 22,
+        "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "Footer legal Careers"
+      },
+      {
+        "position": 23,
+        "label": 23,
+        "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[4]/a[1]",
+        "descriptor": "Footer legal Terms of Use"
+      },
+      {
+        "position": 24,
+        "label": 24,
+        "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[5]/a[1]",
+        "descriptor": "Footer legal Privacy Policy"
+      },
+      {
+        "position": 25,
+        "label": 25,
+        "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[6]/a[1]",
+        "descriptor": "Footer legal Do Not Sell or Share My Personal Information"
+      },
+      {
+        "position": 26,
+        "label": 26,
+        "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[7]/a[1]",
+        "descriptor": "Footer legal Legal Notices"
+      },
+      {
+        "position": 27,
+        "label": 27,
+        "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[8]/a[1]",
+        "descriptor": "Footer legal Your US State Privacy Rights"
+      },
+      {
+        "position": 28,
+        "label": 28,
+        "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[9]/a[1]",
+        "descriptor": "Footer legal Interest-Based Ads"
+      },
+      {
+        "position": 29,
+        "label": 29,
+        "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[10]/a[1]",
+        "descriptor": "Footer legal Children's Online Privacy Policy"
+      }
+    ]
+  },
+  "kfg": {
+    "UIGraphStates": [
+      {
+        "v_exit": [],
+        "nodes": [
+          {
+            "xpath": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[7]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[10]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[7]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[8]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/div[1]/div[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[6]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[6]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[9]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[8]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/header[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          }
+        ],
+        "v_special": [
+          {
+            "v_0": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "v_entry": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "v_entry_successor": "null"
+          }
+        ],
+        "v_n": [],
+        "edges_inAndOutsideDialog": [],
+        "visibleCtrlDomInsideDialogSequence": [],
+        "visibleCtrlDomSequence": [],
+        "edges": [
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[8]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[7]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/header[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[6]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/header[1]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[7]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[8]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[7]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/div[1]/div[1]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[9]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[8]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[3]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[4]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/div[1]/div[1]/button[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[8]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[5]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[10]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[9]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[6]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[7]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[6]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[2]/a[1]"
+          }
+        ],
+        "stateTransition": [],
+        "state_properties": [
+          {
+            "type": "KFFG"
+          },
+          {
+            "phase": "INITIAL_PHASE"
+          },
+          {
+            "thisStateID": 0
+          },
+          {
+            "parentStateID": -1
+          }
+        ],
+        "ctrlClusters": [],
+        "dialogStateProperties": [
+          {
+            "isADialogState": "0"
+          },
+          {
+            "triggerNodeLeadingToState": "null"
+          },
+          {
+            "postModalTriggerRoot": "null",
+            "preModalTriggerRoot": "null"
+          }
+        ]
+      }
+    ]
+  },
+  "screenshot_paths": [
+    "/Users/lance/Downloads/Empirical_Study_Results/disneyguest/disneyguest1.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/disneyguest/disneyguest2.jpg"
+  ],
+  "candidate_transitions": [
+    {
+      "transition_id": "T0001",
+      "transition": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[2]/nav[1]/ul[1]/li[2]/a[1]",
+      "source_label": "1",
+      "destination_label": "2",
+      "source_position": "1",
+      "destination_position": "2",
+      "source_descriptor": "Top nav Disney logo/home",
+      "destination_descriptor": "Top nav Disney+",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0002",
+      "transition": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[2]/nav[1]/ul[1]/li[3]/a[1]",
+      "source_label": "2",
+      "destination_label": "3",
+      "source_position": "2",
+      "destination_position": "3",
+      "source_descriptor": "Top nav Disney+",
+      "destination_descriptor": "Top nav Shop",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0003",
+      "transition": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[2]/nav[1]/ul[1]/li[4]/a[1]",
+      "source_label": "3",
+      "destination_label": "4",
+      "source_position": "3",
+      "destination_position": "4",
+      "source_descriptor": "Top nav Shop",
+      "destination_descriptor": "Top nav Parks & Travel",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0004",
+      "transition": "/html[1]/body[1]/div[2]/nav[1]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[5]/a[1]",
+      "source_label": "4",
+      "destination_label": "5",
+      "source_position": "4",
+      "destination_position": "5",
+      "source_descriptor": "Top nav Parks & Travel",
+      "destination_descriptor": "Skip to Main Content",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0005",
+      "transition": "/html[1]/body[1]/div[5]/a[1] -> /html[1]/body[1]/main[1]/header[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "5",
+      "destination_label": "6",
+      "source_position": "5",
+      "destination_position": "6",
+      "source_descriptor": "Skip to Main Content",
+      "destination_descriptor": "Disney Guest Services breadcrumb/link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0006",
+      "transition": "/html[1]/body[1]/div[7]/div[1]/div[1]/button[1] -> /html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[1]/a[1]",
+      "source_label": "15",
+      "destination_label": "16",
+      "source_position": "15",
+      "destination_position": "16",
+      "source_descriptor": "Language selector English (US)",
+      "destination_descriptor": "Footer nav Disney logo/home",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0007",
+      "transition": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[2]/a[1]",
+      "source_label": "16",
+      "destination_label": "17",
+      "source_position": "16",
+      "destination_position": "17",
+      "source_descriptor": "Footer nav Disney logo/home",
+      "destination_descriptor": "Footer nav Disney+",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0008",
+      "transition": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[3]/a[1]",
+      "source_label": "17",
+      "destination_label": "18",
+      "source_position": "17",
+      "destination_position": "18",
+      "source_descriptor": "Footer nav Disney+",
+      "destination_descriptor": "Footer nav Shop",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0009",
+      "transition": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[4]/a[1]",
+      "source_label": "18",
+      "destination_label": "19",
+      "source_position": "18",
+      "destination_position": "19",
+      "source_descriptor": "Footer nav Shop",
+      "destination_descriptor": "Footer nav Parks & Travel",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0010",
+      "transition": "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[7]/nav[1]/ul[1]/li[1]/a[1]",
+      "source_label": "19",
+      "destination_label": "20",
+      "source_position": "19",
+      "destination_position": "20",
+      "source_descriptor": "Footer nav Parks & Travel",
+      "destination_descriptor": "Footer legal About Disney",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0011",
+      "transition": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[7]/nav[1]/ul[1]/li[2]/a[1]",
+      "source_label": "20",
+      "destination_label": "21",
+      "source_position": "20",
+      "destination_position": "21",
+      "source_descriptor": "Footer legal About Disney",
+      "destination_descriptor": "Footer legal Help",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0012",
+      "transition": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[7]/nav[1]/ul[1]/li[3]/a[1]",
+      "source_label": "21",
+      "destination_label": "22",
+      "source_position": "21",
+      "destination_position": "22",
+      "source_descriptor": "Footer legal Help",
+      "destination_descriptor": "Footer legal Careers",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0013",
+      "transition": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[7]/nav[1]/ul[1]/li[4]/a[1]",
+      "source_label": "22",
+      "destination_label": "23",
+      "source_position": "22",
+      "destination_position": "23",
+      "source_descriptor": "Footer legal Careers",
+      "destination_descriptor": "Footer legal Terms of Use",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0014",
+      "transition": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[7]/nav[1]/ul[1]/li[5]/a[1]",
+      "source_label": "23",
+      "destination_label": "24",
+      "source_position": "23",
+      "destination_position": "24",
+      "source_descriptor": "Footer legal Terms of Use",
+      "destination_descriptor": "Footer legal Privacy Policy",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0015",
+      "transition": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[5]/a[1] -> /html[1]/body[1]/div[7]/nav[1]/ul[1]/li[6]/a[1]",
+      "source_label": "24",
+      "destination_label": "25",
+      "source_position": "24",
+      "destination_position": "25",
+      "source_descriptor": "Footer legal Privacy Policy",
+      "destination_descriptor": "Footer legal Do Not Sell or Share My Personal Information",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0016",
+      "transition": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[6]/a[1] -> /html[1]/body[1]/div[7]/nav[1]/ul[1]/li[7]/a[1]",
+      "source_label": "25",
+      "destination_label": "26",
+      "source_position": "25",
+      "destination_position": "26",
+      "source_descriptor": "Footer legal Do Not Sell or Share My Personal Information",
+      "destination_descriptor": "Footer legal Legal Notices",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0017",
+      "transition": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[7]/a[1] -> /html[1]/body[1]/div[7]/nav[1]/ul[1]/li[8]/a[1]",
+      "source_label": "26",
+      "destination_label": "27",
+      "source_position": "26",
+      "destination_position": "27",
+      "source_descriptor": "Footer legal Legal Notices",
+      "destination_descriptor": "Footer legal Your US State Privacy Rights",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0018",
+      "transition": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[8]/a[1] -> /html[1]/body[1]/div[7]/nav[1]/ul[1]/li[9]/a[1]",
+      "source_label": "27",
+      "destination_label": "28",
+      "source_position": "27",
+      "destination_position": "28",
+      "source_descriptor": "Footer legal Your US State Privacy Rights",
+      "destination_descriptor": "Footer legal Interest-Based Ads",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0019",
+      "transition": "/html[1]/body[1]/div[7]/nav[1]/ul[1]/li[9]/a[1] -> /html[1]/body[1]/div[7]/nav[1]/ul[1]/li[10]/a[1]",
+      "source_label": "28",
+      "destination_label": "29",
+      "source_position": "28",
+      "destination_position": "29",
+      "source_descriptor": "Footer legal Interest-Based Ads",
+      "destination_descriptor": "Footer legal Children's Online Privacy Policy",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0020",
+      "transition": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+      "source_label": "7",
+      "destination_label": "8",
+      "source_position": "7",
+      "destination_position": "8",
+      "source_descriptor": "Category Disney+",
+      "destination_descriptor": "Category Parks & Resorts",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0021",
+      "transition": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[2]/a[1] -> /html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[3]/a[1]",
+      "source_label": "8",
+      "destination_label": "9",
+      "source_position": "8",
+      "destination_position": "9",
+      "source_descriptor": "Category Parks & Resorts",
+      "destination_descriptor": "Category Shop",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0022",
+      "transition": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[3]/a[1] -> /html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[4]/a[1]",
+      "source_label": "9",
+      "destination_label": "10",
+      "source_position": "9",
+      "destination_position": "10",
+      "source_descriptor": "Category Shop",
+      "destination_descriptor": "Category Star Wars",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0023",
+      "transition": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[4]/a[1] -> /html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[5]/a[1]",
+      "source_label": "10",
+      "destination_label": "11",
+      "source_position": "10",
+      "destination_position": "11",
+      "source_descriptor": "Category Star Wars",
+      "destination_descriptor": "Category Games and Apps",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0024",
+      "transition": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[5]/a[1] -> /html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[6]/a[1]",
+      "source_label": "11",
+      "destination_label": "12",
+      "source_position": "11",
+      "destination_position": "12",
+      "source_descriptor": "Category Games and Apps",
+      "destination_descriptor": "Category MyDisney",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0025",
+      "transition": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[6]/a[1] -> /html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[7]/a[1]",
+      "source_label": "12",
+      "destination_label": "13",
+      "source_position": "12",
+      "destination_position": "13",
+      "source_descriptor": "Category MyDisney",
+      "destination_descriptor": "Category Accessibility",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0026",
+      "transition": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[7]/a[1] -> /html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[8]/a[1]",
+      "source_label": "13",
+      "destination_label": "14",
+      "source_position": "13",
+      "destination_position": "14",
+      "source_descriptor": "Category Accessibility",
+      "destination_descriptor": "Category Other Questions",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0027",
+      "transition": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[8]/a[1] -> /html[1]/body[1]/div[7]/div[1]/div[1]/button[1]",
+      "source_label": "14",
+      "destination_label": "15",
+      "source_position": "14",
+      "destination_position": "15",
+      "source_descriptor": "Category Other Questions",
+      "destination_descriptor": "Language selector English (US)",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0028",
+      "transition": "/html[1]/body[1]/main[1]/header[1]/div[1]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[1]/a[1]",
+      "source_label": "6",
+      "destination_label": "7",
+      "source_position": "6",
+      "destination_position": "7",
+      "source_descriptor": "Disney Guest Services breadcrumb/link",
+      "destination_descriptor": "Category Disney+",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0029",
+      "transition": "Browser -> /html[1]/body[1]/div[2]/nav[1]/ul[1]/li[1]/a[1]",
+      "source_label": "",
+      "destination_label": "1",
+      "source_position": "",
+      "destination_position": "1",
+      "source_descriptor": "Virtual Browser boundary",
+      "destination_descriptor": "Top nav Disney logo/home",
+      "observed_in_stage1": "True",
+      "browser_boundary": "True"
+    }
+  ]
+}

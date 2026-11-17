@@ -1,0 +1,21 @@
+Pattern: FP02
+Name: Cycle or wrap-around edge treated as failure
+Error type: FP
+Subject: videotron
+
+Summary: The detector sometimes flags page-cycle or wrap-like transitions that return to an earlier page location, even though the reference data does not label that exact edge as an LNF.
+
+Matching criteria: The implemented TAB edge returns from a later or last page element to a much earlier element, often near the top/header or first item, and the transition is classified FP.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E053
+Classification: FP
+Transition: /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/div[1]/button[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]
+Source: SIGN IN button
+Destination: top header language link
+Positions: 9 -> 1
+Supporting evidence: original_predictions contains exactly this transition. evaluated_transitions classifies it as FP with observed_in_stage1=True. navigation_order shows source position 9 and destination position 1. kfg edges contains a TAB edge from the SIGN IN button to the top header language link. Ground truth instead labels /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/div[2]/div[1]/a[1] as the strong wrap-around LNF.
+Confidence: medium
+Requires review: False

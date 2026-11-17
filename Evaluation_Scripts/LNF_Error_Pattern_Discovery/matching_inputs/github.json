@@ -1,0 +1,733 @@
+{
+  "subject": "github",
+  "navigation_order": {
+    "navigation_order": [
+      {
+        "position": 1,
+        "label": 1,
+        "xpath": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]",
+        "descriptor": "Username or email address input"
+      },
+      {
+        "position": 2,
+        "label": 2,
+        "xpath": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]",
+        "descriptor": "Password input"
+      },
+      {
+        "position": 3,
+        "label": 4,
+        "xpath": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]",
+        "descriptor": "Forgot password? link"
+      },
+      {
+        "position": 4,
+        "label": 3,
+        "xpath": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12]",
+        "descriptor": "Sign in button"
+      },
+      {
+        "position": 5,
+        "label": 5,
+        "xpath": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]",
+        "descriptor": "Create an account link"
+      },
+      {
+        "position": 6,
+        "label": 6,
+        "xpath": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]",
+        "descriptor": "Terms link"
+      },
+      {
+        "position": 7,
+        "label": 7,
+        "xpath": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]",
+        "descriptor": "Privacy link"
+      },
+      {
+        "position": 8,
+        "label": 8,
+        "xpath": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]",
+        "descriptor": "Security link"
+      },
+      {
+        "position": 9,
+        "label": 9,
+        "xpath": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]",
+        "descriptor": "Contact GitHub link"
+      }
+    ]
+  },
+  "kfg": {
+    "UIGraphStates": [
+      {
+        "v_exit": [
+          {
+            "phi": "SPACE",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12]"
+          }
+        ],
+        "nodes": [
+          {
+            "xpath": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "967,252,96,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "902,64,48,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "852,531,39,14",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,16,48",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "789,329,274,32",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "789,281,274,32",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "803,531,32,14",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "918,414,114,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "789,204,274,32",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "967,531,82,14",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "907,531,43,14",
+            "I'": "null"
+          }
+        ],
+        "v_special": [
+          {
+            "v_0": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]"
+          },
+          {
+            "v_entry": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]"
+          },
+          {
+            "v_entry_successor": "null"
+          }
+        ],
+        "v_n": [],
+        "edges_inAndOutsideDialog": [],
+        "visibleCtrlDomInsideDialogSequence": [],
+        "visibleCtrlDomSequence": [
+          {
+            "0": "/html[1]/body[1]/div[1]/a[1]"
+          },
+          {
+            "1": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "2": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]"
+          },
+          {
+            "3": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]"
+          },
+          {
+            "4": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12]"
+          },
+          {
+            "5": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]"
+          },
+          {
+            "6": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "7": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "8": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "9": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "10": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]"
+          }
+        ],
+        "edges": [
+          {
+            "phi": "LEFT",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "DOWN",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "UP",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "RIGHT",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]"
+          },
+          {
+            "phi": "UP",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]"
+          },
+          {
+            "phi": "SPACE",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "UP",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "DOWN",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "RIGHT",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SPACE",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "SPACE",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "LEFT",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "UP",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "LEFT",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "DOWN",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "DOWN",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "UP",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "RIGHT",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "SPACE",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]"
+          },
+          {
+            "phi": "DOWN",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "RIGHT",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "LEFT",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "DOWN",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "DOWN",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "UP",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "SPACE",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "RIGHT",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]"
+          },
+          {
+            "phi": "LEFT",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "DOWN",
+            "v_t": "/html[1]/body[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12]"
+          },
+          {
+            "phi": "RIGHT",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "LEFT",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "UP",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SPACE",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "LEFT",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]"
+          },
+          {
+            "phi": "LEFT",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "RIGHT",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "UP",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "DOWN",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "RIGHT",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12]"
+          },
+          {
+            "phi": "SPACE",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "UP",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "RIGHT",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SPACE",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SPACE",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "LEFT",
+            "v_t": "/html[1]/body[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "RIGHT",
+            "v_t": "/html[1]/body[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "DOWN",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SPACE",
+            "v_t": "/html[1]/body[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "LEFT",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12]",
+            "v_s": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "UP",
+            "v_t": "/html[1]/body[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/a[1]"
+          }
+        ],
+        "stateTransition": [],
+        "state_properties": [
+          {
+            "type": "KFFG"
+          },
+          {
+            "phase": "INITIAL_PHASE"
+          },
+          {
+            "thisStateID": 0
+          },
+          {
+            "parentStateID": -1
+          }
+        ],
+        "ctrlClusters": [],
+        "dialogStateProperties": [
+          {
+            "isADialogState": "0"
+          },
+          {
+            "triggerNodeLeadingToState": "null"
+          },
+          {
+            "postModalTriggerRoot": "null",
+            "preModalTriggerRoot": "null"
+          }
+        ]
+      }
+    ]
+  },
+  "screenshot_paths": [
+    "/Users/lance/Downloads/Empirical_Study_Results/github/github1.jpg"
+  ],
+  "candidate_transitions": [
+    {
+      "transition_id": "T0001",
+      "transition": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1] -> /html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]",
+      "source_label": "4",
+      "destination_label": "5",
+      "source_position": "3",
+      "destination_position": "5",
+      "source_descriptor": "Forgot password? link",
+      "destination_descriptor": "Create an account link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0002",
+      "transition": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12] -> /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]",
+      "source_label": "3",
+      "destination_label": "4",
+      "source_position": "4",
+      "destination_position": "3",
+      "source_descriptor": "Sign in button",
+      "destination_descriptor": "Forgot password? link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0003",
+      "transition": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1] -> /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12]",
+      "source_label": "2",
+      "destination_label": "3",
+      "source_position": "2",
+      "destination_position": "4",
+      "source_descriptor": "Password input",
+      "destination_descriptor": "Sign in button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0004",
+      "transition": "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2] -> /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]",
+      "source_label": "1",
+      "destination_label": "2",
+      "source_position": "1",
+      "destination_position": "2",
+      "source_descriptor": "Username or email address input",
+      "destination_descriptor": "Password input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0005",
+      "transition": "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1] -> /html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]",
+      "source_label": "5",
+      "destination_label": "6",
+      "source_position": "5",
+      "destination_position": "6",
+      "source_descriptor": "Create an account link",
+      "destination_descriptor": "Terms link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0006",
+      "transition": "/html[1]/body[1]/div[4]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[4]/ul[1]/li[2]/a[1]",
+      "source_label": "6",
+      "destination_label": "7",
+      "source_position": "6",
+      "destination_position": "7",
+      "source_descriptor": "Terms link",
+      "destination_descriptor": "Privacy link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0007",
+      "transition": "/html[1]/body[1]/div[4]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[4]/ul[1]/li[3]/a[1]",
+      "source_label": "7",
+      "destination_label": "8",
+      "source_position": "7",
+      "destination_position": "8",
+      "source_descriptor": "Privacy link",
+      "destination_descriptor": "Security link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0008",
+      "transition": "/html[1]/body[1]/div[4]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[4]/ul[1]/li[4]/a[1]",
+      "source_label": "8",
+      "destination_label": "9",
+      "source_position": "8",
+      "destination_position": "9",
+      "source_descriptor": "Security link",
+      "destination_descriptor": "Contact GitHub link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0009",
+      "transition": "Browser -> /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]",
+      "source_label": "",
+      "destination_label": "1",
+      "source_position": "",
+      "destination_position": "1",
+      "source_descriptor": "Virtual Browser boundary",
+      "destination_descriptor": "Username or email address input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "True"
+    }
+  ]
+}

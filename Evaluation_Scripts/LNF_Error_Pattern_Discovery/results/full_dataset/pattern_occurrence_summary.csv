@@ -1,0 +1,10 @@
+﻿pattern_id,neutral_pattern_id,pattern_name,pattern_error_type,total_model_matches,matched_subjects,matched_TP,matched_FP,matched_FN,matched_TN,uncertain_decisions,uncertain_TP,uncertain_FP,uncertain_FN,uncertain_TN,no_match_decisions,target_error_matches,target_error_percent_of_model_matches,discovery_stage_error_memberships,discovery_cases_rematched,discovery_cases_uncertain,discovery_cases_not_matched
+FP01,P01,Adjacent region-to-region continuation over-flagged,FP,97,34,2,2,6,87,16,0,0,0,16,747,2,2.06,5,2,0,3
+FP02,P02,Cycle or wrap-around edge treated as failure,FP,16,15,11,4,1,0,0,0,0,0,0,844,4,25.0,3,3,0,0
+FP03,P03,Consecutive utility or auxiliary controls misread as disorder,FP,152,27,4,1,5,142,184,5,3,6,170,524,1,0.66,3,1,2,0
+FN01,P04,Browser-boundary transitions omitted,FN,34,34,0,0,9,25,3,0,0,1,2,823,9,26.47,10,9,1,0
+FN02,P05,Consecutive cross-group transitions missed,FN,178,33,5,1,8,164,21,0,2,1,18,661,8,4.49,16,7,0,9
+FN03,P06,Field-to-field progression skips embedded helper link,FN,17,17,1,0,4,12,1,1,0,0,0,842,4,23.53,4,4,0,0
+FN04,P07,Auxiliary or recovery link jumps past core form controls,FN,8,8,2,0,5,1,2,1,0,0,1,850,5,62.5,6,4,0,2
+FN05,P08,Primary control jumps forward over intermediate local controls,FN,25,14,8,1,10,6,0,0,0,0,0,835,10,40.0,7,6,0,1
+FN06,P09,Backward local reversals within forms or content clusters missed,FN,14,9,9,1,3,1,1,1,0,0,0,845,3,21.43,4,3,0,1

@@ -1,0 +1,21 @@
+Pattern: FN02
+Name: Consecutive cross-group transitions missed
+Error type: FN
+Subject: github
+
+Summary: The detector often misses ground-truth LNFs when the implemented move is immediately consecutive but crosses a visual or functional subgroup boundary.
+
+Matching criteria: The transition is consecutive in the implemented order and typically also consecutive in inferred positions, no intermediate focus target is documented, but the endpoints belong to visibly or functionally distinct subgroups such as adjacent panels, header subareas, footer subclusters, or separate content units.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E029
+Classification: FN
+Transition: /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1] -> /html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]
+Source: Forgot password? link
+Destination: Create an account link
+Positions: 3 -> 5
+Supporting evidence: evaluated_transitions marks this exact transition as FN with observed_in_stage1=True and browser_boundary=False. navigation_order shows source label 4 at position 3 (Forgot password? link) and destination label 5 at position 5 (Create an account link). kfg contains the TAB edge /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1] -> /html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]. The screenshot shows the destination link in a separate panel below the sign-in form, while the source link is embedded in the password/sign-in panel.
+Confidence: medium
+Requires review: True

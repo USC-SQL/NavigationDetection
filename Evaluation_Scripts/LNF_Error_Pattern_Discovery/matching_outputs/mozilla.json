@@ -1,0 +1,437 @@
+{
+  "subject" : "mozilla",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG has a direct TAB edge from /article/footer/.../a[1] 'compliance@mozilla.com' to /article/footer/.../p[3]/a[1] 'Click here for Data Subject Access Requests'. In the screenshot these are adjacent links inside the 'Contact Mozilla' block, and both serve secondary privacy/support functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from 'Click here for Data Subject Access Requests' to 'our forums'. Both links appear together in the 'Contact Mozilla' section of the page footer/article footer and function as support/help resources."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "The KFG contains a direct TAB edge from /article/footer/.../p[4]/a[1] 'our forums' (navigation position 30) back to /aside/nav/.../h4/a[1] 'Mozilla Privacy' (navigation position 7), which is an earlier control higher on the page."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The KFG confirms a direct TAB edge between 'here' and 'mission of being open', but the evidence does not clearly establish that both links are genuinely secondary support/utility controls rather than ordinary in-text content links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from /article/main/section[4]/... 'mission of being open' to /article/footer/... 'compliance@mozilla.com'. Their navigation positions are consecutive (27 to 28), and the screenshot/DOM indicate a boundary from main article content to the article footer contact region."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The destination is a support contact link, but the source 'mission of being open' appears to be an in-text policy/content link, so it is unclear whether both endpoints are secondary auxiliary controls."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG has a direct TAB edge from /aside/nav/.../li[12]/a[1] 'MDN Plus' to /aside/section[1]/p[1]/a[1] 'Data Privacy Principles'. Their navigation positions are consecutive (19 to 20), and the screenshot shows movement from the aside navigation list into the adjacent aside informational panel below it."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0021",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0022",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0023",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0024",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0025",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The KFG confirms a direct TAB edge within one aside paragraph from 'Data Privacy Principles' to 'this page', but the evidence does not clearly show that both are secondary utility/support controls; they may simply be ordinary content links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0026",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "A direct TAB edge exists in the KFG from /aside/section[1]/p[1]/a[2] 'this page' to /aside/section[2]/p[1]/a[1] 'Transparency Report'. Navigation positions are consecutive (21 to 22), and the screenshot shows movement between adjacent aside sections/panels."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "These links are in adjacent sidebar text sections, but their roles as secondary support/utility controls are not firmly established from the supplied evidence."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0027",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from 'Transparency Report' to 'subscribe to Mozilla’s governance group'. Their navigation positions are consecutive (22 to 23), and the screenshot places them in adjacent sidebar sections ('Transparency Report' then 'Get Involved')."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Although both links are in the sidebar, the evidence does not clearly establish that both are secondary auxiliary/support controls in the same local functional group."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0028",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG contains a direct TAB edge from 'subscribe to Mozilla’s governance group' to 'Mozilla’s Open Policy and Advocacy Blog'. In the screenshot both links are grouped within the same 'Get Involved' sidebar section and serve secondary engagement/support functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0029",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from /aside/section[3]/p[2]/a[1] 'Mozilla’s Open Policy and Advocacy Blog' to /aside/section[4]/h2/a[1] 'Outdated Policies'. Positions are consecutive (24 to 25), and the screenshot shows these as adjacent sidebar sections."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is a blog link, but the destination is a section heading link 'Outdated Policies'; the evidence does not clearly establish both endpoints as auxiliary/support controls within one local utility group."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0030",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0031",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0032",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0033",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0034",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0035",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0036",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG verifies a direct TAB edge from footer section 1 link 'Donate' to footer section 2 link 'Privacy Hub'. Their navigation positions are consecutive (36 to 37), and the screenshot footer shows these as adjacent visual columns/sections."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This direct TAB edge moves from one clear footer subgroup to another: Company section item 'Donate' to Resources section item 'Privacy Hub'. The destination position is exactly one greater than the source (36 to 37), and the screenshot shows distinct labeled footer columns."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0037",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0038",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0039",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG contains a direct TAB edge from 'Brand Standards' to 'Product Help'. Their navigation positions are consecutive (39 to 40), and the footer screenshot shows a transition between adjacent visual columns from Resources to Support."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition between distinct footer subgroups: Resources ('Brand Standards') and Support ('Product Help'). The destination position is exactly one greater than the source (39 to 40)."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0040",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from 'Product Help' to 'File a Bug'. In the footer screenshot these are the two links under the same 'Support' section, and both are secondary support/help controls."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0041",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG verifies a direct TAB edge from 'File a Bug' to 'Developer Edition'. Their positions are consecutive (41 to 42), and the screenshot shows movement between adjacent footer columns from Support to Developers."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This direct TAB edge crosses clear footer subgroups: Support ('File a Bug') to Developers ('Developer Edition'). The destination position is exactly one greater than the source (41 to 42), satisfying subgroup adjacency."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0042",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0043",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0044",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0045",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0046",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0047",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0048",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from 'Tools' to 'Follow @Mozilla link 1'. Positions are consecutive (48 to 49), and the footer screenshot shows movement between adjacent footer columns from Developers to social-follow links."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a direct TAB transition between distinct footer subgroups: Developers ('Tools') and the social/follow group ('Follow @Mozilla link 1'). The destination position is exactly one greater than the source (48 to 49)."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0049",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG confirms a direct TAB edge between 'Follow @Mozilla link 1' and 'Follow @Mozilla link 2'. Both are nearby secondary social/follow controls within the same local footer follow group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0050",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from 'Follow @Mozilla link 2' to 'Follow @Firefox link 1'. Both endpoints are adjacent social-follow links in the same footer follow cluster, serving secondary social/auxiliary functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0051",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG contains a direct TAB edge between 'Follow @Firefox link 1' and 'Follow @Firefox link 2'. Both are nearby secondary social/follow controls within the same local follow group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0052",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG confirms a direct TAB edge from 'Follow @Firefox link 2' to 'Follow @Firefox link 3'. Both are adjacent social/follow links in the same footer group and are secondary auxiliary controls."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0053",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from 'Follow @Firefox link 3' to 'Language'. Their navigation positions are consecutive (53 to 54), and the screenshot shows movement between adjacent footer areas from the social-follow group to the language selector area."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This direct TAB edge crosses distinct footer subgroups: the social-follow links to the language selector form. The destination position is exactly one greater than the source (53 to 54), and the screenshot shows visually separate footer modules."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0054",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0055",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0056",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG verifies a direct TAB edge from 'Mozilla footer logo/home' to 'Website Privacy Notice'. Their navigation positions are consecutive (56 to 57), and the footer screenshot shows movement between adjacent footer modules from the logo block to the legal/policy links block."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This direct TAB transition moves between distinct footer subgroups: the footer logo/home link and the legal/policy links list. The destination position is exactly one greater than the source (56 to 57), and the screenshot shows separate visual groupings."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0057",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0058",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The KFG confirms a direct TAB edge from 'Mozilla Foundation' to 'license', but it is unclear whether both endpoints should be treated as secondary support/utility controls in one local auxiliary group rather than ordinary informational/footer links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0059",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The KFG shows a direct TAB edge between 'Website Privacy Notice' and 'Cookies', but the evidence does not clearly establish both as auxiliary/support controls rather than ordinary legal/policy links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0060",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "There is a direct TAB edge from 'Cookies' to 'Legal', but the supplied evidence is insufficient to confidently classify both endpoints as secondary utility/support controls under the pattern definition."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0061",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The KFG confirms a direct TAB edge from 'Legal' to 'Community Participation Guidelines', but it is ambiguous whether both are auxiliary/support controls rather than ordinary policy/informational footer links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0062",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from /footer/nav[2]/.../li[4]/a[1] 'Community Participation Guidelines' to /footer/nav[2]/.../p[1]/a[1] 'Mozilla Corporation'. Positions are consecutive (60 to 61), and the footer screenshot shows movement from the legal links list to the adjacent attribution text/link area."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The destination is in the footer attribution paragraph rather than clearly a support/utility control, so both endpoints cannot be confidently classified as auxiliary controls in the same local group."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0063",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "The candidate is a Browser-boundary transition to /div[2]/div[1]/div[1]/div[1]/a[1] 'Mozilla logo/home'. The KFG special nodes mark this same element as v_entry and v_0, documenting the first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed matches are concentrated in modeled page entry (Browser to logo), several direct cross-region/adjacent-panel TAB moves between major sidebar, main/footer, and footer-column regions, and a number of local auxiliary progressions in clearly secondary groups such as contact/support links and social-follow controls. No supplied candidate showed evidence of field-to-field helper-link behavior, auxiliary-link jumps across primary workflow controls, primary-control bypass over local controls, or backward local TAB transitions."
+}

@@ -1,0 +1,237 @@
+{
+  "subject" : "disneyguest",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG has a direct TAB edge from /div[2]/nav/ul/li[4]/a to /div[5]/a. The source is in the top navigation/header region ('Top nav Parks & Travel') and the destination is the separate 'Skip to Main Content' link shown just below the nav in the screenshot. Destination meaningful position 5 is exactly one greater than source position 4."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "Direct KFG TAB edge connects two distinct functional subgroups: the top navigation menu item ('Top nav Parks & Travel') and the standalone skip link ('Skip to Main Content'). They are consecutive in inferred meaningful order (4 to 5)."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The destination is a utility skip link, but the source is a primary site navigation item rather than a clearly secondary auxiliary/support control, so both endpoints do not clearly satisfy the auxiliary-control requirement."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from /div[5]/a to /main/header/.../li[1]/a. The screenshot and DOM place the source in the skip-link area and the destination in the main content/header breadcrumb area ('Disney Guest Services'). The destination position 6 is exactly one greater than source position 5."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition between distinct subgroups: the standalone skip link and the main-content breadcrumb/link. They are consecutive in meaningful order (5 to 6)."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is an auxiliary skip link, but the breadcrumb destination is not clearly a secondary help/recovery/support control; its role is navigational within main content."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG has a direct TAB edge from /div[7]/div[1]/div[1]/button to /div[7]/div[2]/nav/ul/li[1]/a. In the screenshot, the source is the footer language selector on the right and the destination is the separate footer navigation group beginning with the Disney logo/home link. Destination position 16 is exactly one greater than source position 15."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This direct TAB edge moves between distinct footer subgroups: language selector control and footer brand/navigation links. They are consecutive in meaningful order (15 to 16)."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The language selector may be a utility control, but the footer logo/home link is not clearly a secondary support/help/recovery control, so both endpoints are not clearly auxiliary."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from /div[7]/div[2]/nav/ul/li[4]/a to /div[7]/nav/ul/li[1]/a. The screenshot shows these as adjacent but distinct footer regions: footer brand/navigation links and a separate footer legal links row. Destination position 20 is exactly one greater than source position 19."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This verified TAB transition connects distinct footer subgroups: footer nav ('Parks & Travel') to footer legal ('About Disney'), and the two endpoints are consecutive in inferred meaningful order (19 to 20)."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The footer legal link destination could be considered utility content, but the source is a footer site-navigation item rather than a clearly secondary auxiliary/support control."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are footer legal links, but the evidence does not clearly establish that both function as secondary support/help/recovery controls; 'About Disney' is informational while 'Help' is support-oriented."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source 'Help' is support-oriented, but 'Careers' is not clearly a secondary utility/support/recovery control, so endpoint roles are mixed."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "These are nearby footer legal links, but the evidence does not clearly establish both as secondary utility/help/support controls rather than general legal/informational links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both are footer legal/privacy-related links, which may be utility content, but the supplied evidence does not clearly classify them as the kind of secondary help/recovery/support controls required by P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "These are adjacent footer legal links, but whether both qualify as genuinely secondary utility/support controls under P03 is not established by the evidence."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The links are within the footer legal group, but the evidence does not clearly show both as support/recovery/utility controls rather than general legal/privacy links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are footer legal/privacy links, but the supplied evidence is insufficient to classify both as secondary auxiliary/support controls per P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "These are adjacent footer legal/privacy links; however, the evidence does not clearly establish that both are auxiliary/support-type controls as required for P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0021",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0022",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0023",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0024",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0025",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The destination 'Accessibility' suggests a support-related category, but the source 'MyDisney' is not clearly a secondary utility/help/recovery control, so both endpoints do not clearly satisfy P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0026",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are category links in the same grid, and 'Accessibility'/'Other Questions' may be support-oriented, but the evidence does not clearly establish both as secondary local auxiliary controls rather than primary category selections."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0027",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG contains a direct TAB edge from /main/.../div[8]/a to /div[7]/div[1]/div[1]/button. The screenshot shows the source in the main category grid ('Other Questions') and the destination in the footer language selector region. Destination position 15 is exactly one greater than source position 14."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This direct TAB transition moves between clearly distinct subgroups/regions: the main content category grid and the footer language selector. The endpoints are consecutive in meaningful order (14 to 15)."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source category 'Other Questions' may be support-related, but the destination is a language selector rather than a clearly similar auxiliary/support control; endpoint roles do not clearly meet P03."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0028",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from /main/header/.../li[1]/a to /main/.../div[1]/a. In the screenshot, the source is the breadcrumb/link at the top of main content and the destination is the first item in the separate category-selection grid. Destination position 7 is exactly one greater than source position 6."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This verified TAB edge connects distinct subgroups within main content: the breadcrumb/header link and the category grid. They are consecutive in inferred meaningful order (6 to 7)."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The breadcrumb and category link are navigational elements, but the evidence does not show both are genuinely secondary utility/support/recovery controls."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0029",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "The candidate itself is a Browser-boundary transition, and the KFG v_special identifies /html/body/div[2]/nav/ul/li[1]/a as both v_0 and v_entry. The destination is the documented first focused webpage control: 'Top nav Disney logo/home' at position 1."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed verified TAB order is largely linear through top navigation, skip link, main-content breadcrumb and category grid, then footer language selector, footer navigation, and footer legal links. Matches occur mainly for browser entry (P04) and consecutive direct transitions across clearly distinct regions or subgroups (P01 and P05) at boundaries between header/nav, skip link, main, and footer areas. No evidence supports wraparound, backward-local, field/helper, or skipped-local-control patterns."
+}

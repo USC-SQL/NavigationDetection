@@ -1,0 +1,119 @@
+{
+  "subject" : "yumpu",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "The KFG contains a direct TAB edge from the LOG IN button (position 3) to Google social login (position 4). In the screenshot, the Google social-login row is visually above the email/password/login controls, so this TAB edge returns from a later workflow control to an earlier/top-of-form area, consistent with a cyclic/backaround focus edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG verifies a direct TAB edge from Google social login (position 4) to Facebook social login (position 5). These are adjacent controls in the social-login icon row, a distinct functional subgroup within the login form, and the destination position is exactly one greater than the source."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are social-login options. They may be alternative primary sign-in methods rather than secondary utility/support controls, so the evidence does not clearly establish the required auxiliary role for both endpoints."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG verifies a direct TAB edge from Facebook social login (position 5) to LinkedIn social login (position 6). These controls are adjacent items in the same social-login row, a clearly distinct subgroup, and the destination position is exactly one greater."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The available evidence shows nearby social-login controls, but does not establish that both are genuinely secondary help/recovery/support controls rather than alternative primary authentication actions."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG verifies a direct TAB edge from LinkedIn social login (position 6) to Apple social login (position 7). The screenshot shows these as consecutive icons in the same social-login subgroup, with destination position exactly one greater than source."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Although the controls are adjacent and local, the evidence does not show that social-login options are secondary utility/support controls as required by P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The destination is clearly a recovery link, but the source is an Apple social-login option whose role is not clearly auxiliary/support versus an alternative primary authentication control."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "The KFG verifies a direct TAB edge from Email address input (position 1) to Password input (position 2). The screenshot and navigation order show a separate focusable helper/recovery link, 'Forgotten your password?' (position 8), visually associated with the password field group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is a recovery/support link, but the destination 'Register' link may function as a primary account-creation action rather than a secondary utility control, so both endpoints' auxiliary status is not established."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG verifies a direct TAB edge from the Register link (position 9) inside the login form area to the Terms and Conditions link (position 10) in the separate legal-links paragraph below the form. The screenshot shows these as distinct adjacent page regions/components, and the destination position is exactly one greater than the source."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The direct TAB edge moves from the registration/account-creation subgroup (Register link at position 9) to the legal/footer-links subgroup (Terms and Conditions at position 10). These are distinct functional/visual subgroups, and the destination position is exactly one greater."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Terms and Conditions is a secondary legal/support link, but Register is not clearly a secondary auxiliary control; it may be a primary account-creation action."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG verifies a direct TAB edge from Terms and Conditions (position 10) to Privacy Policy (position 11). The screenshot shows these nearby links in the same legal-links cluster at the bottom, and both are secondary/supporting legal utility controls."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The direct TAB edge connects consecutive items within the bottom legal-links subgroup: Terms and Conditions (10) to Privacy Policy (11), with destination position exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG verifies a direct TAB edge from Privacy Policy (position 11) to Cookie Guidelines (position 12). The screenshot shows these adjacent bottom legal/support links in one local cluster, and both serve secondary legal/support functions."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The transition is a verified direct TAB edge between adjacent controls in the bottom legal-links subgroup, from position 11 to position 12."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a Browser-boundary transition, and the KFG v_special identifies v_entry/v_0 as the Email address input. The candidate transition is Browser -> Email address input (position 1), matching browser-to-page entry."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "The observed keyboard pattern on yumpu is a login page with a modeled browser entry to the email field, standard field-to-field movement from email to password, several consecutive TAB edges within the social-login row and within the bottom legal-links cluster, a cross-region/subgroup move from Register to the legal links, and a wraparound-style edge from the LOG IN button back to the social-login row. Evidence for auxiliary-control progression is clear for the legal links, but ambiguous for social-login and register-related transitions."
+}

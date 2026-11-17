@@ -1,0 +1,146 @@
+{
+  "subject" : "trello",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The KFG confirms a direct TAB edge from Continue with Apple (position 6) to Log in with SSO (position 7), and they are nearby within the login card, but the evidence does not clearly establish that both endpoints are genuinely secondary utility/support controls rather than alternative primary login methods."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG contains a direct TAB edge from Log in with SSO to Can't log in?. The screenshot shows these as nearby links below the main login actions in the same login area, and both serve secondary/support purposes rather than primary form entry."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "The KFG shows a direct TAB edge from the Email input (position 1) to the Password input (position 2). A separate recovery/helper link, Can't log in? (position 8), is visibly present in the same login module and associated with the login/password area shown in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The KFG confirms a direct TAB edge from Can't log in? to Sign up for an account, and the links are nearby, but only the first is clearly a recovery/support control. The second appears promotional/account-creation oriented, so both endpoints do not clearly satisfy the auxiliary/support requirement."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from Sign up for an account (position 9) to Privacy Policy (position 10). These are consecutive positions, and the screenshot/DOM place the source in the login card's lower link row while the destination is in the separate legal-links row beneath the card, indicating adjacent distinct page regions."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The transition is a verified direct TAB edge between consecutive positions 9 and 10. The source belongs to the account/help link subgroup under the login card, while the destination is in a distinct legal-links subgroup below, as supported by the separate UL structures and visual separation in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG contains a direct TAB edge from Privacy Policy to Terms of Service. These are nearby legal/utility links in the same local legal-links group shown below the login card, and both serve secondary informational purposes."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from Terms of Service (position 11) to the Language selector (position 12). These are consecutive positions, and the source is in the page's legal-links area under the main section while the destination is in the footer language control, a distinct adjacent page region visible in the screenshot and reflected by the move from /section to /footer in the XPaths."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition between consecutive positions 11 and 12. The source is in the legal-links subgroup and the destination is the separate footer language-control subgroup, supported by distinct DOM containers and visual separation."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The KFG confirms a direct TAB edge from About to Help in the footer link row, but the evidence does not clearly establish that both endpoints are secondary utility/support controls; About is informational/navigation rather than clearly support-oriented."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG contains a direct TAB edge from Help to Cookie Settings. In the footer these are nearby secondary utility/support controls, with Help and Cookie Settings both serving support/preferences functions within the same local footer link group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0021",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate explicitly originates from the virtual Browser boundary and targets the Email input. The KFG v_special marks the email input as v_entry/v_0, indicating the documented first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed matches are limited and mostly involve secondary utility links or region/subgroup boundaries. Clear matches include browser entry to the email field, local auxiliary progressions among support/legal/footer utility links, and adjacent cross-region or cross-subgroup moves from account/help links to legal links and from legal links to the footer language selector. No evidence supports wraparound, backward local transitions, or primary-control skipping patterns in the supplied candidate transitions."
+}

@@ -1,0 +1,62 @@
+{
+  "subject" : "woot",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/span[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/label[1]/div[1]/label[1]/span[1]/span[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Large forward jump within sign-in panel",
+    "observable_characteristics" : "The implemented focus order moves from the top sign-in action, \"Log in with Amazon button\" (label 4, meaningful position 1), directly to the inline \"Details link\" associated with the keep-signed-in option (label 5, meaningful position 4). The screenshot shows these controls inside the same sign-in card, with the checkbox and Woot login button visually between or related to them. The transition is explicitly present in the KFG and evaluated_transitions.",
+    "matching_criteria" : "A transition should match when focus moves directly between controls in the same local panel while bypassing intermediate controls that are present elsewhere in the implemented sequence, and the source/destination have a substantial meaningful-position gap rather than being adjacent in the inferred order.",
+    "possible_cause" : "Observed evidence shows a direct edge from the Amazon login button to the Details link, and ground truth labels it as an LNF. A plausible detector error is that the original detector may have relied on adjacency of implemented focus labels or expected wraparound behavior and therefore did not flag this nonadjacent semantic jump. This cause is unverified.",
+    "supporting_evidence" : "navigation_order: source position 1 label 4 \"Log in with Amazon button\"; destination position 4 label 5 \"Details link\". kfg edge exists from /div[1]/div[1]/div[1]/div[1]/span[1]/span[1]/input[1] to /div[4]/div[1]/div[1]/label[1]/div[1]/label[1]/span[1]/span[1]/a[1]. evaluated_transitions marks it FN and observed_in_stage1=True. Screenshot numbering places 4 near the top action and 5 near the keep-signed-in row.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/label[1]/div[1]/label[1]/span[1]/span[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[6]/div[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Inline option to legal text jump",
+    "observable_characteristics" : "Focus moves from the inline \"Details link\" in the keep-signed-in control group to the \"terms of use link\" in agreement text near the bottom of the form. In navigation_order these are meaningful positions 4 and 6, with the \"Create your Woot account link\" at position 5 between them. The KFG confirms the direct TAB edge.",
+    "matching_criteria" : "A transition matches when focus leaves a small inline control or help link and jumps to legal/disclaimer text, while another prominent actionable control in the same form appears between them in the inferred meaningful order.",
+    "possible_cause" : "Observed evidence supports that this is a direct implemented jump labeled as an LNF in ground truth. A possible reason for the miss is that the detector may have treated movement into nearby text links at the bottom of the same form as acceptable continuation, underweighting the fact that the create-account link is meaningfully prior. This remains a hypothesis.",
+    "supporting_evidence" : "navigation_order lists \"Details link\" at position 4 and \"terms of use link\" at position 6, with \"Create your Woot account link\" at position 5. kfg edge: Details link -> terms of use link. evaluated_transitions classification FN, observed_in_stage1=True. Screenshot shows the create-account control visually above the terms text.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[4]/span[1]/span[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/span[1]/span[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Button to lower account-creation link jump",
+    "observable_characteristics" : "The implemented TAB order moves from \"Log in with Woot button\" (position 2, label 2) directly to \"Create your Woot account link\" (position 5, label 3). The checkbox and its associated details link occupy positions 3 and 4 in the inferred meaningful order. The screenshot also places the account-creation area below the keep-signed-in area.",
+    "matching_criteria" : "A transition matches when a primary action button moves directly to a lower secondary link while skipping a nearby option cluster that is visually and functionally tied to the login process.",
+    "possible_cause" : "The detector appears to have missed a cross-group jump within the same form. One hypothesis is that it may have prioritized the destination's implemented adjacency or interpreted the account-creation link as the next major section, failing to recognize the intervening keep-signed-in controls and details link as meaningful navigation steps.",
+    "supporting_evidence" : "navigation_order: source \"Log in with Woot button\" position 2 label 2; destination \"Create your Woot account link\" position 5 label 3. Intervening meaningful positions are checkbox position 3 and Details link position 4. kfg edge directly connects these XPaths. evaluated_transitions marks FN and observed_in_stage1=True.",
+    "confidence" : "high",
+    "requires_review" : false
+  }, {
+    "transition" : "Browser -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/label[1]/div[1]/label[1]/input[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Browser entry into mid-form control",
+    "observable_characteristics" : "Ground truth marks the first focusable destination as the \"Keep me signed in checkbox\" rather than the visually topmost or meaningfully earliest control. navigation_order places this checkbox at meaningful position 3, while the Amazon and Woot login buttons are positions 1 and 2. The KFG special nodes identify this checkbox as both v_0 and v_entry.",
+    "matching_criteria" : "A transition matches when the supplied evidence indicates that initial keyboard entry lands on a control located mid-sequence within a form, with earlier meaningful controls documented in navigation_order.",
+    "possible_cause" : "Observed evidence shows the KFG explicitly models the checkbox as the entry node. A possible reason the original detector missed this is special handling or suppression of Browser-boundary transitions, or exclusion of virtual entry edges from ordinary LNF scoring. Because Browser is a virtual boundary and not an ordinary DOM element, the exact detector failure mechanism cannot be confirmed from the supplied evidence alone.",
+    "supporting_evidence" : "ground_truth and evaluated_transitions classify Browser -> checkbox as LNF/FN. ground_truth_severity marks it Strongly. navigation_order places destination at position 3, after \"Log in with Amazon button\" and \"Log in with Woot button\". kfg v_special contains v_0 and v_entry equal to the checkbox XPath; browser_boundary=True.",
+    "confidence" : "high",
+    "requires_review" : true
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/label[1]/div[1]/label[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[4]/span[1]/span[1]/input[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison for a detected LNF inside the same sign-in form where focus moves backward in meaningful order from position 3 to position 2."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/span[1]/span[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/span[1]/input[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison for a detected wrap/jump from a lower create-account link back to the top Amazon login button in the same card."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[6]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[6]/div[1]/a[2]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful non-error comparison showing adjacent legal links that follow the inferred order without a jump."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[6]/div[1]/a[2] -> /html[1]/body[1]/div[1]/div[1]/div[4]/div[2]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison showing a boundary between form content and footer links that was not labeled as an LNF."
+  } ],
+  "subject_summary" : "This subject shows several missed LNFs within a compact sign-in card where implemented focus jumps among login actions, checkbox/help content, account-creation, and legal links in an order that differs from the inferred meaningful sequence. The strongest recurring characteristic is cross-group jumping inside the same form rather than simple omission of isolated elements. The Browser-entry FN is well supported as a labeled error, but the detector's reason for missing it is uncertain because Browser is a virtual boundary and may have been specially handled."
+}

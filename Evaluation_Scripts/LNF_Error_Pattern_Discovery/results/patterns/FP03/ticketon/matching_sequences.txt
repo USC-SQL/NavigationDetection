@@ -1,0 +1,21 @@
+Pattern: FP03
+Name: Consecutive utility or auxiliary controls misread as disorder
+Error type: FP
+Subject: ticketon
+
+Summary: The detector sometimes over-flags short moves between nearby auxiliary controls inside the same local section, even when the supplied evidence shows a straightforward consecutive sequence.
+
+Matching criteria: Source and destination are nearby auxiliary, support, or utility controls in the same local header/login/support area; they are consecutive or locally coherent in the implemented order; and ground truth classifies the prediction as FP.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E051
+Classification: FP
+Transition: /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[2]/li[3]/a[1] -> /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/a[2]
+Source: Ingresar header link
+Destination: Language selector English
+Positions: 7 -> 8
+Supporting evidence: original_predictions contains exactly this transition. ground_truth is empty, so it is not a reference LNF. navigation_order lists /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[2]/li[3]/a[1] at position/label 7 and /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/a[2] at position/label 8. kfg edges include a TAB edge from /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[2]/li[3]/a[1] to /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/a[2]. Screenshot annotations place markers 7 and 8 together in the header region.
+Confidence: high
+Requires review: False

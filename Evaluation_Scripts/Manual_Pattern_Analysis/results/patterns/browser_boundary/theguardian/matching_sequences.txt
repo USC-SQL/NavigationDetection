@@ -1,0 +1,4 @@
+Pattern: FN01 - Browser-boundary omission
+Subject: theguardian
+Classification: TN
+Transition: Browser -> /html[1]/body[1]/a[1]

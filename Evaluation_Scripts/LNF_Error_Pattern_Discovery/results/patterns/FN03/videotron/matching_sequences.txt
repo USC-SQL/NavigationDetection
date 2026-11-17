@@ -1,0 +1,21 @@
+Pattern: FN03
+Name: Field-to-field progression skips embedded helper link
+Error type: FN
+Subject: videotron
+
+Summary: A recurring miss occurs when focus moves directly between primary form fields while a visible helper or recovery link associated with the field group occupies an intermediate meaningful position.
+
+Matching criteria: The source and destination are major form fields, usually adjacent-looking inputs, but a separately focusable inline helper/recovery link in the same form region is documented between them or tied to the field group; the case is classified FN.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E054
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[2]/div[1]/input[1]
+Source: ID input field
+Destination: Password input field
+Positions: 2 -> 4
+Supporting evidence: Ground truth includes this transition as Neutral severity. evaluated_transitions marks it FN and observed_in_stage1=True. navigation_order lists ID input at position 2, Forgot your username? at position 3, and Password input at position 4. kfg edges contains a TAB edge directly from the ID input to the Password input. The screenshot places the username-recovery link on the same row region as the ID field.
+Confidence: high
+Requires review: False

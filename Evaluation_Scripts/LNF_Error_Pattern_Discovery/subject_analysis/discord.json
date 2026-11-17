@@ -1,0 +1,32 @@
+{
+  "subject" : "discord",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/button[1]",
+    "classification" : "FP",
+    "pattern_hypothesis" : "Nested interactive promo controls",
+    "observable_characteristics" : "The implemented focus order moves consecutively from the footer promo link (label 22) to a descendant button inside that same link (label 23). Navigation_order assigns consecutive meaningful positions 22 and 23, and the KFG visibleCtrlDomSequence also places them consecutively. The screenshot shows a dark footer promo area with a prominent LEARN MORE button inside the same promo block, followed by platform/app links. No supplied ground-truth transition is labeled as an LNF for this page.",
+    "matching_criteria" : "A reported LNF where the source and destination are parent/descendant interactive elements within the same visible promo/card region, the implemented tab sequence is consecutive in Stage 1/KFG, and there is no supplied reference LNF label for that transition.",
+    "possible_cause" : "Observed evidence shows a nested interactive relationship: the destination XPath is inside the source XPath. A plausible detector error is that the original detector treated focus entering a descendant interactive element inside an already focusable container/link as a linear-navigation failure or suspicious duplicate stop, even though the supplied reference data does not classify it as an LNF. Whether the underlying HTML pattern is invalid or confusing is separate from the LNF label and cannot be concluded here.",
+    "supporting_evidence" : "original_predictions contains exactly this transition. evaluated_transitions marks it FP with observed_in_stage1=True and browser_boundary=False. navigation_order lists /html[1]/body[1]/footer[1]/div[1]/div[1]/a[1] as label/position 22 and /html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/button[1] as label/position 23. kfg visibleCtrlDomSequence indexes 21 and 22 are the same pair, and kfg edges include TAB from the link to the nested button. Screenshots 2-3 show the footer promo region with the LEARN MORE control grouped in that area.",
+    "confidence" : "high",
+    "requires_review" : false
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/main[1]/div[2]/section[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows a normal forward transition between adjacent top-level sections, useful for contrasting with the FP nested-control transition."
+  }, {
+    "transition" : "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/button[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows that after the nested button, focus continues normally to the next footer control, suggesting no broader local focus disruption in this area."
+  }, {
+    "transition" : "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[2]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Provides a nearby example of standard consecutive focus movement among sibling footer links."
+  }, {
+    "transition" : "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[1] -> /html[1]/body[1]/header[1]/div[2]/nav[1]/div[1]/button[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows another consecutive non-LNF transition in a grouped navigation region, useful as a comparison against detector overreaction to local structural complexity."
+  } ],
+  "subject_summary" : "This subject contains one evaluated detector error and no ground-truth LNFs, so there are no FNs. The FP is a consecutive focus move within a footer promo block from a focusable link to a descendant button. Evidence supports a likely detector over-trigger on nested interactive structure rather than a documented WCAG 2.4.3 failure. Uncertainty remains only about the detector's internal rule, not about the observed implemented sequence."
+}

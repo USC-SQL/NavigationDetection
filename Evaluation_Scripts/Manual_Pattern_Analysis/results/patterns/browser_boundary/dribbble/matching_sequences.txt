@@ -1,0 +1,4 @@
+Pattern: FN01 - Browser-boundary omission
+Subject: dribbble
+Classification: FN
+Transition: Browser -> /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[1]/input[1]

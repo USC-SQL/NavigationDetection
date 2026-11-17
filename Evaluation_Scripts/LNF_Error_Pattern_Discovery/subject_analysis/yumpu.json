@@ -1,0 +1,46 @@
+{
+  "subject" : "yumpu",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/input[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/button[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Adjacent form-control progression marked only in ground truth",
+    "observable_characteristics" : "The implemented TAB sequence shown in the KFG and navigation_order moves from Password input (label 2, position 2) directly to LOG IN button (label 3, position 3). These controls are vertically adjacent within the main login form and appear visually contiguous in the screenshots. No intermediate focusable element is documented between them.",
+    "matching_criteria" : "A transition should match this pattern when it is a direct consecutive focus movement between adjacent controls in the same form section, the source and destination are consecutive in both implemented labels and inferred positions, and there is no documented skipped focusable element in the KFG.",
+    "possible_cause" : "Observed evidence confirms this was a ground-truth LNF that the detector did not report. The reason is unverified. A plausible hypothesis is that the original detector relied heavily on position-jump or reorder signals and therefore did not flag a transition where implemented and inferred order are aligned numerically, even though the reference evaluation labeled it as an LNF for some other reason not evident from the supplied artifacts.",
+    "supporting_evidence" : "navigation_order lists Password input as label/position 2 and LOG IN button as label/position 3. The KFG contains a TAB edge from the password input XPath to the button XPath. evaluated_transitions marks this exact transition as FN and observed_in_stage1=True. The screenshots show the password field above the login button in the same form area.",
+    "confidence" : "low",
+    "requires_review" : true
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[3]/div[3]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/p[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Consecutive lower-page link progression omitted by detector",
+    "observable_characteristics" : "The implemented TAB sequence moves from the Forgotten your password? link (label 8, position 8) to the Register link (label 9, position 9). These links are close together in the lower portion of the login module, with Register visually below the login button and above the footer policy links. The transition is consecutive in both the navigation_order and KFG, without any documented intervening focus target.",
+    "matching_criteria" : "A transition should match this pattern when it connects two nearby links in the same lower-page area, both are consecutive in implemented focus order and inferred order, and the movement is directly represented as a KFG edge with no documented skip.",
+    "possible_cause" : "Observed evidence confirms a detector miss relative to ground truth, but the underlying reason is uncertain. A possible hypothesis is that the detector emphasized larger structural jumps such as form-to-social-login movements and under-detected milder same-column or nearby-link transitions that the reference still considered LNFs.",
+    "supporting_evidence" : "navigation_order lists Forgotten your password? as label/position 8 and Register as label/position 9. The KFG includes a TAB edge from the forgot-password link XPath to the register link XPath. evaluated_transitions classifies this exact transition as FN with observed_in_stage1=True. The screenshots place these items in the same central column below the password area and login button.",
+    "confidence" : "low",
+    "requires_review" : true
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/button[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful contrast because it is a reported and confirmed LNF involving a jump from the main form controls to the social-login group."
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/a[4] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[3]/div[3]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Another confirmed LNF that crosses between the social-login cluster and a different functional area, suggesting the detector more readily captured cross-group jumps."
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/input[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/input[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Consecutive form-field progression useful for comparing with the FN from Password input to LOG IN button, since both are adjacent within the same form."
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/a[2]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Consecutive movement inside a compact functional cluster of social-login links, useful as a non-LNF comparison for same-group adjacency."
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/p[1]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/p[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Represents progression from the Register link into the footer links area, useful for comparing with the nearby FN from Forgotten your password? to Register."
+  } ],
+  "subject_summary" : "This subject shows a simple single-column login flow whose implemented focus order is fully documented in the KFG. The detector correctly identified cross-group jumps involving the social-login cluster, but missed two ground-truth LNFs that appear as consecutive focus steps with matching labels and inferred positions. Because the supplied evidence does not reveal a visible skip, reorder, or hidden intermediate target for those FN transitions, the exact error mechanism remains uncertain and requires review."
+}

@@ -1,0 +1,31 @@
+Pattern: FN05
+Name: Primary control jumps forward over intermediate local controls
+Error type: FN
+Subject: woot
+
+Summary: Another recurring miss is a direct move from a primary field, button, or top action to a later control in the same local module while intervening visible controls are bypassed.
+
+Matching criteria: The source is a primary input, button, logo/header entry point, or other major control; the destination is a later control in the same local panel or task region; and the supplied evidence documents one or more visible intermediate controls that are skipped by the implemented TAB edge.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E061
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/span[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/label[1]/div[1]/label[1]/span[1]/span[1]/a[1]
+Source: Log in with Amazon button
+Destination: Details link
+Positions: 1 -> 4
+Supporting evidence: navigation_order: source position 1 label 4 "Log in with Amazon button"; destination position 4 label 5 "Details link". kfg edge exists from /div[1]/div[1]/div[1]/div[1]/span[1]/span[1]/input[1] to /div[4]/div[1]/div[1]/label[1]/div[1]/label[1]/span[1]/span[1]/a[1]. evaluated_transitions marks it FN and observed_in_stage1=True. Screenshot numbering places 4 near the top action and 5 near the keep-signed-in row.
+Confidence: medium
+Requires review: False
+
+Case ID: E063
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[4]/span[1]/span[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/span[1]/span[1]/a[1]
+Source: Log in with Woot button
+Destination: Create your Woot account link
+Positions: 2 -> 5
+Supporting evidence: navigation_order: source "Log in with Woot button" position 2 label 2; destination "Create your Woot account link" position 5 label 3. Intervening meaningful positions are checkbox position 3 and Details link position 4. kfg edge directly connects these XPaths. evaluated_transitions marks FN and observed_in_stage1=True.
+Confidence: high
+Requires review: False

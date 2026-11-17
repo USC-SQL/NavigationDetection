@@ -1,0 +1,21 @@
+Pattern: FP02
+Name: Cycle or wrap-around edge treated as failure
+Error type: FP
+Subject: experian
+
+Summary: The detector sometimes flags page-cycle or wrap-like transitions that return to an earlier page location, even though the reference data does not label that exact edge as an LNF.
+
+Matching criteria: The implemented TAB edge returns from a later or last page element to a much earlier element, often near the top/header or first item, and the transition is classified FP.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E024
+Classification: FP
+Transition: /html[1]/body[1]/app-root[1]/app-public[1]/ecs-public-template[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-signin[1]/ecs-card[1]/section[2]/div[1]/div[1]/div[1]/app-signin-form[1]/ecs-form[1]/form[1]/div[5]/button[1] -> /html[1]/body[1]/app-root[1]/app-public[1]/ecs-public-template[1]/ecs-header[1]/div[1]/div[1]/div[1]/div[1]/a[1]
+Source: Sign In button
+Destination: Experian logo link in header
+Positions: 5 -> 1
+Supporting evidence: original_predictions contains this exact transition. evaluated_transitions marks it FP and observed_in_stage1=True. navigation_order maps the sign-in button to position 5 label 3 and the header logo to position 1 label 4. KFG edges include TAB from '/form[1]/div[5]/button[1]' to '/ecs-header[1]/div[1]/div[1]/div[1]/div[1]/a[1]'. Ground truth lists other transitions but not this one.
+Confidence: medium
+Requires review: False

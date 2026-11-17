@@ -1,0 +1,179 @@
+{
+  "subject" : "disneyworld",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "KFG contains a direct TAB edge from the Walt Disney World logo link to the Forgot password button/link. Both controls are in the sign-in module shown in the screenshot, and visibleCtrlDomSequence plus navigation_order show later visible local controls between them: the Email/username info icon, Email input, Password input, Remember Me checkbox, and Sign In button."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "KFG contains a direct TAB edge from Create Account link (position 9) to the Walt Disney World logo link (position 1), a later-to-earlier jump back to the top of the page/module consistent with wraparound."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "KFG shows a direct TAB edge from the Email Address or Username input to the Password input. The screenshot and navigation_order show a separate helper/recovery control, the Forgot password button/link, visually associated with the destination password field group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is an email/username field info icon and the destination is a footer Help & Guest Services link. The source may be auxiliary, but the evidence does not establish both endpoints as nearby controls within the same local auxiliary/support group."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "KFG shows a direct TAB edge from Password input to Sign In button. Within the same sign-in form, visible focusable local controls occupy intermediate positions: the Remember Me checkbox and the Forgot password button/link appear between those endpoints in navigation_order and the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P09",
+      "evidence" : "KFG shows a direct TAB edge from Cancel link (position 7) to Remember Me checkbox (position 6), which moves backward in inferred meaningful order within the same localized sign-in form controls cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P09",
+      "evidence" : "KFG shows a direct TAB edge from Sign In button (position 8) to Cancel link (position 7), a backward move in meaningful order within the same local sign-in form action row."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Forgot password button/link to the Email/username field info icon. Both endpoints are secondary utility/support-style controls within the same sign-in form: one is a recovery control and the other is an informational helper control."
+    }, {
+      "pattern_id" : "P09",
+      "evidence" : "KFG shows a direct TAB edge from Forgot password button/link (position 5) back to the Email/username field info icon (position 3), a backward move within the same localized sign-in form cluster rather than a page-wide wraparound."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Remember Me checkbox to Create Account link. Their inferred meaningful positions are consecutive (6 to 9 in the provided sequence of actual focusable controls around the module: Remember Me, Cancel, Sign In, Create Account), and the screenshot shows distinct local subgroups inside the same module: form controls/actions above and account-creation callout below."
+    }, {
+      "pattern_id" : "P08",
+      "evidence" : "KFG shows a direct TAB edge from the primary form control Remember Me checkbox to the later Create Account link within the same sign-in module. The screenshot and navigation_order identify intermediate visible focusable local controls between them: Cancel link and Sign In button."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Help & Guest Services link to Site Map link. Both are nearby secondary support/utility links within the same footer link group."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "KFG verifies a direct TAB transition and navigation_order shows consecutive inferred meaningful positions 10 to 11. In the screenshot both endpoints are separate adjacent footer utility links within the footer link list, supporting a local subgroup-to-subgroup progression."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Site Map link to Terms of Use link. Both are nearby secondary utility/support links in the same footer link group."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "KFG verifies the TAB edge, and navigation_order shows consecutive positions 11 to 12 between adjacent footer links within the same footer cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Terms of Use link to Legal Notices link. Both are nearby secondary utility/legal links in the same footer group."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "KFG verifies the TAB edge and navigation_order shows consecutive positions 12 to 13 for adjacent footer links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Legal Notices link to Privacy Policy link. Both are nearby secondary legal/privacy links in the footer."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "KFG verifies the TAB edge and navigation_order shows consecutive positions 13 to 14 between adjacent footer links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Privacy Policy link to Do Not Sell My Info link. Both are nearby secondary privacy/utility links in the same footer group."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "KFG verifies the TAB edge and navigation_order shows consecutive positions 14 to 15 between adjacent footer links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Do Not Sell My Info link to Children's Online Privacy Policy link. Both are nearby secondary policy/privacy links in the same footer list."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "KFG verifies the TAB edge and navigation_order shows consecutive positions 15 to 16 between adjacent footer links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Children's Online Privacy Policy link to Your California Privacy Rights link. Both are nearby secondary policy/privacy links in the same footer group."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "KFG verifies the TAB edge and navigation_order shows consecutive positions 16 to 17 between adjacent footer links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Your California Privacy Rights link to Additional footer link, and navigation_order shows consecutive positions 17 to 18 for adjacent items in the footer link list."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is clearly a secondary footer privacy-rights link, but the evidence names the destination only as 'Additional footer link,' so its role as a genuinely secondary utility/support control is not established."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This is an explicit Browser-boundary candidate, and KFG v_special marks v_entry and v_0 as the Email Address or Username input, documenting modeled browser-to-page entry to that first focused control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed patterns include modeled browser entry to the email field, multiple backward or wraparound edges inside the sign-in module, direct field-to-field movement near a helper/recovery link, primary-control jumps over local controls within the sign-in area, and regular consecutive footer-link progressions. No clear adjacent cross-region continuation was established from the supplied evidence."
+}

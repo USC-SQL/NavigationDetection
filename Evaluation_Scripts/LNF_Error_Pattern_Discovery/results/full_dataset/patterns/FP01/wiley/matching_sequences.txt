@@ -1,0 +1,4 @@
+/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/footer[1]/div[1]/div[1]/div[3]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/footer[1]/div[1]/div[2]/p[1]/a[1]
+/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/p[2]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[2]/ul[1]/li[1]/a[1]
+/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[2]/ul[1]/li[6]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[3]/ul[1]/li[1]/a[1]
+/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[3]/ul[1]/li[7]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/footer[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]

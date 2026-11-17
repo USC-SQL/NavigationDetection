@@ -1,0 +1,545 @@
+{
+  "subject": "cgtn",
+  "evidence_description": {
+    "original_predictions": "Original Stage 2 detected LNF transitions.",
+    "ground_truth": "Reference LNF transitions.",
+    "navigation_order": "Stage 1 inferred meaningful order and implemented keyboard labels.",
+    "kfg": "Original keyboard focus graph JSON.",
+    "evaluated_transitions": "Original prediction-vs-ground-truth classification inventory. TN labels are provisional within the modeled candidate set.",
+    "screenshot_paths": "Local annotated screenshot paths to be attached as images during the API request."
+  },
+  "original_predictions": [
+    "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1]",
+    "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[6] -> /html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/span[1]/span[1]/button[1]"
+  ],
+  "ground_truth": [
+    "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[6] -> /html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/span[1]/span[1]/button[1]",
+    "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1]"
+  ],
+  "ground_truth_severity": {
+    "Strongly": [
+      "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[6] -> /html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/span[1]/span[1]/button[1]",
+      "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1]"
+    ],
+    "Slightly": [],
+    "Neutral": []
+  },
+  "navigation_order": {
+    "navigation_order": [
+      {
+        "position": 1,
+        "label": 3,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1]",
+        "descriptor": "carousel indicator 1"
+      },
+      {
+        "position": 2,
+        "label": 4,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[2]",
+        "descriptor": "carousel indicator 2"
+      },
+      {
+        "position": 3,
+        "label": 5,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[3]",
+        "descriptor": "carousel indicator 3"
+      },
+      {
+        "position": 4,
+        "label": 6,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[4]",
+        "descriptor": "carousel indicator 4"
+      },
+      {
+        "position": 5,
+        "label": 7,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[5]",
+        "descriptor": "carousel indicator 5"
+      },
+      {
+        "position": 6,
+        "label": 8,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[6]",
+        "descriptor": "carousel indicator 6"
+      },
+      {
+        "position": 7,
+        "label": 1,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[2]/input[1]",
+        "descriptor": "phone number input"
+      },
+      {
+        "position": 8,
+        "label": 2,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/input[1]",
+        "descriptor": "password input"
+      },
+      {
+        "position": 9,
+        "label": 9,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/span[1]/span[1]/button[1]",
+        "descriptor": "forgot password button/link"
+      },
+      {
+        "position": 10,
+        "label": 10,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/label[1]/span[1]/input[1]",
+        "descriptor": "terms agreement checkbox"
+      },
+      {
+        "position": 11,
+        "label": 11,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/form[1]/button[1]",
+        "descriptor": "Sign in button"
+      }
+    ]
+  },
+  "kfg": {
+    "UIGraphStates": [
+      {
+        "v_exit": [],
+        "nodes": [
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/label[1]/span[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[6]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "262,887,8,8",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/span[1]/span[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1615,445,157,42",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/form[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1368,585,410,60",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[4]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "206,887,8,8",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[5]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "234,887,8,8",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "150,887,8,8",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[3]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "178,887,8,8",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1368,445,410,40",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "122,887,8,8",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[2]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1411,375,366,40",
+            "I'": "null"
+          }
+        ],
+        "v_special": [
+          {
+            "v_0": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[2]/input[1]"
+          },
+          {
+            "v_entry": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[2]/input[1]"
+          },
+          {
+            "v_entry_successor": "null"
+          }
+        ],
+        "v_n": [],
+        "edges_inAndOutsideDialog": [],
+        "visibleCtrlDomInsideDialogSequence": [],
+        "visibleCtrlDomSequence": [
+          {
+            "0": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1]"
+          },
+          {
+            "1": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[2]"
+          },
+          {
+            "2": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[3]"
+          },
+          {
+            "3": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[4]"
+          },
+          {
+            "4": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[5]"
+          },
+          {
+            "5": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[6]"
+          },
+          {
+            "6": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[2]/input[1]"
+          },
+          {
+            "7": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/input[1]"
+          },
+          {
+            "8": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/span[1]/span[1]/button[1]"
+          },
+          {
+            "9": "/html[1]/body[1]/div[1]/div[1]/form[1]/button[1]"
+          }
+        ],
+        "edges": [
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/form[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/form[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[5]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[4]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[6]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[5]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/label[1]/span[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/span[1]/span[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/form[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/label[1]/span[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[2]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[6]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[5]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[5]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[4]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[4]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[3]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/span[1]/span[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[6]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[2]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[3]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/label[1]/span[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/span[1]/span[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/form[1]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/form[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/label[1]/span[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/span[1]/span[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[6]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[3]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[4]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[3]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[2]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1]"
+          }
+        ],
+        "stateTransition": [],
+        "state_properties": [
+          {
+            "type": "KFFG"
+          },
+          {
+            "phase": "INITIAL_PHASE"
+          },
+          {
+            "thisStateID": 0
+          },
+          {
+            "parentStateID": -1
+          }
+        ],
+        "ctrlClusters": [],
+        "dialogStateProperties": [
+          {
+            "isADialogState": "0"
+          },
+          {
+            "triggerNodeLeadingToState": "null"
+          },
+          {
+            "postModalTriggerRoot": "null",
+            "preModalTriggerRoot": "null"
+          }
+        ]
+      }
+    ]
+  },
+  "evaluated_transitions": [
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[2]",
+      "source_label": "3",
+      "destination_label": "4",
+      "source_position": "1",
+      "destination_position": "2",
+      "source_descriptor": "carousel indicator 1",
+      "destination_descriptor": "carousel indicator 2",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[2] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[3]",
+      "source_label": "4",
+      "destination_label": "5",
+      "source_position": "2",
+      "destination_position": "3",
+      "source_descriptor": "carousel indicator 2",
+      "destination_descriptor": "carousel indicator 3",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[3] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[4]",
+      "source_label": "5",
+      "destination_label": "6",
+      "source_position": "3",
+      "destination_position": "4",
+      "source_descriptor": "carousel indicator 3",
+      "destination_descriptor": "carousel indicator 4",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[4] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[5]",
+      "source_label": "6",
+      "destination_label": "7",
+      "source_position": "4",
+      "destination_position": "5",
+      "source_descriptor": "carousel indicator 4",
+      "destination_descriptor": "carousel indicator 5",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[5] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[6]",
+      "source_label": "7",
+      "destination_label": "8",
+      "source_position": "5",
+      "destination_position": "6",
+      "source_descriptor": "carousel indicator 5",
+      "destination_descriptor": "carousel indicator 6",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TP",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[6] -> /html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/span[1]/span[1]/button[1]",
+      "source_label": "8",
+      "destination_label": "9",
+      "source_position": "6",
+      "destination_position": "9",
+      "source_descriptor": "carousel indicator 6",
+      "destination_descriptor": "forgot password button/link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[2]/input[1] -> /html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/input[1]",
+      "source_label": "1",
+      "destination_label": "2",
+      "source_position": "7",
+      "destination_position": "8",
+      "source_descriptor": "phone number input",
+      "destination_descriptor": "password input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TP",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/span[1]",
+      "source_label": "2",
+      "destination_label": "3",
+      "source_position": "8",
+      "destination_position": "1",
+      "source_descriptor": "password input",
+      "destination_descriptor": "carousel indicator 1",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[1]/span[1]/span[1]/button[1] -> /html[1]/body[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/label[1]/span[1]/input[1]",
+      "source_label": "9",
+      "destination_label": "10",
+      "source_position": "9",
+      "destination_position": "10",
+      "source_descriptor": "forgot password button/link",
+      "destination_descriptor": "terms agreement checkbox",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/form[1]/div[5]/div[1]/div[1]/label[1]/span[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/form[1]/button[1]",
+      "source_label": "10",
+      "destination_label": "11",
+      "source_position": "10",
+      "destination_position": "11",
+      "source_descriptor": "terms agreement checkbox",
+      "destination_descriptor": "Sign in button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "Browser -> /html[1]/body[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[2]/input[1]",
+      "source_label": "",
+      "destination_label": "1",
+      "source_position": "",
+      "destination_position": "7",
+      "source_descriptor": "Virtual Browser boundary",
+      "destination_descriptor": "phone number input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "True"
+    }
+  ],
+  "screenshot_paths": [
+    "/Users/lance/Downloads/Empirical_Study_Results/cgtn/cgtn1.jpg"
+  ]
+}

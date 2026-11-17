@@ -1,0 +1,38 @@
+{
+  "subject" : "forter",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[6] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+    "classification" : "FP",
+    "pattern_hypothesis" : "Section-to-footer continuation misread as disorder",
+    "observable_characteristics" : "The implemented TAB order proceeds consecutively from the last brand card in the main content (label 15, Nordstrom brand card) to the first focusable item in the footer (label 16, Footer Forter logo link). In the navigation_order, implemented labels and inferred meaningful positions match exactly at 15 and 16. The screenshots show the brand-card row ending above a conventional footer area, with the footer logo appearing as the next visible focus target below the cards.",
+    "matching_criteria" : "A transition should match this pattern when it moves from the last focusable element of one visible page region to the first focusable element of the next region, the two elements are adjacent in the observed keyboard sequence, no intermediate focusable controls are documented between them in navigation_order/KFG, and the destination begins a structurally distinct but expected continuation such as a footer.",
+    "possible_cause" : "Observed evidence shows a normal consecutive transition, not a ground-truth LNF. A possible detector error is that it treated crossing from main content into the footer as a semantic reordering signal, even though the supplied evidence shows direct adjacency and no skipped focusable elements. This cause is hypothetical; the detector's internal scoring is not provided.",
+    "supporting_evidence" : "navigation_order lists /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[6] as position 15/label 15 and /html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/a[1] as position 16/label 16. KFG contains a direct TAB edge from the source to the destination. evaluated_transitions marks this transition observed_in_stage1=True, browser_boundary=False, and classification=FP. Screenshot 2 shows the card strip followed by the footer region containing the logo.",
+    "confidence" : "high",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+    "classification" : "FP",
+    "pattern_hypothesis" : "Intra-footer adjacency misread as disorder",
+    "observable_characteristics" : "This transition stays within the footer, moving from the footer logo link (label 16) to the Privacy & Security link (label 17). The navigation_order shows consecutive meaningful positions and implemented labels, and the KFG shows a direct TAB edge. The screenshot places these items in the same footer band, with the logo on the left and footer links/options to the right, which is consistent with a left-to-right footer navigation progression.",
+    "matching_criteria" : "A transition should match this pattern when both source and destination are in the same footer or utility region, they are consecutive in the observed focus order, their implemented labels equal their inferred positions, and the movement follows the visible organization of footer controls without evidence of omitted intermediate items.",
+    "possible_cause" : "Observed evidence indicates a straightforward consecutive footer transition. A possible detector error is that it overinterpreted footer layout differences or multi-column footer structure as focus-order disorder, despite the lack of any documented skipped control or position mismatch. This explanation is a hypothesis because no detector rationale is supplied.",
+    "supporting_evidence" : "navigation_order lists the footer logo link as position 16/label 16 and the Privacy & Security link as position 17/label 17. KFG includes a direct TAB edge from /html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/a[1] to /html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]. evaluated_transitions marks observed_in_stage1=True and classification=FP. Screenshot 2 shows both controls in the footer, visually supporting a normal footer sequence.",
+    "confidence" : "high",
+    "requires_review" : false
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[5] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[6]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Adjacent transition within the horizontal brand-card sequence; useful comparison for the FP that occurs at the end of the same sequence."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/div[1]/select[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Another consecutive footer transition, showing that adjacency among footer controls can be non-problematic."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Normal transition across nearby page regions from form completion to the next content section, useful comparison for section-boundary transitions wrongly flagged as LNFs."
+  } ],
+  "subject_summary" : "This subject shows only false positives and no false negatives. Both FPs are directly observed, consecutive TAB transitions with matching implemented labels and inferred meaningful positions. The recurring characteristic is that the detector appears to have overflagged ordinary region changes near the end of main content and within the footer, even though the KFG and navigation_order document a clean linear sequence and the screenshots show plausible visual continuation."
+}

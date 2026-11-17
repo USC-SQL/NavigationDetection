@@ -1,0 +1,628 @@
+{
+  "subject": "dickssportinggoods",
+  "navigation_order": {
+    "navigation_order": [
+      {
+        "position": 1,
+        "label": 4,
+        "xpath": "/html[1]/body[1]/header[1]/a[1]",
+        "descriptor": "Dick's Sporting Goods logo link"
+      },
+      {
+        "position": 2,
+        "label": 1,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/label[1]/input[1]",
+        "descriptor": "Email input"
+      },
+      {
+        "position": 3,
+        "label": 2,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/input[1]",
+        "descriptor": "Password input"
+      },
+      {
+        "position": 4,
+        "label": 5,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/i[2]",
+        "descriptor": "Show/hide password icon"
+      },
+      {
+        "position": 5,
+        "label": 6,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1]",
+        "descriptor": "Forgot Password button"
+      },
+      {
+        "position": 6,
+        "label": 3,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[1]",
+        "descriptor": "Sign In button"
+      },
+      {
+        "position": 7,
+        "label": 7,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[2]",
+        "descriptor": "Cancel button"
+      },
+      {
+        "position": 8,
+        "label": 8,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]",
+        "descriptor": "Create Account button"
+      },
+      {
+        "position": 9,
+        "label": 9,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/p[1]/a[1]",
+        "descriptor": "customer assistance phone number link"
+      },
+      {
+        "position": 10,
+        "label": 10,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Terms of Use link"
+      },
+      {
+        "position": 11,
+        "label": 11,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Privacy Policy link"
+      },
+      {
+        "position": 12,
+        "label": 12,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "Accessibility Policy link"
+      },
+      {
+        "position": 13,
+        "label": 13,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[4]/a[1]",
+        "descriptor": "Do Not Sell My Personal Information / CA Residents Only link"
+      },
+      {
+        "position": 14,
+        "label": 14,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[5]/a[1]",
+        "descriptor": "California Disclosures link"
+      }
+    ]
+  },
+  "kfg": {
+    "UIGraphStates": [
+      {
+        "v_exit": [],
+        "nodes": [
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1492,886,148,17",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,13,95,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1105,874,282,41",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "392,391,498,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "392,331,498,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/i[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "830,238,24,24",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1401,827,90,17",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "392,226,498,48",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "559,886,94,17",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "242,886,88,17",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/label[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "392,165,498,48",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "736,280,154,33",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "962,481,498,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "861,886,129,17",
+            "I'": "null"
+          }
+        ],
+        "v_special": [
+          {
+            "v_0": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/label[1]/input[1]"
+          },
+          {
+            "v_entry": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/label[1]/input[1]"
+          },
+          {
+            "v_entry_successor": "null"
+          }
+        ],
+        "v_n": [],
+        "edges_inAndOutsideDialog": [],
+        "visibleCtrlDomInsideDialogSequence": [],
+        "visibleCtrlDomSequence": [
+          {
+            "0": "/html[1]/body[1]/header[1]/a[1]"
+          },
+          {
+            "1": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[1]"
+          },
+          {
+            "2": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/label[1]/input[1]"
+          },
+          {
+            "3": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/input[1]"
+          },
+          {
+            "4": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/i[2]"
+          },
+          {
+            "5": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1]"
+          },
+          {
+            "6": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[1]"
+          },
+          {
+            "7": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[2]"
+          },
+          {
+            "8": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]"
+          },
+          {
+            "9": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/p[1]/a[1]"
+          },
+          {
+            "10": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "11": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "12": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "13": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "14": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[5]/a[1]"
+          }
+        ],
+        "edges": [
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/i[2]",
+            "v_s": "/html[1]/body[1]/header[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/i[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/i[2]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[2]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/label[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[2]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[2]"
+          }
+        ],
+        "stateTransition": [],
+        "state_properties": [
+          {
+            "type": "KFFG"
+          },
+          {
+            "phase": "INITIAL_PHASE"
+          },
+          {
+            "thisStateID": 0
+          },
+          {
+            "parentStateID": -1
+          }
+        ],
+        "ctrlClusters": [],
+        "dialogStateProperties": [
+          {
+            "isADialogState": "0"
+          },
+          {
+            "triggerNodeLeadingToState": "null"
+          },
+          {
+            "postModalTriggerRoot": "null",
+            "preModalTriggerRoot": "null"
+          }
+        ]
+      }
+    ]
+  },
+  "screenshot_paths": [
+    "/Users/lance/Downloads/Empirical_Study_Results/dickssportinggoods/dickssportinggoods.jpg"
+  ],
+  "candidate_transitions": [
+    {
+      "transition_id": "T0001",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/label[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/input[1]",
+      "source_label": "1",
+      "destination_label": "2",
+      "source_position": "2",
+      "destination_position": "3",
+      "source_descriptor": "Email input",
+      "destination_descriptor": "Password input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0002",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/i[2] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1]",
+      "source_label": "5",
+      "destination_label": "6",
+      "source_position": "4",
+      "destination_position": "5",
+      "source_descriptor": "Show/hide password icon",
+      "destination_descriptor": "Forgot Password button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0003",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[1]",
+      "source_label": "2",
+      "destination_label": "3",
+      "source_position": "3",
+      "destination_position": "6",
+      "source_descriptor": "Password input",
+      "destination_descriptor": "Sign In button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0004",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[2]",
+      "source_label": "6",
+      "destination_label": "7",
+      "source_position": "5",
+      "destination_position": "7",
+      "source_descriptor": "Forgot Password button",
+      "destination_descriptor": "Cancel button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0005",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[1] -> /html[1]/body[1]/header[1]/a[1]",
+      "source_label": "3",
+      "destination_label": "4",
+      "source_position": "6",
+      "destination_position": "1",
+      "source_descriptor": "Sign In button",
+      "destination_descriptor": "Dick's Sporting Goods logo link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0006",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[2] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]",
+      "source_label": "7",
+      "destination_label": "8",
+      "source_position": "7",
+      "destination_position": "8",
+      "source_descriptor": "Cancel button",
+      "destination_descriptor": "Create Account button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0007",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1] -> /html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/p[1]/a[1]",
+      "source_label": "8",
+      "destination_label": "9",
+      "source_position": "8",
+      "destination_position": "9",
+      "source_descriptor": "Create Account button",
+      "destination_descriptor": "customer assistance phone number link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0008",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/p[1]/a[1] -> /html[1]/body[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "9",
+      "destination_label": "10",
+      "source_position": "9",
+      "destination_position": "10",
+      "source_descriptor": "customer assistance phone number link",
+      "destination_descriptor": "Terms of Use link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0009",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+      "source_label": "10",
+      "destination_label": "11",
+      "source_position": "10",
+      "destination_position": "11",
+      "source_descriptor": "Terms of Use link",
+      "destination_descriptor": "Privacy Policy link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0010",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+      "source_label": "11",
+      "destination_label": "12",
+      "source_position": "11",
+      "destination_position": "12",
+      "source_descriptor": "Privacy Policy link",
+      "destination_descriptor": "Accessibility Policy link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0011",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[2]/div[1]/ul[1]/li[4]/a[1]",
+      "source_label": "12",
+      "destination_label": "13",
+      "source_position": "12",
+      "destination_position": "13",
+      "source_descriptor": "Accessibility Policy link",
+      "destination_descriptor": "Do Not Sell My Personal Information / CA Residents Only link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0012",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[2]/div[1]/ul[1]/li[5]/a[1]",
+      "source_label": "13",
+      "destination_label": "14",
+      "source_position": "13",
+      "destination_position": "14",
+      "source_descriptor": "Do Not Sell My Personal Information / CA Residents Only link",
+      "destination_descriptor": "California Disclosures link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0013",
+      "transition": "/html[1]/body[1]/header[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/i[2]",
+      "source_label": "4",
+      "destination_label": "5",
+      "source_position": "1",
+      "destination_position": "4",
+      "source_descriptor": "Dick's Sporting Goods logo link",
+      "destination_descriptor": "Show/hide password icon",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0014",
+      "transition": "Browser -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/label[1]/input[1]",
+      "source_label": "",
+      "destination_label": "1",
+      "source_position": "",
+      "destination_position": "2",
+      "source_descriptor": "Virtual Browser boundary",
+      "destination_descriptor": "Email input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "True"
+    }
+  ]
+}

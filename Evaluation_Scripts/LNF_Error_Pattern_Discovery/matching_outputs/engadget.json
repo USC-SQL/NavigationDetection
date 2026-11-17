@@ -1,0 +1,416 @@
+{
+  "subject" : "engadget",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG has a direct TAB edge from Search button (position 16) to tips@engadget.com link (position 17). Screenshot shows Search in the top navigation/header area and the email link in the main content section, establishing a header-to-main region change with adjacent positions."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "Direct TAB edge is present in the KFG from Search button to tips@engadget.com link, and the endpoints are in distinct functional subgroups: top navigation search control versus main-content contact/tips section. Destination position 17 is exactly one greater than source position 16."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from header Facebook icon (position 13) to header Twitter icon (position 14). Both are nearby social-media utility links within the same local header social-links group shown at the right side of the top nav."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from header Twitter icon (position 14) to header YouTube icon (position 15). Both are secondary social-media links in the same local header social icon cluster visible in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P05",
+      "reason" : "The transition is between the header social-links cluster and the adjacent search control within the same overall top navigation bar. Evidence does not clearly establish whether these count as clearly distinct functional subgroups rather than one nav component."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG contains a direct TAB edge from Podcasts (position 12) to Facebook icon (position 13). These are adjacent in meaningful order and visibly belong to distinct subgroups inside the top navigation bar: the topical section links list and the separate social-media icon list."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from tips@engadget.com link (position 17) to support@engadget.com link (position 18). Both are secondary contact/support links grouped together in the main content contact area shown in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from support@engadget.com link (position 18) to Contact tips@engadget.com link (position 19). Both are secondary contact/support links within the same localized main-content contact cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG has a direct TAB edge from Contact tips@engadget.com link (position 19) to Engadget Masthead (position 20). Screenshot and DOM indicate a main-content contact section followed by the footer About column, so this is a main-to-footer adjacent cross-region continuation."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "Direct TAB edge is documented in the KFG from the main content contact link to the first footer About-column link. Positions are adjacent (19 to 20), and the controls belong to distinct functional subgroups: main content contact cluster versus footer about-links column."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Engadget Masthead (position 20) to About our Ads (position 21). In the footer About column, both links are secondary informational/utility links within the same local group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG contains a direct TAB edge from About our Ads (position 21) to Advertise (position 22). Both are footer utility/informational links located in the same About column."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Advertise (position 22) to FAQ (position 23). Both are secondary footer utility links within the same About group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0021",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from FAQ (position 23) to RSS Feed (position 24). Both are secondary utility/information links grouped together in the footer About column."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0022",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG documents a direct TAB edge from RSS Feed (position 24) to Reviews footer link (position 25). These adjacent positions lie in clearly distinct footer columns visible in the screenshot: About links versus Sections links."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "Both endpoints are inside the overall footer region. Evidence supports a shift between footer columns/subgroups, but not a clearly distinct page-region boundary such as main-to-footer or header-to-main."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0023",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0024",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0025",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0026",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0027",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0028",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0029",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0030",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0031",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Deals footer link (position 33) to Comment Guidelines (position 34). The screenshot shows these in distinct footer columns/subgroups: Sections versus Contribute, with adjacent positions."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "This appears to move between adjacent footer columns rather than between clearly distinct page regions. Available evidence supports subgroup change more strongly than a page-region boundary."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0032",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG contains a direct TAB edge from Comment Guidelines (position 34) to Support footer link (position 35). Both are secondary support/contribution-related links within the same Contribute footer group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0033",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG documents a direct TAB edge from Support footer link (position 35) to 繁體中文 (position 36). Screenshot shows these in adjacent but distinct footer columns/subgroups: Contribute and International, and the positions are consecutive."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "Both controls are within the footer, and the evidence mainly supports a cross-column subgroup transition rather than a distinct page-region change."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0034",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from 繁體中文 (position 36) to 日本版 (position 37). Both are secondary international/language links grouped within the same International footer section."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0035",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG has a direct TAB edge from 日本版 (position 37) to check out the latest (position 38). The screenshot shows adjacent footer subgroups: International links column to the newsletter promo/link area, and the meaningful positions are consecutive."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "The transition occurs within the footer from one footer block to another. Evidence supports distinct footer subgroups, but not a clearly distinct page-region boundary."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0036",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Subscribe button (position 40) to Footer Facebook (position 41). Screenshot places these in adjacent footer subgroups within the lower footer band: newsletter subscription form and follow-us social icons. Positions are consecutive."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "Both endpoints are within the same footer band rather than clearly separate page regions; evidence supports subgroup adjacency more than page-region adjacency."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0037",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0038",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG contains a direct TAB edge from Footer Facebook (position 41) to Footer Twitter (position 42). Both are nearby secondary social-media links within the same Follow Us group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0039",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Footer Twitter (position 42) to Footer YouTube (position 43). Both are secondary social-media links in the same footer Follow Us cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0040",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG contains a direct TAB edge from Footer YouTube (position 43) to Footer Instagram (position 44). Both are nearby secondary social links within the same Follow Us footer group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0041",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Footer Instagram (position 44) to Footer LinkedIn (position 45). Both endpoints are secondary social-media links in the same local footer social-icons group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0042",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG documents a direct TAB edge from Footer LinkedIn (position 45) to About Us (position 46). Screenshot shows adjacent footer subgroups: Follow Us icons and the lower legal/about links row. Positions are consecutive."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "Both controls are in the footer. The evidence supports movement between local footer subgroups, not a distinct page-region change."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0043",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG has a direct TAB edge from check out the latest (position 38) to Email address input (position 39). The screenshot shows a nearby promo/newsletter link followed by the newsletter form input, making them distinct but adjacent subgroups within the same footer newsletter area."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "Evidence does not support a page-region boundary; both endpoints appear inside the same footer newsletter module."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0044",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from About Us (position 46) to Reprints and Permissions (position 47). Both are secondary informational/footer links within the same lower footer link cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0045",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG contains a direct TAB edge from Reprints and Permissions (position 47) to Suggestions (position 48). Both are nearby footer utility/information links within the same local bottom-links group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0046",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Suggestions (position 48) to Privacy Policy (Updated) (position 49). Both are secondary informational/legal links in the same bottom footer link cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0047",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG documents a direct TAB edge from Privacy Policy (Updated) (position 49) to Terms of Service (Updated) (position 50). Both are nearby secondary legal links within the same footer link group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0048",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Terms of Service (Updated) (position 50) to Do Not Sell My Personal Information (position 51). Both are footer legal/privacy utility links within the same local group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0049",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG has a direct TAB edge from Do Not Sell My Personal Information (position 51) to Trademarks (position 52). Both are secondary footer legal/informational links in the same bottom link row."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0050",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG contains a direct TAB edge from Trademarks (position 52) to Advertise bottom link (position 53). Both are nearby secondary footer informational/utility links in the same lower link cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0051",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Advertise bottom link (position 53) to About Our Ads (position 54). Both are secondary informational/utility links within the same bottom footer links group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0052",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Login is a secondary utility control, but the Engadget logo is not clearly a utility/help/support/recovery control under the pattern definition."
+    }, {
+      "pattern_id" : "P05",
+      "reason" : "The logo and login link are both in the header bar, but the evidence does not clearly establish them as separate visual or functional subgroups rather than one header component."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0053",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Login link (position 2) to Products (position 3). Screenshot and DOM indicate adjacent top-bar subgroups: header account/login area followed by the primary navigation menu, with consecutive positions."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "The screenshot shows both endpoints in the overall top page header/navigation area; the evidence is not strong enough to treat this as a clearly distinct page-region boundary rather than adjacent header subgroups."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0054",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "The candidate is explicitly a Browser-boundary transition to the Engadget logo link, and the KFG special nodes identify v_entry and v_0 as the same logo XPath, indicating the documented first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed matches are dominated by local auxiliary progressions among social, support, language, and footer utility links (P03), plus several adjacent cross-subgroup moves between major navigation/footer columns or footer modules (P05). Clear page-region continuations (P01) are supported for Search-to-main content and main-to-footer transitions. The only browser-entry pattern match is the modeled Browser-to-logo entry (P04). No evidence supports cyclic/wraparound (P02), field/helper/workflow skip patterns (P06-P08), or backward local focus transitions (P09) among the supplied candidates."
+}

@@ -1,0 +1,7 @@
+/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[2]/a[1]
+/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[3]/a[1]
+/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[4]/a[1]
+/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[2]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[3]/a[1]
+/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[1] -> /html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[2]
+/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[1] -> /html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[2]
+/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[1] -> /html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[2]

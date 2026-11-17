@@ -1,0 +1,6 @@
+{
+  "subject" : "outbrainforgot",
+  "error_analyses" : [ ],
+  "correct_transition_examples" : [ ],
+  "subject_summary" : "No FP or FN transitions are present in the supplied evaluated_transitions. original_predictions and ground_truth are both empty, and all evaluated non-browser transitions align with the linear implemented order shown in navigation_order and the KFG visibleCtrlDomSequence. The page evidence also shows additional KFG nodes under /html[1]/body[1]/div[5]/div[2] that are not represented in navigation_order or evaluated_transitions, but because no FP or FN records exist, there is no detector error to analyze for this subject."
+}

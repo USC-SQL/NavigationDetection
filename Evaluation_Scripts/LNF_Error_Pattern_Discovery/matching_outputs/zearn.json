@@ -1,0 +1,98 @@
+{
+  "subject" : "zearn",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG contains a direct TAB edge from /div[2]/div[1]/a[1] (I forgot my password link, position 5) to /div[2]/div[2]/form[1]/button[1] (Sign In with ClassLink button, position 6). The screenshot and DOM show these controls in adjacent right-side regions: the main username/password sign-in area and the separate social/SSO sign-in button group. Destination position is exactly one greater than source."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB edge in the KFG from the password-recovery link (position 5) to the first SSO sign-in button (position 6). The screenshot shows these as consecutive but functionally distinct subgroups within the right panel: the main sign-in form/recovery area above and the alternate sign-in button group below."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "The KFG verifies a direct TAB edge from the Email or Username input (position 1) to the Password input (position 2). The screenshot shows a separate focusable helper/recovery control associated with the password area: the adjacent show-password button at position 3, and also a nearby recovery link 'I forgot my password' at position 5 below the same password/sign-in group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG contains a direct TAB edge from /div[2]/div[2]/div[1]/a[1] (Sign Up for Free link, position 9) to /section[1]/div[1]/a[1] (Get to know us link, position 10). The screenshot shows these in distinct adjacent page regions: the right login panel and the separate left promotional yellow panel. Destination position is exactly one greater than source."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition in the KFG from the right-side account-creation link (position 9) to the left-side promotional link (position 10). The screenshot shows them as consecutive but belonging to clearly different visual/functional subgroups: account controls in the login panel versus a promotional/info area in the separate yellow panel."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG verifies a direct TAB edge from Sign In with ClassLink (position 6) to Sign In with Clever (position 7). In the screenshot these are consecutive buttons in the alternate sign-in area, and each button is its own distinct sign-in option subgroup/form, with destination position exactly one greater than source."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG verifies a direct TAB edge from Sign In with Clever (position 7) to Sign In with Google (position 8). The screenshot shows these as consecutive alternate sign-in buttons, implemented as separate forms/buttons within the same SSO area; destination position is exactly one greater than source."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG contains a direct TAB edge from Sign In with Google (position 8) to Sign Up for Free link (position 9). The screenshot shows these as consecutive but functionally distinct subgroups within the lower right panel: the alternate sign-in button list followed by the separate account-creation link area. Destination position is exactly one greater than source."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The KFG verifies a direct TAB edge from 'Get to know us' (position 10) to a footer link (position 11), and both are links within the left panel/footer area. However, the evidence does not establish that both endpoints are genuinely secondary utility/support controls; 'Get to know us' appears promotional/informational rather than clearly auxiliary support."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The KFG verifies a direct TAB edge between footer links at positions 11 and 12, but the screenshot labels them only as generic footer links. Their exact functions are not visible, so it cannot be determined from supplied evidence whether both are secondary utility/support controls as required."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a Browser -> page transition. The KFG v_special marks /div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1] as both v_0 and v_entry, and the navigation order lists it as the first focused webpage control (position 1, Email or Username input)."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed direct TAB navigation largely follows consecutive controls. Clear cross-region/consecutive subgroup transitions occur from password recovery to SSO options and from the right login panel to the left promotional panel. A browser-entry transition to the email field is explicitly modeled. One field-to-field transition occurs near helper/recovery controls. Footer-link transitions do not have enough evidence to confirm auxiliary/support roles."
+}

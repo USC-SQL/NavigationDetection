@@ -1,0 +1,21 @@
+Pattern: FN03
+Name: Field-to-field progression skips embedded helper link
+Error type: FN
+Subject: dribbble
+
+Summary: A recurring miss occurs when focus moves directly between primary form fields while a visible helper or recovery link associated with the field group occupies an intermediate meaningful position.
+
+Matching criteria: The source and destination are major form fields, usually adjacent-looking inputs, but a separately focusable inline helper/recovery link in the same form region is documented between them or tied to the field group; the case is classified FN.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E021
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[1]/input[1] -> /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[2]/input[1]
+Source: Username or Email input
+Destination: Password input
+Positions: 4 -> 5
+Supporting evidence: evaluated_transitions marks this as FN; navigation_order lists Username input position 4 and Password input position 5, but KFG visibleCtrlDomSequence orders '/fieldset[1]/input[1]' then '/fieldset[2]/label[1]/a[1]' then '/fieldset[2]/input[1]'; KFG contains a direct TAB edge from Username input to Password input; screenshot shows 'Forgot?' near the password label rather than as an obviously separate step.
+Confidence: medium
+Requires review: True

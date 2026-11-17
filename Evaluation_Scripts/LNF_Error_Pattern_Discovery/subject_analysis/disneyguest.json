@@ -1,0 +1,52 @@
+{
+  "subject" : "disneyguest",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[7]/div[1]/div[1]/button[1] -> /html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Adjacent footer subgroup boundary missed",
+    "observable_characteristics" : "The implemented focus order moves from the footer language selector at label/position 15 to the first item of a separate footer navigation group at label/position 16. In the screenshots, the language selector appears visually separated on the right while the footer logo/navigation group appears lower and to the left. Structurally, the source is in /div[7]/div[1]/div[1]/button[1] and the destination is in a different container /div[7]/div[2]/nav[1]/ul[1]/li[1]/a[1]. Despite the visual separation, this transition is the immediate next TAB edge in the KFG and Stage 1 order.",
+    "matching_criteria" : "A transition where TAB moves between consecutive focusable elements that belong to different sibling footer subcontainers, especially when one control is visually isolated from the rest of the footer content, but the implemented sequence still follows a contiguous DOM/tab order.",
+    "possible_cause" : "Observed evidence shows a cross-container footer transition that ground truth labels as an LNF. A possible reason the detector missed it is that the detector may have treated consecutive label/position progression (15 to 16) as normal and insufficiently weighted visual separation or footer subgroup changes. This is a hypothesis, not directly proven by the evidence.",
+    "supporting_evidence" : "navigation_order shows source position 15 'Language selector English (US)' followed immediately by destination position 16 'Footer nav Disney logo/home'. kfg contains the TAB edge from /html[1]/body[1]/div[7]/div[1]/div[1]/button[1] to /html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[1]/a[1]. Screenshot 2 places marker 15 on the right and markers 16-19 around the left footer navigation cluster.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[8]/a[1] -> /html[1]/body[1]/div[7]/div[1]/div[1]/button[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Main-to-footer isolated control jump missed",
+    "observable_characteristics" : "The transition goes from the last main content category tile 'Other Questions' at label/position 14 to the footer language selector at label/position 15. The screenshots show the source in the final category card within the main grid and the destination as an isolated language selector in the footer at the lower right, with substantial vertical and horizontal separation. This is the immediate implemented TAB successor according to both Stage 1 and the KFG.",
+    "matching_criteria" : "A transition where focus leaves the last interactive item of a main content collection and lands on a visually isolated footer control rather than on the nearest-looking footer link cluster, while remaining consecutive in implemented tab order.",
+    "possible_cause" : "Observed evidence shows a large visual jump into a distinct footer control. A possible reason the detector missed it is reliance on sequential labels/positions and DOM adjacency, causing it to under-detect jumps that are visually distant but still consecutive in the focus model. This remains a hypothesis.",
+    "supporting_evidence" : "navigation_order lists label/position 14 '/main.../div[8]/a[1]' followed by label/position 15 '/div[7]/div[1]/div[1]/button[1]'. kfg includes a TAB edge from /html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[8]/a[1] to /html[1]/body[1]/div[7]/div[1]/div[1]/button[1]. Screenshot 1 shows 14 at the final category card; screenshot 2 shows 15 separated to the right of the footer content.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "Browser -> /html[1]/body[1]/div[2]/nav[1]/ul[1]/li[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Browser-entry boundary missed",
+    "observable_characteristics" : "Ground truth marks the virtual Browser boundary entering the page at the first top navigation link 'Top nav Disney logo/home'. The KFG special nodes identify /html[1]/body[1]/div[2]/nav[1]/ul[1]/li[1]/a[1] as both v_0 and v_entry. The first visible focused element in the screenshots is the top navigation logo/home control labeled 1. Because the source is a virtual browser boundary rather than an ordinary page element, page-internal visual comparison is limited.",
+    "matching_criteria" : "A transition involving the Browser boundary as source or destination, where the page's first reachable focus target is evaluated as an LNF in the reference data rather than as an ordinary DOM-to-DOM navigation step.",
+    "possible_cause" : "Observed evidence confirms a browser-boundary transition labeled as ground-truth LNF. A possible reason the detector missed it is that the detector may exclude, down-rank, or not model virtual browser-entry transitions as candidate LNFs. Since Browser is not an ordinary DOM node, this cause is plausible but unverified.",
+    "supporting_evidence" : "evaluated_transitions marks this record as FN with browser_boundary 'True' and observed_in_stage1 'True'. ground_truth includes 'Browser -> /html[1]/body[1]/div[2]/nav[1]/ul[1]/li[1]/a[1]'. kfg v_special lists v_entry and v_0 as /html[1]/body[1]/div[2]/nav[1]/ul[1]/li[1]/a[1]. original_predictions is empty, so no browser-boundary transition was reported.",
+    "confidence" : "medium",
+    "requires_review" : true
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[2]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison for normal within-group footer navigation after the disputed language-selector boundary."
+  }, {
+    "transition" : "/html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[7]/nav[1]/ul[1]/li[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows another cross-subgroup footer transition that was not labeled as an LNF, helping distinguish the specific disputed boundary at 15 -> 16."
+  }, {
+    "transition" : "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[7]/a[1] -> /html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[8]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Represents standard sequential movement within the main category grid before the disputed 14 -> 15 jump."
+  }, {
+    "transition" : "/html[1]/body[1]/div[5]/a[1] -> /html[1]/body[1]/main[1]/header[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows a non-LNF boundary from skip link into main content, useful as contrast with the browser-entry FN and with other section boundaries."
+  } ],
+  "subject_summary" : "This subject has no FPs and three FNs. Two FNs are ordinary DOM-to-DOM transitions that are consecutive in both Stage 1 order and the KFG, suggesting the detector likely under-reported visually or functionally significant section-boundary jumps when label/position progression looked regular. The third FN involves the virtual Browser boundary, where evidence supports the reference label but not the detector's internal rationale; browser-boundary handling remains uncertain and should be reviewed separately."
+}

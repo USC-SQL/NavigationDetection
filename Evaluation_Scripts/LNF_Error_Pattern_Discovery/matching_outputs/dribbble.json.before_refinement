@@ -1,0 +1,81 @@
+{
+  "subject" : "dribbble",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG has a direct TAB edge from /section[1]/div[1]/a[1] (Webflow logo link) to /section[1]/div[1]/a[2] (Get started — it's free link). Both are nearby links in the same left promotional region, and navigation_order positions 1 and 2 are consecutive."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from /section[1]/div[1]/a[2] (Get started — it's free link) to /section[2]/main[1]/div[1]/div[1]/form[1]/button[1] (Sign in with Google button). These are in distinct visible regions in the screenshot (left promo panel to right sign-in panel), and navigation_order positions 2 and 3 are adjacent with no documented intermediate focused target."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The direct TAB edge goes from the left marketing subgroup (/section[1]) to the right sign-in subgroup (/section[2]/main...). Their inferred meaningful positions are adjacent in navigation_order (2 to 3), supporting a consecutive cross-subgroup transition."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "KFG contains a direct TAB edge from the Sign in with Google button to the Forgot password link. Within the right sign-in module, visibleCtrlDomSequence places the Username or Email input and Password/Forgot area between the source and destination, and navigation_order jumps from position 3 to 6, indicating visible intermediate controls were bypassed."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from the Username or Email input to the Password input. These are distinct form subgroups/fields within the sign-in form, and navigation_order positions 4 and 5 are adjacent."
+    }, {
+      "pattern_id" : "P06",
+      "evidence" : "This is a direct TAB transition between primary form fields: Username or Email input -> Password input. A separate helper/recovery link, the Forgot password link, is visually associated with the destination password field group in the screenshot and represented in the same password fieldset in the XPath."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from the Password input to the Sign In button. These are distinct but nearby form subgroups within the same sign-in workflow, and navigation_order positions 5 and 7 are nearby."
+    }, {
+      "pattern_id" : "P08",
+      "evidence" : "The direct TAB edge goes from a primary control (Password input) to a later control (Sign In button) in the same sign-in module, while a visible local control lies between them: the Forgot password link appears between password and button in both the screenshot and navigation_order (position 6)."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P07",
+      "evidence" : "KFG includes a direct TAB edge from the Forgot password link to the Sign up link. The source is a helper/recovery link, and a primary workflow control—the Sign In button—sits between them in inferred meaningful order (positions 6 -> 7 -> 8) and visually in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "KFG shows a direct TAB edge from /form/input[2] (Sign In button, navigation_order position 7) back to /section[1]/div[1]/a[1] (Webflow logo link, position 1). This is a later-page control wrapping to an earlier, top-of-page control."
+    }, {
+      "pattern_id" : "P09",
+      "evidence" : "The transition is backward in inferred meaningful order, from position 7 to position 1. The screenshot shows both controls as part of the same overall page content rather than a modal/dialog change, so it exhibits a backward local/page-level focus return."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a Browser -> page transition, and the KFG v_special marks /section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[1]/input[1] (Username or Email input) as both v_0 and v_entry, indicating the documented first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed keyboard patterns include local progression within the left promo links, cross-region movement from the promo panel into the sign-in module, field-to-field movement in the login form with a helper link associated to the password group, several direct jumps that bypass visible intermediate controls, a helper-link jump across the primary Sign In control, a wraparound TAB edge from Sign In back to the top-left logo, and a modeled Browser-to-page entry landing on the Username or Email field."
+}

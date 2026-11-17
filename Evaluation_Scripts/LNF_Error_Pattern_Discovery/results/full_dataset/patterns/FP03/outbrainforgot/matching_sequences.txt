@@ -1,0 +1,6 @@
+/html[1]/body[1]/div[3]/p[3]/a[1] -> /html[1]/body[1]/div[3]/p[4]/a[1]
+/html[1]/body[1]/footer[1]/div[1]/div[2]/a[2] -> /html[1]/body[1]/footer[1]/div[1]/div[2]/a[3]
+/html[1]/body[1]/footer[1]/div[1]/div[2]/a[3] -> /html[1]/body[1]/footer[1]/div[1]/div[2]/a[4]
+/html[1]/body[1]/footer[1]/div[1]/div[2]/a[4] -> /html[1]/body[1]/footer[1]/div[1]/div[2]/a[5]
+/html[1]/body[1]/footer[1]/div[1]/div[2]/a[5] -> /html[1]/body[1]/footer[1]/div[1]/div[2]/a[6]
+/html[1]/body[1]/footer[1]/div[1]/div[2]/a[6] -> /html[1]/body[1]/footer[1]/div[1]/div[2]/a[7]

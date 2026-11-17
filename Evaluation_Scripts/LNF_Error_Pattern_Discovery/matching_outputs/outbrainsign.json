@@ -1,0 +1,204 @@
+{
+  "subject" : "outbrainsign",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG has a direct TAB edge from /footer/div[1]/div[1]/a[1] (Outbrain footer logo link, position 16) to /footer/div[1]/div[2]/a[1] (Amplify link, position 17). The screenshot shows these as adjacent footer regions: a logo area and a separate footer link list, and the destination position is exactly one greater."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB edge in the KFG from the footer logo link to the first link in the footer links group. The screenshot and DOM show distinct footer subgroups (logo block div[1] vs link block div[2]), and positions 16 to 17 are consecutive."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are footer links, but the evidence does not establish that both 'Amplify' and 'Terms' are genuinely secondary utility/support controls within one local auxiliary group. 'Amplify' may be promotional/navigation rather than auxiliary."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /footer/div[1]/div[2]/a[2] (Terms, position 18) to /footer/div[1]/div[2]/a[3] (Advertising Guidelines, position 19). Both are nearby footer policy/guideline links serving secondary informational/utility purposes within the same footer link group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /footer/div[1]/div[2]/a[3] (Advertising Guidelines, position 19) to /footer/div[1]/div[2]/a[4] (Privacy Policy, position 20). The screenshot shows both in the same footer links row, and both are secondary informational/policy links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /footer/div[1]/div[2]/a[4] (Privacy Policy, position 20) to /footer/div[1]/div[2]/a[5] (Security, position 21). Both appear as nearby footer policy/security links and are secondary utility/informational controls."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /footer/div[1]/div[2]/a[5] (Security, position 21) to /footer/div[1]/div[2]/a[6] (Contact Us, position 22). These are adjacent footer utility/support links in the same local footer link group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /footer/div[1]/div[2]/a[6] (Contact Us, position 22) to /footer/div[1]/div[2]/a[7] (Help/FAQs, position 23). Both are nearby secondary support/help links within the same footer link group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from /main/div[3]/div[1]/div[2]/a[1] (Get started link, position 5) to /main/div[3]/div[2]/form/ul/label[1]/li[1]/input[1] (Enter the code input, position 6). The screenshot shows these in adjacent visual panels within main content: left login panel and right two-factor panel, and the positions are consecutive."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition between distinct subgroups inside the main area: the first login/account panel and the separate two-factor authentication panel. Source and destination are consecutive in inferred meaningful order (5 to 6)."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is clearly a recovery link ('Forgot password?'), but the destination ('Get started') appears promotional/account-creation related rather than clearly secondary utility/support. The endpoints therefore do not clearly satisfy both auxiliary roles."
+    }, {
+      "pattern_id" : "P05",
+      "reason" : "The transition is consecutive (positions 4 to 5) and direct in the KFG, but the evidence is mixed on whether the source and destination belong to clearly distinct local functional subgroups rather than the same overall login/account area."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /main/div[3]/div[2]/form/ul/div[1]/div[1]/a[1] (Use authentication app, position 11) to /main/div[3]/div[2]/form/ul/div[1]/div[3]/a[1] (Authenticate via email, position 13). In the screenshot both are nearby alternative-authentication/help-style links within the same two-factor support link cluster."
+    }, {
+      "pattern_id" : "P08",
+      "evidence" : "This is a direct TAB transition within the two-factor module from one local link to a later control, and navigation_order identifies an intermediate visible focusable control at position 12: /main/div[3]/div[2]/form/ul/div[1]/div[2]/a[1] ('Troubleshooting guide link'). KFG confirms the direct edge from source to destination despite that intermediate control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /main/div[3]/div[2]/form/ul/div[1]/div[2]/a[1] (Troubleshooting guide, position 12) to /main/div[3]/div[2]/form/ul/div[1]/div[4]/a[1] (Contact support, position 14). Both are nearby support/help links within the same two-factor auxiliary link cluster."
+    }, {
+      "pattern_id" : "P08",
+      "evidence" : "This direct TAB move stays within the same two-factor support-links module and skips over a visible focusable intermediate control identified in navigation_order at position 13: /main/div[3]/div[2]/form/ul/div[1]/div[3]/a[1] ('Authenticate via email link'). KFG contains the direct edge from Troubleshooting guide to Contact support."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /main/div[3]/div[2]/form/ul/div[1]/div[4]/a[1] (Contact support, position 14) to /main/div[3]/div[2]/form/ul/div[4]/a[1] (Go back, position 15). Both act as secondary support/navigation controls in the same local two-factor recovery/help area."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This verified direct TAB transition moves between distinct but adjacent subgroups inside the two-factor panel: the cluster of help/support links and the separate 'Go back' control below it. Positions 14 and 15 are consecutive."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "KFG shows a direct TAB edge from /main/div[3]/div[2]/form/ul/div[4]/a[1] (Go back, position 15) to /main/div[3]/div[2]/form/ul/label[1]/li[2]/div[1]/input[1] (Trust this device checkbox, position 8), moving from a later control back to an earlier one within the same module."
+    }, {
+      "pattern_id" : "P09",
+      "evidence" : "The direct KFG edge moves backward in inferred meaningful order within the localized two-factor component, from 'Go back' (position 15) to 'Trust this device checkbox' (position 8), rather than between separate page regions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from /main/div[3]/div[2]/form/ul/label[1]/li[1]/div[1]/a[1] (Resend code, position 7) to /main/div[3]/div[2]/form/ul/div[1]/div[2]/a[1] (Troubleshooting guide, position 12). Both are secondary help/recovery links within the same two-factor support area."
+    }, {
+      "pattern_id" : "P07",
+      "evidence" : "The direct edge originates from the helper/recovery link 'Resend code' and lands on 'Troubleshooting guide'. Between their endpoints in inferred meaningful order are primary workflow controls at positions 8, 9, and 10: 'Trust this device checkbox', 'Trust this device label', and 'Two-factor Log In button'."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "KFG shows a direct TAB edge from /main/div[3]/div[2]/form/ul/label[1]/li[1]/input[1] (Enter the code input, position 6) to /main/div[3]/div[2]/form/ul/label[1]/li[2]/div[1]/label[1] (Trust this device label, position 9) within the same two-factor module. Navigation_order identifies specific intermediate visible focusable controls at positions 7 and 8: 'Resend code link' and 'Trust this device checkbox'."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P06",
+      "reason" : "The source is a primary form field and a helper link ('Resend code') is visually associated with the code-entry area, but the destination is a 'Trust this device' label rather than clearly another primary form field. The evidence does not firmly establish a field-to-field transition."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0021",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is a label associated with a checkbox and the destination is the two-factor submit button. The source is not clearly a genuine auxiliary/help/support control, so the local auxiliary-control pattern cannot be confidently applied."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0022",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "KFG shows a direct TAB edge from /main/div[3]/div[2]/form/ul/label[1]/li[2]/input[1] (Two-factor Log In button, position 10) back to /main/div[3]/div[2]/form/ul/label[1]/li[1]/div[1]/a[1] (Resend code link, position 7), which is a backward move to an earlier control."
+    }, {
+      "pattern_id" : "P09",
+      "evidence" : "This direct KFG edge moves backward in meaningful order within the same localized two-factor form cluster, from the primary button at position 10 to the earlier resend-code link at position 7."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0023",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "The KFG v_special entry marks /main/div[3]/div[1]/form/ul/label[1]/li[1]/input[1] as v_entry, and the candidate explicitly models Browser -> Username or Email input. This is the documented first focused page control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed patterns include modeled browser entry to the username field, several direct auxiliary-link progressions within the footer and two-factor support area, adjacent cross-region/cross-subgroup moves between distinct footer and main-panel areas, specific bypass transitions over intermediate local controls inside the two-factor module, and backward/cyclic local transitions within the two-factor component."
+}

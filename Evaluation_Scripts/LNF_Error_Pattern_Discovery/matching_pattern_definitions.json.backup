@@ -1,0 +1,50 @@
+{
+  "purpose": "Outcome-blinded pattern matching",
+  "patterns": [
+    {
+      "pattern_id": "P01",
+      "name": "Adjacent cross-region continuation",
+      "observable_criteria": "A direct consecutive TAB transition between distinct visible page regions, with adjacent inferred meaningful positions and no documented intermediate focus target."
+    },
+    {
+      "pattern_id": "P02",
+      "name": "Cyclic or wraparound focus edge",
+      "observable_criteria": "A TAB transition from a later or end-of-page control back to an earlier control, often near the top or beginning of the page."
+    },
+    {
+      "pattern_id": "P03",
+      "name": "Local auxiliary-control progression",
+      "observable_criteria": "A transition between nearby support, utility, or auxiliary controls within the same functional group, with a consecutive or locally coherent focus sequence."
+    },
+    {
+      "pattern_id": "P04",
+      "name": "Browser-to-page entry",
+      "observable_criteria": "A modeled transition from the virtual Browser boundary to the documented first focused webpage control."
+    },
+    {
+      "pattern_id": "P05",
+      "name": "Consecutive cross-subgroup transition",
+      "observable_criteria": "A direct consecutive TAB transition whose endpoints belong to distinct visible or functional subgroups. Inferred meaningful positions are adjacent or nearby."
+    },
+    {
+      "pattern_id": "P06",
+      "name": "Field-to-field transition near embedded helper link",
+      "observable_criteria": "A direct TAB transition between primary form fields where a separate focusable helper or recovery link is visually or structurally associated with the destination field group."
+    },
+    {
+      "pattern_id": "P07",
+      "name": "Auxiliary-link transition across workflow controls",
+      "observable_criteria": "A direct TAB transition originating from a helper, recovery, or support link, with one or more primary workflow controls located between its endpoints in the inferred meaningful or visual order."
+    },
+    {
+      "pattern_id": "P08",
+      "name": "Primary-control transition over local controls",
+      "observable_criteria": "A direct TAB transition from a primary control to a later control in the same functional module, with one or more visible intermediate controls between them in meaningful or visual order."
+    },
+    {
+      "pattern_id": "P09",
+      "name": "Backward local focus transition",
+      "observable_criteria": "A TAB transition within the same local component or content cluster where the destination has an earlier inferred meaningful position than the source."
+    }
+  ]
+}

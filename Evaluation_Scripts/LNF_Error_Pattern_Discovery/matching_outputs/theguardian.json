@@ -1,0 +1,146 @@
+{
+  "subject" : "theguardian",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG has a direct TAB edge from /html[1]/body[1]/a[1] (Skip to main content, position 1) to /html[1]/body[1]/header[1]/div[1]/a[1] (Guardian home/logo link, position 2). The endpoints are in distinct regions supported by XPath and screenshot: a top-level body skip link and a header logo link, and the destination position is exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from footer Help (position 13) to footer Terms & Conditions (position 14). Screenshot 3 shows both within the same footer link cluster, and both are secondary utility/support links rather than primary workflow controls."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from footer Terms & Conditions (position 14) to footer Contact us (position 15). Screenshot 3 places both in the same footer utility/support group, and both serve secondary site/support purposes."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from footer Contact us (position 15) to footer Privacy Policy (position 16). Screenshot 3 shows both inside the same footer utility link cluster, and both are secondary/support/legal links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from footer Privacy Policy (position 16) to footer Report technical issue (position 17). Screenshot 3 shows both in the same footer link group, and both are secondary utility/support controls."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from footer Report technical issue (position 17) to footer Cookie Policy (position 18). Screenshot 3 places both in the same footer utility/support group, and both are secondary site-support/legal links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from /html[1]/body[1]/header[1]/div[1]/a[1] (Guardian home/logo link, position 2) to /html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/a[1] (Sign in or register, position 3). The source is in the header region and the destination in the main sign-in panel, supported by XPath and screenshot, and destination position is exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P05",
+      "reason" : "The KFG confirms a direct TAB edge from the main panel heading/link 'Sign in or register' (position 3) to 'Continue with Google' (position 4), but the evidence does not clearly establish whether these are distinct functional subgroups versus parts of one local sign-in component."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from in-panel footer Terms & Conditions (position 9) to in-panel footer Privacy Policy (position 10). Screenshot 2 shows both adjacent within the same local legal/support text block, and both are secondary legal/utility links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from in-panel Privacy Policy (position 10) to Google Privacy Policy (position 11). Screenshot 2 shows both in the same local legal/reCAPTCHA notice area, and both are secondary policy/support links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Google Privacy Policy (position 11) to Terms of Service (position 12). Screenshot 2 shows both adjacent within the same reCAPTCHA legal/support block, and both are secondary policy/support controls."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from /html[1]/body[1]/main[1]/.../footer[1]/p[2]/a[2] (Terms of Service, position 12) to /html[1]/body[1]/footer[1]/div[1]/div[1]/ul[1]/li[1]/a[1] (Help, position 13). The source is in the main sign-in module's footer/legal area and the destination is in the page footer region shown in screenshot 3; destination position is exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ {
+      "pattern_id" : "P07",
+      "evidence" : "KFG shows a direct TAB edge from the primary workflow control 'Next button' (position 8) to the legal helper/support link 'Terms & Conditions' (position 9). This does not fit P07 because the source is not auxiliary; however, the observable layout shows this move enters a local legal-link block after the primary action. No other supplied pattern fits more specifically."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P05",
+      "reason" : "There is a verified TAB edge from 'Continue with Google' (position 4) to 'Continue with Facebook' (position 5), but the evidence indicates both controls are parallel social sign-in options within one fieldset, not clearly distinct subgroups."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P05",
+      "reason" : "There is a verified TAB edge from 'Continue with Facebook' (position 5) to 'Continue with Apple' (position 6), but both appear as adjacent options in the same social sign-in fieldset rather than clearly distinct functional subgroups."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P05",
+      "reason" : "KFG verifies a direct TAB edge from 'Continue with Apple' (position 6) to the email address input (position 7). These may represent different sign-in methods within one form, but the evidence does not clearly establish whether they are distinct functional subgroups versus one unified sign-in module."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a browser-boundary transition: Browser -> /html[1]/body[1]/a[1]. The destination is the first documented webpage control in navigation_order, 'Skip to main content' at position 1."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed direct TAB navigation largely follows sequential order through header, main sign-in module, in-panel legal links, and footer utility links. Clear pattern matches include cross-region continuation for header/main and main/footer boundaries, local auxiliary progression among legal and footer utility links, and the modeled browser-to-page entry. Most within-form transitions do not satisfy the supplied subgroup, helper-link, skip-over, or backward-transition definitions based on the available evidence."
+}

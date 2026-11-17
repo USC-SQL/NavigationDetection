@@ -1,0 +1,1898 @@
+{
+  "subject": "engadget",
+  "navigation_order": {
+    "navigation_order": [
+      {
+        "position": 1,
+        "label": 1,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "Engadget logo link"
+      },
+      {
+        "position": 2,
+        "label": 2,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+        "descriptor": "Login link"
+      },
+      {
+        "position": 3,
+        "label": 3,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Products"
+      },
+      {
+        "position": 4,
+        "label": 4,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Reviews"
+      },
+      {
+        "position": 5,
+        "label": 5,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "Gaming"
+      },
+      {
+        "position": 6,
+        "label": 6,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+        "descriptor": "Gear"
+      },
+      {
+        "position": 7,
+        "label": 7,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[5]/a[1]",
+        "descriptor": "Entertainment"
+      },
+      {
+        "position": 8,
+        "label": 8,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[6]/a[1]",
+        "descriptor": "Tomorrow"
+      },
+      {
+        "position": 9,
+        "label": 9,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[7]/a[1]",
+        "descriptor": "Deals"
+      },
+      {
+        "position": 10,
+        "label": 10,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[8]/a[1]",
+        "descriptor": "Buying Guides"
+      },
+      {
+        "position": 11,
+        "label": 11,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[9]/a[1]",
+        "descriptor": "Video"
+      },
+      {
+        "position": 12,
+        "label": 12,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[10]/a[1]",
+        "descriptor": "Podcasts"
+      },
+      {
+        "position": 13,
+        "label": 13,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Facebook icon"
+      },
+      {
+        "position": 14,
+        "label": 14,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Twitter icon"
+      },
+      {
+        "position": 15,
+        "label": 15,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "YouTube icon"
+      },
+      {
+        "position": 16,
+        "label": 16,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/button[1]",
+        "descriptor": "Search button"
+      },
+      {
+        "position": 17,
+        "label": 17,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/a[1]",
+        "descriptor": "tips@engadget.com link"
+      },
+      {
+        "position": 18,
+        "label": 18,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[2]/a[1]",
+        "descriptor": "support@engadget.com link"
+      },
+      {
+        "position": 19,
+        "label": 19,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[3]/a[1]",
+        "descriptor": "Contact tips@engadget.com link"
+      },
+      {
+        "position": 20,
+        "label": 20,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+        "descriptor": "Engadget Masthead"
+      },
+      {
+        "position": 21,
+        "label": 21,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[2]",
+        "descriptor": "About our Ads"
+      },
+      {
+        "position": 22,
+        "label": 22,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[3]",
+        "descriptor": "Advertise"
+      },
+      {
+        "position": 23,
+        "label": 23,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[4]",
+        "descriptor": "FAQ"
+      },
+      {
+        "position": 24,
+        "label": 24,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[5]",
+        "descriptor": "RSS Feed"
+      },
+      {
+        "position": 25,
+        "label": 25,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[1]",
+        "descriptor": "Reviews footer link"
+      },
+      {
+        "position": 26,
+        "label": 26,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[2]",
+        "descriptor": "Gear footer link"
+      },
+      {
+        "position": 27,
+        "label": 27,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[3]",
+        "descriptor": "Gaming footer link"
+      },
+      {
+        "position": 28,
+        "label": 28,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[4]",
+        "descriptor": "Entertainment footer link"
+      },
+      {
+        "position": 29,
+        "label": 29,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[5]",
+        "descriptor": "Tomorrow footer link"
+      },
+      {
+        "position": 30,
+        "label": 30,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[6]",
+        "descriptor": "The Buyer's Guide footer link"
+      },
+      {
+        "position": 31,
+        "label": 31,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[7]",
+        "descriptor": "Video footer link"
+      },
+      {
+        "position": 32,
+        "label": 32,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[8]",
+        "descriptor": "Podcasts footer link"
+      },
+      {
+        "position": 33,
+        "label": 33,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[9]",
+        "descriptor": "Deals footer link"
+      },
+      {
+        "position": 34,
+        "label": 34,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/a[1]",
+        "descriptor": "Comment Guidelines"
+      },
+      {
+        "position": 35,
+        "label": 35,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/a[2]",
+        "descriptor": "Support footer link"
+      },
+      {
+        "position": 36,
+        "label": 36,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/a[1]",
+        "descriptor": "\u7e41\u9ad4\u4e2d\u6587"
+      },
+      {
+        "position": 37,
+        "label": 37,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/a[2]",
+        "descriptor": "\u65e5\u672c\u7248"
+      },
+      {
+        "position": 38,
+        "label": 38,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/p[1]/a[1]",
+        "descriptor": "check out the latest"
+      },
+      {
+        "position": 39,
+        "label": 39,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/input[1]",
+        "descriptor": "Email address input"
+      },
+      {
+        "position": 40,
+        "label": 40,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/button[1]",
+        "descriptor": "Subscribe button"
+      },
+      {
+        "position": 41,
+        "label": 41,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+        "descriptor": "Footer Facebook"
+      },
+      {
+        "position": 42,
+        "label": 42,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+        "descriptor": "Footer Twitter"
+      },
+      {
+        "position": 43,
+        "label": 43,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/a[1]",
+        "descriptor": "Footer YouTube"
+      },
+      {
+        "position": 44,
+        "label": 44,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[4]/a[1]",
+        "descriptor": "Footer Instagram"
+      },
+      {
+        "position": 45,
+        "label": 45,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[5]/a[1]",
+        "descriptor": "Footer LinkedIn"
+      },
+      {
+        "position": 46,
+        "label": 46,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "About Us"
+      },
+      {
+        "position": 47,
+        "label": 47,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Reprints and Permissions"
+      },
+      {
+        "position": 48,
+        "label": 48,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "Suggestions"
+      },
+      {
+        "position": 49,
+        "label": 49,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+        "descriptor": "Privacy Policy (Updated)"
+      },
+      {
+        "position": 50,
+        "label": 50,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[5]/a[1]",
+        "descriptor": "Terms of Service (Updated)"
+      },
+      {
+        "position": 51,
+        "label": 51,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[6]/a[1]",
+        "descriptor": "Do Not Sell My Personal Information"
+      },
+      {
+        "position": 52,
+        "label": 52,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[7]/a[1]",
+        "descriptor": "Trademarks"
+      },
+      {
+        "position": 53,
+        "label": 53,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[8]/a[1]",
+        "descriptor": "Advertise bottom link"
+      },
+      {
+        "position": 54,
+        "label": 54,
+        "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[9]/a[1]",
+        "descriptor": "About Our Ads"
+      }
+    ]
+  },
+  "kfg": {
+    "UIGraphStates": [
+      {
+        "v_exit": [],
+        "nodes": [
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[6]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[7]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[4]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[4]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[8]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[6]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[3]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[3]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[9]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[8]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[7]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[6]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[8]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[7]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[10]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[9]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[5]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[5]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[9]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          }
+        ],
+        "v_special": [
+          {
+            "v_0": "/html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "v_entry": "/html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "v_entry_successor": "null"
+          }
+        ],
+        "v_n": [],
+        "edges_inAndOutsideDialog": [],
+        "visibleCtrlDomInsideDialogSequence": [],
+        "visibleCtrlDomSequence": [],
+        "edges": [
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[9]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[8]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[5]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[2]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[3]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[7]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[6]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[6]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[5]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[4]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[4]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[3]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[8]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[7]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[6]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[7]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[7]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[8]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[7]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[9]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[8]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[8]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[7]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/a[2]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[4]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[3]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[5]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[4]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[9]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[8]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/a[2]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[9]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[10]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[9]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[3]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[2]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[6]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[5]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[10]/a[1]"
+          }
+        ],
+        "stateTransition": [],
+        "state_properties": [
+          {
+            "type": "KFFG"
+          },
+          {
+            "phase": "INITIAL_PHASE"
+          },
+          {
+            "thisStateID": 0
+          },
+          {
+            "parentStateID": -1
+          }
+        ],
+        "ctrlClusters": [],
+        "dialogStateProperties": [
+          {
+            "isADialogState": "0"
+          },
+          {
+            "triggerNodeLeadingToState": "null"
+          },
+          {
+            "postModalTriggerRoot": "null",
+            "preModalTriggerRoot": "null"
+          }
+        ]
+      }
+    ]
+  },
+  "screenshot_paths": [
+    "/Users/lance/Downloads/Empirical_Study_Results/engadget/engadget1.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/engadget/engadget2.jpg"
+  ],
+  "candidate_transitions": [
+    {
+      "transition_id": "T0001",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/button[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/a[1]",
+      "source_label": "16",
+      "destination_label": "17",
+      "source_position": "16",
+      "destination_position": "17",
+      "source_descriptor": "Search button",
+      "destination_descriptor": "tips@engadget.com link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0002",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+      "source_label": "13",
+      "destination_label": "14",
+      "source_position": "13",
+      "destination_position": "14",
+      "source_descriptor": "Facebook icon",
+      "destination_descriptor": "Twitter icon",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0003",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+      "source_label": "14",
+      "destination_label": "15",
+      "source_position": "14",
+      "destination_position": "15",
+      "source_descriptor": "Twitter icon",
+      "destination_descriptor": "YouTube icon",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0004",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/button[1]",
+      "source_label": "15",
+      "destination_label": "16",
+      "source_position": "15",
+      "destination_position": "16",
+      "source_descriptor": "YouTube icon",
+      "destination_descriptor": "Search button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0005",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[10]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "12",
+      "destination_label": "13",
+      "source_position": "12",
+      "destination_position": "13",
+      "source_descriptor": "Podcasts",
+      "destination_descriptor": "Facebook icon",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0006",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+      "source_label": "3",
+      "destination_label": "4",
+      "source_position": "3",
+      "destination_position": "4",
+      "source_descriptor": "Products",
+      "destination_descriptor": "Reviews",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0007",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+      "source_label": "4",
+      "destination_label": "5",
+      "source_position": "4",
+      "destination_position": "5",
+      "source_descriptor": "Reviews",
+      "destination_descriptor": "Gaming",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0008",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+      "source_label": "5",
+      "destination_label": "6",
+      "source_position": "5",
+      "destination_position": "6",
+      "source_descriptor": "Gaming",
+      "destination_descriptor": "Gear",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0009",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[5]/a[1]",
+      "source_label": "6",
+      "destination_label": "7",
+      "source_position": "6",
+      "destination_position": "7",
+      "source_descriptor": "Gear",
+      "destination_descriptor": "Entertainment",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0010",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[5]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[6]/a[1]",
+      "source_label": "7",
+      "destination_label": "8",
+      "source_position": "7",
+      "destination_position": "8",
+      "source_descriptor": "Entertainment",
+      "destination_descriptor": "Tomorrow",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0011",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[6]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[7]/a[1]",
+      "source_label": "8",
+      "destination_label": "9",
+      "source_position": "8",
+      "destination_position": "9",
+      "source_descriptor": "Tomorrow",
+      "destination_descriptor": "Deals",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0012",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[7]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[8]/a[1]",
+      "source_label": "9",
+      "destination_label": "10",
+      "source_position": "9",
+      "destination_position": "10",
+      "source_descriptor": "Deals",
+      "destination_descriptor": "Buying Guides",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0013",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[8]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[9]/a[1]",
+      "source_label": "10",
+      "destination_label": "11",
+      "source_position": "10",
+      "destination_position": "11",
+      "source_descriptor": "Buying Guides",
+      "destination_descriptor": "Video",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0014",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[9]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[10]/a[1]",
+      "source_label": "11",
+      "destination_label": "12",
+      "source_position": "11",
+      "destination_position": "12",
+      "source_descriptor": "Video",
+      "destination_descriptor": "Podcasts",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0015",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[2]/a[1]",
+      "source_label": "17",
+      "destination_label": "18",
+      "source_position": "17",
+      "destination_position": "18",
+      "source_descriptor": "tips@engadget.com link",
+      "destination_descriptor": "support@engadget.com link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0016",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[3]/a[1]",
+      "source_label": "18",
+      "destination_label": "19",
+      "source_position": "18",
+      "destination_position": "19",
+      "source_descriptor": "support@engadget.com link",
+      "destination_descriptor": "Contact tips@engadget.com link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0017",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[3]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+      "source_label": "19",
+      "destination_label": "20",
+      "source_position": "19",
+      "destination_position": "20",
+      "source_descriptor": "Contact tips@engadget.com link",
+      "destination_descriptor": "Engadget Masthead",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0018",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[2]",
+      "source_label": "20",
+      "destination_label": "21",
+      "source_position": "20",
+      "destination_position": "21",
+      "source_descriptor": "Engadget Masthead",
+      "destination_descriptor": "About our Ads",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0019",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[2] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[3]",
+      "source_label": "21",
+      "destination_label": "22",
+      "source_position": "21",
+      "destination_position": "22",
+      "source_descriptor": "About our Ads",
+      "destination_descriptor": "Advertise",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0020",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[3] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[4]",
+      "source_label": "22",
+      "destination_label": "23",
+      "source_position": "22",
+      "destination_position": "23",
+      "source_descriptor": "Advertise",
+      "destination_descriptor": "FAQ",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0021",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[4] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[5]",
+      "source_label": "23",
+      "destination_label": "24",
+      "source_position": "23",
+      "destination_position": "24",
+      "source_descriptor": "FAQ",
+      "destination_descriptor": "RSS Feed",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0022",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[5] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[1]",
+      "source_label": "24",
+      "destination_label": "25",
+      "source_position": "24",
+      "destination_position": "25",
+      "source_descriptor": "RSS Feed",
+      "destination_descriptor": "Reviews footer link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0023",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[2]",
+      "source_label": "25",
+      "destination_label": "26",
+      "source_position": "25",
+      "destination_position": "26",
+      "source_descriptor": "Reviews footer link",
+      "destination_descriptor": "Gear footer link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0024",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[2] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[3]",
+      "source_label": "26",
+      "destination_label": "27",
+      "source_position": "26",
+      "destination_position": "27",
+      "source_descriptor": "Gear footer link",
+      "destination_descriptor": "Gaming footer link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0025",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[3] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[4]",
+      "source_label": "27",
+      "destination_label": "28",
+      "source_position": "27",
+      "destination_position": "28",
+      "source_descriptor": "Gaming footer link",
+      "destination_descriptor": "Entertainment footer link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0026",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[4] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[5]",
+      "source_label": "28",
+      "destination_label": "29",
+      "source_position": "28",
+      "destination_position": "29",
+      "source_descriptor": "Entertainment footer link",
+      "destination_descriptor": "Tomorrow footer link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0027",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[5] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[6]",
+      "source_label": "29",
+      "destination_label": "30",
+      "source_position": "29",
+      "destination_position": "30",
+      "source_descriptor": "Tomorrow footer link",
+      "destination_descriptor": "The Buyer's Guide footer link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0028",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[6] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[7]",
+      "source_label": "30",
+      "destination_label": "31",
+      "source_position": "30",
+      "destination_position": "31",
+      "source_descriptor": "The Buyer's Guide footer link",
+      "destination_descriptor": "Video footer link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0029",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[7] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[8]",
+      "source_label": "31",
+      "destination_label": "32",
+      "source_position": "31",
+      "destination_position": "32",
+      "source_descriptor": "Video footer link",
+      "destination_descriptor": "Podcasts footer link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0030",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[8] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[9]",
+      "source_label": "32",
+      "destination_label": "33",
+      "source_position": "32",
+      "destination_position": "33",
+      "source_descriptor": "Podcasts footer link",
+      "destination_descriptor": "Deals footer link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0031",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/a[9] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/a[1]",
+      "source_label": "33",
+      "destination_label": "34",
+      "source_position": "33",
+      "destination_position": "34",
+      "source_descriptor": "Deals footer link",
+      "destination_descriptor": "Comment Guidelines",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0032",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/a[2]",
+      "source_label": "34",
+      "destination_label": "35",
+      "source_position": "34",
+      "destination_position": "35",
+      "source_descriptor": "Comment Guidelines",
+      "destination_descriptor": "Support footer link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0033",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/a[2] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/a[1]",
+      "source_label": "35",
+      "destination_label": "36",
+      "source_position": "35",
+      "destination_position": "36",
+      "source_descriptor": "Support footer link",
+      "destination_descriptor": "\u7e41\u9ad4\u4e2d\u6587",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0034",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/a[2]",
+      "source_label": "36",
+      "destination_label": "37",
+      "source_position": "36",
+      "destination_position": "37",
+      "source_descriptor": "\u7e41\u9ad4\u4e2d\u6587",
+      "destination_descriptor": "\u65e5\u672c\u7248",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0035",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/a[2] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/p[1]/a[1]",
+      "source_label": "37",
+      "destination_label": "38",
+      "source_position": "37",
+      "destination_position": "38",
+      "source_descriptor": "\u65e5\u672c\u7248",
+      "destination_descriptor": "check out the latest",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0036",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/button[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+      "source_label": "40",
+      "destination_label": "41",
+      "source_position": "40",
+      "destination_position": "41",
+      "source_descriptor": "Subscribe button",
+      "destination_descriptor": "Footer Facebook",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0037",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/input[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/button[1]",
+      "source_label": "39",
+      "destination_label": "40",
+      "source_position": "39",
+      "destination_position": "40",
+      "source_descriptor": "Email address input",
+      "destination_descriptor": "Subscribe button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0038",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+      "source_label": "41",
+      "destination_label": "42",
+      "source_position": "41",
+      "destination_position": "42",
+      "source_descriptor": "Footer Facebook",
+      "destination_descriptor": "Footer Twitter",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0039",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/a[1]",
+      "source_label": "42",
+      "destination_label": "43",
+      "source_position": "42",
+      "destination_position": "43",
+      "source_descriptor": "Footer Twitter",
+      "destination_descriptor": "Footer YouTube",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0040",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[4]/a[1]",
+      "source_label": "43",
+      "destination_label": "44",
+      "source_position": "43",
+      "destination_position": "44",
+      "source_descriptor": "Footer YouTube",
+      "destination_descriptor": "Footer Instagram",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0041",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[5]/a[1]",
+      "source_label": "44",
+      "destination_label": "45",
+      "source_position": "44",
+      "destination_position": "45",
+      "source_descriptor": "Footer Instagram",
+      "destination_descriptor": "Footer LinkedIn",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0042",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[5]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "45",
+      "destination_label": "46",
+      "source_position": "45",
+      "destination_position": "46",
+      "source_descriptor": "Footer LinkedIn",
+      "destination_descriptor": "About Us",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0043",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/p[1]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/input[1]",
+      "source_label": "38",
+      "destination_label": "39",
+      "source_position": "38",
+      "destination_position": "39",
+      "source_descriptor": "check out the latest",
+      "destination_descriptor": "Email address input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0044",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+      "source_label": "46",
+      "destination_label": "47",
+      "source_position": "46",
+      "destination_position": "47",
+      "source_descriptor": "About Us",
+      "destination_descriptor": "Reprints and Permissions",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0045",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+      "source_label": "47",
+      "destination_label": "48",
+      "source_position": "47",
+      "destination_position": "48",
+      "source_descriptor": "Reprints and Permissions",
+      "destination_descriptor": "Suggestions",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0046",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+      "source_label": "48",
+      "destination_label": "49",
+      "source_position": "48",
+      "destination_position": "49",
+      "source_descriptor": "Suggestions",
+      "destination_descriptor": "Privacy Policy (Updated)",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0047",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[5]/a[1]",
+      "source_label": "49",
+      "destination_label": "50",
+      "source_position": "49",
+      "destination_position": "50",
+      "source_descriptor": "Privacy Policy (Updated)",
+      "destination_descriptor": "Terms of Service (Updated)",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0048",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[5]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[6]/a[1]",
+      "source_label": "50",
+      "destination_label": "51",
+      "source_position": "50",
+      "destination_position": "51",
+      "source_descriptor": "Terms of Service (Updated)",
+      "destination_descriptor": "Do Not Sell My Personal Information",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0049",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[6]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[7]/a[1]",
+      "source_label": "51",
+      "destination_label": "52",
+      "source_position": "51",
+      "destination_position": "52",
+      "source_descriptor": "Do Not Sell My Personal Information",
+      "destination_descriptor": "Trademarks",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0050",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[7]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[8]/a[1]",
+      "source_label": "52",
+      "destination_label": "53",
+      "source_position": "52",
+      "destination_position": "53",
+      "source_descriptor": "Trademarks",
+      "destination_descriptor": "Advertise bottom link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0051",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[8]/a[1] -> /html[1]/body[1]/div[1]/div[2]/footer[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[9]/a[1]",
+      "source_label": "53",
+      "destination_label": "54",
+      "source_position": "53",
+      "destination_position": "54",
+      "source_descriptor": "Advertise bottom link",
+      "destination_descriptor": "About Our Ads",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0052",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+      "source_label": "1",
+      "destination_label": "2",
+      "source_position": "1",
+      "destination_position": "2",
+      "source_descriptor": "Engadget logo link",
+      "destination_descriptor": "Login link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0053",
+      "transition": "/html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/nav[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "2",
+      "destination_label": "3",
+      "source_position": "2",
+      "destination_position": "3",
+      "source_descriptor": "Login link",
+      "destination_descriptor": "Products",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0054",
+      "transition": "Browser -> /html[1]/body[1]/div[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "",
+      "destination_label": "1",
+      "source_position": "",
+      "destination_position": "1",
+      "source_descriptor": "Virtual Browser boundary",
+      "destination_descriptor": "Engadget logo link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "True"
+    }
+  ]
+}

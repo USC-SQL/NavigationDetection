@@ -1,0 +1,86 @@
+{
+  "patterns" : [ {
+    "pattern_id" : "FP01",
+    "error_type" : "FP",
+    "name" : "Adjacent region-to-region continuation over-flagged",
+    "short_summary" : "The detector sometimes flags ordinary progression between adjacent page regions even when the implemented focus order and inferred meaningful order are consecutive and no intermediate focus target is documented.",
+    "matching_criteria" : "Source and destination are consecutive in the supplied navigation/KFG evidence, the move crosses a visible region boundary such as header to main, main to footer, or one footer/header subgroup to the next, and the case is classified FP in ground truth.",
+    "hypothesized_cause" : "The detector may over-weight visual distance, container changes, or region boundaries and under-weight the documented fact that the focus move is the next implemented step with no observed skipped target.",
+    "uncertainty" : "This pattern is based on observed adjacency plus cross-region movement, but the detector's internal rule is not available. Some cases may differ in how much the visual boundary contributed versus DOM/list boundary cues.",
+    "matched_case_ids" : [ "E001", "E027", "E028", "E039", "E051" ]
+  }, {
+    "pattern_id" : "FP02",
+    "error_type" : "FP",
+    "name" : "Cycle or wrap-around edge treated as failure",
+    "short_summary" : "The detector sometimes flags page-cycle or wrap-like transitions that return to an earlier page location, even though the reference data does not label that exact edge as an LNF.",
+    "matching_criteria" : "The implemented TAB edge returns from a later or last page element to a much earlier element, often near the top/header or first item, and the transition is classified FP.",
+    "hypothesized_cause" : "The detector may treat any large backward positional reset as an LNF without distinguishing page-end cycling or loop edges from the specific transitions selected in the reference labels.",
+    "uncertainty" : "These cases are observably cyclic, but the reason the reference excludes the exact edge is not always explicit. Some may reflect disagreement over which edge in a loop is the meaningful failure.",
+    "matched_case_ids" : [ "E024", "E045", "E053" ]
+  }, {
+    "pattern_id" : "FP03",
+    "error_type" : "FP",
+    "name" : "Consecutive utility or auxiliary controls misread as disorder",
+    "short_summary" : "The detector sometimes over-flags short moves between nearby auxiliary controls inside the same local section, even when the supplied evidence shows a straightforward consecutive sequence.",
+    "matching_criteria" : "Source and destination are nearby auxiliary, support, or utility controls in the same local header/login/support area; they are consecutive or locally coherent in the implemented order; and ground truth classifies the prediction as FP.",
+    "hypothesized_cause" : "The detector may over-interpret structural boundaries between small controls, such as list boundaries, sibling wrappers, or grouped support links, as meaningful navigation failures.",
+    "uncertainty" : "One case in this pattern includes a tolerated skip within a support-link cluster rather than strict consecutiveness, so the commonality is local auxiliary-link grouping rather than a single identical structure.",
+    "matched_case_ids" : [ "E037", "E038", "E051" ]
+  }, {
+    "pattern_id" : "FN01",
+    "error_type" : "FN",
+    "name" : "Browser-boundary transitions omitted",
+    "short_summary" : "Many missed LNFs originate at the virtual Browser boundary rather than a normal DOM element, suggesting special-case under-detection of entry transitions.",
+    "matching_criteria" : "The source is Browser, the destination is a documented entry node or first reached page control, and the case is classified FN.",
+    "hypothesized_cause" : "The detector may exclude, de-prioritize, or inconsistently model virtual browser-entry edges compared with ordinary DOM-to-DOM transitions.",
+    "uncertainty" : "Browser is a virtual boundary, so these cases are inherently less directly observable than normal focus moves. The evidence supports the reference labels but does not reveal detector boundary policy.",
+    "matched_case_ids" : [ "E003", "E014", "E018", "E022", "E035", "E043", "E046", "E047", "E060", "E064" ]
+  }, {
+    "pattern_id" : "FN02",
+    "error_type" : "FN",
+    "name" : "Consecutive cross-group transitions missed",
+    "short_summary" : "The detector often misses ground-truth LNFs when the implemented move is immediately consecutive but crosses a visual or functional subgroup boundary.",
+    "matching_criteria" : "The transition is consecutive in the implemented order and typically also consecutive in inferred positions, no intermediate focus target is documented, but the endpoints belong to visibly or functionally distinct subgroups such as adjacent panels, header subareas, footer subclusters, or separate content units.",
+    "hypothesized_cause" : "A detector focused on skipped nodes, large positional gaps, or obvious reversals may fail to flag semantically disruptive handoffs when the move appears numerically orderly.",
+    "uncertainty" : "The reference rationale for some consecutive moves is not fully recoverable from the supplied artifacts, so the shared characteristic is the observed subgroup boundary, not certainty about why each was labeled an LNF.",
+    "matched_case_ids" : [ "E004", "E005", "E006", "E007", "E012", "E013", "E019", "E029", "E032", "E033", "E034", "E036", "E040", "E042", "E065", "E066" ]
+  }, {
+    "pattern_id" : "FN03",
+    "error_type" : "FN",
+    "name" : "Field-to-field progression skips embedded helper link",
+    "short_summary" : "A recurring miss occurs when focus moves directly between primary form fields while a visible helper or recovery link associated with the field group occupies an intermediate meaningful position.",
+    "matching_criteria" : "The source and destination are major form fields, usually adjacent-looking inputs, but a separately focusable inline helper/recovery link in the same form region is documented between them or tied to the field group; the case is classified FN.",
+    "hypothesized_cause" : "The detector may assume field-to-field movement is ordinarily acceptable and therefore under-detect cases where an embedded auxiliary control makes that progression non-linear according to the reference.",
+    "uncertainty" : "Some cases have stronger evidence of an intervening link than others, and one case is partly ambiguous because KFG and navigation evidence differ in how the auxiliary link is situated.",
+    "matched_case_ids" : [ "E021", "E025", "E044", "E054" ]
+  }, {
+    "pattern_id" : "FN04",
+    "error_type" : "FN",
+    "name" : "Auxiliary or recovery link jumps past core form controls",
+    "short_summary" : "The detector misses many jumps that start from a helper, recovery, or support link and land on a later target while bypassing primary fields, buttons, or options in the same workflow.",
+    "matching_criteria" : "The source is an auxiliary/help/recovery/support link within or near a form or authentication flow, the destination is later in the page or a different subgroup, and one or more visible core controls in the same task sequence lie between source and destination in the supplied order evidence.",
+    "hypothesized_cause" : "The detector may underweight auxiliary-link endpoints, especially when both endpoints are links or when the move stays inside one broad login module, causing disruptive bypasses of primary controls to be missed.",
+    "uncertainty" : "These cases vary in skip size and destination type. The commonality is the source role and bypassed core workflow, not a single DOM structure.",
+    "matched_case_ids" : [ "E002", "E020", "E023", "E041", "E055", "E062" ]
+  }, {
+    "pattern_id" : "FN05",
+    "error_type" : "FN",
+    "name" : "Primary control jumps forward over intermediate local controls",
+    "short_summary" : "Another recurring miss is a direct move from a primary field, button, or top action to a later control in the same local module while intervening visible controls are bypassed.",
+    "matching_criteria" : "The source is a primary input, button, logo/header entry point, or other major control; the destination is a later control in the same local panel or task region; and the supplied evidence documents one or more visible intermediate controls that are skipped by the implemented TAB edge.",
+    "hypothesized_cause" : "The detector may model coarse container-level continuity within a form or card and therefore miss shorter-range but still meaningful forward jumps that remain inside the same overall module.",
+    "uncertainty" : "These cases include different source types and gap sizes. The evidence supports the skip, but the detector's exact thresholding for within-module jumps is unknown.",
+    "matched_case_ids" : [ "E009", "E010", "E015", "E048", "E050", "E061", "E063" ]
+  }, {
+    "pattern_id" : "FN06",
+    "error_type" : "FN",
+    "name" : "Backward local reversals within forms or content clusters missed",
+    "short_summary" : "The detector also misses short backward moves where TAB lands on an earlier meaningful control within the same local form row, option cluster, or content block.",
+    "matching_criteria" : "The implemented TAB edge goes from a later meaningful position to an earlier one, the move stays within the same local page module, and the case is classified FN.",
+    "hypothesized_cause" : "The detector may emphasize larger cross-section anomalies and discount short-range reversals when the controls are visually close or belong to the same local grouping.",
+    "uncertainty" : "Some reversals involve compound widgets or unusual label structures, which may contribute additional complexity beyond simple backward ordering.",
+    "matched_case_ids" : [ "E016", "E017", "E049", "E056" ]
+  } ],
+  "unclassified_case_ids" : [ "E008", "E011", "E026", "E030", "E031", "E052", "E057", "E058", "E059" ],
+  "overall_summary" : "Across the supplied errors, false negatives are dominated by two broad tendencies: omission of Browser-boundary LNFs and under-detection of within-page transitions that either cross subgroup boundaries without a positional gap or bypass local controls inside forms and authentication flows. False positives are concentrated in ordinary adjacent region handoffs, wrap-around/cycle edges, and small auxiliary-control transitions that the detector appears to over-interpret as disorder. Several remaining cases are distinctive or too ambiguous to support a cross-subject recurring pattern under the stated evidence constraints."
+}

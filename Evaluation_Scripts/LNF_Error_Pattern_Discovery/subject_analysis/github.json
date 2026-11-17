@@ -1,0 +1,32 @@
+{
+  "subject" : "github",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1] -> /html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Visually separated next-item jump after local reorder",
+    "observable_characteristics" : "The implemented focus order shown by labels and KFG is Username (1), Password (2), Sign in button (3), Forgot password? link (4), Create an account link (5). In the screenshot, the Forgot password? link is visually aligned to the right of the Password label/input area, while the Create an account link appears in a separate box below the form. The evaluated transition is an observed Tab move from the in-form auxiliary link to the below-form account-creation link. Ground truth labels this as an LNF, but the transition itself moves forward in implemented keyboard order from label 4 to label 5.",
+    "matching_criteria" : "A transition should match when it is an observed forward Tab transition between adjacent implemented focus targets, but the two targets belong to visually or functionally separated regions and the earlier region already contains a focus-order irregularity that may affect interpretation of the later jump.",
+    "possible_cause" : "Observed evidence shows the detector did not report this ground-truth LNF even though the transition is present in Stage 1 and KFG. A plausible but unverified cause is that the detector primarily keyed on direct inversions between implemented labels and inferred meaningful positions, which would catch the Sign in button -> Forgot password? link reversal but not this subsequent forward move from label 4 to 5. Another unverified possibility is that the detector treated adjacent forward Tab moves as normal even when the ground truth considered the surrounding sequence slightly disordered.",
+    "supporting_evidence" : "evaluated_transitions marks this exact transition as FN with observed_in_stage1=True and browser_boundary=False. navigation_order shows source label 4 at position 3 (Forgot password? link) and destination label 5 at position 5 (Create an account link). kfg contains the TAB edge /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1] -> /html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1]. The screenshot shows the destination link in a separate panel below the sign-in form, while the source link is embedded in the password/sign-in panel.",
+    "confidence" : "medium",
+    "requires_review" : true
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12] -> /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison because it is the immediately preceding observed reversal inside the same form region, where implemented focus moves from the Sign in button to the Forgot password? link despite the inferred meaningful position placing the link earlier."
+  }, {
+    "transition" : "/html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1] -> /html[1]/body[1]/div[4]/ul[1]/li[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison because it is another adjacent forward Tab move across visual containers that was not labeled an LNF, helping distinguish ordinary cross-section continuation from the disputed FN."
+  }, {
+    "transition" : "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1] -> /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison because it shows that a forward move within the form from Password to Sign in button was treated as acceptable despite a position gap, indicating that position mismatch alone was not sufficient in ground truth."
+  }, {
+    "transition" : "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2] -> /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison because it is a normal adjacent Tab transition at the start of the form, showing the baseline linear progression used on this page."
+  } ],
+  "subject_summary" : "This subject has one detector miss: a ground-truth LNF on the transition from the in-form Forgot password? link to the below-form Create an account link. The page exhibits a local reordering inside the login form, where the Sign in button receives focus before the Forgot password? link despite the inferred meaningful order placing the link earlier. The detector correctly reported that direct reversal but missed the subsequent forward transition, suggesting sensitivity to direct order inversions and weaker handling of downstream effects across visually separated but sequentially adjacent targets. Because the supplied evidence does not establish the detector's internal rule set, the exact cause remains unverified and warrants review."
+}

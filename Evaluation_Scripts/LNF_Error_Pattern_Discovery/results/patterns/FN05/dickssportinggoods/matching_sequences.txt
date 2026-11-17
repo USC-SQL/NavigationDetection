@@ -1,0 +1,31 @@
+Pattern: FN05
+Name: Primary control jumps forward over intermediate local controls
+Error type: FN
+Subject: dickssportinggoods
+
+Summary: Another recurring miss is a direct move from a primary field, button, or top action to a later control in the same local module while intervening visible controls are bypassed.
+
+Matching criteria: The source is a primary input, button, logo/header entry point, or other major control; the destination is a later control in the same local panel or task region; and the supplied evidence documents one or more visible intermediate controls that are skipped by the implemented TAB edge.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E009
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[1]
+Source: Password input
+Destination: Sign In button
+Positions: 3 -> 6
+Supporting evidence: ground_truth includes this exact transition with Slightly severity; original_predictions do not. navigation_order: password input is position 3, show/hide icon position 4, Forgot Password button position 5, Sign In button position 6. kfg edges include TAB from /form/div[5]/label[1]/input[1] to /form/div[7]/button[1]. Screenshot labels 2, 5, 6, and 3 show these controls arranged within the same sign-in panel.
+Confidence: medium
+Requires review: False
+
+Case ID: E010
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[2]
+Source: Forgot Password button
+Destination: Cancel button
+Positions: 5 -> 7
+Supporting evidence: ground_truth includes this exact transition with Strongly severity; original_predictions do not. navigation_order places Forgot Password at position 5, Sign In at 6, and Cancel at 7. kfg edges include TAB from /form/div[6]/button[1] to /form/div[7]/button[2]. Screenshot markers 6, 3, and 7 show the utility link/button above and the two action buttons below in the sign-in panel.
+Confidence: medium
+Requires review: False

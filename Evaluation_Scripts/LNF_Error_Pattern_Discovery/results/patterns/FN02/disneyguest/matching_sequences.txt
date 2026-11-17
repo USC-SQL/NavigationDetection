@@ -1,0 +1,31 @@
+Pattern: FN02
+Name: Consecutive cross-group transitions missed
+Error type: FN
+Subject: disneyguest
+
+Summary: The detector often misses ground-truth LNFs when the implemented move is immediately consecutive but crosses a visual or functional subgroup boundary.
+
+Matching criteria: The transition is consecutive in the implemented order and typically also consecutive in inferred positions, no intermediate focus target is documented, but the endpoints belong to visibly or functionally distinct subgroups such as adjacent panels, header subareas, footer subclusters, or separate content units.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E012
+Classification: FN
+Transition: /html[1]/body[1]/div[7]/div[1]/div[1]/button[1] -> /html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[1]/a[1]
+Source: Language selector English (US)
+Destination: Footer nav Disney logo/home
+Positions: 15 -> 16
+Supporting evidence: navigation_order shows source position 15 'Language selector English (US)' followed immediately by destination position 16 'Footer nav Disney logo/home'. kfg contains the TAB edge from /html[1]/body[1]/div[7]/div[1]/div[1]/button[1] to /html[1]/body[1]/div[7]/div[2]/nav[1]/ul[1]/li[1]/a[1]. Screenshot 2 places marker 15 on the right and markers 16-19 around the left footer navigation cluster.
+Confidence: medium
+Requires review: False
+
+Case ID: E013
+Classification: FN
+Transition: /html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[8]/a[1] -> /html[1]/body[1]/div[7]/div[1]/div[1]/button[1]
+Source: Category Other Questions
+Destination: Language selector English (US)
+Positions: 14 -> 15
+Supporting evidence: navigation_order lists label/position 14 '/main.../div[8]/a[1]' followed by label/position 15 '/div[7]/div[1]/div[1]/button[1]'. kfg includes a TAB edge from /html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[8]/a[1] to /html[1]/body[1]/div[7]/div[1]/div[1]/button[1]. Screenshot 1 shows 14 at the final category card; screenshot 2 shows 15 separated to the right of the footer content.
+Confidence: medium
+Requires review: False

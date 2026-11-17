@@ -1,0 +1,41 @@
+Pattern: FN02
+Name: Consecutive cross-group transitions missed
+Error type: FN
+Subject: mozilla
+
+Summary: The detector often misses ground-truth LNFs when the implemented move is immediately consecutive but crosses a visual or functional subgroup boundary.
+
+Matching criteria: The transition is consecutive in the implemented order and typically also consecutive in inferred positions, no intermediate focus target is documented, but the endpoints belong to visibly or functionally distinct subgroups such as adjacent panels, header subareas, footer subclusters, or separate content units.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E032
+Classification: FN
+Transition: /html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/nav[1]/ul[1]/li[1]/a[1]
+Source: Download Firefox
+Destination: Firefox Browsers
+Positions: 2 -> 3
+Supporting evidence: ground_truth includes this exact transition. evaluated_transitions marks it FN. navigation_order shows source position 2 label 2 (Download Firefox) and destination position 3 label 3 (Firefox Browsers), so no positional gap exists. kfg visibleCtrlDomSequence places them consecutively at indices 1 and 2, with a TAB edge between them. Screenshots of the header show the menu items arranged across the top and the Download Firefox control at the far right.
+Confidence: high
+Requires review: False
+
+Case ID: E033
+Classification: FN
+Transition: /html[1]/body[1]/div[3]/footer[1]/div[1]/nav[1]/div[1]/section[5]/ul[2]/li[3]/a[1] -> /html[1]/body[1]/div[3]/footer[1]/div[1]/nav[2]/div[1]/form[1]/a[1]
+Source: Follow @Firefox link 3
+Destination: Language
+Positions: 53 -> 54
+Supporting evidence: ground_truth marks this transition as an LNF with Strongly severity. evaluated_transitions marks it FN. navigation_order shows source label 53 position 53 (Follow @Firefox link 3) and destination label 54 position 54 (Language). kfg visibleCtrlDomSequence places them consecutively at indices 52 and 53, and includes a TAB edge from the source XPath to /html[1]/body[1]/div[3]/footer[1]/div[1]/nav[2]/div[1]/form[1]/a[1]. Screenshot 5 shows social icons in one footer area and the language selector in another.
+Confidence: medium
+Requires review: False
+
+Case ID: E034
+Classification: FN
+Transition: /html[1]/body[1]/div[3]/footer[1]/div[1]/nav[2]/div[1]/form[1]/select[1] -> /html[1]/body[1]/div[3]/footer[1]/div[1]/nav[2]/div[2]/a[1]
+Source: Language select
+Destination: Mozilla footer logo/home
+Positions: 55 -> 56
+Supporting evidence: ground_truth includes this exact transition with Strongly severity. evaluated_transitions marks it FN. navigation_order lists source position 55 label 55 (Language select) and destination position 56 label 56 (Mozilla footer logo/home). kfg visibleCtrlDomSequence places them consecutively at indices 54 and 55, and contains a TAB edge between the same XPaths. Screenshot 5 shows the language selector and footer logo as separate functional elements within the lower footer.
+Confidence: high
+Requires review: False

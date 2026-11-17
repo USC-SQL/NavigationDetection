@@ -1,0 +1,164 @@
+{
+  "subject" : "tinyurl",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG contains a direct TAB edge from Hero Get Started button (position 9) to WIRED publication link (position 10). The screenshot shows these as distinct adjacent main-content regions: a hero CTA section followed by the publications section."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB edge from Hero Get Started button (position 9) to WIRED publication link (position 10), and the screenshot shows them as different functional/visual subgroups within main content: the hero CTA area and the publication-logo cluster. The destination position is exactly one greater than the source."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from WIRED publication link (position 10) to TIME publication link (position 11). These are adjacent items within the publication-logo cluster, a distinct local subgroup, and the destination position is exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from TIME publication link (position 11) to StarTribune publication link (position 12). These are adjacent items in the same publications subgroup, with destination position exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from StarTribune publication link (position 12) to theONION publication link (position 13). The screenshot places them as neighboring controls in the publications logo subgroup, and the positions are consecutive."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from theONION publication link (position 13) to ZDNet publication link (position 14). These are consecutive adjacent controls in the publications subgroup."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG contains a direct TAB edge from ZDNet publication link (position 14) to Get Started for Free button (position 15). Screenshots show a boundary between the publications region and a lower CTA region, and the positions are adjacent."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This verified direct TAB transition goes from the publications-logo subgroup (ZDNet link, position 14) to a distinct CTA subgroup (Get Started for Free button, position 15). The destination position is exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from Get Started for Free button (position 15) to Footer copyright/TinyURL LLC link (position 16). The screenshot clearly separates the CTA section from the footer, and the destination position is exactly one greater."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition from a CTA subgroup (Get Started for Free button, position 15) to a distinct footer links subgroup (copyright/TinyURL LLC link, position 16), with consecutive positions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Footer copyright/TinyURL LLC link (position 16) to Footer Terms link (position 17). Both are adjacent controls within the footer links subgroup and have consecutive positions."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are footer links in the same local group, but the evidence does not clearly establish them as genuinely secondary support/utility controls in the sense required by P03; copyright/home and terms are not clearly a help/recovery/support pair."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "Footer Terms link (position 17) and Footer Privacy Policy link (position 18) are nearby secondary utility links within the same footer legal-links group, and KFG shows a direct TAB edge between them."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Footer Terms link (position 17) to Footer Privacy Policy link (position 18). They are adjacent controls within the footer legal-links subgroup, with destination position exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The destination is a Help icon link, but the source is the TinyURL logo/home link. The logo is not clearly a secondary utility/support control, so the evidence is insufficient to establish that both endpoints satisfy P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from My URLs (position 3) to Plans (position 4). These are adjacent navigation items within the header navigation subgroup, and the positions are consecutive."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Plans (position 4) to Blog (position 5). Both are neighboring items in the header navigation subgroup, with destination position exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Blog (position 5) to Features menu (position 6). These are adjacent items in the same header navigation subgroup, and the destination position is exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Sign Up (position 7) to Sign In (position 8). These are adjacent controls in the right side of the header navigation subgroup, with consecutive positions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG contains a direct TAB edge from Sign In (position 8) to Hero Get Started button (position 9). Screenshots show this as a transition from the header navigation region to the main hero region, with adjacent positions."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This verified direct TAB transition moves from the header auth/navigation subgroup (Sign In, position 8) to the distinct hero CTA subgroup (Get Started button, position 9). The destination position is exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Features menu (position 6) to Sign Up (position 7). These are adjacent controls within the header navigation subgroup, and the destination position is exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a Browser-boundary transition to the first page control. KFG v_special lists v_entry as /html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/a[1], which is the TinyURL logo/home link, matching the documented first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed keyboard navigation is largely linear and consecutive. Confirmed patterns include browser-to-page entry at the logo (P04), several adjacent cross-region continuations between header/main/footer sections (P01), and many consecutive transitions within distinct navigation, publications, and footer subgroups (P05). One footer legal-link transition matches local auxiliary-control progression (P03). No evidence supports wraparound, backward local movement, helper-link field patterns, or primary-control bypass patterns."
+}

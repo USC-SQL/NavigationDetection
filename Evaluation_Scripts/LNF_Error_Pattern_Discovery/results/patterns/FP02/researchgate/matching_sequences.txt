@@ -1,0 +1,21 @@
+Pattern: FP02
+Name: Cycle or wrap-around edge treated as failure
+Error type: FP
+Subject: researchgate
+
+Summary: The detector sometimes flags page-cycle or wrap-like transitions that return to an earlier page location, even though the reference data does not label that exact edge as an LNF.
+
+Matching criteria: The implemented TAB edge returns from a later or last page element to a much earlier element, often near the top/header or first item, and the transition is classified FP.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E045
+Classification: FP
+Transition: /html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[2]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]
+Source: Imprint link
+Destination: ResearchGate logo link
+Positions: 20 -> 1
+Supporting evidence: Original predictions include this exact transition, but ground truth does not. Navigation order identifies Imprint as position 20 and the ResearchGate logo as position 1. KFG contains the TAB edge from /html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[2]/ul[1]/li[4]/a[1] to /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]. The evaluated transition is observed_in_stage1 true and browser_boundary false.
+Confidence: high
+Requires review: False

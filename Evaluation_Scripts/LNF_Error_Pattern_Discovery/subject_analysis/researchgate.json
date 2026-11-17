@@ -1,0 +1,56 @@
+{
+  "subject" : "researchgate",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Intervening auxiliary control between related fields",
+    "observable_characteristics" : "The transition goes from the Email input to the Password input. In the implemented keyboard order, a separate focusable Forgot password link is positioned between them: Email field label (label 2, position 2) -> Email input (label 3, position 3) -> Forgot password link (label 1, position 4) -> Password input (label 4, position 5). The screenshots show the Forgot password link visually aligned on the password row to the right of the Password label, while the Email and Password inputs appear as the main form fields.",
+    "matching_criteria" : "Another transition matches this pattern when two semantically related form fields are consecutive in an inferred meaningful order, but the actual keyboard sequence inserts a smaller auxiliary control, such as a help or recovery link, between them; the source and destination fields themselves still appear in a broadly top-to-bottom form structure.",
+    "possible_cause" : "Observed evidence shows a meaningful-position gap of 3 -> 5 caused by the inserted Forgot password link at position 4. A possible reason for the detector missing this ground-truth LNF is that it may have prioritized local DOM adjacency or treated the auxiliary link as an acceptable in-group interruption within the form, rather than as a transition that changes the expected progression between the two main inputs. This is a hypothesis; the detector's exact decision rule is not provided.",
+    "supporting_evidence" : "Ground truth includes this exact transition as Neutral severity. Navigation order places Email input at position 3 and Password input at position 5, with Forgot password link at position 4. KFG contains the actual edges Email input -> Password input and Forgot password link -> Email field label. Screenshot numbering shows label 3 on the Email input, label 1 on Forgot password, and label 4 on the Password input.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[2]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+    "classification" : "FP",
+    "pattern_hypothesis" : "Expected page wrap-around misread as disorder",
+    "observable_characteristics" : "This transition goes from the last footer link, Imprint (label 19, position 20), to the ResearchGate logo link (label 20, position 1). The navigation order shows a full sequential path through the page from the logo and login form down through the footer links, with this transition returning from the final element back to the first. The screenshot places the logo at the top and the footer legal links at the bottom, consistent with page-end wrap-around rather than an in-page reordering problem.",
+    "matching_criteria" : "Another transition matches this pattern when the source is the last implemented focusable element in the page sequence and the destination is the first implemented focusable element, indicating a cycle or wrap-around at sequence boundaries rather than a mid-sequence jump.",
+    "possible_cause" : "Observed evidence indicates a boundary transition from the final footer item back to the first page item. A possible reason for the false positive is that the detector may have flagged any large backward jump in inferred meaningful positions (20 -> 1) without recognizing that this occurs specifically at the end of the focus cycle. This is a plausible detector limitation, not a directly verified mechanism.",
+    "supporting_evidence" : "Original predictions include this exact transition, but ground truth does not. Navigation order identifies Imprint as position 20 and the ResearchGate logo as position 1. KFG contains the TAB edge from /html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[2]/ul[1]/li[4]/a[1] to /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]. The evaluated transition is observed_in_stage1 true and browser_boundary false.",
+    "confidence" : "high",
+    "requires_review" : false
+  }, {
+    "transition" : "Browser -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Virtual entry starts at non-first form control",
+    "observable_characteristics" : "The reference data labels the Browser boundary entering at the Forgot password link (label 1, position 4) as an LNF. The KFG special nodes list both v_0 and v_entry as this Forgot password link, and v_entry_successor is null. The screenshot shows this link visually to the right of the Password label, not as the first visible interactive element in the form or page. The navigation order's first meaningful position is the ResearchGate logo link, followed by the Email label and Email input before the Forgot password link.",
+    "matching_criteria" : "Another transition matches this pattern when the modeled browser-entry point lands on an interior control rather than the first meaningful interactive element, especially when earlier visible and focusable controls are documented in the same page sequence.",
+    "possible_cause" : "Observed evidence shows that the virtual browser-entry target in the KFG is the Forgot password link. A possible reason for the detector missing this ground-truth LNF is that browser-boundary transitions may have been excluded, down-weighted, or inconsistently handled compared with ordinary element-to-element transitions. Because the Browser node is virtual and not an ordinary DOM element, the exact detector failure mechanism cannot be confirmed from the supplied evidence.",
+    "supporting_evidence" : "Ground truth includes this exact Browser -> Forgot password transition with Strongly severity. Evaluated transition marks browser_boundary true and observed_in_stage1 true. KFG v_special specifies v_0 and v_entry as /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/a[1]. Navigation order shows earlier page items at positions 1, 2, and 3 before that destination.",
+    "confidence" : "medium",
+    "requires_review" : true
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/label[1]/span[2]/span[1]/span[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison for backward reordering within the login form: focus moves from Forgot password back to the Email field label, a non-boundary jump that ground truth confirms as an LNF."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/label[1]/span[2]/span[1]/span[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows a normal local progression from a form label element to its associated input, contrasting with the disputed Email input -> Password input FN."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[3]/div[1]/label[1]/input[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows that after Password input, focus continues forward normally to the checkbox, supporting that the anomaly is specific to controls before Password rather than the whole form."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[2]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[2]/ul[1]/li[4]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Provides a normal within-footer forward step immediately before the FP transition, showing the footer sequence itself is orderly up to the last item."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[2]/div[2]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows another accepted section-to-section transition near the page end, useful for comparing ordinary forward progression with the last-element wrap-around FP."
+  } ],
+  "subject_summary" : "This subject shows two main error tendencies: boundary handling and ambiguous small-control interruptions within a form. The FP is a clear end-of-sequence wrap-around from the last footer link to the first page element, which appears to have been over-flagged because of a large positional reset. The FNs involve the login form: one is a ground-truth LNF where the main field progression is interrupted by a Forgot password link, and the other is a browser-boundary entry that lands on that same link rather than the first meaningful page control. The browser-entry mechanism is documented in the KFG, but its real-world interpretation remains less certain than the ordinary element-to-element transitions."
+}

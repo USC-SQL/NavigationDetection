@@ -1,0 +1,55 @@
+{
+  "subject" : "branch",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "The KFG has a direct TAB edge from Work email input to Show password button. Within the same sign-in form module, the navigation_order shows a later visible focusable control between them in meaningful order: Password input is position 3, while the source is position 2 and the destination is position 4. The screenshot also places the password field group below the email field, with the Show control associated with that group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P09",
+      "evidence" : "The KFG shows a direct TAB edge from Show password button to Password input. In navigation_order, the source is position 4 and the destination is position 3, so the move goes backward in inferred meaningful order. The screenshot and DOM place both controls in the same localized password field group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from the Sign in button to the help link. Their inferred meaningful positions are consecutive (6 to 7). The screenshot shows the Sign in button in the main sign-in form area and the help link below in a separate questions/help area, supporting a boundary between adjacent page regions/panels rather than a single local control group."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG verifies a direct TAB transition from Sign in button to help link, and the navigation_order positions are consecutive (6 then 7). The endpoints belong to distinct functional subgroups visible in the screenshot: the primary sign-in action within the form versus a separate support/help subgroup below the form."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a Browser-boundary transition, and the KFG v_special marks v_entry as the Create an account link, which is also the first item in visibleCtrlDomSequence and navigation_order position 1."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed matches are limited and specific: a Browser-to-page entry to the Create an account link (P04), a primary-control transition over a local control from Work email to Show password button with Password input in between (P08), a backward local TAB move within the password control cluster from Show password button to Password input (P09), and a consecutive transition from the Sign in button to a separate help area that fits both adjacent cross-region continuation and cross-subgroup movement (P01, P05). No evidence supports wraparound/cyclic behavior, auxiliary-to-auxiliary local progression, field-to-field helper-link progression, or auxiliary-link transitions across workflow controls for the supplied candidates."
+}

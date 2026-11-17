@@ -1,0 +1,21 @@
+Pattern: FP01
+Name: Adjacent region-to-region continuation over-flagged
+Error type: FP
+Subject: ticketon
+
+Summary: The detector sometimes flags ordinary progression between adjacent page regions even when the implemented focus order and inferred meaningful order are consecutive and no intermediate focus target is documented.
+
+Matching criteria: Source and destination are consecutive in the supplied navigation/KFG evidence, the move crosses a visible region boundary such as header to main, main to footer, or one footer/header subgroup to the next, and the case is classified FP in ground truth.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E051
+Classification: FP
+Transition: /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[2]/li[3]/a[1] -> /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/a[2]
+Source: Ingresar header link
+Destination: Language selector English
+Positions: 7 -> 8
+Supporting evidence: original_predictions contains exactly this transition. ground_truth is empty, so it is not a reference LNF. navigation_order lists /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[2]/li[3]/a[1] at position/label 7 and /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/a[2] at position/label 8. kfg edges include a TAB edge from /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/ul[2]/li[3]/a[1] to /html[1]/body[1]/header[1]/nav[1]/div[1]/div[2]/a[2]. Screenshot annotations place markers 7 and 8 together in the header region.
+Confidence: high
+Requires review: False

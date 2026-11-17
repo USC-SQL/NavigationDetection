@@ -1,0 +1,134 @@
+{
+  "subject" : "videotron",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "The KFG contains a direct TAB edge from the SIGN IN button (/form/div[1]/button[1], navigation position 9) to the top header language link (/div[1]/div[2]/div[1]/a[1], navigation position 1). This moves from a later control back to an earlier top-of-page control, matching a wraparound/cyclic edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from CREATE AN ACCOUNT link (/form/div[1]/div[2]/div[1]/a[1], position 10) to Contact us footer link (/footer/.../li[1]/a[1], position 11). The screenshot and DOM indicate these are in distinct page regions: main login/account area versus footer. Destination position is exactly one greater than source."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB edge from the CREATE AN ACCOUNT link in the main login/account module to the Contact us link in the footer link group. These are distinct visual/functional subgroups, and the destination's inferred meaningful position (11) is exactly one greater than the source's (10)."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "The KFG shows a direct TAB edge from the ID input field (position 2) to the Password input field (position 4). A separate focusable helper/recovery link, 'Forgot your username?' (position 3), is visually associated with the ID field group and lies between the two fields in navigation order, satisfying a field-to-field transition near an embedded helper link."
+    }, {
+      "pattern_id" : "P08",
+      "evidence" : "This is a direct TAB transition from a primary control, the ID input field, to a later control, the Password input field, within the same login form module. The intermediate visible focusable control is the 'Forgot your username?' link at position 3, identified in the navigation JSON and screenshot, which is bypassed by this specific edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG includes a direct TAB edge from 'Forgot your username?' (position 3) to 'Forgot your password?' (position 8). Both endpoints are nearby recovery/help links within the same login form, so they are local auxiliary controls."
+    }, {
+      "pattern_id" : "P07",
+      "evidence" : "The source is the helper/recovery link 'Forgot your username?'. The direct TAB edge goes to another helper/recovery link, 'Forgot your password?'. Between them in inferred order are primary workflow controls: Password input (position 4), show/hide password control (5), Public computer checkbox (6), and Public computer option container/label (7)."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from the show or hide password control (position 5) to the Public computer checkbox (position 6). The screenshot shows these as adjacent visual panels/rows within the form: the password row and the public-computer option row. Destination position is exactly one greater than source."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This verified TAB edge moves from the password-field subgroup's embedded control (show/hide password) to the distinct public-computer option subgroup. These are separate local subgroups within the form, and the destination position 6 is exactly one greater than source position 5."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from the Password input field (position 4) to the show or hide password control (position 5). These are distinct but adjacent functional subgroups within the password row: the primary text-entry field and its embedded visibility toggle control. Destination position is exactly one greater than source."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P05",
+      "reason" : "The KFG verifies a direct TAB edge from the Public computer checkbox (position 6) to the Public computer option container/label (position 7), but the evidence does not clearly establish whether these are distinct functional subgroups or simply parts of one checkbox control cluster."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG contains a direct TAB edge from Contact us footer link (position 11) to Terms of use footer link (position 12). In the screenshot these are neighboring footer utility links within the same footer link cluster, and both serve secondary/supportive page functions rather than the main login workflow."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Terms of use footer link (position 12) to Privacy footer link (position 13). Both are adjacent footer utility/policy links within the same local footer group, fitting auxiliary-control progression."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Privacy footer link (position 13) to Accessibility footer link (position 14). These are neighboring footer utility/support links in the same footer cluster, both secondary to the page's primary login task."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG contains a direct TAB edge from Accessibility footer link (position 14) to Wireless Code footer link (position 15). In the screenshot these are adjacent footer links within the same local utility/support group."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "Although the positions are consecutive and the edge is direct, both endpoints appear to be within the same footer link group rather than clearly distinct page regions, so cross-region status is not established."
+    }, {
+      "pattern_id" : "P05",
+      "reason" : "The evidence shows adjacent footer links, but it does not establish that Accessibility and Wireless Code belong to clearly distinct visual or functional subgroups rather than one footer link list."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a Browser-boundary transition, and the KFG v_special marks the ID input field as both v_0 and v_entry. The modeled first focused webpage control is the ID input field."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "The evidence shows a modeled browser-entry to the ID field, a clear wraparound TAB edge from the SIGN IN button back to the header language link, a direct main-to-footer continuation from CREATE AN ACCOUNT to the first footer link, several local auxiliary-link progressions in the footer, and a few within-form transitions including a field-to-field jump that bypasses the 'Forgot your username?' helper link."
+}

@@ -1,0 +1,66 @@
+{
+  "subject" : "disneyworld",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/button[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Local form controls bypassed by implemented tab order",
+    "observable_characteristics" : "The password input is followed by the Sign In button in the implemented focus graph, even though the same form region also contains a Forgot password control, a Remember Me checkbox, and a Cancel link. In navigation_order, the password input is position 4 and the Sign In button is position 8, with positions 5-7 occupied by nearby form controls. The screenshot shows these controls visually grouped within the same sign-in card.",
+    "matching_criteria" : "A transition within one compact form or control cluster where focus moves directly from one control to another later control while one or more visible, focusable controls in the same cluster appear elsewhere in the implemented sequence and occupy intermediate meaningful positions.",
+    "possible_cause" : "Observed: the detector did not flag this transition although ground truth labels it an LNF. Hypothesis: the detector may have treated movement from a text field to the primary submit button as an acceptable within-form shortcut or relied too heavily on DOM/visual adjacency of the source and destination while underweighting the intervening auxiliary controls.",
+    "supporting_evidence" : "KFG edge TAB exists from /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1] to /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/button[1]. navigation_order places Forgot password button/link at position 5, Remember Me checkbox at position 6, and Cancel link at position 7 between source position 4 and destination position 8. Screenshot labels show password as 2 and Sign In as 3, with Forgot password 8, Remember Me 5, and Cancel 4 also present in the card.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/span[1]/span[2]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Reverse wrap inside control row",
+    "observable_characteristics" : "The Cancel link and Remember Me checkbox are both in the lower portion of the form. Implemented focus moves from Cancel back to Remember Me. navigation_order assigns Cancel position 7 and Remember Me position 6, so this is a backward step in meaningful order. The KFG includes a TAB edge for this backward move, indicating the implemented sequence wraps within the row rather than continuing forward.",
+    "matching_criteria" : "A transition where TAB moves from a later control to an earlier control within the same visually grouped row or button area, producing a backward local wrap instead of progressing to the next meaningful item.",
+    "possible_cause" : "Observed: this backward transition is labeled ground-truth LNF but was not predicted. Hypothesis: the detector may have focused on larger cross-section jumps and missed short-range reversals among nearby controls, especially when the controls are visually close and belong to the same form footer area.",
+    "supporting_evidence" : "KFG edge TAB exists from /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/a[1] to /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/span[1]/span[2]. navigation_order gives Cancel link position 7 and Remember Me checkbox position 6. The screenshot shows Cancel near the Sign In action row and Remember Me above-left in the same form area.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/button[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Button-to-secondary-action backstep",
+    "observable_characteristics" : "Implemented focus moves from the primary Sign In button to the secondary Cancel link. navigation_order places Sign In at position 8 and Cancel at position 7, so TAB causes a one-step backward move in the inferred meaningful order. Both controls are visually adjacent in the same action row at the bottom of the sign-in form.",
+    "matching_criteria" : "A transition where the primary action is followed by a secondary action that has an earlier meaningful position, causing TAB to move backward among adjacent action controls within the same row or footer region.",
+    "possible_cause" : "Observed: the detector missed this ground-truth LNF. Hypothesis: the detector may have discounted small backward swaps between adjacent controls as harmless because the controls are close together visually, or it may have used a threshold favoring larger positional jumps.",
+    "supporting_evidence" : "KFG edge TAB exists from /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/button[1] to /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/a[1]. navigation_order gives Sign In button position 8 and Cancel link position 7. The screenshot labels Sign In as 3 and Cancel as 4, showing them side-by-side in the same action area.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "Browser -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Browser-entry omitted due to virtual boundary handling",
+    "observable_characteristics" : "Ground truth marks the browser-entry transition to the Email Address or Username input as an LNF, but the source is the virtual Browser boundary rather than a DOM element. The KFG special nodes identify the email input as v_entry and v_0. navigation_order places the Walt Disney World logo link at position 1 ahead of the email input at position 2, indicating focus entry begins inside the form rather than on the top logo link.",
+    "matching_criteria" : "A case where the evaluated transition originates at the Browser boundary and lands on a page control that is not the first meaningful item, with KFG metadata explicitly designating an entry node.",
+    "possible_cause" : "Observed: the detector did not report this ground-truth browser-boundary LNF. Hypothesis: the detector may not score virtual Browser boundary transitions as ordinary candidates, or may exclude entry behavior because it is not represented as a normal DOM-to-DOM edge.",
+    "supporting_evidence" : "evaluated_transitions marks browser_boundary=True for Browser -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]. In kfg.v_special, v_entry and v_0 both point to that input. navigation_order shows the logo link at position 1 and the destination input at position 2. No original_predictions entry includes a Browser source.",
+    "confidence" : "medium",
+    "requires_review" : true
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/button[2]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison for a larger within-page jump that the detector did catch; focus moves from the logo to a later form control, bypassing earlier fields."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/button[2] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/span[1]/span[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison for a reverse jump within the form that the detector did catch; unlike the missed FN reversals, this one spans multiple earlier positions and lands near the top of the form."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/span[1]/span[2] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows a non-error forward move from Remember Me to Create Account, helpful to distinguish true local reordering from ordinary progression to the next section."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows a normal text-field-to-text-field advance within the same form, contrasting with the missed password-to-Sign In jump."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Shows that the detector can catch a strong wraparound from lower-page content back to the top logo, contrasting with the missed browser-entry and smaller local wraps."
+  } ],
+  "subject_summary" : "This subject shows a sign-in card whose implemented keyboard order differs from the inferred meaningful order in multiple local ways: the password field jumps to the Sign In button, and the action/footer controls include backward moves from Sign In to Cancel and from Cancel to Remember Me. The detector did catch larger jumps and major wraparounds, but missed several short-range within-form reversals and the Browser entry case. The browser-boundary FN is especially uncertain because the source is virtual rather than a standard DOM node, so the detector's omission mechanism remains partly unverified."
+}

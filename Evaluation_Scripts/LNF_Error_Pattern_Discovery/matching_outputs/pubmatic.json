@@ -1,0 +1,50 @@
+{
+  "subject" : "pubmatic",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "The KFG contains a direct TAB edge from the Username input to the Password input. Both endpoints are primary form fields within the login form, and the screenshot/navigation data show a separate recovery helper control, the 'Forgot Password button/link', associated with the password/login area."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P09",
+      "evidence" : "The KFG shows a direct TAB edge from the Log In button to the Forgot Password button/link. In navigation_order, this moves backward in inferred meaningful order from position 5 to position 4, and both controls are part of the same localized login module shown in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from the 'Forgot Password button/link' to the 'Privacy Policy footer link'. The screenshot and DOM/XPath place the source in the login panel/main content and the destination in the footer, which are clearly distinct page regions. The destination's inferred meaningful position is exactly one greater than the source (4 to 6? No; however by navigation_order positions source is 4 and destination is 6, so this does not satisfy adjacency)."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is a recovery control, but the destination is a footer privacy link. The evidence does not support both endpoints being secondary controls within the same local functional group."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a Browser-boundary transition, and the KFG v_special marks the Username input as the v_entry/first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed direct TAB navigation mostly follows the login form sequence: Username to Password, Password to Remember me, Remember me to Log In, Log In to Forgot Password, then Forgot Password to the footer Privacy Policy link. Clear pattern support exists for browser-to-page entry (Browser to Username), a field-to-field transition near a recovery link (Username to Password), and a backward local focus movement within the login module (Log In to Forgot Password)."
+}

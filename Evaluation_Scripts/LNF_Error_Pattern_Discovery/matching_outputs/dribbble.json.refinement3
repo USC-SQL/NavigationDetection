@@ -1,0 +1,78 @@
+{
+  "subject" : "dribbble",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG has a direct TAB edge from /section[1]/div[1]/a[2] (Get started — it's free link) to /section[2]/main[1]/div[1]/div[1]/form[1]/button[1] (Sign in with Google button). The screenshot shows these controls in separate visual regions: a left promotional Webflow panel and a right sign-in panel."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a direct consecutive TAB transition in the KFG from the left promotional panel CTA (/section[1]/div[1]/a[2]) to the right sign-in module's Google sign-in button (/section[2]/main[1]/div[1]/div[1]/form[1]/button[1]). These endpoints are in distinct visual/functional subgroups rather than the same local component."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from the social sign-in area button (/div[1]/form[1]/button[1], Sign in with Google) to the email-sign-in form's Forgot password link (/div[2]/form[1]/div[1]/fieldset[2]/label[1]/a[1]). The screenshot separates these into distinct subgroups within the sign-in module: the Google sign-in option above and the email/password form below."
+    }, {
+      "pattern_id" : "P08",
+      "evidence" : "A direct TAB edge exists in the KFG from the primary Sign in with Google button to the later Forgot password link. Visible focusable controls occupy intermediate positions in the same sign-in module: Username or Email input (navigation position 4) and Password input (navigation position 5) are both between source position 3 and destination position 6 in the navigation JSON; the screenshot also shows them between the endpoints."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "The KFG includes a direct TAB edge from /fieldset[1]/input[1] (Username or Email input) to /fieldset[2]/input[1] (Password input). A separate focusable helper/recovery link, /fieldset[2]/label[1]/a[1] (Forgot password link), is visually associated with the destination password field group in the screenshot and DOM."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "The KFG shows a direct TAB edge from /fieldset[2]/input[1] (Password input) to /form[1]/input[2] (Sign In button). A separate visible focusable control lies between them locally: /fieldset[2]/label[1]/a[1] (Forgot password link) appears between the password field and the Sign In button in visibleCtrlDomSequence and in the screenshot near the password field."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P07",
+      "evidence" : "The KFG includes a direct TAB edge from /fieldset[2]/label[1]/a[1] (Forgot password link), a recovery/helper link, to /div[2]/p[1]/a[1] (Sign up link). The primary workflow control Sign In button is located between them in inferred meaningful order: Forgot password is position 6, Sign In button is position 7, and Sign up link is position 8."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is clearly an auxiliary recovery link, but the destination Sign up link may function as an alternate primary account-creation path rather than a secondary utility/support control. The evidence does not establish that both endpoints are genuinely auxiliary within the same local functional group."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG has a direct TAB edge from /section[2]/main[1]/div[1]/div[2]/form[1]/input[2] (Sign In button) to /section[1]/div[1]/a[1] (Webflow logo link). The screenshot shows these controls in different page regions: the right sign-in form area and the left promotional panel."
+    }, {
+      "pattern_id" : "P02",
+      "evidence" : "This TAB edge goes from a later control (navigation position 7, Sign In button) back to an earlier control near the page beginning (navigation position 1, Webflow logo link), which is a wraparound-like return to the start."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a Browser boundary transition, and the KFG v_special marks /section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[1]/input[1] (Username or Email input) as both v_0 and v_entry, indicating the modeled browser-to-page entry focus target."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed patterns include cross-region/subgroup TAB moves between the left promotional panel and the right sign-in panel, direct skipping transitions within the sign-in module, a field-to-field transition associated with the Forgot password helper link, a helper-link transition crossing over the Sign In workflow control, a wraparound TAB edge from Sign In back to the first promotional link, and a modeled Browser-to-page entry landing on the Username or Email input."
+}

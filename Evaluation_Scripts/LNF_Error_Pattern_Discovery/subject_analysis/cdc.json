@@ -1,0 +1,52 @@
+{
+  "subject" : "cdc",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1] -> /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Adjacent header cluster under-detection",
+    "observable_characteristics" : "The implemented focus order moves directly from the Search link to the first prominent header action button, About Our Service. In both navigation_order and KFG visibleCtrlDomSequence, these are consecutive focusable elements (labels/positions 6 to 7). Visually they are in the same top hero/header region, with Search on the right side and the action buttons grouped below/left within the same header band.",
+    "matching_criteria" : "A similar case should show two consecutive focusable controls in the implemented order, located within the same visible header/hero cluster, where the transition is ground-truth labeled as an LNF even though no intermediate focusable element is skipped in the documented sequence.",
+    "possible_cause" : "Observed evidence confirms only that the detector failed to flag a ground-truth-labeled transition. A possible cause is that the detector relied heavily on adjacency in DOM or tab order and therefore treated this as normal sequential navigation, missing a semantically questionable shift between header subregions. This remains a hypothesis because the supplied evidence does not expose detector internals.",
+    "supporting_evidence" : "navigation_order shows label 6 Search immediately followed by label 7 About Our Service. KFG contains a TAB edge from /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1] to /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]. evaluated_transitions marks this transition FN. Screenshot 1 places both controls within the blue header area but in distinct subareas.",
+    "confidence" : "medium",
+    "requires_review" : true
+  }, {
+    "transition" : "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3] -> /html[1]/body[1]/main[1]/section[1]/div[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Header-to-isolated utility link under-detection",
+    "observable_characteristics" : "Focus moves from the third header CTA, View All, to the standalone Español link at the top right of the main content. These are consecutive in the implemented order (labels/positions 9 to 10). Visually, the destination is separated from the header CTA row and appears as a small isolated language link before the Trending Topics content.",
+    "matching_criteria" : "A similar transition should connect the end of a header action group to a small standalone utility link in the next page region, with direct adjacency in the actual focus order but a noticeable visual or functional shift between clusters.",
+    "possible_cause" : "A plausible explanation is that the detector treated this as an ordinary region boundary because it follows the sequential order from header into main content, and therefore did not flag the cluster break that ground truth considers an LNF. This is unverified because the evidence does not specify detector features or thresholds.",
+    "supporting_evidence" : "navigation_order lists label 9 View All followed immediately by label 10 Español. KFG has a TAB edge from /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3] to /html[1]/body[1]/main[1]/section[1]/div[1]/a[1]. evaluated_transitions classifies it as FN. Screenshot 1 shows View All within the large blue header block and Español as a separate small link below/right outside that block.",
+    "confidence" : "medium",
+    "requires_review" : true
+  }, {
+    "transition" : "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Within-card image-to-heading under-detection",
+    "observable_characteristics" : "Focus moves from the large CDC-INFO image link to the About Our Service heading link within the same promotional card. They are consecutive in the implemented order (labels/positions 22 to 23). The screenshot shows a split card layout where the image is on the right and the text heading is on the left, so focus advances between two linked parts of the same card but not in straightforward left-to-right visual reading order.",
+    "matching_criteria" : "Another occurrence should involve two consecutive focusable elements belonging to the same card or teaser, with an image link and a title/headline link representing the same content unit, especially when their visual arrangement is side-by-side or reversed relative to reading order.",
+    "possible_cause" : "A likely cause is that the detector did not flag transitions internal to a single card because image-to-title adjacency often indicates acceptable grouping. Ground truth, however, labels this internal card transition as an LNF, possibly due to the card's visual order. This explanation is inferential and not confirmed by the evidence alone.",
+    "supporting_evidence" : "navigation_order shows label 22 CDC-INFO image followed by label 23 About Our Service heading. KFG includes a TAB edge from /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1] to /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]. evaluated_transitions marks it FN. Screenshot 2 shows the heading block left of the image, while focus numbering places 22 on the image and 23 on the heading.",
+    "confidence" : "medium",
+    "requires_review" : true
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison for a correctly detected cluster break from the final item in a right-column list to the next section's large image card."
+  }, {
+    "transition" : "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[2] -> /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Adjacent controls within the same header CTA group; contrasts with the FN from Search to About Our Service by showing a clearly ordinary within-group step."
+  }, {
+    "transition" : "/html[1]/body[1]/main[1]/section[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Another sequential cross-region move into the main content that ground truth did not label, helpful when comparing the FN from View All to Español."
+  }, {
+    "transition" : "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Within the same promo card, heading-to-button is treated as normal, useful contrast for the FN image-to-heading transition inside that card."
+  } ],
+  "subject_summary" : "All observed errors for this subject are FNs rather than FPs. Each FN is a consecutive implemented TAB transition confirmed by both navigation_order and KFG. The recurring theme is under-detection of transitions that are structurally adjacent in the actual focus order but visually or functionally cross subgroups: header search to CTA group, header CTA row to isolated language link, and image-to-heading within a promo card. Because the evidence package does not reveal the detector's internal decision rules or a definitive violation rationale beyond ground-truth labels, the proposed causes remain hypotheses and warrant review."
+}

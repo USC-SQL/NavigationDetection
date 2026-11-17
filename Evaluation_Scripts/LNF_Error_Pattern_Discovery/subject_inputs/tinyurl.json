@@ -1,0 +1,797 @@
+{
+  "subject": "tinyurl",
+  "evidence_description": {
+    "original_predictions": "Original Stage 2 detected LNF transitions.",
+    "ground_truth": "Reference LNF transitions.",
+    "navigation_order": "Stage 1 inferred meaningful order and implemented keyboard labels.",
+    "kfg": "Original keyboard focus graph JSON.",
+    "evaluated_transitions": "Original prediction-vs-ground-truth classification inventory. TN labels are provisional within the modeled candidate set.",
+    "screenshot_paths": "Local annotated screenshot paths to be attached as images during the API request."
+  },
+  "original_predictions": [],
+  "ground_truth": [],
+  "ground_truth_severity": {
+    "Strongly": [],
+    "Slightly": [],
+    "Neutral": []
+  },
+  "navigation_order": {
+    "navigation_order": [
+      {
+        "position": 1,
+        "label": 1,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/a[1]",
+        "descriptor": "TinyURL logo/home link"
+      },
+      {
+        "position": 2,
+        "label": 2,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[1]/a[1]",
+        "descriptor": "Help icon link"
+      },
+      {
+        "position": 3,
+        "label": 3,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[1]",
+        "descriptor": "My URLs"
+      },
+      {
+        "position": 4,
+        "label": 4,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[2]",
+        "descriptor": "Plans"
+      },
+      {
+        "position": 5,
+        "label": 5,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[3]",
+        "descriptor": "Blog"
+      },
+      {
+        "position": 6,
+        "label": 6,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/div[1]",
+        "descriptor": "Features menu"
+      },
+      {
+        "position": 7,
+        "label": 7,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[4]",
+        "descriptor": "Sign Up"
+      },
+      {
+        "position": 8,
+        "label": 8,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[5]",
+        "descriptor": "Sign In"
+      },
+      {
+        "position": 9,
+        "label": 9,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+        "descriptor": "Hero Get Started button"
+      },
+      {
+        "position": 10,
+        "label": 10,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/a[1]",
+        "descriptor": "WIRED publication link"
+      },
+      {
+        "position": 11,
+        "label": 11,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[2]/a[1]",
+        "descriptor": "TIME publication link"
+      },
+      {
+        "position": 12,
+        "label": 12,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[3]/a[1]",
+        "descriptor": "StarTribune publication link"
+      },
+      {
+        "position": 13,
+        "label": 13,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[4]/a[1]",
+        "descriptor": "theONION publication link"
+      },
+      {
+        "position": 14,
+        "label": 14,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[5]/a[1]",
+        "descriptor": "ZDNet publication link"
+      },
+      {
+        "position": 15,
+        "label": 15,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[5]/a[1]",
+        "descriptor": "Get Started for Free button"
+      },
+      {
+        "position": 16,
+        "label": 16,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[1]",
+        "descriptor": "Footer copyright/TinyURL LLC link"
+      },
+      {
+        "position": 17,
+        "label": 17,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[2]",
+        "descriptor": "Footer Terms link"
+      },
+      {
+        "position": 18,
+        "label": 18,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[3]",
+        "descriptor": "Footer Privacy Policy link"
+      }
+    ]
+  },
+  "kfg": {
+    "UIGraphStates": [
+      {
+        "v_exit": [],
+        "nodes": [
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "609,2773,350,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/div[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1511,16,116,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[3]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1275,16,98,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[3]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1445,16,65,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "751,2643,255,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1511,16,116,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[5]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1720,16,84,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "48,16,162,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "989,2773,255,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1036,2643,350,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1373,16,72,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1231,22,32,32",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[4]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1628,16,92,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "466,2643,255,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "814,3230,224,56",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "371,493,155,56",
+            "I'": "null"
+          }
+        ],
+        "v_special": [
+          {
+            "v_0": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/a[1]"
+          },
+          {
+            "v_entry": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/a[1]"
+          },
+          {
+            "v_entry_successor": "null"
+          }
+        ],
+        "v_n": [],
+        "edges_inAndOutsideDialog": [],
+        "visibleCtrlDomInsideDialogSequence": [],
+        "visibleCtrlDomSequence": [
+          {
+            "0": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/a[1]"
+          },
+          {
+            "1": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[1]/a[1]"
+          },
+          {
+            "2": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[1]"
+          },
+          {
+            "3": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[2]"
+          },
+          {
+            "4": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[3]"
+          },
+          {
+            "5": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/div[1]"
+          },
+          {
+            "6": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/div[1]/a[1]"
+          },
+          {
+            "7": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[4]"
+          },
+          {
+            "8": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[5]"
+          },
+          {
+            "9": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]"
+          },
+          {
+            "10": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "11": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[2]/a[1]"
+          },
+          {
+            "12": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[3]/a[1]"
+          },
+          {
+            "13": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[4]/a[1]"
+          },
+          {
+            "14": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[5]/a[1]"
+          },
+          {
+            "15": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[5]/a[1]"
+          },
+          {
+            "16": "/html[1]/body[1]/div[2]/div[1]/div[3]/a[1]"
+          },
+          {
+            "17": "/html[1]/body[1]/div[2]/div[1]/div[3]/a[2]"
+          },
+          {
+            "18": "/html[1]/body[1]/div[2]/div[1]/div[3]/a[3]"
+          },
+          {
+            "19": "/html[1]/body[1]/div[2]/div[1]/div[3]/button[1]"
+          }
+        ],
+        "edges": [
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[5]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[4]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/div[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[3]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[3]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[3]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[3]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[5]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[4]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[5]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[3]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[2]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[4]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/div[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[2]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/div[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[3]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[4]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/div[1]"
+          }
+        ],
+        "stateTransition": [],
+        "state_properties": [
+          {
+            "type": "KFFG"
+          },
+          {
+            "phase": "INITIAL_PHASE"
+          },
+          {
+            "thisStateID": 0
+          },
+          {
+            "parentStateID": -1
+          }
+        ],
+        "ctrlClusters": [],
+        "dialogStateProperties": [
+          {
+            "isADialogState": "0"
+          },
+          {
+            "triggerNodeLeadingToState": "null"
+          },
+          {
+            "postModalTriggerRoot": "null",
+            "preModalTriggerRoot": "null"
+          }
+        ]
+      }
+    ]
+  },
+  "evaluated_transitions": [
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/a[1]",
+      "source_label": "9",
+      "destination_label": "10",
+      "source_position": "9",
+      "destination_position": "10",
+      "source_descriptor": "Hero Get Started button",
+      "destination_descriptor": "WIRED publication link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[2]/a[1]",
+      "source_label": "10",
+      "destination_label": "11",
+      "source_position": "10",
+      "destination_position": "11",
+      "source_descriptor": "WIRED publication link",
+      "destination_descriptor": "TIME publication link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[2]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[3]/a[1]",
+      "source_label": "11",
+      "destination_label": "12",
+      "source_position": "11",
+      "destination_position": "12",
+      "source_descriptor": "TIME publication link",
+      "destination_descriptor": "StarTribune publication link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[3]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[4]/a[1]",
+      "source_label": "12",
+      "destination_label": "13",
+      "source_position": "12",
+      "destination_position": "13",
+      "source_descriptor": "StarTribune publication link",
+      "destination_descriptor": "theONION publication link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[4]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[5]/a[1]",
+      "source_label": "13",
+      "destination_label": "14",
+      "source_position": "13",
+      "destination_position": "14",
+      "source_descriptor": "theONION publication link",
+      "destination_descriptor": "ZDNet publication link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[5]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[5]/a[1]",
+      "source_label": "14",
+      "destination_label": "15",
+      "source_position": "14",
+      "destination_position": "15",
+      "source_descriptor": "ZDNet publication link",
+      "destination_descriptor": "Get Started for Free button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[5]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[4]/a[1]",
+      "source_label": "15",
+      "destination_label": "16",
+      "source_position": "15",
+      "destination_position": "16",
+      "source_descriptor": "Get Started for Free button",
+      "destination_descriptor": "Footer copyright/TinyURL LLC link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[4]/a[2]",
+      "source_label": "16",
+      "destination_label": "17",
+      "source_position": "16",
+      "destination_position": "17",
+      "source_descriptor": "Footer copyright/TinyURL LLC link",
+      "destination_descriptor": "Footer Terms link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/div[4]/a[2] -> /html[1]/body[1]/div[2]/div[1]/div[4]/a[3]",
+      "source_label": "17",
+      "destination_label": "18",
+      "source_position": "17",
+      "destination_position": "18",
+      "source_descriptor": "Footer Terms link",
+      "destination_descriptor": "Footer Privacy Policy link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/a[1] -> /html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[1]/a[1]",
+      "source_label": "1",
+      "destination_label": "2",
+      "source_position": "1",
+      "destination_position": "2",
+      "source_descriptor": "TinyURL logo/home link",
+      "destination_descriptor": "Help icon link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[1]/a[1] -> /html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[1]",
+      "source_label": "2",
+      "destination_label": "3",
+      "source_position": "2",
+      "destination_position": "3",
+      "source_descriptor": "Help icon link",
+      "destination_descriptor": "My URLs",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[1] -> /html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[2]",
+      "source_label": "3",
+      "destination_label": "4",
+      "source_position": "3",
+      "destination_position": "4",
+      "source_descriptor": "My URLs",
+      "destination_descriptor": "Plans",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[2] -> /html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[3]",
+      "source_label": "4",
+      "destination_label": "5",
+      "source_position": "4",
+      "destination_position": "5",
+      "source_descriptor": "Plans",
+      "destination_descriptor": "Blog",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[3] -> /html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/div[1]",
+      "source_label": "5",
+      "destination_label": "6",
+      "source_position": "5",
+      "destination_position": "6",
+      "source_descriptor": "Blog",
+      "destination_descriptor": "Features menu",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[4] -> /html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[5]",
+      "source_label": "7",
+      "destination_label": "8",
+      "source_position": "7",
+      "destination_position": "8",
+      "source_descriptor": "Sign Up",
+      "destination_descriptor": "Sign In",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[5] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+      "source_label": "8",
+      "destination_label": "9",
+      "source_position": "8",
+      "destination_position": "9",
+      "source_descriptor": "Sign In",
+      "destination_descriptor": "Hero Get Started button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/div[1] -> /html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/a[4]",
+      "source_label": "6",
+      "destination_label": "7",
+      "source_position": "6",
+      "destination_position": "7",
+      "source_descriptor": "Features menu",
+      "destination_descriptor": "Sign Up",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "Browser -> /html[1]/body[1]/div[2]/div[1]/header[1]/nav[1]/a[1]",
+      "source_label": "",
+      "destination_label": "1",
+      "source_position": "",
+      "destination_position": "1",
+      "source_descriptor": "Virtual Browser boundary",
+      "destination_descriptor": "TinyURL logo/home link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "True"
+    }
+  ],
+  "screenshot_paths": [
+    "/Users/lance/Downloads/Empirical_Study_Results/tinyurl/tinyurl1.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/tinyurl/tinyurl2.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/tinyurl/tinyurl3.jpg"
+  ]
+}

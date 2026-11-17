@@ -1,0 +1,2538 @@
+{
+  "subject": "cdc",
+  "evidence_description": {
+    "original_predictions": "Original Stage 2 detected LNF transitions.",
+    "ground_truth": "Reference LNF transitions.",
+    "navigation_order": "Stage 1 inferred meaningful order and implemented keyboard labels.",
+    "kfg": "Original keyboard focus graph JSON.",
+    "evaluated_transitions": "Original prediction-vs-ground-truth classification inventory. TN labels are provisional within the modeled candidate set.",
+    "screenshot_paths": "Local annotated screenshot paths to be attached as images during the API request."
+  },
+  "original_predictions": [
+    "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+  ],
+  "ground_truth": [
+    "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3] -> /html[1]/body[1]/main[1]/section[1]/div[1]/a[1]",
+    "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+    "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1] -> /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+    "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+  ],
+  "ground_truth_severity": {
+    "Strongly": [],
+    "Slightly": [
+      "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3] -> /html[1]/body[1]/main[1]/section[1]/div[1]/a[1]"
+    ],
+    "Neutral": [
+      "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+      "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1] -> /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+      "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+    ]
+  },
+  "navigation_order": {
+    "navigation_order": [
+      {
+        "position": 1,
+        "label": 1,
+        "xpath": "/html[1]/body[1]/div[1]/a[1]",
+        "descriptor": "Skip directly to site content"
+      },
+      {
+        "position": 2,
+        "label": 2,
+        "xpath": "/html[1]/body[1]/div[1]/a[2]",
+        "descriptor": "Second skip link"
+      },
+      {
+        "position": 3,
+        "label": 3,
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/span[1]/a[1]",
+        "descriptor": "Official U.S. government banner link"
+      },
+      {
+        "position": 4,
+        "label": 4,
+        "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "CDC logo"
+      },
+      {
+        "position": 5,
+        "label": 5,
+        "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "CDC-INFO home"
+      },
+      {
+        "position": 6,
+        "label": 6,
+        "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1]",
+        "descriptor": "Search"
+      },
+      {
+        "position": 7,
+        "label": 7,
+        "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+        "descriptor": "About Our Service"
+      },
+      {
+        "position": 8,
+        "label": 8,
+        "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[2]",
+        "descriptor": "Email CDC-INFO"
+      },
+      {
+        "position": 9,
+        "label": 9,
+        "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3]",
+        "descriptor": "View All"
+      },
+      {
+        "position": 10,
+        "label": 10,
+        "xpath": "/html[1]/body[1]/main[1]/section[1]/div[1]/a[1]",
+        "descriptor": "Espa\u00f1ol"
+      },
+      {
+        "position": 11,
+        "label": 11,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "Dog article image"
+      },
+      {
+        "position": 12,
+        "label": 12,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+        "descriptor": "Bringing a Dog into the U.S."
+      },
+      {
+        "position": 13,
+        "label": 13,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]",
+        "descriptor": "Respiratory illnesses image"
+      },
+      {
+        "position": 14,
+        "label": 14,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1]",
+        "descriptor": "Respiratory Illnesses"
+      },
+      {
+        "position": 15,
+        "label": 15,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "Get Answers to Common Travel Questions"
+      },
+      {
+        "position": 16,
+        "label": 16,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "Order Publications"
+      },
+      {
+        "position": 17,
+        "label": 17,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[3]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "CDC Resources in other languages"
+      },
+      {
+        "position": 18,
+        "label": 18,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[4]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "CDC Division of Media Relations"
+      },
+      {
+        "position": 19,
+        "label": 19,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[5]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "Request a Speaker"
+      },
+      {
+        "position": 20,
+        "label": 20,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[6]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "NHSN Help Desk"
+      },
+      {
+        "position": 21,
+        "label": 21,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "SAMS NHSN User FAQs"
+      },
+      {
+        "position": 22,
+        "label": 22,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "CDC-INFO image"
+      },
+      {
+        "position": 23,
+        "label": 23,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+        "descriptor": "About Our Service heading"
+      },
+      {
+        "position": 24,
+        "label": 24,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/a[1]",
+        "descriptor": "Learn More"
+      },
+      {
+        "position": 25,
+        "label": 25,
+        "xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[1]",
+        "descriptor": "Home icon link"
+      },
+      {
+        "position": 26,
+        "label": 26,
+        "xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[2]",
+        "descriptor": "CDC-INFO section title"
+      },
+      {
+        "position": 27,
+        "label": 27,
+        "xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/a[1]",
+        "descriptor": "View All"
+      },
+      {
+        "position": 28,
+        "label": 28,
+        "xpath": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "About Our Service"
+      },
+      {
+        "position": 29,
+        "label": 29,
+        "xpath": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Email CDC-INFO"
+      },
+      {
+        "position": 30,
+        "label": 30,
+        "xpath": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[2]/div[1]/a[1]",
+        "descriptor": "Sign up for Email Updates"
+      },
+      {
+        "position": 31,
+        "label": 31,
+        "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[1]",
+        "descriptor": "Contact Us"
+      },
+      {
+        "position": 32,
+        "label": 32,
+        "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[2]",
+        "descriptor": "About CDC"
+      },
+      {
+        "position": 33,
+        "label": 33,
+        "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[3]",
+        "descriptor": "Policies"
+      },
+      {
+        "position": 34,
+        "label": 34,
+        "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[4]",
+        "descriptor": "Languages"
+      },
+      {
+        "position": 35,
+        "label": 35,
+        "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[5]",
+        "descriptor": "Archive"
+      },
+      {
+        "position": 36,
+        "label": 36,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "CDC footer logo"
+      },
+      {
+        "position": 37,
+        "label": 37,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+        "descriptor": "Facebook"
+      },
+      {
+        "position": 38,
+        "label": 38,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[2]",
+        "descriptor": "X"
+      },
+      {
+        "position": 39,
+        "label": 39,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[3]",
+        "descriptor": "Instagram"
+      },
+      {
+        "position": 40,
+        "label": 40,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[4]",
+        "descriptor": "LinkedIn"
+      },
+      {
+        "position": 41,
+        "label": 41,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[1]",
+        "descriptor": "YouTube"
+      },
+      {
+        "position": 42,
+        "label": 42,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[2]",
+        "descriptor": "Pinterest"
+      },
+      {
+        "position": 43,
+        "label": 43,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[3]",
+        "descriptor": "Snapchat"
+      },
+      {
+        "position": 44,
+        "label": 44,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[4]",
+        "descriptor": "RSS"
+      },
+      {
+        "position": 45,
+        "label": 45,
+        "xpath": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[1]",
+        "descriptor": "HHS.gov"
+      },
+      {
+        "position": 46,
+        "label": 46,
+        "xpath": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[2]",
+        "descriptor": "USA.gov"
+      }
+    ]
+  },
+  "kfg": {
+    "UIGraphStates": [
+      {
+        "v_exit": [],
+        "nodes": [
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "765,1887,119,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "767,427,317,178",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "720,1419,113,20",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[4]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1160,605,256,24",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1833,146,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1788,113,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1497,1869,71,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "383,159,167,42",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1056,1806,66,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "767,614,206,29",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[5]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1761,103,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1415,1743,36,36",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[5]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1044,1661,129,64",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "765,1806,64,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "590,1815,95,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1455,1797,36,36",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1348,1833,54,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "473,1887,49,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1407,1869,71,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[3]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1160,563,275,24",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1806,64,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1406,94,90,28",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "765,1860,49,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1806,159,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1761,100,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1160,521,146,24",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "563,159,155,42",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1348,1806,66,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[3]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "669,1661,129,64",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "590,1788,31,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[5]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1788,212,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[4]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1537,1743,36,36",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "405,987,135,39",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "926,891,521,293",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[4]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "839,1661,164,64",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[5]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1160,647,148,24",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[3]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1496,1797,36,36",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1761,132,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "387,427,317,178",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1056,1887,59,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1761,132,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "473,1860,83,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "280,1774,300,24",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/section[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1429,269,54,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "590,1761,41,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1056,1860,83,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "280,1382,142,38",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1842,104,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "732,158,143,43",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "465,1661,162,64",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[3]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1496,1743,36,36",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1833,104,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "193,68,145,93",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "383,68,241,67",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1160,731,195,24",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[4]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1537,1797,36,36",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "590,1869,244,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "473,1833,72,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1348,1887,59,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1806,103,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1761,100,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[6]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1160,689,138,24",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1056,1833,48,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1815,58,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[2]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "735,1495,175,20",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "720,1381,123,20",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "240,1860,118,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "262,1661,163,64",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "473,1806,64,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1455,1743,36,36",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "590,1842,145,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1415,1797,36,36",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/span[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1353,10,136,17",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "280,1565,138,46",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "387,614,270,29",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1160,455,317,48",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "765,1833,68,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "405,891,180,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "473,1761,194,27",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1348,1860,52,27",
+            "I'": "null"
+          }
+        ],
+        "v_special": [
+          {
+            "v_0": "/html[1]/body[1]/div[2]/div[1]/div[1]/span[1]/a[1]"
+          },
+          {
+            "v_entry": "/html[1]/body[1]/div[2]/div[1]/div[1]/span[1]/a[1]"
+          },
+          {
+            "v_entry_successor": "null"
+          }
+        ],
+        "v_n": [],
+        "edges_inAndOutsideDialog": [],
+        "visibleCtrlDomInsideDialogSequence": [],
+        "visibleCtrlDomSequence": [
+          {
+            "0": "/html[1]/body[1]/div[2]/div[1]/div[1]/span[1]/a[1]"
+          },
+          {
+            "1": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "2": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "3": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1]"
+          },
+          {
+            "4": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]"
+          },
+          {
+            "5": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[2]"
+          },
+          {
+            "6": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3]"
+          },
+          {
+            "7": "/html[1]/body[1]/main[1]/section[1]/div[1]/a[1]"
+          },
+          {
+            "8": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "9": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "10": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]"
+          },
+          {
+            "11": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "12": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "13": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "14": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[3]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "15": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[4]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "16": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[5]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "17": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[6]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "18": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "19": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "20": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "21": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/a[1]"
+          },
+          {
+            "22": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[2]"
+          },
+          {
+            "23": "/html[1]/body[1]/section[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "24": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "25": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "26": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[2]/div[1]/a[1]"
+          },
+          {
+            "27": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "28": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "29": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "30": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "31": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[2]"
+          },
+          {
+            "32": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "33": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "34": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "35": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "36": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[3]"
+          },
+          {
+            "37": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "38": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "39": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "40": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "41": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "42": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "43": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "44": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "45": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "46": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[4]"
+          },
+          {
+            "47": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "48": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "49": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/a[1]"
+          },
+          {
+            "50": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "51": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "52": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "53": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "54": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "55": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "56": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "57": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "58": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "59": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "60": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "61": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[3]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "62": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "63": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "64": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "65": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[4]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "66": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[5]"
+          },
+          {
+            "67": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[5]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "68": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/div[5]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "69": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "70": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "71": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[2]"
+          },
+          {
+            "72": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[3]"
+          },
+          {
+            "73": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[4]"
+          },
+          {
+            "74": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[1]"
+          },
+          {
+            "75": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[2]"
+          },
+          {
+            "76": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[3]"
+          },
+          {
+            "77": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[4]"
+          },
+          {
+            "78": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[1]"
+          },
+          {
+            "79": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[2]"
+          }
+        ],
+        "edges": [
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[5]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[4]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[3]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[2]",
+            "v_s": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[4]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[4]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[3]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[3]",
+            "v_s": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/section[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/section[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/a[2]",
+            "v_s": "/html[1]/body[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/section[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[1]/span[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[3]",
+            "v_s": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[4]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[3]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[4]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[3]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[4]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[4]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[3]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[2]/div[1]/div[1]/span[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[4]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[3]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[1]/span[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[4]",
+            "v_s": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[3]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/section[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[6]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/section[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[2]",
+            "v_s": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[3]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[3]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[5]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[2]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[3]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[5]",
+            "v_s": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[4]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[6]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[5]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[5]",
+            "v_s": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[4]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[4]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[3]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[4]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/section[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/section[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[6]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[5]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[4]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[3]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[5]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/section[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[3]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[5]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[4]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[2]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[6]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[4]",
+            "v_s": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[3]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[2]/div[1]/div[1]/span[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]"
+          }
+        ],
+        "stateTransition": [],
+        "state_properties": [
+          {
+            "type": "KFFG"
+          },
+          {
+            "phase": "INITIAL_PHASE"
+          },
+          {
+            "thisStateID": 0
+          },
+          {
+            "parentStateID": -1
+          }
+        ],
+        "ctrlClusters": [],
+        "dialogStateProperties": [
+          {
+            "isADialogState": "0"
+          },
+          {
+            "triggerNodeLeadingToState": "null"
+          },
+          {
+            "postModalTriggerRoot": "null",
+            "preModalTriggerRoot": "null"
+          }
+        ]
+      }
+    ]
+  },
+  "evaluated_transitions": [
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/a[1] -> /html[1]/body[1]/div[1]/a[2]",
+      "source_label": "1",
+      "destination_label": "2",
+      "source_position": "1",
+      "destination_position": "2",
+      "source_descriptor": "Skip directly to site content",
+      "destination_descriptor": "Second skip link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/a[2] -> /html[1]/body[1]/div[2]/div[1]/div[1]/span[1]/a[1]",
+      "source_label": "2",
+      "destination_label": "3",
+      "source_position": "2",
+      "destination_position": "3",
+      "source_descriptor": "Second skip link",
+      "destination_descriptor": "Official U.S. government banner link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[2]/div[1]/div[1]/span[1]/a[1] -> /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "3",
+      "destination_label": "4",
+      "source_position": "3",
+      "destination_position": "4",
+      "source_descriptor": "Official U.S. government banner link",
+      "destination_descriptor": "CDC logo",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+      "source_label": "36",
+      "destination_label": "37",
+      "source_position": "36",
+      "destination_position": "37",
+      "source_descriptor": "CDC footer logo",
+      "destination_descriptor": "Facebook",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[2]",
+      "source_label": "37",
+      "destination_label": "38",
+      "source_position": "37",
+      "destination_position": "38",
+      "source_descriptor": "Facebook",
+      "destination_descriptor": "X",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[2] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[3]",
+      "source_label": "38",
+      "destination_label": "39",
+      "source_position": "38",
+      "destination_position": "39",
+      "source_descriptor": "X",
+      "destination_descriptor": "Instagram",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[3] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[4]",
+      "source_label": "39",
+      "destination_label": "40",
+      "source_position": "39",
+      "destination_position": "40",
+      "source_descriptor": "Instagram",
+      "destination_descriptor": "LinkedIn",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[4] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[1]",
+      "source_label": "40",
+      "destination_label": "41",
+      "source_position": "40",
+      "destination_position": "41",
+      "source_descriptor": "LinkedIn",
+      "destination_descriptor": "YouTube",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[2]",
+      "source_label": "41",
+      "destination_label": "42",
+      "source_position": "41",
+      "destination_position": "42",
+      "source_descriptor": "YouTube",
+      "destination_descriptor": "Pinterest",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[2] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[3]",
+      "source_label": "42",
+      "destination_label": "43",
+      "source_position": "42",
+      "destination_position": "43",
+      "source_descriptor": "Pinterest",
+      "destination_descriptor": "Snapchat",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[3] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[4]",
+      "source_label": "43",
+      "destination_label": "44",
+      "source_position": "43",
+      "destination_position": "44",
+      "source_descriptor": "Snapchat",
+      "destination_descriptor": "RSS",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[4] -> /html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[1]",
+      "source_label": "44",
+      "destination_label": "45",
+      "source_position": "44",
+      "destination_position": "45",
+      "source_descriptor": "RSS",
+      "destination_descriptor": "HHS.gov",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[2]",
+      "source_label": "45",
+      "destination_label": "46",
+      "source_position": "45",
+      "destination_position": "46",
+      "source_descriptor": "HHS.gov",
+      "destination_descriptor": "USA.gov",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[2]",
+      "source_label": "31",
+      "destination_label": "32",
+      "source_position": "31",
+      "destination_position": "32",
+      "source_descriptor": "Contact Us",
+      "destination_descriptor": "About CDC",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[2] -> /html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[3]",
+      "source_label": "32",
+      "destination_label": "33",
+      "source_position": "32",
+      "destination_position": "33",
+      "source_descriptor": "About CDC",
+      "destination_descriptor": "Policies",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[3] -> /html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[4]",
+      "source_label": "33",
+      "destination_label": "34",
+      "source_position": "33",
+      "destination_position": "34",
+      "source_descriptor": "Policies",
+      "destination_descriptor": "Languages",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[4] -> /html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[5]",
+      "source_label": "34",
+      "destination_label": "35",
+      "source_position": "34",
+      "destination_position": "35",
+      "source_descriptor": "Languages",
+      "destination_descriptor": "Archive",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[5] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "35",
+      "destination_label": "36",
+      "source_position": "35",
+      "destination_position": "36",
+      "source_descriptor": "Archive",
+      "destination_descriptor": "CDC footer logo",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "4",
+      "destination_label": "5",
+      "source_position": "4",
+      "destination_position": "5",
+      "source_descriptor": "CDC logo",
+      "destination_descriptor": "CDC-INFO home",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1]",
+      "source_label": "5",
+      "destination_label": "6",
+      "source_position": "5",
+      "destination_position": "6",
+      "source_descriptor": "CDC-INFO home",
+      "destination_descriptor": "Search",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "FN",
+      "transition": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/a[1] -> /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+      "source_label": "6",
+      "destination_label": "7",
+      "source_position": "6",
+      "destination_position": "7",
+      "source_descriptor": "Search",
+      "destination_descriptor": "About Our Service",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1] -> /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[2]",
+      "source_label": "7",
+      "destination_label": "8",
+      "source_position": "7",
+      "destination_position": "8",
+      "source_descriptor": "About Our Service",
+      "destination_descriptor": "Email CDC-INFO",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[2] -> /html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3]",
+      "source_label": "8",
+      "destination_label": "9",
+      "source_position": "8",
+      "destination_position": "9",
+      "source_descriptor": "Email CDC-INFO",
+      "destination_descriptor": "View All",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "FN",
+      "transition": "/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[3] -> /html[1]/body[1]/main[1]/section[1]/div[1]/a[1]",
+      "source_label": "9",
+      "destination_label": "10",
+      "source_position": "9",
+      "destination_position": "10",
+      "source_descriptor": "View All",
+      "destination_descriptor": "Espa\u00f1ol",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+      "source_label": "11",
+      "destination_label": "12",
+      "source_position": "11",
+      "destination_position": "12",
+      "source_descriptor": "Dog article image",
+      "destination_descriptor": "Bringing a Dog into the U.S.",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]",
+      "source_label": "12",
+      "destination_label": "13",
+      "source_position": "12",
+      "destination_position": "13",
+      "source_descriptor": "Bringing a Dog into the U.S.",
+      "destination_descriptor": "Respiratory illnesses image",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1]",
+      "source_label": "13",
+      "destination_label": "14",
+      "source_position": "13",
+      "destination_position": "14",
+      "source_descriptor": "Respiratory illnesses image",
+      "destination_descriptor": "Respiratory Illnesses",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "14",
+      "destination_label": "15",
+      "source_position": "14",
+      "destination_position": "15",
+      "source_descriptor": "Respiratory Illnesses",
+      "destination_descriptor": "Get Answers to Common Travel Questions",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "15",
+      "destination_label": "16",
+      "source_position": "15",
+      "destination_position": "16",
+      "source_descriptor": "Get Answers to Common Travel Questions",
+      "destination_descriptor": "Order Publications",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[3]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "16",
+      "destination_label": "17",
+      "source_position": "16",
+      "destination_position": "17",
+      "source_descriptor": "Order Publications",
+      "destination_descriptor": "CDC Resources in other languages",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[3]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[4]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "17",
+      "destination_label": "18",
+      "source_position": "17",
+      "destination_position": "18",
+      "source_descriptor": "CDC Resources in other languages",
+      "destination_descriptor": "CDC Division of Media Relations",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[4]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[5]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "18",
+      "destination_label": "19",
+      "source_position": "18",
+      "destination_position": "19",
+      "source_descriptor": "CDC Division of Media Relations",
+      "destination_descriptor": "Request a Speaker",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[5]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[6]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "19",
+      "destination_label": "20",
+      "source_position": "19",
+      "destination_position": "20",
+      "source_descriptor": "Request a Speaker",
+      "destination_descriptor": "NHSN Help Desk",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[6]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "20",
+      "destination_label": "21",
+      "source_position": "20",
+      "destination_position": "21",
+      "source_descriptor": "NHSN Help Desk",
+      "destination_descriptor": "SAMS NHSN User FAQs",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TP",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[7]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "21",
+      "destination_label": "22",
+      "source_position": "21",
+      "destination_position": "22",
+      "source_descriptor": "SAMS NHSN User FAQs",
+      "destination_descriptor": "CDC-INFO image",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "FN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+      "source_label": "22",
+      "destination_label": "23",
+      "source_position": "22",
+      "destination_position": "23",
+      "source_descriptor": "CDC-INFO image",
+      "destination_descriptor": "About Our Service heading",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/a[1]",
+      "source_label": "23",
+      "destination_label": "24",
+      "source_position": "23",
+      "destination_position": "24",
+      "source_descriptor": "About Our Service heading",
+      "destination_descriptor": "Learn More",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/a[1] -> /html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[1]",
+      "source_label": "24",
+      "destination_label": "25",
+      "source_position": "24",
+      "destination_position": "25",
+      "source_descriptor": "Learn More",
+      "destination_descriptor": "Home icon link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/section[1]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "10",
+      "destination_label": "11",
+      "source_position": "10",
+      "destination_position": "11",
+      "source_descriptor": "Espa\u00f1ol",
+      "destination_descriptor": "Dog article image",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/section[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "27",
+      "destination_label": "28",
+      "source_position": "27",
+      "destination_position": "28",
+      "source_descriptor": "View All",
+      "destination_descriptor": "About Our Service",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[1] -> /html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[2]",
+      "source_label": "25",
+      "destination_label": "26",
+      "source_position": "25",
+      "destination_position": "26",
+      "source_descriptor": "Home icon link",
+      "destination_descriptor": "CDC-INFO section title",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/section[1]/div[1]/div[1]/h2[1]/a[2] -> /html[1]/body[1]/section[1]/div[1]/div[1]/a[1]",
+      "source_label": "26",
+      "destination_label": "27",
+      "source_position": "26",
+      "destination_position": "27",
+      "source_descriptor": "CDC-INFO section title",
+      "destination_descriptor": "View All",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+      "source_label": "28",
+      "destination_label": "29",
+      "source_position": "28",
+      "destination_position": "29",
+      "source_descriptor": "About Our Service",
+      "destination_descriptor": "Email CDC-INFO",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/section[1]/div[1]/div[2]/div[2]/div[1]/a[1]",
+      "source_label": "29",
+      "destination_label": "30",
+      "source_position": "29",
+      "destination_position": "30",
+      "source_descriptor": "Email CDC-INFO",
+      "destination_descriptor": "Sign up for Email Updates",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/section[1]/div[1]/div[2]/div[2]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[1]",
+      "source_label": "30",
+      "destination_label": "31",
+      "source_position": "30",
+      "destination_position": "31",
+      "source_descriptor": "Sign up for Email Updates",
+      "destination_descriptor": "Contact Us",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "Browser -> /html[1]/body[1]/div[1]/a[1]",
+      "source_label": "",
+      "destination_label": "1",
+      "source_position": "",
+      "destination_position": "1",
+      "source_descriptor": "Virtual Browser boundary",
+      "destination_descriptor": "Skip directly to site content",
+      "observed_in_stage1": "True",
+      "browser_boundary": "True"
+    }
+  ],
+  "screenshot_paths": [
+    "/Users/lance/Downloads/Empirical_Study_Results/cdc/cdc1.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/cdc/cdc2.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/cdc/cdc3.jpg"
+  ]
+}

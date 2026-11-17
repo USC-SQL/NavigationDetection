@@ -1,0 +1,448 @@
+{
+  "subject" : "wiley",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P09",
+      "evidence" : "The KFG contains a verified SHIFTTAB edge from /header/div/form/button to /header/div/form/input. Both controls are within the same localized search form in the header, and the destination meaningful position (8) is earlier than the source (9)."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from top utility nav link 1 to top utility nav link 2. The first three header links are grouped together in the top utility bar in the screenshot and descriptors identify them as utility navigation links, i.e., nearby secondary controls in one local group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from top utility nav link 2 to top utility nav link 3. Both are adjacent links in the same top utility bar and are described as utility nav links, supporting a local auxiliary/utility progression."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from top utility nav link 3 (position 3) to the Wiley logo (position 4). The screenshot separates the small top utility links from the larger brand/logo area, indicating distinct adjacent header subgroups with consecutive meaningful positions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from the Wiley logo to Resources. Both appear together in the same main header navigation cluster in the screenshot; within that local header cluster the logo functions as a secondary site-navigation/branding control adjacent to the nav link."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Resources and Subjects are adjacent in the same header menu, but the evidence does not clearly establish them as secondary utility/support controls rather than ordinary primary site navigation."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Subjects and About are adjacent in the same header menu, but the evidence does not clearly establish both endpoints as secondary auxiliary/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from About to the Search button. In the screenshot, the main nav links and the search form are distinct adjacent header subgroups; the controls are consecutive in focus flow among implemented controls in that header area."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The two footer resources links are adjacent within one footer list, but the evidence does not identify them as help/support/utility controls rather than ordinary navigational links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The two footer resources links are adjacent within one footer list, but their roles are ordinary navigation and not clearly auxiliary/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Adjacent footer resource links are visible in one local group, but available evidence does not show both are genuinely secondary utility/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "This is an adjacent move inside one footer resources list, but the link roles are not clearly auxiliary/support under the supplied evidence."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The links are adjacent in the same footer resources group, but evidence is insufficient to classify both as auxiliary/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from Footer Resources link 6 (position 37) to Footer Resources link 7 (position 38). In the screenshot these occupy two adjacent columns/lists within the footer Resources area, indicating a consecutive transition across distinct local subgroups."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The transition is within the second footer resources list, but the evidence does not clearly establish both links as support/utility controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The two endpoints are adjacent footer resources links, but their classification as auxiliary/support controls is unclear from the evidence."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Although adjacent within one footer list, the endpoints appear to be ordinary resource navigation links, so auxiliary status is not established."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from Footer Resources link 10 (position 41) to Footer About - About Us (position 42). The screenshot shows separate adjacent footer columns labeled RESOURCES and ABOUT, so this is a consecutive transition across distinct footer subgroups."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "This is within one footer About list, but the evidence does not clearly identify both links as secondary utility/help/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0021",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The two About links are adjacent in one footer list, but the available evidence does not establish them as auxiliary/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0022",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Adjacent links in the footer About group are shown, but their roles are ordinary informational navigation rather than clearly auxiliary/support."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0023",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The endpoints are nearby in the footer About list, but the evidence does not clearly establish both as support/utility controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0024",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "This is an adjacent within-list footer About transition, but the evidence is insufficient to classify both endpoints as auxiliary controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0025",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from Footer About - Newsroom (position 47) to Footer Customer Support link 1 (position 48). The screenshot shows separate adjacent footer columns labeled ABOUT and CUSTOMER SUPPORT, supporting a consecutive cross-subgroup transition."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0026",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are in the footer customer support column, but one is generic and the other is Contact Us; the evidence does not fully establish that both are genuinely secondary utility/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0027",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from Footer Customer Support - Contact Us (position 49) to Footer copyright link 1 (position 50). The screenshot places both in the footer but in clearly distinct adjacent footer regions/blocks: a customer-support column followed by the lower copyright block, with destination position exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0028",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Facebook to Twitter. In the screenshot these are neighboring social-media links grouped together in the footer, functioning as secondary utility/outbound controls within one local cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0029",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Twitter to Google Plus. Both are adjacent social-media links in the same footer cluster, which are secondary utility/outbound controls."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0030",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from Google Plus (position 54) to the Footer Wiley logo (position 55). The screenshot shows the social icons as one footer cluster and the logo as a distinct adjacent footer subgroup, with consecutive positions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0031",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "These are adjacent links in the footer copyright sentence, but the evidence does not clearly identify them as utility/help/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0032",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from Footer copyright link 2 (position 51) to Facebook (position 52). The screenshot shows the copyright text block and the social-media icon group as distinct adjacent footer subgroups, with consecutive positions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0033",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "The KFG includes a direct TAB edge from Account Information to Track Recent Orders. Navigation order shows Instructor Account at position 12 between source position 11 and destination position 13, and the screenshot shows it as a visible focusable item in the same main account list."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0034",
+    "matches" : [ {
+      "pattern_id" : "P09",
+      "evidence" : "The KFG contains a direct TAB edge from Instructor Account (position 12) back to Account Information (position 11). Both are links in the same localized main account list/table, so this is a backward local focus transition."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0035",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Track Recent Orders and Complete Order History are nearby account links, but the evidence does not establish that both are secondary utility/support controls rather than ordinary account workflow items."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0036",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Complete Order History and Download Center are adjacent in the account list, but their roles are not clearly both auxiliary/support controls from the provided evidence."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0037",
+    "matches" : [ {
+      "pattern_id" : "P09",
+      "evidence" : "The KFG contains a direct TAB edge from Download Center (position 15) to Managing Your Account (position 10). Both are in the same localized main account content cluster, and the transition moves backward in meaningful order."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0038",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Registration Codes and Textbook Rentals are adjacent within the account list, but the evidence does not clearly classify both as secondary auxiliary/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0039",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "The KFG shows a direct TAB edge from Textbook Rentals (position 17), a later page control in the main content, to Top utility nav link 1 (position 1) near the top of the page, which is a wraparound/cyclic focus edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0040",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "The KFG includes a direct TAB edge from Managing Your Account to Registration Codes. Navigation order shows visible focusable controls Account Information, Instructor Account, Track Recent Orders, Complete Order History, and Download Center at positions 11-15 between source position 10 and destination position 16 within the same main account content module."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0041",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from Chat Now (position 18) to Sidebar My Account - Account Information (position 19). The screenshot shows Chat Now in a customer-care panel and the destination in the adjacent My Account sidebar panel; these are clearly distinct adjacent page regions/panels with consecutive positions."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "Within the right sidebar area, Chat Now and the My Account list are visually distinct adjacent subgroups. The KFG verifies a direct TAB edge and the destination position 19 is exactly one greater than source position 18."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0042",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The endpoints are adjacent links within the My Account sidebar list, but the evidence does not clearly establish both as secondary utility/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0043",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The two sidebar My Account links are adjacent, but the supplied evidence does not show both are genuinely auxiliary/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0044",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Order History and Downloads are adjacent sidebar links, but their classification as auxiliary/support controls is not clearly established."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0045",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Downloads and Registration Codes are adjacent sidebar My Account links, but the evidence does not clearly identify both as secondary support/utility controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0046",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Registration Codes and TextBook Rentals are adjacent in one sidebar list, but both endpoints are not clearly established as auxiliary/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0047",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from Sidebar My Account - TextBook Rentals (position 24) to Help - Shipping (position 25). The screenshot shows these as separate adjacent sidebar panels/lists labeled My Account and Help, with destination position exactly one greater."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "Within the right sidebar, the My Account list and the Help list are distinct adjacent functional subgroups. The KFG verifies the direct TAB edge from position 24 to 25."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0048",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Help - Shipping to Help - Returns. Both are adjacent support/help links within the same Help panel, satisfying a local auxiliary-control progression."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0049",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Help - Returns to Help - Journal Subscriptions. Both endpoints are adjacent help/support links in the same Help sidebar group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0050",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Help - Journal Subscriptions to Help - Technical Support. Both are adjacent support/help links within the same Help list."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0051",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Help - Technical Support to Help - Academic Support. Both endpoints are adjacent support links in the same Help panel."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0052",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Help - Academic Support to Help - Seller Support. Both are adjacent help/support links within the same local Help group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0053",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Help - Seller Support to Help - More About Wiley. Both links are in the same Help panel and presented as nearby support/help resources."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0054",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from Help - More About Wiley (position 31) to Footer Resources link 1 (position 32). The screenshot shows a transition from the main/sidebar content area into the footer, and the destination position is exactly one greater."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0055",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate explicitly originates from the virtual Browser boundary, and the KFG v_special marks /table/.../tr[2]/th/a (Instructor Account) as v_entry/v_0, i.e., the documented first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed patterns include several verified cross-subgroup or cross-region TAB moves between adjacent footer/sidebar panels (P01, P05), a wraparound edge from main content back to the top header utility links (P02), a modeled browser-to-page entry to Instructor Account (P04), and local auxiliary progressions within clear help/support or social-link groups (P03). A few backward local edges occur within the search form and account cluster (P09), and some direct jumps bypass intermediate account links within the same module (P08). Many ordinary adjacent navigation-link transitions remain NO_MATCH or UNCERTAIN where the evidence does not clearly establish auxiliary/support roles."
+}

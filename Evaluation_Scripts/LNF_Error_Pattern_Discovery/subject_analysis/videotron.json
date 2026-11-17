@@ -1,0 +1,76 @@
+{
+  "subject" : "videotron",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/div[2]/div[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Top-of-page link wraps into lower form action",
+    "observable_characteristics" : "The source is the top header language link at the upper-right of the page (label 9, position 1). The destination is the CREATE AN ACCOUNT link inside the login panel below the SIGN IN button (label 10, position 10). The KFG shows this TAB transition directly, and the screenshots show the header link visually separated from the form card while the destination remains inside that card. Multiple intermediate form controls exist in the implemented sequence between these elements, including the ID field, support links, password field, checkbox, and SIGN IN button.",
+    "matching_criteria" : "A transition matches when keyboard focus moves directly from a top-level header utility link into a later action inside a form/card, while the implemented sequence documented elsewhere for the page contains several same-page interactive elements between them and the transition is observed in Stage 1.",
+    "possible_cause" : "Observed evidence shows a long wrap-around jump from the header link to a late form control. A possible reason the original detector missed it is that the detector may have underweighted or ignored cyclic/wrap-around transitions that reconnect page regions, especially when both endpoints are visually plausible tab stops and not browser-boundary events. This is a hypothesis only.",
+    "supporting_evidence" : "Ground truth labels this transition as an LNF with Strongly severity. evaluated_transitions marks it FN and observed_in_stage1=True. In navigation_order, source is position 1 and destination is position 10. In kfg edges there is a TAB edge from /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1] to /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/div[2]/div[1]/a[1].",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/div[1]/button[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+    "classification" : "FP",
+    "pattern_hypothesis" : "Cycle counterpart of labeled wrap-around",
+    "observable_characteristics" : "The source is the SIGN IN button in the login form (label 8, position 9). The destination is the top header language link (label 9, position 1). The KFG shows this as a direct TAB transition. Visually, this is an upward jump from the main form to a header utility link. However, the reference ground truth does not label this exact transition as an LNF, even though the opposite regional jump from the header link to CREATE AN ACCOUNT is labeled.",
+    "matching_criteria" : "A transition matches when it is a direct implemented focus jump between distant page regions that appears to be part of a cyclic tab loop, but the reference labels only a different edge in that loop as the LNF.",
+    "possible_cause" : "A plausible reason for the FP is that the original detector flagged the visually obvious wrap-around edge from the form back to the header because it compares implemented order with page reading order and treats large backward jumps as failures. The mismatch with ground truth suggests the detector may have selected the wrong edge within a multi-edge loop rather than inventing a non-existent navigation behavior.",
+    "supporting_evidence" : "original_predictions contains exactly this transition. evaluated_transitions classifies it as FP with observed_in_stage1=True. navigation_order shows source position 9 and destination position 1. kfg edges contains a TAB edge from the SIGN IN button to the top header language link. Ground truth instead labels /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/div[2]/div[1]/a[1] as the strong wrap-around LNF.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[2]/div[1]/input[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Inline assistance omitted between paired inputs",
+    "observable_characteristics" : "The source is the ID input field (label 1, position 2) and the destination is the Password input field (label 2, position 4). The meaningful order places the Forgot your username? link (label 6, position 3) between them, and the screenshot shows that help link aligned to the right of the ID field row. The implemented TAB order moves directly from the ID input to the Password input, bypassing that visible help link until later.",
+    "matching_criteria" : "A transition matches when two related form inputs are consecutive in implemented keyboard order even though a visible, separately focusable help/recovery link associated with the first input is present between them in the page's meaningful order.",
+    "possible_cause" : "A possible reason for the miss is that the original detector may have treated the move from one primary text field to the next as a normal form progression and discounted nearby auxiliary links. The detector may not have recognized that the omitted control is visible and focusable within the same form group. This remains a hypothesis.",
+    "supporting_evidence" : "Ground truth includes this transition as Neutral severity. evaluated_transitions marks it FN and observed_in_stage1=True. navigation_order lists ID input at position 2, Forgot your username? at position 3, and Password input at position 4. kfg edges contains a TAB edge directly from the ID input to the Password input. The screenshot places the username-recovery link on the same row region as the ID field.",
+    "confidence" : "high",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[1]/div[3]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[3]/div[2]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Laterally aligned recovery links jump across form controls",
+    "observable_characteristics" : "The source is the Forgot your username? link (label 6, position 3) and the destination is the Forgot your password? link (label 7, position 8). These links are visually similar right-aligned assistance links on different rows of the same form. The implemented sequence jumps from the first recovery link to the second, passing over the Password input, password visibility control, public computer checkbox, and its container/label.",
+    "matching_criteria" : "A transition matches when two visually similar utility/help links in a form are directly connected by keyboard focus despite several interactive controls located between them in the same implemented interface.",
+    "possible_cause" : "A likely reason for the FN is that the original detector may have relied heavily on visual alignment or role similarity, causing it to treat the two right-side recovery links as a coherent sequence rather than a disruptive jump across core form controls. This is a hypothesis based on the links' similar placement and function.",
+    "supporting_evidence" : "Ground truth includes this transition with Slightly severity. evaluated_transitions marks it FN. navigation_order places the source at position 3 and destination at position 8, with positions 4-7 occupied by Password input, show/hide password control, Public computer checkbox, and Public computer option container/label. kfg edges contains a TAB edge directly from the username-recovery link to the password-recovery link.",
+    "confidence" : "high",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[3]/div[1]/div[1]/div[1]/div[1] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[1]/div[3]/div[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Backward jump from option label to earlier recovery link",
+    "observable_characteristics" : "The source is the Public computer option container/label (label 5, position 7), a focusable element visually tied to the checkbox row. The destination is the earlier Forgot your username? link (label 6, position 3). The KFG shows a TAB edge producing a backward jump to an upper help link rather than continuing downward to the next lower control. The screenshot indicates the destination is visually above the source and in another row of the form.",
+    "matching_criteria" : "A transition matches when focus leaves a secondary focusable subcomponent of a checkbox or option row and jumps backward to an earlier help link located higher in the same form, instead of proceeding to the next lower control.",
+    "possible_cause" : "A possible reason for the FN is that the detector may not have modeled the option container/label as a meaningful standalone source of a disruptive jump, perhaps because it is structurally adjacent to its checkbox and visually small. It may also have difficulty interpreting backward edges originating from composite widgets. This is unverified.",
+    "supporting_evidence" : "Ground truth labels this transition as Strongly severity. evaluated_transitions marks it FN with observed_in_stage1=True. navigation_order shows source position 7 and destination position 3. kfg edges contains a TAB edge from the Public computer option container/label to the Forgot your username? link, and a SHIFTTAB edge in the reverse direction. The screenshots show the Public computer row below the username-recovery link.",
+    "confidence" : "medium",
+    "requires_review" : false
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[2]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[2]/div[1]/div[1]/span[2]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful contrast for the FN involving omitted assistance: this transition stays within the same password row and adjacent control cluster."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[2]/div[1]/div[1]/span[2] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[3]/div[1]/div[1]/input[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows a normal downward progression from password tools to the next row, contrasting with the FN that jumps from a later row back to an earlier help link."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[3]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[3]/div[1]/div[1]/div[1]/div[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows an acceptable transition inside the Public computer control cluster, useful for distinguishing composite-widget local movement from disruptive cross-row jumps."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[3]/div[2]/a[1] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/div[1]/button[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Provides a nearby non-error comparison where focus continues from the lower recovery link to the primary action instead of looping backward."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Contrasts with the header-to-form FN and form-to-header FP by showing a straightforward progression from the login card into the footer rather than a wrap-around into an earlier page region."
+  } ],
+  "subject_summary" : "This subject shows several focus-order errors centered on the login form: visible help links and utility controls are not traversed in the form's apparent reading/interaction order, and there is also a page-level wrap-around between the header language link and later form actions. The detector appears to have caught only one wrap-like edge, but it selected a transition not labeled in the reference and missed multiple labeled jumps involving inline assistance links and a composite checkbox/label row. Some causes are plausible from structure and visual grouping, but they remain hypotheses rather than directly proven detector logic."
+}

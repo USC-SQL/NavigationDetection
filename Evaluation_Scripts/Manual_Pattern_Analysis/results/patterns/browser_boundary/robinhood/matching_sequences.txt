@@ -1,0 +1,4 @@
+Pattern: FN01 - Browser-boundary omission
+Subject: robinhood
+Classification: FN
+Transition: Browser -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/p[1]/a[1]

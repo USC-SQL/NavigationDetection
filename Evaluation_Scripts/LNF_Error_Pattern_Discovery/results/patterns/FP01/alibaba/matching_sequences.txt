@@ -1,0 +1,21 @@
+Pattern: FP01
+Name: Adjacent region-to-region continuation over-flagged
+Error type: FP
+Subject: alibaba
+
+Summary: The detector sometimes flags ordinary progression between adjacent page regions even when the implemented focus order and inferred meaningful order are consecutive and no intermediate focus target is documented.
+
+Matching criteria: Source and destination are consecutive in the supplied navigation/KFG evidence, the move crosses a visible region boundary such as header to main, main to footer, or one footer/header subgroup to the next, and the case is classified FP in ground truth.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E001
+Classification: FP
+Transition: /html[1]/body[1]/div[1]/div[2]/select[1] -> /html[1]/body[1]/div[2]/div[2]/div[1]/a[1]
+Source: language selector
+Destination: main content / sign-in panel link
+Positions: 2 -> 3
+Supporting evidence: evaluated_transitions marks this exact transition FP; navigation_order lists language selector at position 2 and main content / sign-in panel link at position 3; kfg contains the TAB edge /html[1]/body[1]/div[1]/div[2]/select[1] -> /html[1]/body[1]/div[2]/div[2]/div[1]/a[1]; screenshots show no visible intermediate top-level control between them.
+Confidence: high
+Requires review: False

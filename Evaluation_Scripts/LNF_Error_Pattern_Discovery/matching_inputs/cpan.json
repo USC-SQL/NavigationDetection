@@ -1,0 +1,1616 @@
+{
+  "subject": "cpan",
+  "navigation_order": {
+    "navigation_order": [
+      {
+        "position": 1,
+        "label": 1,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/a[1]",
+        "descriptor": "CPAN logo/home link"
+      },
+      {
+        "position": 2,
+        "label": 2,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Home"
+      },
+      {
+        "position": 3,
+        "label": 3,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Modules"
+      },
+      {
+        "position": 4,
+        "label": 4,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "Ports"
+      },
+      {
+        "position": 5,
+        "label": 5,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[4]/a[1]",
+        "descriptor": "Perl Source"
+      },
+      {
+        "position": 6,
+        "label": 6,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[5]/a[1]",
+        "descriptor": "FAQ"
+      },
+      {
+        "position": 7,
+        "label": 7,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[6]/a[1]",
+        "descriptor": "Mirrors"
+      },
+      {
+        "position": 8,
+        "label": 8,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/a[1]",
+        "descriptor": "Search label/link"
+      },
+      {
+        "position": 9,
+        "label": 9,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[1]",
+        "descriptor": "Module name search input"
+      },
+      {
+        "position": 10,
+        "label": 10,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[2]",
+        "descriptor": "Search button"
+      },
+      {
+        "position": 11,
+        "label": 11,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[1]",
+        "descriptor": "219,024 Perl modules"
+      },
+      {
+        "position": 12,
+        "label": 12,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[2]",
+        "descriptor": "mirrored"
+      },
+      {
+        "position": 13,
+        "label": 13,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "metacpan.org"
+      },
+      {
+        "position": 14,
+        "label": 14,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Recent upload 1"
+      },
+      {
+        "position": 15,
+        "label": 15,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Recent upload 2"
+      },
+      {
+        "position": 16,
+        "label": 16,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "Recent upload 3"
+      },
+      {
+        "position": 17,
+        "label": 17,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[4]/a[1]",
+        "descriptor": "Recent upload 4"
+      },
+      {
+        "position": 18,
+        "label": 18,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[5]/a[1]",
+        "descriptor": "Recent upload 5"
+      },
+      {
+        "position": 19,
+        "label": 19,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[6]/a[1]",
+        "descriptor": "Recent upload 6"
+      },
+      {
+        "position": 20,
+        "label": 20,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[7]/a[1]",
+        "descriptor": "Recent upload 7"
+      },
+      {
+        "position": 21,
+        "label": 21,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[8]/a[1]",
+        "descriptor": "Recent upload 8"
+      },
+      {
+        "position": 22,
+        "label": 22,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[9]/a[1]",
+        "descriptor": "Recent upload 9"
+      },
+      {
+        "position": 23,
+        "label": 23,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[10]/a[1]",
+        "descriptor": "Recent upload 10"
+      },
+      {
+        "position": 24,
+        "label": 24,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[11]/a[1]",
+        "descriptor": "more..."
+      },
+      {
+        "position": 25,
+        "label": 25,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[1]/a[1]",
+        "descriptor": "Installing Perl Modules"
+      },
+      {
+        "position": 26,
+        "label": 26,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[2]/a[1]",
+        "descriptor": "Learn Perl"
+      },
+      {
+        "position": 27,
+        "label": 27,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[1]/a[1]",
+        "descriptor": "Read"
+      },
+      {
+        "position": 28,
+        "label": 28,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[2]/a[1]",
+        "descriptor": "Visit https://pause.perl.org/"
+      },
+      {
+        "position": 29,
+        "label": 29,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[1]/a[1]",
+        "descriptor": "Perl Programming language"
+      },
+      {
+        "position": 30,
+        "label": 30,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[2]/a[1]",
+        "descriptor": "Documentation"
+      },
+      {
+        "position": 31,
+        "label": 31,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[3]/a[1]",
+        "descriptor": "Mailing Lists"
+      },
+      {
+        "position": 32,
+        "label": 32,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[4]/a[1]",
+        "descriptor": "Perl FAQ"
+      },
+      {
+        "position": 33,
+        "label": 33,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[5]/a[1]",
+        "descriptor": "Scripts Repository"
+      },
+      {
+        "position": 34,
+        "label": 34,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[1]",
+        "descriptor": "Perl.org"
+      },
+      {
+        "position": 35,
+        "label": 35,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[2]",
+        "descriptor": "Disclaimer"
+      },
+      {
+        "position": 36,
+        "label": 36,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[1]",
+        "descriptor": "NetActuate"
+      },
+      {
+        "position": 37,
+        "label": 37,
+        "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[2]",
+        "descriptor": "Fastly"
+      }
+    ]
+  },
+  "kfg": {
+    "UIGraphStates": [
+      {
+        "v_exit": [],
+        "nodes": [
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "798,298,153,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "394,74,250,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1148,116,248,22",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "798,255,263,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[11]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "798,428,47,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1130,449,79,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "645,587,40,14",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "561,115,69,30",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[8]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "798,363,124,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[7]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "798,342,274,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1085,117,53,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1161,330,139,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "467,115,93,30",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "402,264,53,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "798,234,251,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "426,391,88,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "748,115,61,30",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1130,234,66,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1149,590,149,15",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1130,492,116,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "798,277,127,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[6]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "810,115,83,30",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1401,116,52,22",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[9]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "798,385,138,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1130,470,58,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "631,115,117,30",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1130,427,126,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "790,587,53,14",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "798,212,198,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1168,309,22,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1327,590,118,15",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1130,212,144,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1130,406,208,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[10]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "798,406,231,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "394,115,73,30",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "541,228,140,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[6]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "798,320,130,18",
+            "I'": "null"
+          }
+        ],
+        "v_special": [
+          {
+            "v_0": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[1]"
+          },
+          {
+            "v_entry": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[1]"
+          },
+          {
+            "v_entry_successor": "null"
+          }
+        ],
+        "v_n": [],
+        "edges_inAndOutsideDialog": [],
+        "visibleCtrlDomInsideDialogSequence": [],
+        "visibleCtrlDomSequence": [
+          {
+            "0": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/a[1]"
+          },
+          {
+            "1": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "2": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "3": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "4": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "5": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "6": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "7": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/a[1]"
+          },
+          {
+            "8": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[1]"
+          },
+          {
+            "9": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[2]"
+          },
+          {
+            "10": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[1]"
+          },
+          {
+            "11": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[2]"
+          },
+          {
+            "12": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "13": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "14": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "15": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "16": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "17": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "18": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "19": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[7]/a[1]"
+          },
+          {
+            "20": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[8]/a[1]"
+          },
+          {
+            "21": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[9]/a[1]"
+          },
+          {
+            "22": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[10]/a[1]"
+          },
+          {
+            "23": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[11]/a[1]"
+          },
+          {
+            "24": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "25": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "26": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[1]/a[1]"
+          },
+          {
+            "27": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[2]/a[1]"
+          },
+          {
+            "28": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[1]/a[1]"
+          },
+          {
+            "29": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[2]/a[1]"
+          },
+          {
+            "30": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[3]/a[1]"
+          },
+          {
+            "31": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[4]/a[1]"
+          },
+          {
+            "32": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[5]/a[1]"
+          },
+          {
+            "33": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "34": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[2]"
+          },
+          {
+            "35": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[1]"
+          },
+          {
+            "36": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[2]"
+          }
+        ],
+        "edges": [
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[6]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[7]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[6]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[6]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[8]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[7]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[8]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[9]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[2]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[11]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[5]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[10]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[11]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[11]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[7]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[8]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[7]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[9]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[8]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[6]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[9]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[10]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[10]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[9]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[11]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[10]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[2]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[6]/a[1]"
+          }
+        ],
+        "stateTransition": [],
+        "state_properties": [
+          {
+            "type": "KFFG"
+          },
+          {
+            "phase": "INITIAL_PHASE"
+          },
+          {
+            "thisStateID": 0
+          },
+          {
+            "parentStateID": -1
+          }
+        ],
+        "ctrlClusters": [],
+        "dialogStateProperties": [
+          {
+            "isADialogState": "0"
+          },
+          {
+            "triggerNodeLeadingToState": "null"
+          },
+          {
+            "postModalTriggerRoot": "null",
+            "preModalTriggerRoot": "null"
+          }
+        ]
+      }
+    ]
+  },
+  "screenshot_paths": [
+    "/Users/lance/Downloads/Empirical_Study_Results/cpan/cpan1.jpg"
+  ],
+  "candidate_transitions": [
+    {
+      "transition_id": "T0001",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[1]/a[1]",
+      "source_label": "1",
+      "destination_label": "2",
+      "source_position": "1",
+      "destination_position": "2",
+      "source_descriptor": "CPAN logo/home link",
+      "destination_descriptor": "Home",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0002",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[1]",
+      "source_label": "8",
+      "destination_label": "9",
+      "source_position": "8",
+      "destination_position": "9",
+      "source_descriptor": "Search label/link",
+      "destination_descriptor": "Module name search input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0003",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[2]",
+      "source_label": "9",
+      "destination_label": "10",
+      "source_position": "9",
+      "destination_position": "10",
+      "source_descriptor": "Module name search input",
+      "destination_descriptor": "Search button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0004",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/input[2] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[1]",
+      "source_label": "10",
+      "destination_label": "11",
+      "source_position": "10",
+      "destination_position": "11",
+      "source_descriptor": "Search button",
+      "destination_descriptor": "219,024 Perl modules",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0005",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[2]/a[1]",
+      "source_label": "2",
+      "destination_label": "3",
+      "source_position": "2",
+      "destination_position": "3",
+      "source_descriptor": "Home",
+      "destination_descriptor": "Modules",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0006",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[3]/a[1]",
+      "source_label": "3",
+      "destination_label": "4",
+      "source_position": "3",
+      "destination_position": "4",
+      "source_descriptor": "Modules",
+      "destination_descriptor": "Ports",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0007",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[4]/a[1]",
+      "source_label": "4",
+      "destination_label": "5",
+      "source_position": "4",
+      "destination_position": "5",
+      "source_descriptor": "Ports",
+      "destination_descriptor": "Perl Source",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0008",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[5]/a[1]",
+      "source_label": "5",
+      "destination_label": "6",
+      "source_position": "5",
+      "destination_position": "6",
+      "source_descriptor": "Perl Source",
+      "destination_descriptor": "FAQ",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0009",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[5]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[6]/a[1]",
+      "source_label": "6",
+      "destination_label": "7",
+      "source_position": "6",
+      "destination_position": "7",
+      "source_descriptor": "FAQ",
+      "destination_descriptor": "Mirrors",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0010",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/ul[1]/li[6]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/form[1]/a[1]",
+      "source_label": "7",
+      "destination_label": "8",
+      "source_position": "7",
+      "destination_position": "8",
+      "source_descriptor": "Mirrors",
+      "destination_descriptor": "Search label/link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0011",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[2]",
+      "source_label": "11",
+      "destination_label": "12",
+      "source_position": "11",
+      "destination_position": "12",
+      "source_descriptor": "219,024 Perl modules",
+      "destination_descriptor": "mirrored",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0012",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[2] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/ul[1]/li[1]/a[1]",
+      "source_label": "12",
+      "destination_label": "13",
+      "source_position": "12",
+      "destination_position": "13",
+      "source_descriptor": "mirrored",
+      "destination_descriptor": "metacpan.org",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0013",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "13",
+      "destination_label": "14",
+      "source_position": "13",
+      "destination_position": "14",
+      "source_descriptor": "metacpan.org",
+      "destination_descriptor": "Recent upload 1",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0014",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[10]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[11]/a[1]",
+      "source_label": "23",
+      "destination_label": "24",
+      "source_position": "23",
+      "destination_position": "24",
+      "source_descriptor": "Recent upload 10",
+      "destination_descriptor": "more...",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0015",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[11]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[1]/a[1]",
+      "source_label": "24",
+      "destination_label": "25",
+      "source_position": "24",
+      "destination_position": "25",
+      "source_descriptor": "more...",
+      "destination_descriptor": "Installing Perl Modules",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0016",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[2]/a[1]",
+      "source_label": "14",
+      "destination_label": "15",
+      "source_position": "14",
+      "destination_position": "15",
+      "source_descriptor": "Recent upload 1",
+      "destination_descriptor": "Recent upload 2",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0017",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[3]/a[1]",
+      "source_label": "15",
+      "destination_label": "16",
+      "source_position": "15",
+      "destination_position": "16",
+      "source_descriptor": "Recent upload 2",
+      "destination_descriptor": "Recent upload 3",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0018",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[4]/a[1]",
+      "source_label": "16",
+      "destination_label": "17",
+      "source_position": "16",
+      "destination_position": "17",
+      "source_descriptor": "Recent upload 3",
+      "destination_descriptor": "Recent upload 4",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0019",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[5]/a[1]",
+      "source_label": "17",
+      "destination_label": "18",
+      "source_position": "17",
+      "destination_position": "18",
+      "source_descriptor": "Recent upload 4",
+      "destination_descriptor": "Recent upload 5",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0020",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[5]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[6]/a[1]",
+      "source_label": "18",
+      "destination_label": "19",
+      "source_position": "18",
+      "destination_position": "19",
+      "source_descriptor": "Recent upload 5",
+      "destination_descriptor": "Recent upload 6",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0021",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[6]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[7]/a[1]",
+      "source_label": "19",
+      "destination_label": "20",
+      "source_position": "19",
+      "destination_position": "20",
+      "source_descriptor": "Recent upload 6",
+      "destination_descriptor": "Recent upload 7",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0022",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[7]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[8]/a[1]",
+      "source_label": "20",
+      "destination_label": "21",
+      "source_position": "20",
+      "destination_position": "21",
+      "source_descriptor": "Recent upload 7",
+      "destination_descriptor": "Recent upload 8",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0023",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[8]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[9]/a[1]",
+      "source_label": "21",
+      "destination_label": "22",
+      "source_position": "21",
+      "destination_position": "22",
+      "source_descriptor": "Recent upload 8",
+      "destination_descriptor": "Recent upload 9",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0024",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[9]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/ul[1]/li[10]/a[1]",
+      "source_label": "22",
+      "destination_label": "23",
+      "source_position": "22",
+      "destination_position": "23",
+      "source_descriptor": "Recent upload 9",
+      "destination_descriptor": "Recent upload 10",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0025",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[2]/a[1]",
+      "source_label": "25",
+      "destination_label": "26",
+      "source_position": "25",
+      "destination_position": "26",
+      "source_descriptor": "Installing Perl Modules",
+      "destination_descriptor": "Learn Perl",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0026",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[1]/a[1]",
+      "source_label": "26",
+      "destination_label": "27",
+      "source_position": "26",
+      "destination_position": "27",
+      "source_descriptor": "Learn Perl",
+      "destination_descriptor": "Read",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0027",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[2]/a[1]",
+      "source_label": "27",
+      "destination_label": "28",
+      "source_position": "27",
+      "destination_position": "28",
+      "source_descriptor": "Read",
+      "destination_descriptor": "Visit https://pause.perl.org/",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0028",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[2]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[1]/a[1]",
+      "source_label": "28",
+      "destination_label": "29",
+      "source_position": "28",
+      "destination_position": "29",
+      "source_descriptor": "Visit https://pause.perl.org/",
+      "destination_descriptor": "Perl Programming language",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0029",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[2]/a[1]",
+      "source_label": "29",
+      "destination_label": "30",
+      "source_position": "29",
+      "destination_position": "30",
+      "source_descriptor": "Perl Programming language",
+      "destination_descriptor": "Documentation",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0030",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[2]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[3]/a[1]",
+      "source_label": "30",
+      "destination_label": "31",
+      "source_position": "30",
+      "destination_position": "31",
+      "source_descriptor": "Documentation",
+      "destination_descriptor": "Mailing Lists",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0031",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[3]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[4]/a[1]",
+      "source_label": "31",
+      "destination_label": "32",
+      "source_position": "31",
+      "destination_position": "32",
+      "source_descriptor": "Mailing Lists",
+      "destination_descriptor": "Perl FAQ",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0032",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[4]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[5]/a[1]",
+      "source_label": "32",
+      "destination_label": "33",
+      "source_position": "32",
+      "destination_position": "33",
+      "source_descriptor": "Perl FAQ",
+      "destination_descriptor": "Scripts Repository",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0033",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[5]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[1]",
+      "source_label": "33",
+      "destination_label": "34",
+      "source_position": "33",
+      "destination_position": "34",
+      "source_descriptor": "Scripts Repository",
+      "destination_descriptor": "Perl.org",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0034",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[2]",
+      "source_label": "34",
+      "destination_label": "35",
+      "source_position": "34",
+      "destination_position": "35",
+      "source_descriptor": "Perl.org",
+      "destination_descriptor": "Disclaimer",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0035",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/p[1]/a[2] -> /html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[1]",
+      "source_label": "35",
+      "destination_label": "36",
+      "source_position": "35",
+      "destination_position": "36",
+      "source_descriptor": "Disclaimer",
+      "destination_descriptor": "NetActuate",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0036",
+      "transition": "/html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[4]/td[1]/div[2]/p[1]/a[2]",
+      "source_label": "36",
+      "destination_label": "37",
+      "source_position": "36",
+      "destination_position": "37",
+      "source_descriptor": "NetActuate",
+      "destination_descriptor": "Fastly",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0037",
+      "transition": "Browser -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/a[1]",
+      "source_label": "",
+      "destination_label": "1",
+      "source_position": "",
+      "destination_position": "1",
+      "source_descriptor": "Virtual Browser boundary",
+      "destination_descriptor": "CPAN logo/home link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "True"
+    }
+  ]
+}

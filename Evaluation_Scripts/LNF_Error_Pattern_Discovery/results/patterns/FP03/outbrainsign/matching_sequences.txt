@@ -1,0 +1,31 @@
+Pattern: FP03
+Name: Consecutive utility or auxiliary controls misread as disorder
+Error type: FP
+Subject: outbrainsign
+
+Summary: The detector sometimes over-flags short moves between nearby auxiliary controls inside the same local section, even when the supplied evidence shows a straightforward consecutive sequence.
+
+Matching criteria: Source and destination are nearby auxiliary, support, or utility controls in the same local header/login/support area; they are consecutive or locally coherent in the implemented order; and ground truth classifies the prediction as FP.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E037
+Classification: FP
+Transition: /html[1]/body[1]/main[1]/div[3]/div[1]/form[1]/ul[1]/label[3]/a[1] -> /html[1]/body[1]/main[1]/div[3]/div[1]/div[2]/a[1]
+Source: Forgot password? link
+Destination: Get started link
+Positions: 4 -> 5
+Supporting evidence: original_predictions contains this exact transition, but ground_truth does not. navigation_order places /label[3]/a[1] at position 4 and /div[2]/a[1] at position 5. KFG shows a direct TAB edge between them. evaluated_transitions classifies it as FP.
+Confidence: medium
+Requires review: False
+
+Case ID: E038
+Classification: FP
+Transition: /html[1]/body[1]/main[1]/div[3]/div[2]/form[1]/ul[1]/div[1]/div[2]/a[1] -> /html[1]/body[1]/main[1]/div[3]/div[2]/form[1]/ul[1]/div[1]/div[4]/a[1]
+Source: Troubleshooting guide link
+Destination: Contact support link
+Positions: 12 -> 14
+Supporting evidence: original_predictions includes this transition; ground_truth does not. navigation_order: Troubleshooting guide link is position 12, Authenticate via email link is position 13, Contact support link is position 14. KFG includes a direct edge from /div[1]/div[2]/a[1] to /div[1]/div[4]/a[1]. Screenshot 2 shows multiple small links grouped below the orange Log In button.
+Confidence: low
+Requires review: True

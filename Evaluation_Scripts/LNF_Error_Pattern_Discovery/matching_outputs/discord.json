@@ -1,0 +1,252 @@
+{
+  "subject" : "discord",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The screenshot shows a row of platform/app icons in the footer, but the evidence does not clearly establish the specific functional role of both endpoints as secondary utility/support controls rather than ordinary promotional/download links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are adjacent platform/app links in the same footer icon row, but the supplied evidence does not clearly classify them as genuinely secondary utility/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The endpoints are neighboring platform/app links within one footer cluster, but their exact roles as auxiliary/support controls are not established by the provided descriptors or screenshots."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The evidence shows adjacent platform/app footer links, yet does not clearly show that both are secondary utility/help/support controls as required by P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG contains a direct TAB edge from /footer/div[1]/nav/div[1]/a[1] (label 29, Footer Discord link/logo) to /footer/div[1]/nav/div[3]/div[1]/div[1]/a[1] (label 30, Download link). The destination meaningful position is exactly one greater than the source (29->30), and the screenshot shows these controls in distinct adjacent footer regions: the left footer logo area and the right footer link columns."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB edge in the KFG from label 29 to 30, with consecutive meaningful positions. The screenshot and DOM structure show a transition between distinct footer subgroups: the standalone footer Discord logo block (/nav/div[1]/a[1]) and the first link item in the grouped footer link columns (/nav/div[3]/div[1]/div[1]/a[1])."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Download and Help & Support are adjacent links in the same footer column group, but the evidence does not show that both endpoints are genuinely secondary utility/support controls; Download may be a primary product action."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from /footer/nav/div[3]/div[1]/div[2]/a[1] (label 31, Help & Support link) to /footer/nav/div[3]/div[1]/div[3]/a[1] (label 32, Feedback footer link). Both are nearby footer support/utility links within the same local footer link group shown in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG verifies a direct TAB transition from /footer/nav/div[3]/div[1]/div[3]/a[1] (label 32, Feedback footer link) to /footer/nav/div[3]/div[1]/div[4]/a[1] (label 33, Status link). Both endpoints are nearby secondary/support-oriented links in the same footer link subgroup visible in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Status appears support-like, but Company is a corporate/site-navigation link rather than clearly a secondary support/utility control, so the P03 endpoint roles are not both satisfied from the supplied evidence."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG contains a direct TAB edge from /header/div[2]/a[1] (label 5, Sign in link) to /main/div[2]/nav/ol/li[1]/a[1] (label 6, Breadcrumb Discord). The destination position is exactly one greater (5->6), and the screenshot clearly shows a region boundary from the header navigation/sign-in area to the main content breadcrumb area."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Feedback header link and Language selector are adjacent in the same header nav, but the evidence does not establish that both endpoints are secondary utility/support controls; Feedback is ambiguous in role here."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0021",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0022",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0023",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG verifies a direct TAB edge from /main/div[2]/div[1]/ul/li[11]/a[1] (label 20, Other topic card) to /main/div[2]/section[1]/a[1] (label 21, New post button). Their meaningful positions are consecutive (20->21), and the screenshot shows distinct adjacent subgroups within main content: the grid of topic cards followed by the separate 'Didn't find what you were looking for?' action section containing the New post button."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0024",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0025",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0026",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0027",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0028",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0029",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0030",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0031",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0032",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0033",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from /main/div[2]/header/span/button[1] (label 9, Community Topics dropdown) to /main/div[2]/div[1]/ul/li[1]/a[1] (label 10, API topic card). The positions are consecutive (9->10), and the screenshot shows distinct adjacent main-content subgroups: a filter/header control followed by the separate topic-card grid."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0034",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG verifies a direct TAB edge from /main/div[2]/nav/div[1]/form/input[2] (label 8, Search input) to /main/div[2]/header/span/button[1] (label 9, Community Topics dropdown). The positions are consecutive (8->9), and the screenshot indicates distinct adjacent subgroups within the top main area: the breadcrumb/search bar region and the separate Community Topics header/dropdown control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0035",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are nearby breadcrumb links in one local breadcrumb group, but the evidence does not establish them as secondary utility/help/support controls under P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0036",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG contains a direct TAB edge from /main/div[2]/nav/ol/li[2]/a[1] (label 7, Breadcrumb Feedback) to /main/div[2]/nav/div[1]/form/input[2] (label 8, Search input). The positions are consecutive (7->8), and the screenshot shows distinct adjacent subgroups within the top main navigation area: the breadcrumb trail and the separate search form."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0037",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG verifies a direct TAB edge from /main/div[2]/section[1]/a[1] (label 21, New post button) to /footer/div[1]/div[1]/a[1] (label 22, Footer promo link). The destination position is exactly one greater (21->22), and the screenshot clearly shows a page-region boundary from the main content section to the footer promo region."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0038",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly modeled as Browser -> /html[1]/body[1]/header[1]/div[1]/a[1], and the KFG special nodes identify /header/div[1]/a[1] as v_entry and v_0, the documented first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed matches are mainly consecutive direct TAB transitions across clearly distinct adjacent regions or subgroups, including header-to-main, main-to-footer, and several footer/main subgroup boundaries (P01, P05), plus the modeled browser-entry edge (P04). A few footer support-link transitions match local auxiliary progression (P03), while most ordinary sequential moves within card grids, icon rows, or standard link lists do not match the supplied patterns."
+}

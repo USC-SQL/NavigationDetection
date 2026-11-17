@@ -1,0 +1,22 @@
+{
+  "subject" : "zearn",
+  "error_analyses" : [ ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/section[1]/div[1]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Only evaluated LNF in this subject; useful as the baseline example of the cross-column transition from the right login area to the left promotional section that both the detector and ground truth marked as an LNF."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[3]/button[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Adjacent transition within the same right-side authentication cluster; contrasts with the TP because it stays within a visually grouped area before the later jump to the left section."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/section[1]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Transition immediately after the LNF that continues normally within the left promotional/footer section, showing that the unusual behavior is localized to the entry into that section."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/button[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Normal forward movement from the password-recovery link into the third-party sign-in buttons, showing that earlier transitions across subgroups on the right side were not treated as LNFs."
+  } ],
+  "subject_summary" : "No FP or FN cases are present in the supplied evaluated_transitions for subject zearn. The original detector reported the same single transition that appears in ground_truth, so there are no detector error cases to analyze. The only confirmed LNF is a neutral-severity transition from the right-side 'Sign Up for Free' link to the left-side 'Get to know us' link; surrounding TN transitions indicate otherwise sequential movement within local visual groups."
+}

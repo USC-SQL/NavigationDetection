@@ -1,0 +1,6 @@
+{
+  "subject" : "papajohns",
+  "error_analyses" : [ ],
+  "correct_transition_examples" : [ ],
+  "subject_summary" : "No FP or FN transitions are present in the supplied evaluated_transitions. original_predictions and ground_truth are both empty, and all evaluated transitions are classified as TN. The available evidence shows a linear implemented focus order that closely matches the inferred meaningful order, with no supplied reference LNF violations and no detector overpredictions to analyze."
+}

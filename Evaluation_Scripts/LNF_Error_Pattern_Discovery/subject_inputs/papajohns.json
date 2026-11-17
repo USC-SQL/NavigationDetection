@@ -1,0 +1,2056 @@
+{
+  "subject": "papajohns",
+  "evidence_description": {
+    "original_predictions": "Original Stage 2 detected LNF transitions.",
+    "ground_truth": "Reference LNF transitions.",
+    "navigation_order": "Stage 1 inferred meaningful order and implemented keyboard labels.",
+    "kfg": "Original keyboard focus graph JSON.",
+    "evaluated_transitions": "Original prediction-vs-ground-truth classification inventory. TN labels are provisional within the modeled candidate set.",
+    "screenshot_paths": "Local annotated screenshot paths to be attached as images during the API request."
+  },
+  "original_predictions": [],
+  "ground_truth": [],
+  "ground_truth_severity": {
+    "Strongly": [],
+    "Slightly": [],
+    "Neutral": []
+  },
+  "navigation_order": {
+    "navigation_order": [
+      {
+        "position": 1,
+        "label": 1,
+        "xpath": "/html[1]/body[1]/div[1]/header[1]/a[1]",
+        "descriptor": "Skip to main content"
+      },
+      {
+        "position": 2,
+        "label": 2,
+        "xpath": "/html[1]/body[1]/div[1]/header[1]/section[1]/nav[1]/a[1]",
+        "descriptor": "Papa Johns logo/home link"
+      },
+      {
+        "position": 3,
+        "label": 3,
+        "xpath": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Menu"
+      },
+      {
+        "position": 4,
+        "label": 4,
+        "xpath": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Specials"
+      },
+      {
+        "position": 5,
+        "label": 5,
+        "xpath": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "Papa Rewards"
+      },
+      {
+        "position": 6,
+        "label": 6,
+        "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[1]/div[2]/a[1]",
+        "descriptor": "Buy eGift Card"
+      },
+      {
+        "position": 7,
+        "label": 7,
+        "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[2]/a[1]",
+        "descriptor": "Check Card Balance"
+      },
+      {
+        "position": 8,
+        "label": 8,
+        "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[1]",
+        "descriptor": "Download Corporate Sales Information"
+      },
+      {
+        "position": 9,
+        "label": 9,
+        "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[2]",
+        "descriptor": "Download Corporate Order Form"
+      },
+      {
+        "position": 10,
+        "label": 10,
+        "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[3]/div[2]/p[1]/a[1]",
+        "descriptor": "Learn More"
+      },
+      {
+        "position": 11,
+        "label": 11,
+        "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[1]",
+        "descriptor": "Customer Service phone number"
+      },
+      {
+        "position": 12,
+        "label": 12,
+        "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[2]",
+        "descriptor": "FAQs"
+      },
+      {
+        "position": 13,
+        "label": 13,
+        "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[1]",
+        "descriptor": "Large Order Inquiries phone number"
+      },
+      {
+        "position": 14,
+        "label": 14,
+        "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[2]",
+        "descriptor": "giftcards@papajohns.com"
+      },
+      {
+        "position": 15,
+        "label": 15,
+        "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/p[1]/a[1]",
+        "descriptor": "consumer_services@papajohns.com"
+      },
+      {
+        "position": 16,
+        "label": 16,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/h4[1]/button[1]",
+        "descriptor": "Our Company section toggle"
+      },
+      {
+        "position": 17,
+        "label": 17,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "About Papa John's"
+      },
+      {
+        "position": 18,
+        "label": 18,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Investor Relations"
+      },
+      {
+        "position": 19,
+        "label": 19,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "Careers"
+      },
+      {
+        "position": 20,
+        "label": 20,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/h4[1]/button[1]",
+        "descriptor": "Our Pizza section toggle"
+      },
+      {
+        "position": 21,
+        "label": 21,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[1]/a[1]",
+        "descriptor": "Nutritional Info"
+      },
+      {
+        "position": 22,
+        "label": 22,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[2]/a[1]",
+        "descriptor": "Allergen Guide"
+      },
+      {
+        "position": 23,
+        "label": 23,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[3]/a[1]",
+        "descriptor": "Ingredients"
+      },
+      {
+        "position": 24,
+        "label": 24,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[4]/a[1]",
+        "descriptor": "Quality Guarantee"
+      },
+      {
+        "position": 25,
+        "label": 25,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/h4[1]/button[1]",
+        "descriptor": "Help section toggle"
+      },
+      {
+        "position": 26,
+        "label": 26,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[1]/a[1]",
+        "descriptor": "Customer Service"
+      },
+      {
+        "position": 27,
+        "label": 27,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[2]/a[1]",
+        "descriptor": "Ordering"
+      },
+      {
+        "position": 28,
+        "label": 28,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[3]/a[1]",
+        "descriptor": "Gift Cards"
+      },
+      {
+        "position": 29,
+        "label": 29,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[4]/a[1]",
+        "descriptor": "Store List"
+      },
+      {
+        "position": 30,
+        "label": 30,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/h4[1]/button[1]",
+        "descriptor": "Careers section toggle"
+      },
+      {
+        "position": 31,
+        "label": 31,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[1]/a[1]",
+        "descriptor": "Corporate"
+      },
+      {
+        "position": 32,
+        "label": 32,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[2]/a[1]",
+        "descriptor": "Papa John\u2019s Stores"
+      },
+      {
+        "position": 33,
+        "label": 33,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[3]/a[1]",
+        "descriptor": "Become a Driver"
+      },
+      {
+        "position": 34,
+        "label": 34,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[5]/a[1]",
+        "descriptor": "Open A Franchise"
+      },
+      {
+        "position": 35,
+        "label": 35,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/form[1]/div[1]/select[1]",
+        "descriptor": "International Sites dropdown"
+      },
+      {
+        "position": 36,
+        "label": 36,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Privacy"
+      },
+      {
+        "position": 37,
+        "label": 37,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Cookies"
+      },
+      {
+        "position": 38,
+        "label": 38,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "Terms of Use"
+      },
+      {
+        "position": 39,
+        "label": 39,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[4]/a[1]",
+        "descriptor": "Site Map"
+      },
+      {
+        "position": 40,
+        "label": 40,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[5]/a[1]",
+        "descriptor": "Text & Email Offers"
+      },
+      {
+        "position": 41,
+        "label": 41,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[6]/a[1]",
+        "descriptor": "Pizza Deals & Specials"
+      },
+      {
+        "position": 42,
+        "label": 42,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[1]/a[1]",
+        "descriptor": "Facebook"
+      },
+      {
+        "position": 43,
+        "label": 43,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[2]/a[1]",
+        "descriptor": "Twitter/X"
+      },
+      {
+        "position": 44,
+        "label": 44,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[3]/a[1]",
+        "descriptor": "YouTube"
+      },
+      {
+        "position": 45,
+        "label": 45,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[4]/a[1]",
+        "descriptor": "Instagram"
+      },
+      {
+        "position": 46,
+        "label": 46,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[2]/a[1]",
+        "descriptor": "Click here"
+      },
+      {
+        "position": 47,
+        "label": 47,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[3]/a[1]",
+        "descriptor": "Contact Us"
+      }
+    ]
+  },
+  "kfg": {
+    "UIGraphStates": [
+      {
+        "v_exit": [],
+        "nodes": [
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/h4[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "489,1787,193,21",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "932,1859,121,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "710,1329,40,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "533,2043,50,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "726,1079,275,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "674,2215,71,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "271,1034,148,21",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "717,2043,55,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[1]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "841,387,137,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1560,2047,25,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1154,1787,430,119",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1029,1329,185,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "711,1829,111,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "354,77,189,76",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/h4[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "711,1787,193,21",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "489,1829,90,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "489,1918,113,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "134,77,90,76",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/header[1]/section[1]/nav[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "146,10,135,57",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "267,1859,112,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "711,1889,63,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1459,2047,25,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "423,2287,79,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/header[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "726,1103,233,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "267,1829,117,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "673,1305,113,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/form[1]/div[1]/select[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "267,2030,166,40",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "711,1918,59,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1509,2047,25,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/h4[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "932,1787,193,21",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1408,2047,25,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[3]/div[2]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1222,1006,81,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "267,1889,49,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "932,1889,104,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "473,1601,262,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "462,2043,45,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "489,1859,92,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "798,2043,119,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1031,1305,113,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "224,77,129,76",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/h4[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "267,1787,193,21",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[6]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "943,2043,143,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "489,1889,69,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "711,1859,54,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "609,2043,82,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "932,1829,62,16",
+            "I'": "null"
+          }
+        ],
+        "v_special": [
+          {
+            "v_0": "/html[1]/body[1]/div[1]/header[1]/section[1]/nav[1]/a[1]"
+          },
+          {
+            "v_entry": "/html[1]/body[1]/div[1]/header[1]/section[1]/nav[1]/a[1]"
+          },
+          {
+            "v_entry_successor": "null"
+          }
+        ],
+        "v_n": [],
+        "edges_inAndOutsideDialog": [],
+        "visibleCtrlDomInsideDialogSequence": [],
+        "visibleCtrlDomSequence": [
+          {
+            "0": "/html[1]/body[1]/div[1]/header[1]/section[1]/nav[1]/a[1]"
+          },
+          {
+            "1": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "2": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "3": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "4": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[1]/div[2]/a[1]"
+          },
+          {
+            "5": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[2]/a[1]"
+          },
+          {
+            "6": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[1]"
+          },
+          {
+            "7": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[2]"
+          },
+          {
+            "8": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[3]/div[2]/p[1]/a[1]"
+          },
+          {
+            "9": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "10": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[2]"
+          },
+          {
+            "11": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[1]"
+          },
+          {
+            "12": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[2]"
+          },
+          {
+            "13": "/html[1]/body[1]/div[1]/main[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "14": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/h4[1]/button[1]"
+          },
+          {
+            "15": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "16": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "17": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "18": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/h4[1]/button[1]"
+          },
+          {
+            "19": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "20": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "21": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "22": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "23": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/h4[1]/button[1]"
+          },
+          {
+            "24": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "25": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "26": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "27": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "28": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/h4[1]/button[1]"
+          },
+          {
+            "29": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "30": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "31": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "32": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[5]/a[1]"
+          },
+          {
+            "33": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/form[1]/div[1]/select[1]"
+          },
+          {
+            "34": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "35": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "36": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "37": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "38": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "39": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "40": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[1]/a[1]"
+          },
+          {
+            "41": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[2]/a[1]"
+          },
+          {
+            "42": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[3]/a[1]"
+          },
+          {
+            "43": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[4]/a[1]"
+          },
+          {
+            "44": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[2]/a[1]"
+          },
+          {
+            "45": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[3]/a[1]"
+          }
+        ],
+        "edges": [
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[3]/div[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/form[1]/div[1]/select[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/header[1]/section[1]/nav[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[3]/div[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/form[1]/div[1]/select[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/h4[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/h4[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/header[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[3]/div[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/h4[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[6]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/h4[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/h4[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/h4[1]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/h4[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/h4[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/form[1]/div[1]/select[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[5]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/h4[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/h4[1]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/h4[1]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/h4[1]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/h4[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/form[1]/div[1]/select[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/header[1]/section[1]/nav[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/header[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[6]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/h4[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/h4[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/h4[1]/button[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[3]/div[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[3]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/header[1]/section[1]/nav[1]/a[1]"
+          }
+        ],
+        "stateTransition": [],
+        "state_properties": [
+          {
+            "type": "KFFG"
+          },
+          {
+            "phase": "INITIAL_PHASE"
+          },
+          {
+            "thisStateID": 0
+          },
+          {
+            "parentStateID": -1
+          }
+        ],
+        "ctrlClusters": [],
+        "dialogStateProperties": [
+          {
+            "isADialogState": "0"
+          },
+          {
+            "triggerNodeLeadingToState": "null"
+          },
+          {
+            "postModalTriggerRoot": "null",
+            "preModalTriggerRoot": "null"
+          }
+        ]
+      }
+    ]
+  },
+  "evaluated_transitions": [
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/h4[1]/button[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "16",
+      "destination_label": "17",
+      "source_position": "16",
+      "destination_position": "17",
+      "source_descriptor": "Our Company section toggle",
+      "destination_descriptor": "About Papa John's",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[2]/a[1]",
+      "source_label": "17",
+      "destination_label": "18",
+      "source_position": "17",
+      "destination_position": "18",
+      "source_descriptor": "About Papa John's",
+      "destination_descriptor": "Investor Relations",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[3]/a[1]",
+      "source_label": "18",
+      "destination_label": "19",
+      "source_position": "18",
+      "destination_position": "19",
+      "source_descriptor": "Investor Relations",
+      "destination_descriptor": "Careers",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/h4[1]/button[1]",
+      "source_label": "19",
+      "destination_label": "20",
+      "source_position": "19",
+      "destination_position": "20",
+      "source_descriptor": "Careers",
+      "destination_descriptor": "Our Pizza section toggle",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/h4[1]/button[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[1]/a[1]",
+      "source_label": "20",
+      "destination_label": "21",
+      "source_position": "20",
+      "destination_position": "21",
+      "source_descriptor": "Our Pizza section toggle",
+      "destination_descriptor": "Nutritional Info",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[2]/a[1]",
+      "source_label": "21",
+      "destination_label": "22",
+      "source_position": "21",
+      "destination_position": "22",
+      "source_descriptor": "Nutritional Info",
+      "destination_descriptor": "Allergen Guide",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[3]/a[1]",
+      "source_label": "22",
+      "destination_label": "23",
+      "source_position": "22",
+      "destination_position": "23",
+      "source_descriptor": "Allergen Guide",
+      "destination_descriptor": "Ingredients",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[4]/a[1]",
+      "source_label": "23",
+      "destination_label": "24",
+      "source_position": "23",
+      "destination_position": "24",
+      "source_descriptor": "Ingredients",
+      "destination_descriptor": "Quality Guarantee",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[2]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/h4[1]/button[1]",
+      "source_label": "24",
+      "destination_label": "25",
+      "source_position": "24",
+      "destination_position": "25",
+      "source_descriptor": "Quality Guarantee",
+      "destination_descriptor": "Help section toggle",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/h4[1]/button[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[1]/a[1]",
+      "source_label": "25",
+      "destination_label": "26",
+      "source_position": "25",
+      "destination_position": "26",
+      "source_descriptor": "Help section toggle",
+      "destination_descriptor": "Customer Service",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[2]/a[1]",
+      "source_label": "26",
+      "destination_label": "27",
+      "source_position": "26",
+      "destination_position": "27",
+      "source_descriptor": "Customer Service",
+      "destination_descriptor": "Ordering",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[3]/a[1]",
+      "source_label": "27",
+      "destination_label": "28",
+      "source_position": "27",
+      "destination_position": "28",
+      "source_descriptor": "Ordering",
+      "destination_descriptor": "Gift Cards",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[4]/a[1]",
+      "source_label": "28",
+      "destination_label": "29",
+      "source_position": "28",
+      "destination_position": "29",
+      "source_descriptor": "Gift Cards",
+      "destination_descriptor": "Store List",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[3]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/h4[1]/button[1]",
+      "source_label": "29",
+      "destination_label": "30",
+      "source_position": "29",
+      "destination_position": "30",
+      "source_descriptor": "Store List",
+      "destination_descriptor": "Careers section toggle",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/h4[1]/button[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[1]/a[1]",
+      "source_label": "30",
+      "destination_label": "31",
+      "source_position": "30",
+      "destination_position": "31",
+      "source_descriptor": "Careers section toggle",
+      "destination_descriptor": "Corporate",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[2]/a[1]",
+      "source_label": "31",
+      "destination_label": "32",
+      "source_position": "31",
+      "destination_position": "32",
+      "source_descriptor": "Corporate",
+      "destination_descriptor": "Papa John\u2019s Stores",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[3]/a[1]",
+      "source_label": "32",
+      "destination_label": "33",
+      "source_position": "32",
+      "destination_position": "33",
+      "source_descriptor": "Papa John\u2019s Stores",
+      "destination_descriptor": "Become a Driver",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[4]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[5]/a[1]",
+      "source_label": "33",
+      "destination_label": "34",
+      "source_position": "33",
+      "destination_position": "34",
+      "source_descriptor": "Become a Driver",
+      "destination_descriptor": "Open A Franchise",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[5]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/form[1]/div[1]/select[1]",
+      "source_label": "34",
+      "destination_label": "35",
+      "source_position": "34",
+      "destination_position": "35",
+      "source_descriptor": "Open A Franchise",
+      "destination_descriptor": "International Sites dropdown",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/form[1]/div[1]/select[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "35",
+      "destination_label": "36",
+      "source_position": "35",
+      "destination_position": "36",
+      "source_descriptor": "International Sites dropdown",
+      "destination_descriptor": "Privacy",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[2]/a[1]",
+      "source_label": "36",
+      "destination_label": "37",
+      "source_position": "36",
+      "destination_position": "37",
+      "source_descriptor": "Privacy",
+      "destination_descriptor": "Cookies",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[3]/a[1]",
+      "source_label": "37",
+      "destination_label": "38",
+      "source_position": "37",
+      "destination_position": "38",
+      "source_descriptor": "Cookies",
+      "destination_descriptor": "Terms of Use",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[4]/a[1]",
+      "source_label": "38",
+      "destination_label": "39",
+      "source_position": "38",
+      "destination_position": "39",
+      "source_descriptor": "Terms of Use",
+      "destination_descriptor": "Site Map",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[5]/a[1]",
+      "source_label": "39",
+      "destination_label": "40",
+      "source_position": "39",
+      "destination_position": "40",
+      "source_descriptor": "Site Map",
+      "destination_descriptor": "Text & Email Offers",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[5]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[6]/a[1]",
+      "source_label": "40",
+      "destination_label": "41",
+      "source_position": "40",
+      "destination_position": "41",
+      "source_descriptor": "Text & Email Offers",
+      "destination_descriptor": "Pizza Deals & Specials",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[1]/li[6]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[1]/a[1]",
+      "source_label": "41",
+      "destination_label": "42",
+      "source_position": "41",
+      "destination_position": "42",
+      "source_descriptor": "Pizza Deals & Specials",
+      "destination_descriptor": "Facebook",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[2]/a[1]",
+      "source_label": "42",
+      "destination_label": "43",
+      "source_position": "42",
+      "destination_position": "43",
+      "source_descriptor": "Facebook",
+      "destination_descriptor": "Twitter/X",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[2]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[3]/a[1]",
+      "source_label": "43",
+      "destination_label": "44",
+      "source_position": "43",
+      "destination_position": "44",
+      "source_descriptor": "Twitter/X",
+      "destination_descriptor": "YouTube",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[3]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[4]/a[1]",
+      "source_label": "44",
+      "destination_label": "45",
+      "source_position": "44",
+      "destination_position": "45",
+      "source_descriptor": "YouTube",
+      "destination_descriptor": "Instagram",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[1]/ul[2]/li[4]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[2]/a[1]",
+      "source_label": "45",
+      "destination_label": "46",
+      "source_position": "45",
+      "destination_position": "46",
+      "source_descriptor": "Instagram",
+      "destination_descriptor": "Click here",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[2]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[2]/div[2]/p[3]/a[1]",
+      "source_label": "46",
+      "destination_label": "47",
+      "source_position": "46",
+      "destination_position": "47",
+      "source_descriptor": "Click here",
+      "destination_descriptor": "Contact Us",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/header[1]/a[1] -> /html[1]/body[1]/div[1]/header[1]/section[1]/nav[1]/a[1]",
+      "source_label": "1",
+      "destination_label": "2",
+      "source_position": "1",
+      "destination_position": "2",
+      "source_descriptor": "Skip to main content",
+      "destination_descriptor": "Papa Johns logo/home link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/header[1]/section[1]/nav[1]/a[1] -> /html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[1]/a[1]",
+      "source_label": "2",
+      "destination_label": "3",
+      "source_position": "2",
+      "destination_position": "3",
+      "source_descriptor": "Papa Johns logo/home link",
+      "destination_descriptor": "Menu",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[2]/a[1]",
+      "source_label": "3",
+      "destination_label": "4",
+      "source_position": "3",
+      "destination_position": "4",
+      "source_descriptor": "Menu",
+      "destination_descriptor": "Specials",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[3]/a[1]",
+      "source_label": "4",
+      "destination_label": "5",
+      "source_position": "4",
+      "destination_position": "5",
+      "source_descriptor": "Specials",
+      "destination_descriptor": "Papa Rewards",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/header[1]/section[2]/nav[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/div[1]/main[1]/section[1]/div[1]/div[2]/a[1]",
+      "source_label": "5",
+      "destination_label": "6",
+      "source_position": "5",
+      "destination_position": "6",
+      "source_descriptor": "Papa Rewards",
+      "destination_descriptor": "Buy eGift Card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/main[1]/div[1]/p[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/section[1]/div[1]/h4[1]/button[1]",
+      "source_label": "15",
+      "destination_label": "16",
+      "source_position": "15",
+      "destination_position": "16",
+      "source_descriptor": "consumer_services@papajohns.com",
+      "destination_descriptor": "Our Company section toggle",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[1]/div[2]/a[1] -> /html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[2]/a[1]",
+      "source_label": "6",
+      "destination_label": "7",
+      "source_position": "6",
+      "destination_position": "7",
+      "source_descriptor": "Buy eGift Card",
+      "destination_descriptor": "Check Card Balance",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[1]/div[2]/a[1] -> /html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[1]",
+      "source_label": "7",
+      "destination_label": "8",
+      "source_position": "7",
+      "destination_position": "8",
+      "source_descriptor": "Check Card Balance",
+      "destination_descriptor": "Download Corporate Sales Information",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[1] -> /html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[2]",
+      "source_label": "8",
+      "destination_label": "9",
+      "source_position": "8",
+      "destination_position": "9",
+      "source_descriptor": "Download Corporate Sales Information",
+      "destination_descriptor": "Download Corporate Order Form",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/p[1]/a[2] -> /html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[3]/div[2]/p[1]/a[1]",
+      "source_label": "9",
+      "destination_label": "10",
+      "source_position": "9",
+      "destination_position": "10",
+      "source_descriptor": "Download Corporate Order Form",
+      "destination_descriptor": "Learn More",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[3]/div[2]/p[1]/a[1] -> /html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[1]",
+      "source_label": "10",
+      "destination_label": "11",
+      "source_position": "10",
+      "destination_position": "11",
+      "source_descriptor": "Learn More",
+      "destination_descriptor": "Customer Service phone number",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[1] -> /html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[2]",
+      "source_label": "11",
+      "destination_label": "12",
+      "source_position": "11",
+      "destination_position": "12",
+      "source_descriptor": "Customer Service phone number",
+      "destination_descriptor": "FAQs",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[1]/p[1]/a[2] -> /html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[1]",
+      "source_label": "12",
+      "destination_label": "13",
+      "source_position": "12",
+      "destination_position": "13",
+      "source_descriptor": "FAQs",
+      "destination_descriptor": "Large Order Inquiries phone number",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[1] -> /html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[2]",
+      "source_label": "13",
+      "destination_label": "14",
+      "source_position": "13",
+      "destination_position": "14",
+      "source_descriptor": "Large Order Inquiries phone number",
+      "destination_descriptor": "giftcards@papajohns.com",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]/div[2]/p[1]/a[2] -> /html[1]/body[1]/div[1]/main[1]/div[1]/p[1]/a[1]",
+      "source_label": "14",
+      "destination_label": "15",
+      "source_position": "14",
+      "destination_position": "15",
+      "source_descriptor": "giftcards@papajohns.com",
+      "destination_descriptor": "consumer_services@papajohns.com",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "Browser -> /html[1]/body[1]/div[1]/header[1]/a[1]",
+      "source_label": "",
+      "destination_label": "1",
+      "source_position": "",
+      "destination_position": "1",
+      "source_descriptor": "Virtual Browser boundary",
+      "destination_descriptor": "Skip to main content",
+      "observed_in_stage1": "True",
+      "browser_boundary": "True"
+    }
+  ],
+  "screenshot_paths": [
+    "/Users/lance/Downloads/Empirical_Study_Results/papajohns/papajohns1.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/papajohns/papajohns2.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/papajohns/papajohns3.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/papajohns/papajohns4.jpg"
+  ]
+}

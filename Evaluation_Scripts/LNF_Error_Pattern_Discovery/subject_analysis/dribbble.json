@@ -1,0 +1,62 @@
+{
+  "subject" : "dribbble",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/section[1]/div[1]/a[2] -> /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[1]/form[1]/button[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Adjacent section boundary false negative",
+    "observable_characteristics" : "The implemented TAB order moves from the left-panel promotional link ('Get started — it's free') to the right-panel 'Sign in with Google' button. In navigation_order these are consecutive meaningful positions 2 and 3, and the KFG contains a direct TAB edge for this transition. The screenshot shows the elements in different visual sections but both are prominent, top-level controls.",
+    "matching_criteria" : "A transition directly connects two focusable elements in adjacent page sections, is present as a direct TAB edge in the KFG, and the source and destination are consecutive in the supplied meaningful navigation order despite being visually separated into different columns or panels.",
+    "possible_cause" : "Observed evidence does not show a structural skip or reordering beyond movement between two page sections. A possible detector error is that it discounted or filtered this transition because it appears visually cross-column or cross-container, even though the reference labels it as an LNF. This hypothesis is unverified.",
+    "supporting_evidence" : "navigation_order positions 2 -> 3: '/html[1]/body[1]/div[1]/section[1]/div[1]/a[2]' to '/html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[1]/form[1]/button[1]'; KFG edge with phi 'TAB' from the same source to destination; evaluated_transitions marks observed_in_stage1=True and classification=FN; screenshot shows a left marketing panel and right sign-in panel.",
+    "confidence" : "low",
+    "requires_review" : true
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[1]/form[1]/button[1] -> /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[2]/label[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Embedded text-input skip after social sign-in",
+    "observable_characteristics" : "The implemented TAB sequence goes from the 'Sign in with Google' button directly to the 'Forgot password' link. Navigation_order places the skipped text inputs between them: Username or Email at position 4 and Password at position 5, while the destination Forgot password link is position 6. The KFG also shows the direct TAB edge from the Google button to the Forgot password link. In the screenshot, the skipped fields are visually central form controls located between the source and destination.",
+    "matching_criteria" : "A direct TAB transition jumps from an upper authentication control to a later auxiliary link while one or more visible text-entry controls located in the same form and visually between them exist elsewhere in the sequence.",
+    "possible_cause" : "A plausible reason is that the detector under-weighted or failed to model the cross-subform jump from a social-login button into a later auxiliary link, possibly because it treated the input fields and the link as separate groups or because the visual grouping around the Google button obscured the later skip. This is a hypothesis; the evidence confirms the jump but not the detector's internal rule.",
+    "supporting_evidence" : "ground_truth includes this exact transition and rates it Strongly; navigation_order positions 3 -> 6 with positions 4 and 5 occupied by '/fieldset[1]/input[1]' and '/fieldset[2]/input[1]'; KFG edge with phi 'TAB' from '/div[1]/form[1]/button[1]' to '/fieldset[2]/label[1]/a[1]'; screenshot labels 6, 1, 2, and 7 show the Google button above the skipped fields and Forgot link aligned near the password label.",
+    "confidence" : "high",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[1]/input[1] -> /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[2]/input[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Inline auxiliary link masks field-to-field skip",
+    "observable_characteristics" : "The implemented TAB order moves from the Username or Email input directly to the Password input. However, the KFG visibleCtrlDomSequence places the Forgot password link before the Password input, and the navigation_order places Password at position 5 while Forgot password is position 6. The screenshot shows the Forgot password link visually associated with the password field label and positioned above/right of the password input, which may make the field-to-field move appear natural despite the hidden ordering discrepancy in the supplied sequence evidence.",
+    "matching_criteria" : "A transition connects two consecutive-looking form inputs, but another focusable auxiliary control associated with the destination field is documented in the KFG/DOM sequence between them or around the destination field, creating ambiguity about whether the detector should flag the transition.",
+    "possible_cause" : "The detector may have treated the move between two form fields as ordinary sequential progression and therefore missed a labeled anomaly involving the placement of an inline auxiliary link near the destination field. This is a plausible explanation, but the exact failure mechanism is not established from the evidence alone.",
+    "supporting_evidence" : "evaluated_transitions marks this as FN; navigation_order lists Username input position 4 and Password input position 5, but KFG visibleCtrlDomSequence orders '/fieldset[1]/input[1]' then '/fieldset[2]/label[1]/a[1]' then '/fieldset[2]/input[1]'; KFG contains a direct TAB edge from Username input to Password input; screenshot shows 'Forgot?' near the password label rather than as an obviously separate step.",
+    "confidence" : "medium",
+    "requires_review" : true
+  }, {
+    "transition" : "Browser -> /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[1]/input[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Browser-entry boundary missed",
+    "observable_characteristics" : "The reference labels the browser-entry transition to the Username or Email input as an LNF. The KFG marks this input as both v_0 and v_entry. This is not an ordinary DOM-to-DOM transition; it starts from the virtual Browser boundary. The screenshot cannot directly confirm browser-entry behavior, only the destination element.",
+    "matching_criteria" : "The transition source is the virtual Browser boundary rather than a page element, and the KFG explicitly designates the destination as the entry node or initial focus node.",
+    "possible_cause" : "A likely reason is that the original detector did not model browser-boundary entry transitions consistently or excluded them from ordinary LNF detection. Because browser boundary behavior is virtual and not directly visible in the screenshot, the exact mechanism remains unverified.",
+    "supporting_evidence" : "ground_truth includes 'Browser -> /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[1]/input[1]'; evaluated_transitions marks browser_boundary=True and observed_in_stage1=True; KFG v_special lists both v_0 and v_entry as the Username or Email input.",
+    "confidence" : "medium",
+    "requires_review" : true
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[2]/label[1]/a[1] -> /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/p[1]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison for jumps from an auxiliary link to a later control in the same right-side sign-in region."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/input[2] -> /html[1]/body[1]/div[1]/section[1]/div[1]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison for a strong cross-section wraparound jump from the end of the sign-in form back to the left promotional panel."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[2]/input[1] -> /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/input[2]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison for an accepted forward move within the main sign-in form from a field to the submit button."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/section[1]/div[1]/a[1] -> /html[1]/body[1]/div[1]/section[1]/div[1]/a[2]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison for an accepted adjacent transition within the same left-panel group."
+  } ],
+  "subject_summary" : "This subject mixes a left promotional panel with a right sign-in form and includes several cross-group or non-intuitive focus jumps. The detector correctly caught the strong wrap from the Sign In button back to the left-panel logo and the Forgot-password to Sign-up jump, but missed multiple ground-truth cases: a jump from Google sign-in to Forgot password, a browser-entry anomaly, and other labeled transitions whose failure mechanism is less certain. Several misses appear related to section boundaries, auxiliary links embedded near form fields, and special browser-boundary handling, but some causes remain unverified from the supplied evidence."
+}

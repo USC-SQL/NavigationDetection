@@ -1,0 +1,56 @@
+{
+  "subject" : "samsclub",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/label[1]/div[1]/input[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Forward jump to later form control",
+    "observable_characteristics" : "The implemented TAB order moves from the Sam's Club logo link directly to the Stay signed in checkbox, bypassing multiple visible login controls located between them in the page's meaningful order: Email input, Forgot email link, Password input, and Forgot password link. The checkbox appears lower in the sign-in form than those skipped controls. The transition is explicitly present in the KFG as a TAB edge and was observed in Stage 1.",
+    "matching_criteria" : "A transition matches this pattern when a forward TAB move from an earlier page element lands on a visibly later control while one or more intermediate, visible, focusable controls in the same task flow appear between the source and destination in the implemented DOM/visual sequence and meaningful navigation order.",
+    "possible_cause" : "Observed evidence shows a large forward jump into a later form control. A possible reason the detector missed it is that the jump lands on a control within the same form cluster, and the detector may have underweighted cross-group jumps when both source and destination were still part of the login area. This is a hypothesis only.",
+    "supporting_evidence" : "Ground truth marks this transition as an LNF with Strongly severity. In navigation_order, source position 3 is the Sam's Club logo link and destination position 8 is the Stay signed in checkbox. KFG includes a TAB edge from /html[1]/body[1]/div[1]/div[2]/div[1]/a[1] to /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/label[1]/div[1]/input[1]. visibleCtrlDomSequence shows intervening controls at indices 3 through 6 before the label and checkbox. Screenshots show the checkbox below the email/password fields and recovery links.",
+    "confidence" : "high",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[2]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Immediate local backtrack within form",
+    "observable_characteristics" : "After the Password input, focus moves backward to the Forgot email link rather than continuing forward to the Forgot password link or the stay-signed-in controls. The source and destination are both within the same login form and are spatially near each other, but their meaningful order is reversed: Password input is after Forgot email in navigation_order. The KFG records this as a TAB edge, and Stage 1 observed it.",
+    "matching_criteria" : "A transition matches this pattern when a forward TAB action within a compact form sends focus to a nearby earlier link or control, producing a short-range reversal rather than a long-distance jump or normal progression.",
+    "possible_cause" : "Observed evidence shows a backward TAB move within a tightly grouped set of form elements. A possible reason the detector missed it is that the movement is small and remains inside the same local form region, so a detector emphasizing large spatial jumps or section changes may not flag it. This is unverified.",
+    "supporting_evidence" : "Ground truth marks this transition as Slightly severe. navigation_order gives Password input as position 6 and Forgot email link as position 5. KFG contains TAB from /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/input[1] to /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[2]/a[1]. Screenshots place Forgot email above Password, making the tab move a visual/structural backtrack.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/label[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/button[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Nested control bypasses sibling label target",
+    "observable_characteristics" : "Focus on the Stay signed in checkbox moves directly to the Register your membership button, bypassing the separately focusable Stay signed in label text and the Sign In button. The checkbox is nested inside a focusable label structure. In navigation_order, the checkbox is position 8, the label text is position 9, the Sign In button is position 10, and the registration button is position 11. The KFG contains this TAB edge and Stage 1 observed it.",
+    "matching_criteria" : "A transition matches this pattern when focus starts on a nested control inside a compound widget or label container and TAB moves out to a later section, bypassing one or more nearby sibling focus targets that belong to the same compound or immediate task sequence.",
+    "possible_cause" : "Observed evidence suggests the detector may have treated the checkbox and its label as one functional unit or may have normalized the compound label/checkbox relationship, causing it to overlook that focus exits directly to a later section instead of visiting the intervening label text and Sign In button. This remains a hypothesis.",
+    "supporting_evidence" : "Ground truth marks this transition as Strongly severe. navigation_order shows checkbox at position 8 and Register your membership button at position 11, with label text position 9 and Sign In button position 10 in between. KFG includes TAB from /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/label[1]/div[1]/input[1] to /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/button[1]. Screenshots show the checkbox/label above the Sign In button and the registration button below a divider, making the jump cross a visible boundary.",
+    "confidence" : "medium",
+    "requires_review" : false
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/input[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Comparable forward jump within the same login form that bypasses an intermediate recovery link."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[2]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[4]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Comparable forward jump between adjacent-looking support links that still bypasses an intermediate primary form field."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[4]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/label[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Comparable transition involving the compound stay-signed-in control area, useful for contrasting detector success near label/checkbox structures."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/label[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/button[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Normal forward progression from the focusable label text to the Sign In button, useful contrast against the FN that jumps from checkbox past both."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/button[1] -> /html[1]/body[1]/div[1]/div[1]/button[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Another detected jump that crosses a major page boundary, showing the detector can flag some large discontinuities."
+  } ],
+  "subject_summary" : "This subject shows several implemented TAB transitions that depart from the login form's apparent reading and task order. The detector successfully caught some obvious jumps but missed three patterns: a large forward jump from the logo into a later checkbox, a short backward backtrack inside the form, and a jump out of a nested checkbox/label structure to a later section. Evidence strongly supports the implemented transitions because all FNs are observed in Stage 1 and present as TAB edges in the KFG. The main uncertainty is the detector's internal reasoning; causes are therefore hypotheses rather than established facts."
+}

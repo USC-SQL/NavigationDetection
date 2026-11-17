@@ -1,0 +1,1 @@
+/html[1]/body[1]/app-root[1]/div[1]/div[1]/app-publisher-login[1]/app-login[1]/div[1]/div[1]/app-page-wrapper[1]/div[1]/div[1]/div[2]/div[1]/div[1]/app-okta-widget[1]/div[2]/button[1] -> /html[1]/body[1]/app-root[1]/div[1]/div[2]/pmac-footer[1]/footer[1]/div[1]/div[2]/a[1]

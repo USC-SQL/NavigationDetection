@@ -1,0 +1,21 @@
+Pattern: FN01
+Name: Browser-boundary transitions omitted
+Error type: FN
+Subject: disneyworld
+
+Summary: Many missed LNFs originate at the virtual Browser boundary rather than a normal DOM element, suggesting special-case under-detection of entry transitions.
+
+Matching criteria: The source is Browser, the destination is a documented entry node or first reached page control, and the case is classified FN.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E018
+Classification: FN
+Transition: Browser -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]
+Source: Virtual Browser boundary
+Destination: Email Address or Username input
+Positions:  -> 2
+Supporting evidence: evaluated_transitions marks browser_boundary=True for Browser -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]. In kfg.v_special, v_entry and v_0 both point to that input. navigation_order shows the logo link at position 1 and the destination input at position 2. No original_predictions entry includes a Browser source.
+Confidence: medium
+Requires review: True

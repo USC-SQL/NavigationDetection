@@ -1,0 +1,21 @@
+Pattern: FN04
+Name: Auxiliary or recovery link jumps past core form controls
+Error type: FN
+Subject: alibaba
+
+Summary: The detector misses many jumps that start from a helper, recovery, or support link and land on a later target while bypassing primary fields, buttons, or options in the same workflow.
+
+Matching criteria: The source is an auxiliary/help/recovery/support link within or near a form or authentication flow, the destination is later in the page or a different subgroup, and one or more visible core controls in the same task sequence lie between source and destination in the supplied order evidence.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E002
+Classification: FN
+Transition: /html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[4]/dl[2]/dt[1]/div[1]/span[1]/a[1] -> /html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[4]/dl[4]/dd[2]/div[1]/input[1]
+Source: Forgot Password? link
+Destination: Stay signed in checkbox
+Positions: 7 -> 8
+Supporting evidence: evaluated_transitions marks this exact transition FN; navigation_order identifies the source as "Forgot Password? link" and destination as "Stay signed in checkbox"; kfg contains the TAB edge from the forgot-password link to the checkbox; screenshots show the forgot-password link on the password row and the checkbox below, indicating a local form-order irregularity rather than a simple adjacent progression.
+Confidence: medium
+Requires review: True

@@ -1,0 +1,32 @@
+{
+  "subject" : "robinhood",
+  "error_analyses" : [ {
+    "transition" : "Browser -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/p[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Browser-entry-to-mid-form element",
+    "observable_characteristics" : "The supplied KFG marks the email input as both v_0 and v_entry, indicating the form's implemented tab entry point is the email field. However, the same KFG also contains v_exit ENTER to the forgot-password link, and the ground truth labels Browser -> forgot-password link as an LNF. In the screenshot, the forgot-password link is visually below the password field and above the Sign In button, not the first form control in the visible top-to-bottom sequence. Navigation_order places this link at meaningful position 4 but implemented label 1.",
+    "matching_criteria" : "A transition matches this pattern when the source is the virtual Browser boundary, the destination is the first implemented focus target, and that destination is a lower or later page control rather than the visually/semantically first control in the form or task sequence.",
+    "possible_cause" : "Observed evidence shows a browser-boundary LNF exists in ground truth but was absent from original_predictions. A plausible hypothesis is that the original detector under-modeled or filtered Browser boundary transitions, or prioritized only intra-page element-to-element anomalies. This is unverified because the detector's internal rules are not provided.",
+    "supporting_evidence" : "ground_truth includes \"Browser -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/p[1]/a[1]\"; evaluated_transitions classifies it as FN with browser_boundary=\"True\" and observed_in_stage1=\"True\"; navigation_order shows the destination link has position 4 and label 1; kfg v_special shows v_0 and v_entry at the email input, while kfg v_exit lists ENTER to the forgot-password link; screenshot annotation places marker 1 on the forgot-password link below markers 2, 3, and 4.",
+    "confidence" : "medium",
+    "requires_review" : false
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/p[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/label[1]/div[2]/input[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison because it is the companion intra-page wrap from the same misplaced first focus target back to the top email input, showing the detector did catch the non-browser version of the same ordering anomaly."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/label[1]/div[2]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/label[1]/div[2]/input[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows ordinary forward movement between the first two text fields in the expected form sequence."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/label[1]/div[2]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/label[1]/div[2]/button[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows expected local progression within the password field group to its adjacent show/hide control."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/label[1]/div[2]/button[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/footer[1]/div[1]/button[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows that not every inferred-position gap is treated as an LNF; despite bypassing the forgot-password link in meaningful-position numbering, this implemented move was not labeled a failure."
+  } ],
+  "subject_summary" : "This subject shows a login form whose implemented focus order begins on the forgot-password link rather than the email field, creating both a browser-entry anomaly and an intra-page wrap back to the top input. The detector correctly reported the intra-page link-to-email transition but missed the Browser boundary transition to the same misplaced starting element. Evidence supports a likely browser-boundary handling gap, though the detector's internal mechanism is not directly observable."
+}

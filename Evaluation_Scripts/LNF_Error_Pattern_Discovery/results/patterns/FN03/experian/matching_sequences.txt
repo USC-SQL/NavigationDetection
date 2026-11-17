@@ -1,0 +1,21 @@
+Pattern: FN03
+Name: Field-to-field progression skips embedded helper link
+Error type: FN
+Subject: experian
+
+Summary: A recurring miss occurs when focus moves directly between primary form fields while a visible helper or recovery link associated with the field group occupies an intermediate meaningful position.
+
+Matching criteria: The source and destination are major form fields, usually adjacent-looking inputs, but a separately focusable inline helper/recovery link in the same form region is documented between them or tied to the field group; the case is classified FN.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E025
+Classification: FN
+Transition: /html[1]/body[1]/app-root[1]/app-public[1]/ecs-public-template[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-signin[1]/ecs-card[1]/section[2]/div[1]/div[1]/div[1]/app-signin-form[1]/ecs-form[1]/form[1]/ecs-input[1]/div[1]/div[2]/input[1] -> /html[1]/body[1]/app-root[1]/app-public[1]/ecs-public-template[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-signin[1]/ecs-card[1]/section[2]/div[1]/div[1]/div[1]/app-signin-form[1]/ecs-form[1]/form[1]/div[3]/ecs-input[1]/div[1]/div[2]/input[1]
+Source: Username input
+Destination: Password input
+Positions: 2 -> 4
+Supporting evidence: Ground truth includes this exact transition and evaluated_transitions marks it FN. navigation_order shows username input at position 2 label 1, forgot username at position 3 label 5, and password input at position 4 label 2. KFG edges include TAB from username input directly to password input. The forgot-username link is present as a distinct node and is visible in screenshots near the username section.
+Confidence: high
+Requires review: False

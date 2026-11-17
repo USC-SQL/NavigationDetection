@@ -1,0 +1,283 @@
+{
+  "subject" : "cpan",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG contains a direct TAB edge from the CPAN logo/home link (position 1) to the Home link (position 2). The screenshot shows the logo in the top branding area and Home in the navigation bar below, supporting a boundary between adjacent header branding and header navigation regions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from the Search button (position 10) to the '219,024 Perl modules' link (position 11). The screenshot places the search form in the top header bar and the destination in the main content area under 'Welcome to CPAN', indicating an adjacent header-to-main region transition with destination position exactly one greater."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition in the KFG from the search form subgroup (Search button at position 10) to the next distinct content subgroup in the main column ('219,024 Perl modules' at position 11). The navigation positions are consecutive and the screenshot shows these as separate visual/functional subgroups."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from Mirrors (position 7) to the Search label/link (position 8). The screenshot and DOM place Mirrors in the header navigation menu and the destination in the adjacent search form, which are distinct functional subgroups with consecutive meaningful positions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are links within the same welcome text paragraph, but the evidence does not establish that '219,024 Perl modules' and 'mirrored' are genuinely secondary utility/support controls rather than ordinary content links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The transition is local within the left main-content column, but the evidence does not clearly show that both 'mirrored' and 'metacpan.org' are secondary support/utility controls in the same auxiliary group."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG includes a direct TAB edge from 'metacpan.org' (position 13) to 'Recent upload 1' (position 14). The screenshot shows these in adjacent main-content panels: the left 'Search CPAN via' panel and the middle 'Recent Uploads' panel. The destination position is exactly one greater."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This verified TAB edge moves between distinct adjacent subgroups in the main content table: the left-column 'Search CPAN via' item (position 13) to the middle-column 'Recent Uploads' list start (position 14). Positions are consecutive and the screenshot supports subgroup separation."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Recent upload 10 and 'more...' are within the same list, but the evidence does not establish that both are secondary support/utility controls as required by P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from 'more...' (position 24) to 'Installing Perl Modules' (position 25). The screenshot places these in adjacent visual panels: the middle 'Recent Uploads' column and the right 'Getting Started' column. The destination is exactly one position later."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This verified TAB transition crosses from the 'Recent Uploads' subgroup to the separate 'Getting Started' subgroup, both visually distinct columns in the main content area. The navigation positions 24 and 25 are consecutive."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Although the controls are near adjacent informational sections, the evidence does not show that both 'more...' and 'Installing Perl Modules' are secondary utility/support controls in one local auxiliary group."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0021",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0022",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0023",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0024",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0025",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0026",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG verifies a direct TAB edge from 'Learn Perl' (position 26) to 'Read' (position 27). In the screenshot, these belong to separate adjacent lists under different headings in the right column ('Getting Started' and 'How to contribute'), supporting distinct local subgroups with consecutive positions."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "The endpoints are in adjacent sections within the same right-side content column, but the evidence is less clear that they are distinct page regions rather than subgroups inside one larger main region."
+    }, {
+      "pattern_id" : "P03",
+      "reason" : "The items are links in nearby informational lists, but the evidence does not clearly establish that both are secondary utility/support controls rather than ordinary resource links."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0027",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from 'Read' (position 27) to 'Visit https://pause.perl.org/' (position 28). The screenshot groups both links together under 'How to contribute', and both appear to function as nearby support/instructional links rather than primary workflow controls."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0028",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG contains a direct TAB edge from 'Visit https://pause.perl.org/' (position 28) to 'Perl Programming language' (position 29). The screenshot shows these as starts of two separate adjacent lists in the right column: 'How to contribute' and 'Perl Resources'. Their positions are consecutive."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "The evidence supports adjacent subgroups in the same right column, but it is ambiguous whether these are distinct page regions for P01 rather than subsections within one main region."
+    }, {
+      "pattern_id" : "P03",
+      "reason" : "The source appears support-oriented, but the destination is a general resource link; the evidence does not establish that both endpoints are genuinely auxiliary/support controls in the same local auxiliary group."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0029",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The two endpoints are nearby links within 'Perl Resources', but the evidence does not clearly show that both are secondary support/utility controls rather than ordinary resource navigation links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0030",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Documentation and Mailing Lists are adjacent links in 'Perl Resources', but the evidence is insufficient to classify both as genuinely auxiliary/support controls under P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0031",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Mailing Lists and Perl FAQ are nearby resource/help-like links, but the supplied evidence does not clearly establish that both endpoints are secondary utility/support controls in a local auxiliary group."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0032",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Perl FAQ may be help-related, but Scripts Repository is a general resource link; the evidence does not establish that both endpoints satisfy P03's auxiliary/support role requirement."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0033",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from 'Scripts Repository' (position 33) to 'Perl.org' (position 34). The screenshot places the source in the main content's right panel and the destination in the footer area below, supporting a main-to-footer adjacent region transition with consecutive positions."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This verified TAB edge moves from the 'Perl Resources' subgroup in the main content to the footer link group starting with 'Perl.org'. These are distinct visual/functional subgroups and positions 33 to 34 are consecutive."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0034",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Perl.org and Disclaimer are adjacent footer links, but the evidence does not clearly show that both function as secondary utility/support controls; Perl.org may be a general site link."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0035",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG verifies a direct TAB edge from 'Disclaimer' (position 35) to 'NetActuate' (position 36). In the screenshot footer, 'Disclaimer' is in the left copyright/footer-text group while 'NetActuate' begins the separate hosting/sponsor group on the right. Positions are consecutive and the subgroups are visually distinct."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "Both endpoints are in the footer, so the evidence more clearly supports separate footer subgroups than distinct page regions for P01."
+    }, {
+      "pattern_id" : "P03",
+      "reason" : "Disclaimer is utility-like, but NetActuate appears to be a sponsor/host link; the evidence does not establish that both are auxiliary/support controls in one local support group."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0036",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "NetActuate and Fastly are adjacent hosting-provider links in the footer, but the evidence does not clearly establish that both are secondary utility/support controls under P03 rather than attribution links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0037",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P04",
+      "reason" : "The candidate models Browser -> CPAN logo/home link, but the KFG's special entry node identifies the search input (/tr[2]/td[1]/div[1]/form[1]/input[1], position 9) as v_entry/v_0 rather than the logo. The evidence is contradictory about the documented first focused webpage control."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed matches are mainly straightforward consecutive TAB transitions within the site's linear focus order, with several verified cross-boundary moves between distinct panels or sections: branding to navigation, header search to main content, left-to-middle and middle-to-right main panels, right-column subsections, main content to footer, and between separate footer subgroups. Only one clear local auxiliary progression is supported ('Read' to 'Visit https://pause.perl.org/'). No candidate showed wraparound, backward local TAB movement, field-to-field with helper-link interference, auxiliary-link jumps over workflow controls, or primary-control skips over identified local controls. The Browser-entry candidate is contradicted by the KFG entry metadata and is therefore uncertain rather than matched."
+}

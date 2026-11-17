@@ -1,0 +1,52 @@
+{
+  "subject" : "dickssportinggoods",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/i[2] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Adjacent auxiliary-control progression missed",
+    "observable_characteristics" : "The source is a small show/hide password icon located inside or immediately adjacent to the password field, and the destination is the nearby Forgot Password button. In navigation_order these are consecutive meaningful positions 4 to 5, and in the KFG there is a direct TAB edge from the icon to the Forgot Password button. The screenshot shows both controls in the same sign-in region with the destination placed close to the password field area.",
+    "matching_criteria" : "A transition where a small inline auxiliary control associated with a form field is followed directly by a nearby action in the same form section, the KFG shows a direct focus edge, and the elements are consecutive or near-consecutive in the supplied meaningful navigation order.",
+    "possible_cause" : "Observed evidence shows that the detector did not report this transition even though ground truth labeled it as an LNF. A possible cause is that the detector deprioritized or filtered transitions between spatially adjacent controls within the same local form cluster, especially when the source is a small icon-like control. This cause is unverified from the supplied evidence.",
+    "supporting_evidence" : "ground_truth includes this exact transition; original_predictions do not. navigation_order lists /form/div[5]/label[1]/i[2] as position 4 label 5 and /form/div[6]/button[1] as position 5 label 6. kfg edges include TAB from /form/div[5]/label[1]/i[2] to /form/div[6]/button[1]. Screenshot annotation numbers 5 and 6 appear next to the password reveal icon and Forgot Password control in the same sign-in panel.",
+    "confidence" : "low",
+    "requires_review" : true
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Intra-form jump over intermediate affordances missed",
+    "observable_characteristics" : "The source is the Password input and the destination is the Sign In button. navigation_order places these at meaningful positions 3 and 6, with two intermediate controls: the show/hide password icon at position 4 and Forgot Password button at position 5. The KFG contains a direct TAB edge from the Password input to the Sign In button. Visually, the skipped intermediates are in the same sign-in form and appear between the password field and the sign-in action.",
+    "matching_criteria" : "A transition where a form field tabs directly to a primary action while one or more visible, focusable controls in the same form section appear as intermediate meaningful positions and are bypassed by the implemented focus edge.",
+    "possible_cause" : "Observed evidence indicates the detector missed a direct intra-form jump that bypasses two visible controls. A possible cause is that the detector relied more on coarse container-level progression within the sign-in form and underweighted intermediate inline or secondary controls. Another possibility is that it modeled the password input and sign-in button as an acceptable condensed path. These are hypotheses only.",
+    "supporting_evidence" : "ground_truth includes this exact transition with Slightly severity; original_predictions do not. navigation_order: password input is position 3, show/hide icon position 4, Forgot Password button position 5, Sign In button position 6. kfg edges include TAB from /form/div[5]/label[1]/input[1] to /form/div[7]/button[1]. Screenshot labels 2, 5, 6, and 3 show these controls arranged within the same sign-in panel.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[2]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Lateral skip to secondary action missed",
+    "observable_characteristics" : "The source is the Forgot Password button and the destination is the Cancel button. In navigation_order these are positions 5 and 7, with the Sign In button at position 6 between them. The KFG has a direct TAB edge from Forgot Password to Cancel. The screenshot shows Sign In and Cancel grouped together as action buttons, with Forgot Password nearby above them, so the implemented focus path bypasses the primary Sign In action and lands on the secondary Cancel action.",
+    "matching_criteria" : "A transition where a nearby utility action tabs directly to a secondary action button while a visible primary action in the same action group is an intermediate meaningful position.",
+    "possible_cause" : "Observed evidence supports that this is a real jump but the detector failed to flag it. A possible cause is that the detector discounted skips when the destination remains within the same visual form block and near another action button, or it may have been tuned to look for larger positional reversals rather than shorter local bypasses. This remains a hypothesis.",
+    "supporting_evidence" : "ground_truth includes this exact transition with Strongly severity; original_predictions do not. navigation_order places Forgot Password at position 5, Sign In at 6, and Cancel at 7. kfg edges include TAB from /form/div[6]/button[1] to /form/div[7]/button[2]. Screenshot markers 6, 3, and 7 show the utility link/button above and the two action buttons below in the sign-in panel.",
+    "confidence" : "medium",
+    "requires_review" : false
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/header[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/i[2]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison for a detected jump that bypasses multiple earlier form controls and lands on a small inline control."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[1] -> /html[1]/body[1]/header[1]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison for a detected wrap/reversal from a form action back to the top logo link."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/label[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/label[1]/input[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Baseline normal adjacent progression between two standard form inputs."
+  }, {
+    "transition" : "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[7]/button[2] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Baseline normal progression from the sign-in form's final action to the neighboring create-account panel."
+  } ],
+  "subject_summary" : "This subject shows a sign-in form where implemented focus order diverges from the meaningful order around the password field, reveal icon, forgot-password control, and action buttons. The detector successfully caught the large backward wrap transitions involving the logo link, but missed several shorter intra-form jumps, especially where the destination stayed inside the same sign-in block. For the icon-to-forgot-password FN, the evidence confirms the transition but does not clearly establish why it was missed, so review is warranted."
+}

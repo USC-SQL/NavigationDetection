@@ -1,0 +1,66 @@
+{
+  "subject" : "wiley",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/header[1]/div[1]/div[1]/form[1]/input[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/p[2]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Landing-page content jump after header search",
+    "observable_characteristics" : "Observed Tab order moves from the header search input to a right-column 'Chat Now' link instead of to the nearby main-column links that appear earlier in the page's visual reading flow. Navigation order places Search input at position 8 and Chat Now at position 18, while positions 10-17 contain the visible 'Managing Your Account' and primary account links. The screenshots show those main-column links on the left and the chat card on the right.",
+    "matching_criteria" : "A Tab transition leaves a header control and lands in a later sidebar or auxiliary panel while a visually earlier main-content group exists on the page and is focusable elsewhere in the same sequence.",
+    "possible_cause" : "Hypothesis: the original detector may have relied heavily on implemented DOM adjacency or may have underweighted cross-column visual reading order, so it did not flag the jump from the header search area into the right sidebar. This cause is not directly proven by the evidence.",
+    "supporting_evidence" : "Evaluated transition is classified FN and observed_in_stage1=True. In navigation_order, /header/div[1]/div[1]/form[1]/input[1] is position 8 and /table/.../div[2]/div[1]/p[2]/a[1] ('Chat Now') is position 18. KFG visibleCtrlDomSequence shows the implemented sequence button -> input -> Chat Now. Ground truth labels this transition as an LNF. Screenshots show main account links and explanatory text in the main left content area before the right-side chat panel.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[5]/th[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/p[1]/a[1]",
+    "classification" : "FP",
+    "pattern_hypothesis" : "Local wrap-around within a related content block",
+    "observable_characteristics" : "Within the main 'My Account' content block, focus moves from 'Download Center' back to the earlier 'Managing Your Account' link. This is a reverse jump in the implemented order: source position 15 to destination position 10. However, all involved elements are in the same left-column account section, and the same cluster also contains a confirmed jump from 'Managing Your Account' to 'Registration Codes'.",
+    "matching_criteria" : "A predicted LNF occurs between elements inside one visible content block where focus order is unusual or cyclic, but the reference data does not treat that specific reverse move as a separate LNF.",
+    "possible_cause" : "Hypothesis: the detector likely flagged any strong backward move in meaningful position as an LNF, without distinguishing between a harmful cross-region jump and a local wrap/re-entry inside one section. The evidence does not establish why the reference excludes this edge, so the exact error mechanism remains partly unverified.",
+    "supporting_evidence" : "Original_predictions includes this transition. Evaluated_transitions classifies it as FP with observed_in_stage1=True. Navigation_order places 'Download Center' at position 15 and 'Managing Your Account' at position 10. KFG contains a TAB edge from /table/.../tr[5]/th[1]/a[1] to /table/.../div[1]/p[1]/a[1], and also a SHIFTTAB edge in the opposite direction, indicating a non-linear local loop. Screenshots show both elements in the same main left-column account area under 'My Account'.",
+    "confidence" : "medium",
+    "requires_review" : true
+  }, {
+    "transition" : "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[7]/th[1]/a[1] -> /html[1]/body[1]/header[1]/nav[1]/div[1]/ul[1]/li[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "End-of-section wrap to page header",
+    "observable_characteristics" : "After 'Textbook Rentals' in the main account section, Tab wraps to the first top utility navigation link at the top of the page. Navigation order places the source at position 17 and the destination at position 1, indicating a page-level wrap rather than progression to adjacent on-screen content such as the right-side cards or footer. The screenshots show many remaining visible controls below and to the right of the main section.",
+    "matching_criteria" : "A forward Tab transition from a content section's last item lands at the page header or first top navigation item even though additional focusable content remains elsewhere on the page.",
+    "possible_cause" : "Hypothesis: the original detector may have treated this as ordinary page cycling or may not have modeled end-of-sequence wraps as LNFs unless they crossed a narrower threshold. That is only an inference from the miss, not directly established by the evidence.",
+    "supporting_evidence" : "Ground truth includes this exact transition. Evaluated_transitions classifies it as FN with observed_in_stage1=True. Navigation_order lists /table/.../tr[7]/th[1]/a[1] at position 17 and /header/nav/div[1]/ul[1]/li[1]/a[1] at position 1. KFG contains a TAB edge from /table/.../tr[7]/th[1]/a[1] to /header/nav/div[1]/ul[1]/li[1]/a[1]. The visibleCtrlDomSequence confirms many focusable elements exist after position 17, including positions 18-55.",
+    "confidence" : "high",
+    "requires_review" : false
+  }, {
+    "transition" : "Browser -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[2]/th[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Virtual browser entry into mid-page content",
+    "observable_characteristics" : "The KFG marks the initial entry node as 'Instructor Account' inside the main content table rather than the top navigation or search controls. Ground truth labels the Browser boundary to this element as an LNF. Because the source is the virtual Browser boundary, this is not an ordinary element-to-element DOM move and cannot be visually observed in the same way as in-page transitions.",
+    "matching_criteria" : "The modeled browser-entry point starts at a mid-page or content-section element that bypasses earlier page header/navigation controls, and the evidence package explicitly marks the browser boundary transition as an LNF.",
+    "possible_cause" : "Insufficient evidence to determine the original detector's miss. A plausible hypothesis is that boundary transitions were excluded, deprioritized, or treated differently from ordinary element-to-element edges. This remains unverified.",
+    "supporting_evidence" : "Ground truth includes 'Browser -> /html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/a[1]'. Evaluated_transitions classifies it as FN with browser_boundary=True. In kfg.v_special, both v_0 and v_entry are /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[2]/th[1]/a[1]. Navigation_order shows many earlier page controls at positions 1-11 before this destination at position 12.",
+    "confidence" : "low",
+    "requires_review" : true
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/header[1]/nav[1]/div[3]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/header[1]/div[1]/div[1]/form[1]/button[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Confirmed header-area jump useful for comparison with the missed search-input-to-chat transition."
+  }, {
+    "transition" : "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/p[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[6]/th[1]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Confirmed non-linear jump within the same main content block, useful to compare with the FP local wrap-around transition."
+  }, {
+    "transition" : "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[1]/p[2]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[2]/ul[1]/li[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Normal within-sidebar progression after landing on the right-column chat link."
+  }, {
+    "transition" : "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[2]/div[3]/ul[1]/li[7]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/footer[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Normal end-of-section forward progression into the footer, contrasting with the FN wrap from main content back to the page header."
+  }, {
+    "transition" : "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[4]/th[1]/a[1] -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[5]/th[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Normal adjacent progression within the same main account list."
+  } ],
+  "subject_summary" : "This subject shows several genuine non-linear focus behaviors: header search controls are reversed, focus can jump from header into a later right-column panel, main-content links include non-adjacent jumps and local wrap-around, and one path wraps from mid-page content back to the top utility navigation. The main uncertainty is the FP inside the left-column account section, where the detector appears to over-flag a local reverse move that the reference data does not count as an LNF. Browser-boundary handling is also uncertain because the evidence identifies an entry-point LNF but does not reveal the original detector's boundary policy."
+}

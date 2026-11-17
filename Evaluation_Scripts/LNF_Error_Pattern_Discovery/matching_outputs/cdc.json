@@ -1,0 +1,385 @@
+{
+  "subject" : "cdc",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG has a direct TAB edge from /html[1]/body[1]/div[1]/a[1] to /html[1]/body[1]/div[1]/a[2]. Navigation order positions are consecutive 1 -> 2, and both controls are the two skip links, which are distinct items within the local skip-link subgroup."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The second skip link is unnamed in the supplied evidence, so its exact auxiliary/support role relative to the first skip link is not fully clear."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from the second skip link (/html[1]/body[1]/div[1]/a[2]) to the official U.S. government banner link (/html[1]/body[1]/div[2]/div[1]/div[1]/span[1]/a[1]). Positions are consecutive 2 -> 3, and screenshots/DOM place these in distinct top-page regions: skip-link container to government banner."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from the government banner link to the header CDC logo. Navigation positions are consecutive 3 -> 4, and screenshots show a boundary from the top government banner area into the blue site header."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG contains a direct TAB edge from the CDC footer logo (/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]) to Facebook (/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/a[1]). Positions are consecutive 36 -> 37, and the screenshot shows a move between distinct footer subgroups: branding/logo area to social-media icon group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Facebook to X. Both are nearby social-media links in the same footer social-icon group shown in the screenshot, and both serve secondary/external utility functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from X to Instagram. Both endpoints are nearby social-media utility links within the same footer social group, visible together in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Instagram to LinkedIn. Both are adjacent social-media icons within the same footer utility cluster, and both are secondary utility links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from LinkedIn to YouTube. The screenshot shows both in the same footer social-media icon block, across adjacent rows, and both are secondary utility links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from YouTube to Pinterest. Both are nearby social-media utility controls in the same footer icon group shown in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Pinterest to Snapchat. Both are adjacent secondary social-media links within the same footer utility cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Snapchat to RSS. Both appear in the footer social/feed icon block and function as secondary utility links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from RSS (/html[1]/body[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/a[4]) to HHS.gov (/html[1]/body[1]/footer[1]/div[2]/div[1]/div[1]/a[1]). Positions are consecutive 44 -> 45, and the screenshot shows these as distinct footer subgroups: social/feed icons to government links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from HHS.gov to USA.gov. Both are nearby footer government/utility links within the same local link group and serve secondary utility/navigation purposes."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Contact Us to About CDC. In the screenshot these are adjacent footer navigation controls in the same footer nav bar, serving secondary site-utility/navigation functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from About CDC to Policies. Both are nearby secondary footer navigation links within the same local footer navigation group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Policies to Languages. Both are adjacent footer navigation/utility controls in the same local footer nav group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Languages to Archive. Both are adjacent footer utility/navigation links in the same local footer nav group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Archive (/html[1]/body[1]/footer[1]/section[1]/nav[1]/div[1]/div[1]/a[5]) to CDC footer logo (/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]). Positions are consecutive 35 -> 36, and the screenshot indicates distinct footer subgroups: footer nav bar to footer branding/logo area."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from the header CDC logo to CDC-INFO home. Positions are consecutive 4 -> 5, and the screenshot shows distinct header subgroups: brand logo block and the adjacent site-title/home block."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from CDC-INFO home to Search. Positions are consecutive 5 -> 6, and the screenshot shows these as distinct header subgroups: title/home area and search control area."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Search can be utility-like, but CDC-INFO home is a home/title link rather than clearly a secondary support control, so both endpoints do not clearly satisfy the auxiliary-control requirement."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0021",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Search to About Our Service. Positions are consecutive 6 -> 7, and the screenshot shows a move between distinct header subgroups: the search area to the row of CTA links/buttons."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Search is plausibly auxiliary, but About Our Service appears to be a primary content/CTA link rather than clearly a secondary utility/support control."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0022",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Email CDC-INFO appears support-related, but About Our Service may be a primary CTA rather than a secondary auxiliary control, so both endpoints' roles are not clearly auxiliary."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0023",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Email CDC-INFO is support-like, but View All is a general navigation/primary action in this header module, so the evidence does not clearly establish both endpoints as genuinely auxiliary controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0024",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from header View All to main-content Español. Positions are consecutive 9 -> 10, and the screenshots show a region boundary from the blue header into the main page content."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0025",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0026",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Bringing a Dog into the U.S. to Respiratory illnesses image. Positions are consecutive 12 -> 13, and the screenshot shows these as adjacent article cards within Trending Topics, i.e., distinct neighboring content subgroups."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0027",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0028",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Respiratory Illnesses to Get Answers to Common Travel Questions. Positions are consecutive 14 -> 15, and the screenshot shows a move from the second article card to the separate right-hand list panel, indicating adjacent visual subgroups within the main section."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The destination is a list of informational links and the source is an article link; the evidence does not clearly establish both as secondary utility/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0029",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Get Answers to Common Travel Questions to Order Publications. Both are nearby links within the same right-hand light-blue list panel, and both function as support/information utility links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0030",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Order Publications to CDC Resources in other languages. Both are adjacent links in the same utility/info list panel and serve secondary support/information purposes."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0031",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from CDC Resources in other languages to CDC Division of Media Relations. Both are nearby utility/information links inside the same right-hand list panel."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0032",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from CDC Division of Media Relations to Request a Speaker. Both are adjacent support/information links in the same local list panel."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0033",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Request a Speaker to NHSN Help Desk. Both are nearby support/help links within the same right-hand list module."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0034",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from NHSN Help Desk to SAMS NHSN User FAQs. Both are adjacent help/support links in the same local list panel."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0035",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from SAMS NHSN User FAQs to CDC-INFO image. Positions are consecutive 21 -> 22, and the screenshot shows movement from the right-hand list panel to the separate About Our Service promotional panel below/adjacent, i.e., distinct content subgroups."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is a help/FAQ link, but the destination is an image link for a promotional/service panel rather than clearly an auxiliary support control."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0036",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0037",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0038",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from Learn More to the Home icon link. Positions are consecutive 24 -> 25, and screenshots show a region boundary from the main About Our Service panel into the lower site section above the footer."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Learn More to Home icon link with consecutive positions 24 -> 25. The screenshot shows adjacent visual modules: the section 3 service card and the lower CDC-INFO section block."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0039",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Español to Dog article image. Positions are consecutive 10 -> 11, and the screenshot shows these as distinct neighboring subgroups within main content: the standalone Español link area and the first Trending Topics card."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0040",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from View All to About Our Service. Positions are consecutive 27 -> 28, and the screenshot shows a move between distinct subgroups inside the lower CDC-INFO section: the left-side primary CTA area and the right-side links list."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "About Our Service and View All in this section appear promotional/navigation-oriented, and the evidence does not clearly establish both as genuinely secondary auxiliary/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0041",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The home icon link and section title are in the same heading area, but their roles as secondary auxiliary/support controls are not established by the evidence."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0042",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The section title and View All are nearby in the same module, but the evidence does not clearly show both are secondary utility/support controls rather than ordinary navigational/promotional controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0043",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from About Our Service to Email CDC-INFO in the lower CDC-INFO section. Both are nearby links in the same local links list, and Email CDC-INFO is support-like while About Our Service is a service-navigation link in that same local group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0044",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "KFG shows a direct TAB edge from Email CDC-INFO to Sign up for Email Updates. Positions are consecutive 29 -> 30, and the screenshot shows these as separate but adjacent subgroups within the lower CDC-INFO section: the service links list and the email-signup callout."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Email CDC-INFO is support-like, but Sign up for Email Updates is more of a primary subscription CTA, so both endpoints are not clearly auxiliary."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0045",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from Sign up for Email Updates to Contact Us. Positions are consecutive 30 -> 31, and screenshots show a boundary from the lower CDC-INFO section into the footer navigation bar."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0046",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly modeled as Browser -> /html[1]/body[1]/div[1]/a[1], with browser_boundary=true and destination position 1 ('Skip directly to site content'), matching a browser-to-first-page-control entry."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed matches are mainly straightforward consecutive TAB moves within local utility groups (footer social icons, footer nav links, right-side support-link list) and consecutive transitions across clearly distinct adjacent regions or subgroups (skip links to banner, banner to header, header to main, lower section to footer, and several adjacent content panels). No candidate showed evidence of wraparound, backward local TAB movement, helper-link/field patterns, or primary-control bypass over an identified intermediate control."
+}

@@ -1,0 +1,50 @@
+{
+  "subject" : "meraki",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG contains a direct TAB edge from the Forgot email? link (/div[2]/a[1], position 4) to the Terms link (/div[2]/div[1]/a[1], position 5). The screenshot shows Forgot email? in the main sign-in area and Terms in the bottom footer/legal area, indicating distinct adjacent page regions, and the destination position is exactly one greater than the source."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Forgot email? is a secondary recovery link, but the evidence does not establish that Terms is a local auxiliary/support control within the same local functional group rather than a footer legal link in a different region."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG contains a direct TAB edge from Terms (position 5) to Policy (position 6). In the screenshot these two links are adjacent at the bottom of the page in the same footer/legal group, and both serve secondary utility/legal functions rather than primary workflow actions."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The transition is a direct verified TAB edge between two distinct but adjacent footer legal-link subgroups/items: Terms at position 5 and Policy at position 6. They are consecutive in the navigation order and visually separated as neighboring footer links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P04",
+      "reason" : "This is a browser-boundary candidate, but the KFG's modeled entry node is the Email input field (v_entry and v_0 point to the input), not the Create an account control. The supplied evidence therefore conflicts on which control is the documented first focused webpage control."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed verified TAB edges generally follow the visible order of the sign-in page. One clear adjacent cross-region continuation appears from the recovery link to the footer legal links, and one local auxiliary/legal progression appears between Terms and Policy. The browser-entry evidence is contradictory because Stage 1 proposes entry to Create an account while the KFG marks the Email input as the entry node."
+}

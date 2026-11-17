@@ -1,0 +1,21 @@
+Pattern: FN04
+Name: Auxiliary or recovery link jumps past core form controls
+Error type: FN
+Subject: experian
+
+Summary: The detector misses many jumps that start from a helper, recovery, or support link and land on a later target while bypassing primary fields, buttons, or options in the same workflow.
+
+Matching criteria: The source is an auxiliary/help/recovery/support link within or near a form or authentication flow, the destination is later in the page or a different subgroup, and one or more visible core controls in the same task sequence lie between source and destination in the supplied order evidence.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E023
+Classification: FN
+Transition: /html[1]/body[1]/app-root[1]/app-public[1]/ecs-public-template[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-signin[1]/ecs-card[1]/section[2]/div[1]/div[1]/div[1]/app-signin-form[1]/ecs-form[1]/form[1]/div[2]/a[1] -> /html[1]/body[1]/app-root[1]/app-public[1]/ecs-public-template[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-signin[1]/div[1]/div[1]/a[1]
+Source: Forgot username link
+Destination: Learn more about our services link
+Positions: 3 -> 6
+Supporting evidence: Ground truth includes this exact transition. evaluated_transitions marks it FN and observed_in_stage1=True. navigation_order lists '/form[1]/div[2]/a[1]' as position 3 label 5 and '/app-signin[1]/div[1]/div[1]/a[1]' as position 6 label 6. KFG edges include TAB from '/form[1]/div[2]/a[1]' to '/app-signin[1]/div[1]/div[1]/a[1]'. KFG also lists password input, forgot-password link, checkbox, and sign-in button as focusable nodes between the form area and the lower link.
+Confidence: medium
+Requires review: False

@@ -1,0 +1,6 @@
+{
+  "subject" : "engadget",
+  "error_analyses" : [ ],
+  "correct_transition_examples" : [ ],
+  "subject_summary" : "The supplied evaluated_transitions contain no FP or FN records. original_predictions and ground_truth are both empty, and every listed evaluated transition is provisional TN. As a result, there are no detector error cases to analyze for this subject."
+}

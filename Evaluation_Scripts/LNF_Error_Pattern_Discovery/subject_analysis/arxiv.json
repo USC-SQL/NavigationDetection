@@ -1,0 +1,36 @@
+{
+  "subject" : "arxiv",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Inline auxiliary links inside search control cluster",
+    "observable_characteristics" : "The transition moves from the header search text input to a nearby Help link within the same search area. In the supplied navigation order and KFG, this is the immediate next implemented focus step: label/position 4 to 5. The screenshot shows the Help and Advanced Search links placed directly under or adjacent to the search input within the same header search module, before the search scope dropdown and Search button.",
+    "matching_criteria" : "Another transition matches this pattern when focus moves between adjacent elements within one compact control group, especially from a primary form field to an inline help or support link that is visually and structurally embedded in the same widget area rather than separated into a different page region.",
+    "possible_cause" : "Observed evidence shows the transition is adjacent in both the implemented order and the inferred meaningful order, yet the reference labels it as an LNF. A possible detector error mechanism cannot be established from the supplied evidence because the detector did not flag this transition despite flagging the later transitions in the same search cluster. One unverified hypothesis is that the detector underweighted or ignored short-range transitions between semantically different control types within a shared form region, focusing instead on larger geometric or grouping discontinuities.",
+    "supporting_evidence" : "navigation_order places the Search input at position 4 and the Help link at position 5 with matching labels 4 and 5. evaluated_transitions marks this exact transition as FN and observed_in_stage1=True. KFG visibleCtrlDomSequence indexes the same order as input -> Help -> Advanced Search -> dropdown -> Search button. Screenshot markers 4, 5, 6, 7, 8 show these controls grouped tightly in the header search area.",
+    "confidence" : "low",
+    "requires_review" : true
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison because it occurs in the same header search cluster and was detected as an LNF, showing the detector was sensitive to some within-cluster transitions but not the earlier input-to-Help step."
+  }, {
+    "transition" : "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1] -> /html[1]/body[1]/header[1]/div[3]/div[1]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison because it is another ground-truth LNF in the same header region, but it crosses from the search controls to the separate Login link."
+  }, {
+    "transition" : "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison because it is a normal adjacent link-to-link movement within the same small support-links subgroup of the header search area."
+  }, {
+    "transition" : "/html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/a[1] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison because it enters the same search cluster from the arXiv logo and was not treated as an LNF, suggesting the miss is not explained simply by region entry."
+  }, {
+    "transition" : "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison because it is a normal adjacent movement later in the same search control cluster."
+  } ],
+  "subject_summary" : "This subject has one detector error: a false negative inside the compact header search module. The supplied evidence shows a tightly grouped sequence of search input, help links, scope dropdown, and search button, with two neighboring transitions in that cluster labeled as LNFs and one neighboring transition missed by the detector. Because implemented and inferred orders align and no additional state change evidence is supplied, the underlying reason for the miss remains unverified and requires review."
+}

@@ -1,0 +1,4 @@
+Pattern: FN01 - Browser-boundary omission
+Subject: wsj
+Classification: TN
+Transition: Browser -> /html[1]/body[1]/div[2]/div[1]/div[4]/div[1]/header[1]/div[1]/div[2]/a[1]

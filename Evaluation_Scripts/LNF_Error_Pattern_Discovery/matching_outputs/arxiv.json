@@ -1,0 +1,205 @@
+{
+  "subject" : "arxiv",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The transition is between two nearby footer utility links in the same local footer group: About link (position 16) to Help link (position 17). The screenshot shows them adjacent in the same footer column, and the KFG has a direct TAB edge between these xpaths."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from footer Help (position 17) to footer Contact (position 18). The destination position is exactly one greater, and the screenshot places these controls in adjacent footer subgroups/columns: About/Help in one column and Contact/Subscribe in the next."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Help is a support-style utility link, but Contact may or may not be serving the same local auxiliary/support function group. The evidence does not clearly establish that both endpoints are genuinely secondary controls within one shared local functional group."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The transition is between nearby footer utility links Contact (position 18) and Subscribe (position 19) within the same footer column/group. The screenshot shows them stacked together, and the KFG contains the direct TAB edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from Subscribe (position 19) to Copyright (position 20). Positions are consecutive, and the screenshot places Subscribe in one footer subgroup/column and Copyright in the next footer subgroup/column."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Subscribe is a utility/action link, but Copyright is not clearly a support or recovery control. The evidence does not firmly establish both endpoints as genuinely auxiliary controls in one local functional group."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The transition is between Copyright (position 20) and Privacy Policy (position 21), two adjacent footer policy/utility links in the same footer subgroup. The screenshot shows them together in one column, and the KFG shows the direct TAB edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG contains a direct TAB edge from Privacy Policy (position 21) to Web Accessibility Assistance (position 22). These are consecutive positions, and the screenshot places them in adjacent footer subgroups: policy links in one column and accessibility/operational-status links in the next."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Privacy Policy is a footer policy link and Web Accessibility Assistance is a support link, but the evidence does not clearly establish that both belong to the same local auxiliary group rather than adjacent distinct footer groups."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The transition is between Web Accessibility Assistance (position 22) and arXiv Operational Status (position 23), both support/status-type links located together in the same footer subgroup. The screenshot shows them grouped in the same rightmost footer area, and the KFG shows the TAB edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The transition is between arXiv Operational Status (position 23) and email notifications via (position 24), two nearby secondary/support links inside the same footer status/help text block. The KFG includes the direct TAB edge, and the screenshot shows them in one local cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The transition is between email notifications via (position 24) and or slack (position 25), which are adjacent support/action links within the same footer operational-status text cluster. The KFG shows a direct TAB edge and the screenshot shows them side by side in the same local block."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The destination is a support/acknowledgement link, but the source is a university logo/home-style link, which does not qualify as auxiliary solely because it is a link. The evidence does not support both endpoints as secondary utility/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from the support/acknowledgement link (position 2) to the arXiv home logo link (position 3). The positions are consecutive, and the screenshot shows these endpoints in distinct adjacent header subgroups: the top black institutional strip and the red arXiv branding strip."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG has a direct TAB edge from the arXiv home logo link (position 3) to the Search input (position 4). The destination is exactly one greater in inferred meaningful position, and the screenshot shows adjacent distinct header subgroups: branding/logo area and search form area."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from Search button (position 8) to Login link (position 9). The positions are consecutive, and the screenshot separates these as adjacent header subgroups: the search form and the login area."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "This is a direct TAB transition between Help (position 5) and Advanced Search (position 6), two nearby secondary/support/search-utility links located together under the header search field. The KFG shows the TAB edge, and the screenshot shows them adjacent in the same local search-help group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from Login link in the header (position 9) to the Accounts release link in the main content area (position 10). The destination position is exactly one greater, and the screenshot clearly shows a header-to-main region boundary."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Login can be considered a workflow or utility link, but the Accounts release link is a content/news link rather than clearly a support/auxiliary control. The evidence does not establish both endpoints as genuinely secondary controls in one local group."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "The KFG shows a direct TAB edge from Username or e-mail input (position 11) to Password input (position 12). A separate focusable helper/recovery link, Forgot your password? (position 13), is visually associated with the destination password field group in the same form section, as shown in the screenshot and navigation order."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0021",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0022",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from the Submit button in the already-registered login form (position 14) to the Register for the first time link in the separate never-logged-in section (position 15). The positions are consecutive, and the screenshot shows these as adjacent but distinct main-area panels/sections."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This direct TAB move goes from the login form subgroup (Submit, position 14) to the adjacent registration subgroup (Register for the first time, position 15). The destination is exactly one greater in meaningful position, and the screenshot shows two distinct functional subgroups within main content."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0023",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG contains a direct TAB edge from Register for the first time link in main content (position 15) to About link in the footer (position 16). The destination position is exactly one greater, and the screenshot clearly shows a main-to-footer page region change."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "About is a footer utility link, but Register for the first time appears to be a primary registration action rather than a secondary support control. The evidence does not support both endpoints as auxiliary controls."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0024",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0025",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a modeled Browser -> page transition, and the KFG special nodes identify the entry control as /html/body/header/div[1]/div[1]/a[1], the Cornell University link/logo, which is also position 1 in navigation order."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed patterns are mostly ordinary sequential TAB navigation. Matches include several local auxiliary footer/header link progressions (P03), several consecutive transitions across adjacent header/footer subgroups (P05), two clear cross-region continuations from header to main and main to footer plus one between adjacent main sections (P01), one browser-entry transition (P04), and one field-to-field transition near an embedded recovery link in the login form (P06). No clear evidence supports wraparound/cyclic behavior (P02), auxiliary-link jumps across workflow controls (P07), primary-control skips over intermediate local controls (P08), or backward local TAB transitions (P09) among the supplied candidates."
+}

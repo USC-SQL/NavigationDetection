@@ -1,0 +1,21 @@
+Pattern: FN05
+Name: Primary control jumps forward over intermediate local controls
+Error type: FN
+Subject: disneyworld
+
+Summary: Another recurring miss is a direct move from a primary field, button, or top action to a later control in the same local module while intervening visible controls are bypassed.
+
+Matching criteria: The source is a primary input, button, logo/header entry point, or other major control; the destination is a later control in the same local panel or task region; and the supplied evidence documents one or more visible intermediate controls that are skipped by the implemented TAB edge.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E015
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/button[1]
+Source: Password input
+Destination: Sign In button
+Positions: 4 -> 8
+Supporting evidence: KFG edge TAB exists from /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1] to /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/button[1]. navigation_order places Forgot password button/link at position 5, Remember Me checkbox at position 6, and Cancel link at position 7 between source position 4 and destination position 8. Screenshot labels show password as 2 and Sign In as 3, with Forgot password 8, Remember Me 5, and Cancel 4 also present in the card.
+Confidence: medium
+Requires review: False

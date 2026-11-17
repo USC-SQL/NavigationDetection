@@ -1,0 +1,163 @@
+{
+  "subject" : "samsclub",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG contains a direct TAB edge from /div[1]/div[1]/button[2] (Skip to main content, navigation position 2) to /div[1]/div[2]/div[1]/a[1] (Sam's Club logo link, navigation position 3). The positions are consecutive, and the screenshot shows the source in the top header utility area and the destination in the page content/header branding area below it, indicating a region boundary."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB edge in the KFG from Skip to main content (position 2) to the Sam's Club logo link (position 3). These are adjacent in meaningful order and belong to distinct functional subgroups: a skip-link/header utility control versus the branding/logo area."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "The KFG shows a direct TAB edge from the Sam's Club logo link to the Stay signed in checkbox. Within the same visible main account/sign-in module, there are separate visible focusable controls between them in the navigation data and screenshot: Email input (position 4), Forgot email link (5), Password input (6), and Forgot password link (7)."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P05",
+      "reason" : "The endpoints are in different functional areas (logo/branding and sign-in form), but the destination position is 8 rather than exactly one greater than the source position 3, so it cannot satisfy adjacency; subgroup interpretation is therefore not enough for a match."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "The KFG includes a direct TAB edge from /form/button[1] (Sign In button, navigation position 10) to /div[1]/button[1] (first header button, navigation position 1), which moves from later page content back to the beginning/top of the page."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "The KFG has a direct TAB edge from the Email input to the Password input. A separate focusable helper/recovery link, Forgot password, is visually associated with the destination field group in the screenshot and listed at navigation position 7 adjacent to the Password input (position 6)."
+    }, {
+      "pattern_id" : "P08",
+      "evidence" : "This is a direct TAB transition from one primary form field (Email input) to a later control (Password input) in the same sign-in form. The intermediate visible focusable control is the Forgot email link at navigation position 5, shown between the two fields in the navigation order and screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Forgot email link to Forgot password link. Both endpoints are nearby recovery/help links within the same sign-in form and serve secondary account-recovery functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P09",
+      "evidence" : "The KFG contains a direct TAB edge from the Password input (navigation position 6) back to the Forgot email link (position 5). Both controls are within the same localized sign-in form cluster, and the move is backward in inferred meaningful order."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P07",
+      "evidence" : "The KFG shows a direct TAB edge from the helper/recovery Forgot password link to the Stay signed in label text. In the inferred order and screenshot, a primary workflow control lies between them: the Stay signed in checkbox at position 8 is between source position 7 and destination position 9."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG verifies a direct TAB edge from the Stay signed in label text (position 9) to the Sign In button (position 10). These are consecutive in meaningful order and appear as distinct functional subgroups within the form: an option/instructional checkbox-label group followed by the primary submit action."
+    }, {
+      "pattern_id" : "P01",
+      "evidence" : "There is a direct TAB edge in the KFG from the Stay signed in label text to the Sign In button, and the navigation positions are consecutive (9 to 10). The screenshot shows the source in the checkbox/option block and the destination in the adjacent action/button block immediately below, supporting an adjacent visual-panel boundary within the main content."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "The KFG contains a direct TAB edge from the Stay signed in checkbox to the Register your membership button. In the same main sign-in/account module, visible focusable controls intervene: the Stay signed in label text at position 9 and the Sign In button at position 10 both lie between source position 8 and destination position 11."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from Register your membership button (position 11) to Join now link (position 12). They are consecutive and belong to distinct neighboring subgroups in the lower account area: membership registration action versus non-member join call-to-action."
+    }, {
+      "pattern_id" : "P01",
+      "evidence" : "This direct TAB edge is verified in the KFG, and the destination position is exactly one greater than the source (11 to 12). The screenshot shows adjacent visual panels/sections below the sign-in form: the 'Already a member...' registration section followed by the 'Not a Sam's Club member?' join section."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The destination Chat with us link is clearly a support/auxiliary link, but the source Join now link appears to be a primary promotional/join action rather than a secondary utility control. Because both endpoints must be genuinely auxiliary and the source role is not auxiliary, this does not meet P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG includes a direct TAB edge from Chat with us link (navigation position 13) to Help center link (position 14). The positions are consecutive, and the screenshot shows a clear region shift from the main page content/support area into the footer link region."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition from Chat with us (position 13) to Help center (position 14). They are consecutive and in distinct subgroups: a support link in the main content cluster and the start of the footer legal/help navigation cluster."
+    }, {
+      "pattern_id" : "P03",
+      "evidence" : "Both endpoints are secondary support/help controls: Chat with us is a support link and Help center is a help/support footer link. They are adjacent in navigation and both serve auxiliary support functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Help center is a support link, but Terms is a legal/site-policy link rather than clearly a help/recovery/support utility in the same local functional group. The evidence does not establish that both endpoints are genuinely secondary controls of the specific auxiliary types required by P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a browser-boundary transition. The KFG v_special identifies /form/div[1]/div[1]/input[1] (Email input) as v_entry, documenting the modeled first focused webpage control from the virtual Browser boundary."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed patterns include a browser-to-page entry to the Email input, a wraparound TAB edge from Sign In back to the first header button, several direct cross-region or cross-subgroup consecutive transitions (notably Skip to logo, Chat with us to footer, and some lower-page section boundaries), a field-to-field jump that bypasses a helper link, a local auxiliary progression between the two recovery links, a backward local transition from Password to Forgot email, and multiple primary-control transitions that skip intervening local controls."
+}

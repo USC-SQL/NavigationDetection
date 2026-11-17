@@ -1,0 +1,26 @@
+{
+  "subject" : "leagueoflegends",
+  "error_analyses" : [ ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/select[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Matches the visible top-to-bottom sequence from logo link to region dropdown and aligns implemented labels with inferred positions."
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/select[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/input[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Continues the main form flow from region selection to email entry with no evidence of reordering or skipped intermediate focusable elements."
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/input[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/button[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Within-form navigation is sequential from email field to Start button, consistent with both screenshots and navigation_order."
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/button[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Moves from the primary action button to the adjacent follow-up download link in the documented implemented order."
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/footer[1]/div[1]/div[2]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/footer[1]/div[1]/div[3]/div[1]/div[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Footer navigation proceeds sequentially between the Riot Games link and ESRB rating/details link, supporting a consistent linear tab order."
+  } ],
+  "subject_summary" : "No FP or FN transitions are present in the supplied evaluated_transitions. The subject evidence shows no original_predictions and no ground_truth LNFs, and the documented keyboard sequence aligns with the inferred meaningful order shown in navigation_order and screenshots. The only notable KFG irregularity is a self-loop on the region select dropdown, but it is not represented as an FP or FN in evaluated_transitions and therefore cannot be analyzed as a detector error here."
+}

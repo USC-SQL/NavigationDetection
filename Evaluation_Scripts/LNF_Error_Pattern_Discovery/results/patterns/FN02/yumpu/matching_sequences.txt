@@ -1,0 +1,31 @@
+Pattern: FN02
+Name: Consecutive cross-group transitions missed
+Error type: FN
+Subject: yumpu
+
+Summary: The detector often misses ground-truth LNFs when the implemented move is immediately consecutive but crosses a visual or functional subgroup boundary.
+
+Matching criteria: The transition is consecutive in the implemented order and typically also consecutive in inferred positions, no intermediate focus target is documented, but the endpoints belong to visibly or functionally distinct subgroups such as adjacent panels, header subareas, footer subclusters, or separate content units.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E065
+Classification: FN
+Transition: /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/input[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/button[1]
+Source: Password input
+Destination: LOG IN button
+Positions: 2 -> 3
+Supporting evidence: navigation_order lists Password input as label/position 2 and LOG IN button as label/position 3. The KFG contains a TAB edge from the password input XPath to the button XPath. evaluated_transitions marks this exact transition as FN and observed_in_stage1=True. The screenshots show the password field above the login button in the same form area.
+Confidence: low
+Requires review: True
+
+Case ID: E066
+Classification: FN
+Transition: /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[3]/div[3]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/p[1]/a[1]
+Source: Forgotten your password? link
+Destination: Register link
+Positions: 8 -> 9
+Supporting evidence: navigation_order lists Forgotten your password? as label/position 8 and Register as label/position 9. The KFG includes a TAB edge from the forgot-password link XPath to the register link XPath. evaluated_transitions classifies this exact transition as FN with observed_in_stage1=True. The screenshots place these items in the same central column below the password area and login button.
+Confidence: low
+Requires review: True

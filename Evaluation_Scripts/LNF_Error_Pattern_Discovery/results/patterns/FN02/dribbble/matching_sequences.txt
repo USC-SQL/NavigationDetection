@@ -1,0 +1,21 @@
+Pattern: FN02
+Name: Consecutive cross-group transitions missed
+Error type: FN
+Subject: dribbble
+
+Summary: The detector often misses ground-truth LNFs when the implemented move is immediately consecutive but crosses a visual or functional subgroup boundary.
+
+Matching criteria: The transition is consecutive in the implemented order and typically also consecutive in inferred positions, no intermediate focus target is documented, but the endpoints belong to visibly or functionally distinct subgroups such as adjacent panels, header subareas, footer subclusters, or separate content units.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E019
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/section[1]/div[1]/a[2] -> /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[1]/form[1]/button[1]
+Source: Get started — it's free link
+Destination: Sign in with Google button
+Positions: 2 -> 3
+Supporting evidence: navigation_order positions 2 -> 3: '/html[1]/body[1]/div[1]/section[1]/div[1]/a[2]' to '/html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[1]/form[1]/button[1]'; KFG edge with phi 'TAB' from the same source to destination; evaluated_transitions marks observed_in_stage1=True and classification=FN; screenshot shows a left marketing panel and right sign-in panel.
+Confidence: low
+Requires review: True

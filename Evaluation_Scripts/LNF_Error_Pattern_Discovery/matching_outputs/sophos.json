@@ -1,0 +1,82 @@
+{
+  "subject" : "sophos",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG contains a direct TAB edge from the Forgot password? link (/main/.../div[1]/a[1], position 5) to the English language button (/main/footer/.../li[1]/button[1], position 6). The screenshot and XPaths show the source in the sign-in panel and the destination in the footer, which are distinct page regions, and the destination position is exactly one greater than the source."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB edge in the KFG from position 5 Forgot password? link in the sign-in module to position 6 English language button in the footer utility list. These are clearly distinct visual/functional subgroups, and the positions are consecutive (5 to 6)."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is a recovery link, but the destination is a language selector button in the footer. The evidence does not clearly establish that both endpoints belong to the same local auxiliary/support functional group."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "The KFG shows a direct TAB edge from the Email input (position 2) to the Password input (position 3). The screenshot shows a separate visible helper/recovery control, the Forgot password? link (position 5), associated with the password/sign-in area below these fields."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is a language button and the destination is a support link within the same footer list, but the evidence does not clearly establish that both are genuinely secondary controls within one local auxiliary functional group rather than mixed footer utilities."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from the Support link (position 7) to the Legal link (position 8). The screenshot and navigation order place both as nearby footer utility links within the same footer link row, and both serve secondary/support/legal utility functions rather than primary workflow actions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from the Legal link (position 8) to the Privacy link (position 9). Both are adjacent footer utility links in the same local footer group and both are secondary legal/privacy controls."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from the Privacy link (position 9) to the Cookies link (position 10). Both are nearby footer utility links within the same footer control group and both serve secondary privacy/cookies functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a Browser boundary transition, and the KFG v_special marks the Sophos Home logo/link as v_entry. The transition is Browser -> position 1 Sophos Home logo/link."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed TAB order largely follows the visible sequence: logo to sign-in form, through form controls, then to footer utilities. Clear matches include a browser-to-page entry at the logo, a cross-region/cross-subgroup move from the sign-in panel to the footer, a field-to-field move near the forgot-password helper link, and several local footer utility-link progressions. No evidence supports wraparound, backward local movement, or primary-control skipping over intermediate local controls in the supplied candidates."
+}

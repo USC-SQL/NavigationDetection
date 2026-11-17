@@ -1,0 +1,21 @@
+Pattern: FN01
+Name: Browser-boundary transitions omitted
+Error type: FN
+Subject: wiley
+
+Summary: Many missed LNFs originate at the virtual Browser boundary rather than a normal DOM element, suggesting special-case under-detection of entry transitions.
+
+Matching criteria: The source is Browser, the destination is a documented entry node or first reached page control, and the case is classified FN.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E060
+Classification: FN
+Transition: Browser -> /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[2]/th[1]/a[1]
+Source: Virtual Browser boundary
+Destination: Instructor Account
+Positions:  -> 12
+Supporting evidence: Ground truth includes 'Browser -> /html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/a[1]'. Evaluated_transitions classifies it as FN with browser_boundary=True. In kfg.v_special, both v_0 and v_entry are /html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[2]/th[1]/a[1]. Navigation_order shows many earlier page controls at positions 1-11 before this destination at position 12.
+Confidence: low
+Requires review: True

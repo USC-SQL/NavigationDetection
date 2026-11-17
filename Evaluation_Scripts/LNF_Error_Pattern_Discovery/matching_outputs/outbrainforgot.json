@@ -1,0 +1,106 @@
+{
+  "subject" : "outbrainforgot",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG has a direct TAB edge from /html[1]/body[1]/div[2]/div[1]/a[1] to /html[1]/body[1]/div[3]/form[1]/ul[1]/li[1]/input[1]. Navigation positions are consecutive 1 -> 2. The screenshot and descriptors show the source in the header (Outbrain logo link) and the destination in the main forgot-password form (Email input), which are distinct page regions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG shows a direct TAB edge from /html[1]/body[1]/div[3]/form[1]/ul[1]/li[2]/input[1] to /html[1]/body[1]/div[3]/p[3]/a[1]. Navigation positions are consecutive 3 -> 4. The screenshot shows movement from the primary form controls (Submit within the password-recovery form) to a separate nearby support/recovery link group below the form, indicating distinct local functional subgroups within the main content area."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG includes a direct TAB edge from /html[1]/body[1]/div[3]/p[3]/a[1] to /html[1]/body[1]/div[3]/p[4]/a[1]. The endpoints are the Help Center link and support@outbrain.com email link, both clearly secondary support/recovery controls placed together below the form in the same local assistance area shown in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from /html[1]/body[1]/div[3]/p[4]/a[1] to /html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]. Navigation positions are consecutive 5 -> 6. The screenshot and descriptors place the source in the main page support section and the destination in the footer, establishing a distinct region boundary."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG contains a direct TAB edge from /html[1]/body[1]/footer[1]/div[1]/div[1]/a[1] to /html[1]/body[1]/footer[1]/div[1]/div[2]/a[1]. Positions are consecutive 6 -> 7. Within the footer, the source is the footer logo block and the destination is the first link in the adjacent footer links list (Amplify), which are distinct visual/functional subgroups shown separated in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The KFG verifies a direct TAB edge from Amplify to Terms, but the evidence does not establish that both endpoints are genuinely secondary utility/support controls in the sense required by P03. Terms is utility-like, while Amplify appears more promotional/product-oriented."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from /html[1]/body[1]/footer[1]/div[1]/div[2]/a[2] to /html[1]/body[1]/footer[1]/div[1]/div[2]/a[3]. The endpoints, Terms and Advertising Guidelines, are nearby footer links serving secondary policy/guideline functions within the same local footer-links group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG verifies a direct TAB edge from /html[1]/body[1]/footer[1]/div[1]/div[2]/a[3] to /html[1]/body[1]/footer[1]/div[1]/div[2]/a[4]. Advertising Guidelines and Privacy Policy are adjacent footer utility/policy links in the same local footer-links group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG contains a direct TAB edge from /html[1]/body[1]/footer[1]/div[1]/div[2]/a[4] to /html[1]/body[1]/footer[1]/div[1]/div[2]/a[5]. Privacy Policy and Security are both nearby secondary informational links in the same footer link cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from /html[1]/body[1]/footer[1]/div[1]/div[2]/a[5] to /html[1]/body[1]/footer[1]/div[1]/div[2]/a[6]. Security and Contact Us are adjacent footer utility/support links within the same local footer links group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG verifies a direct TAB edge from /html[1]/body[1]/footer[1]/div[1]/div[2]/a[6] to /html[1]/body[1]/footer[1]/div[1]/div[2]/a[7]. Contact Us and FAQs are both secondary support/help links grouped together in the footer links list."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly modeled as Browser -> /html[1]/body[1]/div[2]/div[1]/a[1], and stage 1 documents the destination as the first focused webpage control with navigation position 1, the Outbrain logo link in the header."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed patterns are mainly straightforward forward TAB transitions. Clear adjacent cross-region continuation appears from header to main content and from main support area to footer. Local auxiliary progression appears between the two support links below the form and among several footer utility/support links. Consecutive cross-subgroup transitions appear from the submit button to the support-links block and from the footer logo block to the footer link list. No candidate shows wraparound, backward local TAB movement, field-to-field skipping near a helper link, or primary-control bypass over an identified intermediate local control."
+}

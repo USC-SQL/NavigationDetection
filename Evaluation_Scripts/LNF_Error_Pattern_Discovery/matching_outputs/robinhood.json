@@ -1,0 +1,42 @@
+{
+  "subject" : "robinhood",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "The KFG has a direct TAB edge from the Email or username input to the Password input. Both endpoints are primary form fields, and the screenshot/navigation data show a separate helper/recovery link ('Forgot your username or password?') associated with the password/login area below these fields."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "The KFG shows a direct TAB edge from the Show/hide password button to the Sign In button. Navigation order and screenshot indicate an intermediate visible focusable control, the 'Forgot your username or password?' link at position 4, between source position 3 and destination position 5 within the same login module."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "The KFG shows a direct TAB edge from the later 'Forgot your username or password?' link (position 4) back to the earlier Email or username input (position 1), which is a wraparound from a later control to an earlier top-of-form control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P04",
+      "reason" : "This is a browser-boundary candidate, but the KFG's v_special identifies the documented page entry control as the Email or username input, not the forgot-password link. The candidate transition targets the link, so the supplied evidence conflicts with the pattern's requirement that the destination be the documented first focused webpage control."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed keyboard patterns on this Robinhood login page are concentrated within a single local form. Evidence supports a field-to-field move near a recovery link (Email to Password), a primary-control TAB transition that bypasses the visible forgot-password link (Show/hide password to Sign In), and a wraparound TAB edge from the forgot-password link back to the first field. The browser-entry candidate is not supported as a match because the documented KFG entry control is the email field rather than the forgot-password link."
+}

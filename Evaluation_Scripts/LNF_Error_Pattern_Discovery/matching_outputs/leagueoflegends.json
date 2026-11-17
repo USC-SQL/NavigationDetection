@@ -1,0 +1,67 @@
+{
+  "subject" : "leagueoflegends",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P05",
+      "evidence" : "The KFG contains a direct TAB edge from the League of Legends logo link (position 1) to the Region select dropdown (position 2). The screenshot shows these as distinct header-area controls: branding/logo at upper left and region selector at upper right, making them adjacent but functionally distinct subgroups."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Although both controls are in the top area, the logo link is branding and the region select is a configuration control; the evidence does not establish that both are genuinely secondary utility/support controls within the same local auxiliary group."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from the Region select dropdown (position 2) to the Email input field (position 3). The screenshot places the region selector in the top/header area and the email field in the central main signup form, supporting a transition across distinct page regions with destination position exactly one greater."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB edge in the KFG from position 2 to position 3. The source is the region-selection control and the destination is the main form's email field, which are visually and functionally distinct adjacent subgroups."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG includes a direct TAB edge from the 'Already registered? Click to download' link (position 5) to the Riot Games footer link (position 6). The screenshot shows the source in the main signup area and the destination in the footer, and the destination position is exactly one greater."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This verified TAB transition goes from the post-form download link (position 5) to the footer Riot Games link (position 6). These are adjacent in inferred meaningful order and belong to distinct functional subgroups: signup/download area versus footer branding."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source appears to be an auxiliary/download link, but the Riot Games footer link may be branding rather than a secondary support utility. The evidence does not clearly establish that both endpoints are genuinely auxiliary controls in the same local group."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are footer links and nearby, but the evidence does not clearly show that both the Riot Games footer link and ESRB rating/details link are genuinely secondary utility/support controls within the same local auxiliary group rather than mixed branding/informational items."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly a Browser-boundary transition, and the KFG special nodes identify the page entry as /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/a[1], the League of Legends logo link, which is also position 1 in the navigation order."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed verified TAB flow proceeds sequentially from header controls to the main signup form and then to footer links. Clear pattern matches include browser-to-page entry (P04), adjacent cross-region continuation from header to main and main to footer (P01), and consecutive cross-subgroup transitions between distinct adjacent functional areas (P05). No evidence supports wraparound, backward-local, or skip-over-local-control patterns."
+}

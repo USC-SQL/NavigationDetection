@@ -1,0 +1,6 @@
+{
+  "subject" : "theguardian",
+  "error_analyses" : [ ],
+  "correct_transition_examples" : [ ],
+  "subject_summary" : "No FP or FN records are present in evaluated_transitions for this subject. The supplied evidence shows a consistent implemented focus sequence that matches the inferred meaningful order across the login form, inline policy links, and site footer links. Because original_predictions and ground_truth are both empty, there are no detector errors to analyze for this subject."
+}

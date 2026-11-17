@@ -1,0 +1,21 @@
+Pattern: FN04
+Name: Auxiliary or recovery link jumps past core form controls
+Error type: FN
+Subject: woot
+
+Summary: The detector misses many jumps that start from a helper, recovery, or support link and land on a later target while bypassing primary fields, buttons, or options in the same workflow.
+
+Matching criteria: The source is an auxiliary/help/recovery/support link within or near a form or authentication flow, the destination is later in the page or a different subgroup, and one or more visible core controls in the same task sequence lie between source and destination in the supplied order evidence.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E062
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/label[1]/div[1]/label[1]/span[1]/span[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[6]/div[1]/a[1]
+Source: Details link
+Destination: terms of use link
+Positions: 4 -> 6
+Supporting evidence: navigation_order lists "Details link" at position 4 and "terms of use link" at position 6, with "Create your Woot account link" at position 5. kfg edge: Details link -> terms of use link. evaluated_transitions classification FN, observed_in_stage1=True. Screenshot shows the create-account control visually above the terms text.
+Confidence: medium
+Requires review: False

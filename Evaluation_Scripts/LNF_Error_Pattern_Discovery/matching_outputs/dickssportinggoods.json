@@ -1,0 +1,126 @@
+{
+  "subject" : "dickssportinggoods",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "KFG has a direct TAB edge from Email input (/form/div[4]/label/input) to Password input (/form/div[5]/label/input). The destination field group has a separate focusable helper/recovery control nearby: the show/hide password icon at position 4 and the Forgot Password button at position 5, both visually associated with the password area in the screenshot and listed in navigation_order."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The source is the show/hide password icon and the destination is the Forgot Password button. Both are secondary/supporting controls associated with password entry/recovery within the same sign-in form cluster, and the KFG shows a direct TAB edge between them."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB edge in the KFG from the show/hide password icon (position 4) to the Forgot Password button (position 5). The controls are adjacent in inferred meaningful order and serve distinct local subgroups within the password area: visibility toggle versus password recovery."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "The KFG shows a direct TAB edge from Password input (position 3) to Sign In button (position 6) within the sign-in module. There are visible intermediate focusable controls between them: the show/hide password icon at position 4 and the Forgot Password button at position 5, both shown in navigation_order and screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P07",
+      "evidence" : "The source is the Forgot Password button, a recovery/support control. The KFG shows a direct TAB edge from it to Cancel button. In inferred meaningful order, the primary workflow Sign In button (position 6) lies between the source at position 5 and destination at position 7."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "The KFG shows a direct TAB edge from Sign In button (position 6) to the header logo link (position 1), moving from a later control back to an earlier top-of-page control, which is a wraparound/cyclic edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG verifies a direct TAB edge from Cancel button in the left sign-in panel to Create Account button in the adjacent right account-creation panel. The screenshot shows two distinct side-by-side panels, and the destination position 8 is exactly one greater than the source position 7."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition between distinct functional subgroups: the sign-in action area (Cancel button) and the adjacent account-creation panel (Create Account button). The positions are consecutive in meaningful order, 7 to 8."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from Create Account button (main right panel, position 8) to the customer assistance phone number link in the footer/support region (position 9). These are clearly distinct page regions in the screenshot, and the destination position is exactly one greater than the source."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This verified TAB edge moves between distinct functional subgroups: the account-creation call-to-action panel and the footer/support content containing the assistance phone link. The positions are consecutive, 8 to 9."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source phone number link appears supportive, but the footer Terms of Use link is a policy/legal link rather than clearly the same local support/recovery utility group. The evidence does not clearly establish that both endpoints are nearby auxiliary controls within one local functional group."
+    }, {
+      "pattern_id" : "P05",
+      "reason" : "Although the positions are consecutive and the KFG shows a direct TAB edge, the evidence is not sufficient to determine whether the customer assistance phone link and the footer legal-link list are clearly distinct visual or functional subgroups versus parts of one broader footer region."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Terms of Use to Privacy Policy. Both are secondary legal/policy links located together in the footer list, forming the same local auxiliary group in the screenshot and navigation_order."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG verifies a direct TAB edge from Privacy Policy to Accessibility Policy. Both are footer policy/support links within the same local auxiliary link cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "Accessibility Policy and Do Not Sell My Personal Information / CA Residents Only are both secondary footer policy/privacy links in the same local group, and the KFG contains the direct TAB edge between them."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG shows a direct TAB edge from Do Not Sell My Personal Information / CA Residents Only to California Disclosures. Both are footer legal/privacy disclosure links within the same local auxiliary group."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is a modeled Browser-to-page entry transition. The KFG v_special marks /form/div[4]/label/input[1] (Email input) as both v_0 and v_entry, documenting it as the first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed direct TAB behavior includes a browser entry to the email field, a wraparound edge from Sign In back to the header logo, cross-region continuation from the sign-in panel to the account-creation panel and then into the footer/support area, local auxiliary progression among footer policy links, a field-to-field move near password helper controls, and one direct primary-control jump from Password to Sign In that bypasses intermediate local controls."
+}

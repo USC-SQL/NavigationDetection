@@ -1,0 +1,41 @@
+Pattern: FN02
+Name: Consecutive cross-group transitions missed
+Error type: FN
+Subject: outbrainsign
+
+Summary: The detector often misses ground-truth LNFs when the implemented move is immediately consecutive but crosses a visual or functional subgroup boundary.
+
+Matching criteria: The transition is consecutive in the implemented order and typically also consecutive in inferred positions, no intermediate focus target is documented, but the endpoints belong to visibly or functionally distinct subgroups such as adjacent panels, header subareas, footer subclusters, or separate content units.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E036
+Classification: FN
+Transition: /html[1]/body[1]/main[1]/div[3]/div[1]/div[2]/a[1] -> /html[1]/body[1]/main[1]/div[3]/div[2]/form[1]/ul[1]/label[1]/li[1]/input[1]
+Source: Get started link
+Destination: Enter the code input
+Positions: 5 -> 6
+Supporting evidence: Ground truth includes this exact transition. It is absent from original_predictions. navigation_order lists Get started link at position 5 and Enter the code input at position 6. KFG contains an edge from /html[1]/body[1]/main[1]/div[3]/div[1]/div[2]/a[1] to /html[1]/body[1]/main[1]/div[3]/div[2]/form[1]/ul[1]/label[1]/li[1]/input[1]. Screenshot shows these controls in neighboring login and two-factor areas.
+Confidence: medium
+Requires review: False
+
+Case ID: E040
+Classification: FN
+Transition: /html[1]/body[1]/main[1]/div[3]/div[2]/form[1]/ul[1]/div[1]/div[4]/a[1] -> /html[1]/body[1]/main[1]/div[3]/div[2]/form[1]/ul[1]/div[4]/a[1]
+Source: Contact support link
+Destination: Go back link
+Positions: 14 -> 15
+Supporting evidence: ground_truth includes this exact transition; original_predictions do not. navigation_order lists Contact support link at position 14 and Go back link at position 15. KFG contains a direct edge from /div[1]/div[4]/a[1] to /div[4]/a[1]. Screenshot 2 shows both links in the lower part of the two-factor module.
+Confidence: low
+Requires review: True
+
+Case ID: E042
+Classification: FN
+Transition: /html[1]/body[1]/main[1]/div[3]/div[2]/form[1]/ul[1]/label[1]/li[2]/div[1]/label[1] -> /html[1]/body[1]/main[1]/div[3]/div[2]/form[1]/ul[1]/label[1]/li[2]/input[1]
+Source: Trust this device label
+Destination: Two-factor Log In button
+Positions: 9 -> 10
+Supporting evidence: ground_truth includes this transition; original_predictions do not. navigation_order lists Trust this device label at position 9 and Two-factor Log In button at position 10. KFG shows a direct TAB edge from the label to the button. Screenshot 2 places these controls around the trust-device option and the orange Log In button.
+Confidence: low
+Requires review: True

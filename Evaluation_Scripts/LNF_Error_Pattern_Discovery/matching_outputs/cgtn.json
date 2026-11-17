@@ -1,0 +1,87 @@
+{
+  "subject" : "cgtn",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The destination is a recovery/support control ('forgot password'), but the source is a carousel indicator. The evidence does not establish the carousel indicator as a secondary utility/support control, so the endpoint roles do not satisfy or clearly refute the auxiliary-control criterion."
+    }, {
+      "pattern_id" : "P07",
+      "reason" : "The destination is a helper/recovery link, but P07 requires the transition to originate from a helper/recovery/support link. Here the source is a carousel indicator, so the pattern does not clearly fit; however the evidence does not describe the indicator's role beyond being a carousel control."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "The KFG contains a direct TAB edge from the phone number input (/form/div[3].../input[1], position 7) to the password input (/form/div[4].../input[1], position 8). The screenshot and navigation JSON show a separate focusable 'forgot password' button/link visually associated with the password field group at position 9."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "The KFG has a direct TAB edge from the password input (position 8) to carousel indicator 1 (position 1), moving from a later control back to the beginning of the page's focus order."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "This is a verified direct TAB edge with adjacent inferred positions 9 to 10, but both endpoints are inside the same form on the right panel. The evidence does not support them being in clearly distinct page regions rather than one local form."
+    }, {
+      "pattern_id" : "P05",
+      "reason" : "The transition is between adjacent controls in the form, but the evidence does not independently establish the forgot-password link and terms checkbox as clearly distinct visual or functional subgroups rather than ordinary controls within one form."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P01",
+      "reason" : "The KFG shows a direct TAB edge from the terms agreement checkbox (position 10) to the Sign in button (position 11), but both controls are within the same sign-in form. The evidence does not support a boundary between clearly distinct page regions."
+    }, {
+      "pattern_id" : "P05",
+      "reason" : "Although positions 10 and 11 are consecutive, the evidence does not establish the checkbox and submit button as belonging to distinct subgroups rather than the same local form workflow."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "The candidate is a Browser-boundary transition, and the KFG v_special marks /form/div[3]/div[1]/div[2]/input[1] as both v_0 and v_entry. This matches a modeled browser-to-page entry to the phone number input, the documented first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed matches are limited to a modeled browser entry to the phone number input (P04), a field-to-field transition from phone to password with an embedded forgot-password helper link nearby (P06), and a wraparound TAB edge from the password field back to the first carousel indicator (P02). Consecutive carousel-indicator transitions remain within one local component and do not match the supplied cross-region/subgroup or auxiliary-control patterns based on the available evidence."
+}

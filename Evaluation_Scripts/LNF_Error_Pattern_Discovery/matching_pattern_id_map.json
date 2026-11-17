@@ -1,0 +1,38 @@
+[
+  {
+    "neutral_id": "P01",
+    "discovered_id": "FP01"
+  },
+  {
+    "neutral_id": "P02",
+    "discovered_id": "FP02"
+  },
+  {
+    "neutral_id": "P03",
+    "discovered_id": "FP03"
+  },
+  {
+    "neutral_id": "P04",
+    "discovered_id": "FN01"
+  },
+  {
+    "neutral_id": "P05",
+    "discovered_id": "FN02"
+  },
+  {
+    "neutral_id": "P06",
+    "discovered_id": "FN03"
+  },
+  {
+    "neutral_id": "P07",
+    "discovered_id": "FN04"
+  },
+  {
+    "neutral_id": "P08",
+    "discovered_id": "FN05"
+  },
+  {
+    "neutral_id": "P09",
+    "discovered_id": "FN06"
+  }
+]

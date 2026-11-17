@@ -1,0 +1,1665 @@
+{
+  "subject": "discord",
+  "navigation_order": {
+    "navigation_order": [
+      {
+        "position": 1,
+        "label": 1,
+        "xpath": "/html[1]/body[1]/header[1]/div[1]/a[1]",
+        "descriptor": "Discord home link/logo"
+      },
+      {
+        "position": 2,
+        "label": 2,
+        "xpath": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[1]",
+        "descriptor": "Feedback header link"
+      },
+      {
+        "position": 3,
+        "label": 3,
+        "xpath": "/html[1]/body[1]/header[1]/div[2]/nav[1]/div[1]/button[1]",
+        "descriptor": "Language selector button"
+      },
+      {
+        "position": 4,
+        "label": 4,
+        "xpath": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[2]",
+        "descriptor": "Submit a request link"
+      },
+      {
+        "position": 5,
+        "label": 5,
+        "xpath": "/html[1]/body[1]/header[1]/div[2]/a[1]",
+        "descriptor": "Sign in link"
+      },
+      {
+        "position": 6,
+        "label": 6,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[1]/a[1]",
+        "descriptor": "Breadcrumb Discord"
+      },
+      {
+        "position": 7,
+        "label": 7,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[2]/a[1]",
+        "descriptor": "Breadcrumb Feedback"
+      },
+      {
+        "position": 8,
+        "label": 8,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/nav[1]/div[1]/form[1]/input[2]",
+        "descriptor": "Search input"
+      },
+      {
+        "position": 9,
+        "label": 9,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/header[1]/span[1]/button[1]",
+        "descriptor": "Community Topics dropdown"
+      },
+      {
+        "position": 10,
+        "label": 10,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "API topic card"
+      },
+      {
+        "position": 11,
+        "label": 11,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Community Features topic card"
+      },
+      {
+        "position": 12,
+        "label": 12,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+        "descriptor": "Difficulty Seeing, Reading, & Accessibility topic card"
+      },
+      {
+        "position": 13,
+        "label": 13,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[4]/a[1]",
+        "descriptor": "Voice and Video topic card"
+      },
+      {
+        "position": 14,
+        "label": 14,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[5]/a[1]",
+        "descriptor": "Account & Server Management topic card"
+      },
+      {
+        "position": 15,
+        "label": 15,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[6]/a[1]",
+        "descriptor": "Text Chat topic card"
+      },
+      {
+        "position": 16,
+        "label": 16,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[7]/a[1]",
+        "descriptor": "Nitro topic card"
+      },
+      {
+        "position": 17,
+        "label": 17,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[8]/a[1]",
+        "descriptor": "Merchandise topic card"
+      },
+      {
+        "position": 18,
+        "label": 18,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[9]/a[1]",
+        "descriptor": "Mobile topic card"
+      },
+      {
+        "position": 19,
+        "label": 19,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[10]/a[1]",
+        "descriptor": "Overlay topic card"
+      },
+      {
+        "position": 20,
+        "label": 20,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[11]/a[1]",
+        "descriptor": "Other topic card"
+      },
+      {
+        "position": 21,
+        "label": 21,
+        "xpath": "/html[1]/body[1]/main[1]/div[2]/section[1]/a[1]",
+        "descriptor": "New post button"
+      },
+      {
+        "position": 22,
+        "label": 22,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]",
+        "descriptor": "Footer promo link"
+      },
+      {
+        "position": 23,
+        "label": 23,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/button[1]",
+        "descriptor": "Learn more button"
+      },
+      {
+        "position": 24,
+        "label": 24,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "Platform/app link 1"
+      },
+      {
+        "position": 25,
+        "label": 25,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[2]",
+        "descriptor": "Platform/app link 2"
+      },
+      {
+        "position": 26,
+        "label": 26,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[3]",
+        "descriptor": "Platform/app link 3"
+      },
+      {
+        "position": 27,
+        "label": 27,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[4]",
+        "descriptor": "Platform/app link 4"
+      },
+      {
+        "position": 28,
+        "label": 28,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[5]",
+        "descriptor": "Platform/app link 5"
+      },
+      {
+        "position": 29,
+        "label": 29,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[1]/a[1]",
+        "descriptor": "Footer Discord link/logo"
+      },
+      {
+        "position": 30,
+        "label": 30,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[1]/a[1]",
+        "descriptor": "Download link"
+      },
+      {
+        "position": 31,
+        "label": 31,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[2]/a[1]",
+        "descriptor": "Help & Support link"
+      },
+      {
+        "position": 32,
+        "label": 32,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[3]/a[1]",
+        "descriptor": "Feedback footer link"
+      },
+      {
+        "position": 33,
+        "label": 33,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[4]/a[1]",
+        "descriptor": "Status link"
+      },
+      {
+        "position": 34,
+        "label": 34,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[1]/a[1]",
+        "descriptor": "Company link"
+      },
+      {
+        "position": 35,
+        "label": 35,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[2]/a[1]",
+        "descriptor": "Jobs link"
+      },
+      {
+        "position": 36,
+        "label": 36,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[3]/a[1]",
+        "descriptor": "Blog link"
+      },
+      {
+        "position": 37,
+        "label": 37,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[1]",
+        "descriptor": "Terms link"
+      },
+      {
+        "position": 38,
+        "label": 38,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[2]",
+        "descriptor": "Privacy link"
+      }
+    ]
+  },
+  "kfg": {
+    "UIGraphStates": [
+      {
+        "v_exit": [],
+        "nodes": [
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1105,1591,49,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "973,20,93,24",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1140,263,364,198",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[11]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "942,827,563,114",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "406,1491,50,38",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "346,26,124,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/header[1]/span[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "366,194,158,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[8]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "744,681,364,114",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "346,95,59,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[7]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "347,681,364,114",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "801,1174,250,142",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "744,305,364,114",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[5]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "744,493,364,156",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1047,1560,30,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/section[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "831,1066,190,38",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[4]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1141,1377,24,30",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[3]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "649,1560,65,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "897,1377,24,30",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "801,1224,250,42",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "649,1591,42,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1047,1591,45,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[10]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "347,827,563,114",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[2]/nav[1]/div[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1110,22,111,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1265,20,149,24",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[4]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "347,514,364,114",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[9]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1140,681,364,114",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1433,20,73,24",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "426,95,73,19",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1047,1529,35,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "649,1498,66,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1047,1498,64,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "649,1529,101,18",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[5]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1213,1377,51,56",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/nav[1]/div[1]/form[1]/input[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1206,85,300,40",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[3]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "991,1377,40,54",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[6]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1140,514,364,114",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "347,305,364,114",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "606,1377,24,30",
+            "I'": "null"
+          }
+        ],
+        "v_special": [
+          {
+            "v_0": "/html[1]/body[1]/header[1]/div[1]/a[1]"
+          },
+          {
+            "v_entry": "/html[1]/body[1]/header[1]/div[1]/a[1]"
+          },
+          {
+            "v_entry_successor": "null"
+          }
+        ],
+        "v_n": [],
+        "edges_inAndOutsideDialog": [],
+        "visibleCtrlDomInsideDialogSequence": [],
+        "visibleCtrlDomSequence": [
+          {
+            "0": "/html[1]/body[1]/header[1]/div[1]/a[1]"
+          },
+          {
+            "1": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[1]"
+          },
+          {
+            "2": "/html[1]/body[1]/header[1]/div[2]/nav[1]/div[1]/button[1]"
+          },
+          {
+            "3": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[2]"
+          },
+          {
+            "4": "/html[1]/body[1]/header[1]/div[2]/a[1]"
+          },
+          {
+            "5": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[1]/a[1]"
+          },
+          {
+            "6": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[2]/a[1]"
+          },
+          {
+            "7": "/html[1]/body[1]/main[1]/div[2]/nav[1]/div[1]/form[1]/input[2]"
+          },
+          {
+            "8": "/html[1]/body[1]/main[1]/div[2]/header[1]/span[1]/button[1]"
+          },
+          {
+            "9": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "10": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "11": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "12": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "13": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "14": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "15": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[7]/a[1]"
+          },
+          {
+            "16": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[8]/a[1]"
+          },
+          {
+            "17": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[9]/a[1]"
+          },
+          {
+            "18": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[10]/a[1]"
+          },
+          {
+            "19": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[11]/a[1]"
+          },
+          {
+            "20": "/html[1]/body[1]/main[1]/div[2]/section[1]/a[1]"
+          },
+          {
+            "21": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "22": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/button[1]"
+          },
+          {
+            "23": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "24": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[2]"
+          },
+          {
+            "25": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[3]"
+          },
+          {
+            "26": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[4]"
+          },
+          {
+            "27": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[5]"
+          },
+          {
+            "28": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[1]/a[1]"
+          },
+          {
+            "29": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[1]/a[1]"
+          },
+          {
+            "30": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[2]/a[1]"
+          },
+          {
+            "31": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[3]/a[1]"
+          },
+          {
+            "32": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[4]/a[1]"
+          },
+          {
+            "33": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[1]/a[1]"
+          },
+          {
+            "34": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[2]/a[1]"
+          },
+          {
+            "35": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[3]/a[1]"
+          },
+          {
+            "36": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[1]"
+          },
+          {
+            "37": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[2]"
+          }
+        ],
+        "edges": [
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/header[1]/span[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/nav[1]/div[1]/button[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[4]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/header[1]/span[1]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/button[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[3]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[4]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[7]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/section[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[11]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[3]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[5]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/button[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[11]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[10]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[8]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[7]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[3]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[9]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[8]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/section[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[5]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[4]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/header[1]/span[1]/button[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/nav[1]/div[1]/form[1]/input[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/nav[1]/div[1]/form[1]/input[2]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[2]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/nav[1]/div[1]/button[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[3]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[10]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[9]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[4]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[3]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[2]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[3]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[6]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[10]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[9]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[4]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[3]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[4]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[3]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[5]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[4]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[3]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/section[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[4]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[6]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[5]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[7]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[6]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/nav[1]/div[1]/form[1]/input[2]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/nav[1]/div[1]/button[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[2]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/nav[1]/div[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[5]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[4]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/header[1]/span[1]/button[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/nav[1]/div[1]/form[1]/input[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[8]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[7]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[11]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[10]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/section[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[11]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[9]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[8]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[5]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[3]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[2]"
+          }
+        ],
+        "stateTransition": [],
+        "state_properties": [
+          {
+            "type": "KFFG"
+          },
+          {
+            "phase": "INITIAL_PHASE"
+          },
+          {
+            "thisStateID": 0
+          },
+          {
+            "parentStateID": -1
+          }
+        ],
+        "ctrlClusters": [],
+        "dialogStateProperties": [
+          {
+            "isADialogState": "0"
+          },
+          {
+            "triggerNodeLeadingToState": "null"
+          },
+          {
+            "postModalTriggerRoot": "null",
+            "preModalTriggerRoot": "null"
+          }
+        ]
+      }
+    ]
+  },
+  "screenshot_paths": [
+    "/Users/lance/Downloads/Empirical_Study_Results/discord/discord1.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/discord/discord2.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/discord/discord3.jpg"
+  ],
+  "candidate_transitions": [
+    {
+      "transition_id": "T0001",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/button[1]",
+      "source_label": "22",
+      "destination_label": "23",
+      "source_position": "22",
+      "destination_position": "23",
+      "source_descriptor": "Footer promo link",
+      "destination_descriptor": "Learn more button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0002",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/button[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "23",
+      "destination_label": "24",
+      "source_position": "23",
+      "destination_position": "24",
+      "source_descriptor": "Learn more button",
+      "destination_descriptor": "Platform/app link 1",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0003",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[2]",
+      "source_label": "24",
+      "destination_label": "25",
+      "source_position": "24",
+      "destination_position": "25",
+      "source_descriptor": "Platform/app link 1",
+      "destination_descriptor": "Platform/app link 2",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0004",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[2] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[3]",
+      "source_label": "25",
+      "destination_label": "26",
+      "source_position": "25",
+      "destination_position": "26",
+      "source_descriptor": "Platform/app link 2",
+      "destination_descriptor": "Platform/app link 3",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0005",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[3] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[4]",
+      "source_label": "26",
+      "destination_label": "27",
+      "source_position": "26",
+      "destination_position": "27",
+      "source_descriptor": "Platform/app link 3",
+      "destination_descriptor": "Platform/app link 4",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0006",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[4] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[5]",
+      "source_label": "27",
+      "destination_label": "28",
+      "source_position": "27",
+      "destination_position": "28",
+      "source_descriptor": "Platform/app link 4",
+      "destination_descriptor": "Platform/app link 5",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0007",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/a[5] -> /html[1]/body[1]/footer[1]/div[1]/nav[1]/div[1]/a[1]",
+      "source_label": "28",
+      "destination_label": "29",
+      "source_position": "28",
+      "destination_position": "29",
+      "source_descriptor": "Platform/app link 5",
+      "destination_descriptor": "Footer Discord link/logo",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0008",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[1]/a[1]",
+      "source_label": "29",
+      "destination_label": "30",
+      "source_position": "29",
+      "destination_position": "30",
+      "source_descriptor": "Footer Discord link/logo",
+      "destination_descriptor": "Download link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0009",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[2]/a[1]",
+      "source_label": "30",
+      "destination_label": "31",
+      "source_position": "30",
+      "destination_position": "31",
+      "source_descriptor": "Download link",
+      "destination_descriptor": "Help & Support link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0010",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[2]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[3]/a[1]",
+      "source_label": "31",
+      "destination_label": "32",
+      "source_position": "31",
+      "destination_position": "32",
+      "source_descriptor": "Help & Support link",
+      "destination_descriptor": "Feedback footer link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0011",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[3]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[4]/a[1]",
+      "source_label": "32",
+      "destination_label": "33",
+      "source_position": "32",
+      "destination_position": "33",
+      "source_descriptor": "Feedback footer link",
+      "destination_descriptor": "Status link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0012",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[1]/div[4]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[1]/a[1]",
+      "source_label": "33",
+      "destination_label": "34",
+      "source_position": "33",
+      "destination_position": "34",
+      "source_descriptor": "Status link",
+      "destination_descriptor": "Company link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0013",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[2]/a[1]",
+      "source_label": "34",
+      "destination_label": "35",
+      "source_position": "34",
+      "destination_position": "35",
+      "source_descriptor": "Company link",
+      "destination_descriptor": "Jobs link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0014",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[2]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[3]/a[1]",
+      "source_label": "35",
+      "destination_label": "36",
+      "source_position": "35",
+      "destination_position": "36",
+      "source_descriptor": "Jobs link",
+      "destination_descriptor": "Blog link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0015",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[3]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[1]",
+      "source_label": "36",
+      "destination_label": "37",
+      "source_position": "36",
+      "destination_position": "37",
+      "source_descriptor": "Blog link",
+      "destination_descriptor": "Terms link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0016",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/nav[1]/div[3]/div[2]/div[4]/a[2]",
+      "source_label": "37",
+      "destination_label": "38",
+      "source_position": "37",
+      "destination_position": "38",
+      "source_descriptor": "Terms link",
+      "destination_descriptor": "Privacy link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0017",
+      "transition": "/html[1]/body[1]/header[1]/div[1]/a[1] -> /html[1]/body[1]/header[1]/div[2]/nav[1]/a[1]",
+      "source_label": "1",
+      "destination_label": "2",
+      "source_position": "1",
+      "destination_position": "2",
+      "source_descriptor": "Discord home link/logo",
+      "destination_descriptor": "Feedback header link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0018",
+      "transition": "/html[1]/body[1]/header[1]/div[2]/a[1] -> /html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[1]/a[1]",
+      "source_label": "5",
+      "destination_label": "6",
+      "source_position": "5",
+      "destination_position": "6",
+      "source_descriptor": "Sign in link",
+      "destination_descriptor": "Breadcrumb Discord",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0019",
+      "transition": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[1] -> /html[1]/body[1]/header[1]/div[2]/nav[1]/div[1]/button[1]",
+      "source_label": "2",
+      "destination_label": "3",
+      "source_position": "2",
+      "destination_position": "3",
+      "source_descriptor": "Feedback header link",
+      "destination_descriptor": "Language selector button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0020",
+      "transition": "/html[1]/body[1]/header[1]/div[2]/nav[1]/a[2] -> /html[1]/body[1]/header[1]/div[2]/a[1]",
+      "source_label": "4",
+      "destination_label": "5",
+      "source_position": "4",
+      "destination_position": "5",
+      "source_descriptor": "Submit a request link",
+      "destination_descriptor": "Sign in link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0021",
+      "transition": "/html[1]/body[1]/header[1]/div[2]/nav[1]/div[1]/button[1] -> /html[1]/body[1]/header[1]/div[2]/nav[1]/a[2]",
+      "source_label": "3",
+      "destination_label": "4",
+      "source_position": "3",
+      "destination_position": "4",
+      "source_descriptor": "Language selector button",
+      "destination_descriptor": "Submit a request link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0022",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[10]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[11]/a[1]",
+      "source_label": "19",
+      "destination_label": "20",
+      "source_position": "19",
+      "destination_position": "20",
+      "source_descriptor": "Overlay topic card",
+      "destination_descriptor": "Other topic card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0023",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[11]/a[1] -> /html[1]/body[1]/main[1]/div[2]/section[1]/a[1]",
+      "source_label": "20",
+      "destination_label": "21",
+      "source_position": "20",
+      "destination_position": "21",
+      "source_descriptor": "Other topic card",
+      "destination_descriptor": "New post button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0024",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[2]/a[1]",
+      "source_label": "10",
+      "destination_label": "11",
+      "source_position": "10",
+      "destination_position": "11",
+      "source_descriptor": "API topic card",
+      "destination_descriptor": "Community Features topic card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0025",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[3]/a[1]",
+      "source_label": "11",
+      "destination_label": "12",
+      "source_position": "11",
+      "destination_position": "12",
+      "source_descriptor": "Community Features topic card",
+      "destination_descriptor": "Difficulty Seeing, Reading, & Accessibility topic card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0026",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[3]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[4]/a[1]",
+      "source_label": "12",
+      "destination_label": "13",
+      "source_position": "12",
+      "destination_position": "13",
+      "source_descriptor": "Difficulty Seeing, Reading, & Accessibility topic card",
+      "destination_descriptor": "Voice and Video topic card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0027",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[5]/a[1]",
+      "source_label": "13",
+      "destination_label": "14",
+      "source_position": "13",
+      "destination_position": "14",
+      "source_descriptor": "Voice and Video topic card",
+      "destination_descriptor": "Account & Server Management topic card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0028",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[5]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[6]/a[1]",
+      "source_label": "14",
+      "destination_label": "15",
+      "source_position": "14",
+      "destination_position": "15",
+      "source_descriptor": "Account & Server Management topic card",
+      "destination_descriptor": "Text Chat topic card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0029",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[6]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[7]/a[1]",
+      "source_label": "15",
+      "destination_label": "16",
+      "source_position": "15",
+      "destination_position": "16",
+      "source_descriptor": "Text Chat topic card",
+      "destination_descriptor": "Nitro topic card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0030",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[7]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[8]/a[1]",
+      "source_label": "16",
+      "destination_label": "17",
+      "source_position": "16",
+      "destination_position": "17",
+      "source_descriptor": "Nitro topic card",
+      "destination_descriptor": "Merchandise topic card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0031",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[8]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[9]/a[1]",
+      "source_label": "17",
+      "destination_label": "18",
+      "source_position": "17",
+      "destination_position": "18",
+      "source_descriptor": "Merchandise topic card",
+      "destination_descriptor": "Mobile topic card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0032",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[9]/a[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[10]/a[1]",
+      "source_label": "18",
+      "destination_label": "19",
+      "source_position": "18",
+      "destination_position": "19",
+      "source_descriptor": "Mobile topic card",
+      "destination_descriptor": "Overlay topic card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0033",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/header[1]/span[1]/button[1] -> /html[1]/body[1]/main[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "9",
+      "destination_label": "10",
+      "source_position": "9",
+      "destination_position": "10",
+      "source_descriptor": "Community Topics dropdown",
+      "destination_descriptor": "API topic card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0034",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/nav[1]/div[1]/form[1]/input[2] -> /html[1]/body[1]/main[1]/div[2]/header[1]/span[1]/button[1]",
+      "source_label": "8",
+      "destination_label": "9",
+      "source_position": "8",
+      "destination_position": "9",
+      "source_descriptor": "Search input",
+      "destination_descriptor": "Community Topics dropdown",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0035",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[1]/a[1] -> /html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[2]/a[1]",
+      "source_label": "6",
+      "destination_label": "7",
+      "source_position": "6",
+      "destination_position": "7",
+      "source_descriptor": "Breadcrumb Discord",
+      "destination_descriptor": "Breadcrumb Feedback",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0036",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/nav[1]/ol[1]/li[2]/a[1] -> /html[1]/body[1]/main[1]/div[2]/nav[1]/div[1]/form[1]/input[2]",
+      "source_label": "7",
+      "destination_label": "8",
+      "source_position": "7",
+      "destination_position": "8",
+      "source_descriptor": "Breadcrumb Feedback",
+      "destination_descriptor": "Search input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0037",
+      "transition": "/html[1]/body[1]/main[1]/div[2]/section[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]",
+      "source_label": "21",
+      "destination_label": "22",
+      "source_position": "21",
+      "destination_position": "22",
+      "source_descriptor": "New post button",
+      "destination_descriptor": "Footer promo link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "transition_id": "T0038",
+      "transition": "Browser -> /html[1]/body[1]/header[1]/div[1]/a[1]",
+      "source_label": "",
+      "destination_label": "1",
+      "source_position": "",
+      "destination_position": "1",
+      "source_descriptor": "Virtual Browser boundary",
+      "destination_descriptor": "Discord home link/logo",
+      "observed_in_stage1": "True",
+      "browser_boundary": "True"
+    }
+  ]
+}

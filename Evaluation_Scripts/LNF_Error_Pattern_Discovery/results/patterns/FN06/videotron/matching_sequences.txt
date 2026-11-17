@@ -1,0 +1,21 @@
+Pattern: FN06
+Name: Backward local reversals within forms or content clusters missed
+Error type: FN
+Subject: videotron
+
+Summary: The detector also misses short backward moves where TAB lands on an earlier meaningful control within the same local form row, option cluster, or content block.
+
+Matching criteria: The implemented TAB edge goes from a later meaningful position to an earlier one, the move stays within the same local page module, and the case is classified FN.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E056
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[3]/div[1]/div[1]/div[1]/div[1] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[1]/div[3]/div[1]/a[1]
+Source: Public computer option container/label
+Destination: Forgot your username? link
+Positions: 7 -> 3
+Supporting evidence: Ground truth labels this transition as Strongly severity. evaluated_transitions marks it FN with observed_in_stage1=True. navigation_order shows source position 7 and destination position 3. kfg edges contains a TAB edge from the Public computer option container/label to the Forgot your username? link, and a SHIFTTAB edge in the reverse direction. The screenshots show the Public computer row below the username-recovery link.
+Confidence: medium
+Requires review: False

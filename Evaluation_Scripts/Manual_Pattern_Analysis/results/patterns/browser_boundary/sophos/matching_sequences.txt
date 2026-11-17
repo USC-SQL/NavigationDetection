@@ -1,0 +1,4 @@
+Pattern: FN01 - Browser-boundary omission
+Subject: sophos
+Classification: TN
+Transition: Browser -> /html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/a[1]

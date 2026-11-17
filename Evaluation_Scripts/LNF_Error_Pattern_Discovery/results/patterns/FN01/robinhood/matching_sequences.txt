@@ -1,0 +1,21 @@
+Pattern: FN01
+Name: Browser-boundary transitions omitted
+Error type: FN
+Subject: robinhood
+
+Summary: Many missed LNFs originate at the virtual Browser boundary rather than a normal DOM element, suggesting special-case under-detection of entry transitions.
+
+Matching criteria: The source is Browser, the destination is a documented entry node or first reached page control, and the case is classified FN.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E047
+Classification: FN
+Transition: Browser -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/p[1]/a[1]
+Source: Virtual Browser boundary
+Destination: Forgot your username or password? link
+Positions:  -> 4
+Supporting evidence: ground_truth includes "Browser -> /html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/p[1]/a[1]"; evaluated_transitions classifies it as FN with browser_boundary="True" and observed_in_stage1="True"; navigation_order shows the destination link has position 4 and label 1; kfg v_special shows v_0 and v_entry at the email input, while kfg v_exit lists ENTER to the forgot-password link; screenshot annotation places marker 1 on the forgot-password link below markers 2, 3, and 4.
+Confidence: medium
+Requires review: False

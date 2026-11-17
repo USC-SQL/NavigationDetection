@@ -1,0 +1,21 @@
+Pattern: FN04
+Name: Auxiliary or recovery link jumps past core form controls
+Error type: FN
+Subject: videotron
+
+Summary: The detector misses many jumps that start from a helper, recovery, or support link and land on a later target while bypassing primary fields, buttons, or options in the same workflow.
+
+Matching criteria: The source is an auxiliary/help/recovery/support link within or near a form or authentication flow, the destination is later in the page or a different subgroup, and one or more visible core controls in the same task sequence lie between source and destination in the supplied order evidence.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E055
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[1]/div[3]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[3]/div[1]/article[1]/section[2]/div[1]/div[1]/div[3]/form[1]/div[1]/fieldset[1]/div[3]/div[2]/a[1]
+Source: Forgot your username? link
+Destination: Forgot your password? link
+Positions: 3 -> 8
+Supporting evidence: Ground truth includes this transition with Slightly severity. evaluated_transitions marks it FN. navigation_order places the source at position 3 and destination at position 8, with positions 4-7 occupied by Password input, show/hide password control, Public computer checkbox, and Public computer option container/label. kfg edges contains a TAB edge directly from the username-recovery link to the password-recovery link.
+Confidence: high
+Requires review: False

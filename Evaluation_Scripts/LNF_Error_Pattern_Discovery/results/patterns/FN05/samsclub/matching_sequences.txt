@@ -1,0 +1,31 @@
+Pattern: FN05
+Name: Primary control jumps forward over intermediate local controls
+Error type: FN
+Subject: samsclub
+
+Summary: Another recurring miss is a direct move from a primary field, button, or top action to a later control in the same local module while intervening visible controls are bypassed.
+
+Matching criteria: The source is a primary input, button, logo/header entry point, or other major control; the destination is a later control in the same local panel or task region; and the supplied evidence documents one or more visible intermediate controls that are skipped by the implemented TAB edge.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E048
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[2]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/label[1]/div[1]/input[1]
+Source: Sam's Club logo link
+Destination: Stay signed in checkbox
+Positions: 3 -> 8
+Supporting evidence: Ground truth marks this transition as an LNF with Strongly severity. In navigation_order, source position 3 is the Sam's Club logo link and destination position 8 is the Stay signed in checkbox. KFG includes a TAB edge from /html[1]/body[1]/div[1]/div[2]/div[1]/a[1] to /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/label[1]/div[1]/input[1]. visibleCtrlDomSequence shows intervening controls at indices 3 through 6 before the label and checkbox. Screenshots show the checkbox below the email/password fields and recovery links.
+Confidence: high
+Requires review: False
+
+Case ID: E050
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/label[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/button[1]
+Source: Stay signed in checkbox
+Destination: Register your membership button
+Positions: 8 -> 11
+Supporting evidence: Ground truth marks this transition as Strongly severe. navigation_order shows checkbox at position 8 and Register your membership button at position 11, with label text position 9 and Sign In button position 10 in between. KFG includes TAB from /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/label[1]/div[1]/input[1] to /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/button[1]. Screenshots show the checkbox/label above the Sign In button and the registration button below a divider, making the jump cross a visible boundary.
+Confidence: medium
+Requires review: False

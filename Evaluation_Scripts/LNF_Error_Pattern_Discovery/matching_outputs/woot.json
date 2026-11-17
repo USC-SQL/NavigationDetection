@@ -1,0 +1,94 @@
+{
+  "subject" : "woot",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "KFG contains a direct TAB edge from the Log in with Amazon button to the Details link. In navigation_order, the source is position 1 and destination is position 4 within the same sign-in form module. The intermediate visible focusable controls are the Log in with Woot button at position 2 and the Keep me signed in checkbox at position 3, shown in the screenshot between the endpoints."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P09",
+      "evidence" : "KFG shows a direct TAB edge from the Keep me signed in checkbox to the Log in with Woot button. Navigation_order places the source at position 3 and destination at position 2, so the move is backward in inferred meaningful order. Screenshot and DOM place both controls within the same localized sign-in form cluster."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P07",
+      "evidence" : "KFG shows a direct TAB edge from the Details link to the terms of use link. The source is a helper/support link associated with the Keep me signed in option, and navigation_order shows the Create your Woot account link at position 5 between source position 4 and destination position 6, i.e., a primary workflow/account action lies between the endpoints."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ {
+      "pattern_id" : "P08",
+      "evidence" : "KFG contains a direct TAB edge from the Log in with Woot button to the Create your Woot account link. In navigation_order, source is position 2 and destination is position 5 within the same sign-in component. The visible intermediate focusable controls are the Keep me signed in checkbox at position 3 and the Details link at position 4, both shown between the endpoints in the form."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB transition from the terms of use link to the privacy policy link. Both are nearby textual policy/support links in the same local legal/auxiliary link group at the bottom of the sign-in form, and navigation_order places them consecutively at positions 6 and 7."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The terms of use link and privacy policy link appear as two adjacent links within the local legal-links subgroup in the sign-in module. KFG verifies the direct TAB edge, and navigation_order shows consecutive meaningful positions 6 to 7."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG verifies a direct TAB edge from the privacy policy link in the sign-in form to the Write Us link in the footer. Navigation_order shows adjacent meaningful positions 7 to 8, and the screenshot supports a page-region boundary from the main sign-in panel to the footer link row."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P02",
+      "evidence" : "KFG shows a direct TAB edge from the Create your Woot account link at position 5 back to the Log in with Amazon button at position 1, a return from a later control to an earlier top-of-form control consistent with a cyclic or wraparound edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from Write Us to Privacy Policy footer link. Both are footer utility/support links in the same local footer link group, and navigation_order places them consecutively at positions 8 and 9."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The source and destination are adjacent controls within a clearly distinct footer-links subgroup. The direct TAB edge is verified in the KFG, and navigation_order shows consecutive positions 8 to 9."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG shows a direct TAB edge from the Privacy Policy footer link to the Terms and Conditions footer link. Both are neighboring footer policy/utility links in the same local footer group, with consecutive navigation_order positions 9 and 10."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The two footer policy links form a distinct local footer subgroup. KFG verifies the direct TAB transition, and navigation_order shows adjacent meaningful positions 9 to 10."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly modeled as Browser -> Keep me signed in checkbox, and the KFG v_special marks that checkbox XPath as v_entry. That supports a browser-to-page entry transition to the documented first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed patterns include direct skips over local controls within the sign-in form (P08), one backward local move within the form (P09), one helper-link jump across an intervening workflow control (P07), a main-to-footer adjacent cross-region continuation (P01), a wraparound edge back to the top of the form (P02), local auxiliary-link progressions among policy/footer links (P03), consecutive transitions within distinct local link subgroups (P05), and a modeled browser-entry transition (P04). No field-to-field transition near an embedded helper link (P06) is supported by the supplied evidence."
+}

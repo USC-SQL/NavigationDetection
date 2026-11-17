@@ -1,0 +1,1 @@
+/html[1]/body[1]/app-root[1]/app-public[1]/ecs-public-template[1]/ecs-footer[1]/footer[1]/div[4]/div[1]/div[1]/div[1]/div[1]/ecs-footer-link[1]/a[1] -> /html[1]/body[1]/app-root[1]/app-public[1]/ecs-public-template[1]/ecs-footer[1]/footer[1]/div[4]/div[1]/div[1]/div[1]/div[1]/ecs-footer-link[2]/a[1]

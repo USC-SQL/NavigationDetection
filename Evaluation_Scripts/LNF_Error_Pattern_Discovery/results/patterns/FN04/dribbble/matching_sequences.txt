@@ -1,0 +1,21 @@
+Pattern: FN04
+Name: Auxiliary or recovery link jumps past core form controls
+Error type: FN
+Subject: dribbble
+
+Summary: The detector misses many jumps that start from a helper, recovery, or support link and land on a later target while bypassing primary fields, buttons, or options in the same workflow.
+
+Matching criteria: The source is an auxiliary/help/recovery/support link within or near a form or authentication flow, the destination is later in the page or a different subgroup, and one or more visible core controls in the same task sequence lie between source and destination in the supplied order evidence.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E020
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[1]/form[1]/button[1] -> /html[1]/body[1]/div[1]/section[2]/main[1]/div[1]/div[2]/form[1]/div[1]/fieldset[2]/label[1]/a[1]
+Source: Sign in with Google button
+Destination: Forgot password link
+Positions: 3 -> 6
+Supporting evidence: ground_truth includes this exact transition and rates it Strongly; navigation_order positions 3 -> 6 with positions 4 and 5 occupied by '/fieldset[1]/input[1]' and '/fieldset[2]/input[1]'; KFG edge with phi 'TAB' from '/div[1]/form[1]/button[1]' to '/fieldset[2]/label[1]/a[1]'; screenshot labels 6, 1, 2, and 7 show the Google button above the skipped fields and Forgot link aligned near the password label.
+Confidence: high
+Requires review: False

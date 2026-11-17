@@ -1,0 +1,6 @@
+{
+  "subject" : "tinyurl",
+  "error_analyses" : [ ],
+  "correct_transition_examples" : [ ],
+  "subject_summary" : "No FP or FN transitions are present in the supplied evaluated_transitions. original_predictions and ground_truth are both empty, and all evaluated transitions are provisional TN records. The implemented focus order shown in navigation_order and KFG is largely sequential through the header, hero CTA, publication links, CTA, and footer. One structural nuance is that the KFG visibleCtrlDomSequence includes additional footer controls under /div[3] and a footer button not represented in navigation_order, while the evaluated TN records and screenshots annotate footer links as /div[4]; however, this discrepancy does not create any FP or FN to analyze from the supplied classifications."
+}

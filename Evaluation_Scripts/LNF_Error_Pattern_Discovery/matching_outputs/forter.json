@@ -1,0 +1,137 @@
+{
+  "subject" : "forter",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG contains a direct TAB edge from the Forter logo link (position 1) to the First Name input (position 2). The screenshot shows these as adjacent visual panels within the hero area: left branding panel and right contact-sales form panel. The destination position is exactly one greater than the source."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from the Privacy Policy consent checkbox (position 9) to the Get Started button (position 10). In the screenshot, the checkbox is part of the contact form area and the Get Started button appears immediately below as a separate adjacent action area/module. The destination position is exactly one greater than the source."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition in the KFG from the form's consent checkbox (position 9) to the separate submit/action control Get Started (position 10). The two controls belong to distinct functional subgroups within the contact-sales workflow, and the destination is exactly one position after the source."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG contains a direct TAB edge from the Get Started button (position 10) to the Asics brand card (position 11). The screenshot shows the button above and the brand-card carousel/grid below as distinct adjacent page regions/modules, with destination position exactly one greater than source."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This verified TAB edge moves from the primary Get Started action (position 10) to the separate brand-card showcase subgroup beginning with Asics (position 11). The source and destination are consecutive in inferred meaningful order and belong to clearly different functional subgroups."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P05",
+      "reason" : "The KFG verifies a direct TAB edge and the positions are consecutive (11 to 12), but the evidence does not clearly establish that adjacent brand cards are distinct visual or functional subgroups rather than repeated controls within one card-list component."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P05",
+      "reason" : "Although the KFG shows a direct consecutive TAB transition from position 12 to 13, the available evidence does not independently show that Snipes and HelloFresh cards are distinct subgroups rather than items within the same brand-card component."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P05",
+      "reason" : "The KFG verifies the direct TAB edge from position 13 to 14, but the evidence is insufficient to determine whether adjacent brand cards are separate functional/visual subgroups instead of repeated controls inside one card row."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P05",
+      "reason" : "There is a verified direct consecutive TAB edge from position 14 to 15, but the screenshots and DOM do not clearly establish distinct subgroups between adjacent brand cards within the same card strip."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from the Nordstrom brand card (position 15) to the Footer Forter logo link (position 16). The screenshot clearly separates the brand-card section in main content from the footer region below. The destination position is exactly one greater than the source."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The transition is between two nearby footer controls, but the footer logo link is not clearly a secondary utility/support control. Because both endpoints must be genuinely auxiliary and the logo's role is unclear, the evidence is insufficient for a P03 match."
+    }, {
+      "pattern_id" : "P05",
+      "reason" : "The controls are consecutive and in the footer, but the evidence does not clearly establish distinct footer subgroups between the logo link and the Privacy & Security link rather than ordinary navigation within one footer cluster."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P05",
+      "reason" : "The KFG confirms a direct consecutive TAB edge from the Privacy & Security link (position 17) to the Language selector (position 18), but the available evidence does not conclusively show these are clearly distinct subgroups rather than nearby controls within one footer utility cluster."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly marked as a browser-boundary transition, and the KFG v_special identifies the entry node (v_entry) as the Forter logo link, which is also position 1 in the navigation order."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed direct TAB flow largely follows the documented sequence through the contact form, brand-card section, and footer. Clear pattern matches appear for browser entry and several adjacent cross-region continuations: logo-to-form, form-to-submit area, submit-to-brand section, and main-content-to-footer. Most ordinary field-to-field transitions do not match the supplied patterns. Some transitions within repeated brand cards or footer utilities remain uncertain for cross-subgroup or auxiliary-control patterns because the evidence does not clearly establish subgroup boundaries or genuinely auxiliary roles."
+}

@@ -1,0 +1,697 @@
+{
+  "subject": "forter",
+  "evidence_description": {
+    "original_predictions": "Original Stage 2 detected LNF transitions.",
+    "ground_truth": "Reference LNF transitions.",
+    "navigation_order": "Stage 1 inferred meaningful order and implemented keyboard labels.",
+    "kfg": "Original keyboard focus graph JSON.",
+    "evaluated_transitions": "Original prediction-vs-ground-truth classification inventory. TN labels are provisional within the modeled candidate set.",
+    "screenshot_paths": "Local annotated screenshot paths to be attached as images during the API request."
+  },
+  "original_predictions": [
+    "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[6] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+    "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]"
+  ],
+  "ground_truth": [],
+  "ground_truth_severity": {
+    "Strongly": [],
+    "Slightly": [],
+    "Neutral": []
+  },
+  "navigation_order": {
+    "navigation_order": [
+      {
+        "position": 1,
+        "label": 1,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "Forter logo link"
+      },
+      {
+        "position": 2,
+        "label": 2,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]",
+        "descriptor": "First Name input"
+      },
+      {
+        "position": 3,
+        "label": 3,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]",
+        "descriptor": "Last Name input"
+      },
+      {
+        "position": 4,
+        "label": 4,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[2]/div[1]/div[1]/input[1]",
+        "descriptor": "Business Email input"
+      },
+      {
+        "position": 5,
+        "label": 5,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[2]/div[2]/div[1]/input[1]",
+        "descriptor": "Phone Number input"
+      },
+      {
+        "position": 6,
+        "label": 6,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[3]/div[1]/div[1]/input[1]",
+        "descriptor": "Job Title input"
+      },
+      {
+        "position": 7,
+        "label": 7,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[3]/div[2]/div[1]/div[1]/select[1]",
+        "descriptor": "Country select"
+      },
+      {
+        "position": 8,
+        "label": 8,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[4]/div[1]/div[1]/input[1]",
+        "descriptor": "How did you hear about us input"
+      },
+      {
+        "position": 9,
+        "label": 9,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]",
+        "descriptor": "Privacy Policy consent checkbox"
+      },
+      {
+        "position": 10,
+        "label": 10,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[1]",
+        "descriptor": "Get Started button"
+      },
+      {
+        "position": 11,
+        "label": 11,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[2]",
+        "descriptor": "Asics brand card"
+      },
+      {
+        "position": 12,
+        "label": 12,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[3]",
+        "descriptor": "Snipes brand card"
+      },
+      {
+        "position": 13,
+        "label": 13,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[4]",
+        "descriptor": "HelloFresh brand card"
+      },
+      {
+        "position": 14,
+        "label": 14,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[5]",
+        "descriptor": "Instacart brand card"
+      },
+      {
+        "position": 15,
+        "label": 15,
+        "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[6]",
+        "descriptor": "Nordstrom brand card"
+      },
+      {
+        "position": 16,
+        "label": 16,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+        "descriptor": "Footer Forter logo link"
+      },
+      {
+        "position": 17,
+        "label": 17,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Privacy & Security link"
+      },
+      {
+        "position": 18,
+        "label": 18,
+        "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/div[1]/select[1]",
+        "descriptor": "Language selector"
+      }
+    ]
+  },
+  "kfg": {
+    "UIGraphStates": [
+      {
+        "v_exit": [],
+        "nodes": [
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[2]/div[2]/div[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[4]/div[1]/div[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[3]/div[2]/div[1]/div[1]/select[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[2]/div[1]/div[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/div[1]/select[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[4]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[3]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[6]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[5]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[3]/div[1]/div[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "0,0,0,0",
+            "I'": "null"
+          }
+        ],
+        "v_special": [
+          {
+            "v_0": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "v_entry": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "v_entry_successor": "null"
+          }
+        ],
+        "v_n": [],
+        "edges_inAndOutsideDialog": [],
+        "visibleCtrlDomInsideDialogSequence": [],
+        "visibleCtrlDomSequence": [],
+        "edges": [
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[3]/div[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[2]/div[2]/div[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[5]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[4]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[4]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[3]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[3]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[2]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/div[1]/select[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[6]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[5]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[4]/div[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[6]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[4]/div[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[3]/div[2]/div[1]/div[1]/select[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[2]/div[2]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[2]/div[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[3]/div[2]/div[1]/div[1]/select[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[3]/div[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[2]/div[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]"
+          }
+        ],
+        "stateTransition": [],
+        "state_properties": [
+          {
+            "type": "KFFG"
+          },
+          {
+            "phase": "INITIAL_PHASE"
+          },
+          {
+            "thisStateID": 0
+          },
+          {
+            "parentStateID": -1
+          }
+        ],
+        "ctrlClusters": [],
+        "dialogStateProperties": [
+          {
+            "isADialogState": "0"
+          },
+          {
+            "triggerNodeLeadingToState": "null"
+          },
+          {
+            "postModalTriggerRoot": "null",
+            "preModalTriggerRoot": "null"
+          }
+        ]
+      }
+    ]
+  },
+  "evaluated_transitions": [
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]",
+      "source_label": "1",
+      "destination_label": "2",
+      "source_position": "1",
+      "destination_position": "2",
+      "source_descriptor": "Forter logo link",
+      "destination_descriptor": "First Name input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[1]",
+      "source_label": "9",
+      "destination_label": "10",
+      "source_position": "9",
+      "destination_position": "10",
+      "source_descriptor": "Privacy Policy consent checkbox",
+      "destination_descriptor": "Get Started button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]",
+      "source_label": "2",
+      "destination_label": "3",
+      "source_position": "2",
+      "destination_position": "3",
+      "source_descriptor": "First Name input",
+      "destination_descriptor": "Last Name input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[2]/div[1]/div[1]/input[1]",
+      "source_label": "3",
+      "destination_label": "4",
+      "source_position": "3",
+      "destination_position": "4",
+      "source_descriptor": "Last Name input",
+      "destination_descriptor": "Business Email input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[2]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[2]/div[2]/div[1]/input[1]",
+      "source_label": "4",
+      "destination_label": "5",
+      "source_position": "4",
+      "destination_position": "5",
+      "source_descriptor": "Business Email input",
+      "destination_descriptor": "Phone Number input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[2]/div[2]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[3]/div[1]/div[1]/input[1]",
+      "source_label": "5",
+      "destination_label": "6",
+      "source_position": "5",
+      "destination_position": "6",
+      "source_descriptor": "Phone Number input",
+      "destination_descriptor": "Job Title input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[3]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[3]/div[2]/div[1]/div[1]/select[1]",
+      "source_label": "6",
+      "destination_label": "7",
+      "source_position": "6",
+      "destination_position": "7",
+      "source_descriptor": "Job Title input",
+      "destination_descriptor": "Country select",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[3]/div[2]/div[1]/div[1]/select[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[4]/div[1]/div[1]/input[1]",
+      "source_label": "7",
+      "destination_label": "8",
+      "source_position": "7",
+      "destination_position": "8",
+      "source_descriptor": "Country select",
+      "destination_descriptor": "How did you hear about us input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[4]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]",
+      "source_label": "8",
+      "destination_label": "9",
+      "source_position": "8",
+      "destination_position": "9",
+      "source_descriptor": "How did you hear about us input",
+      "destination_descriptor": "Privacy Policy consent checkbox",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[2]",
+      "source_label": "10",
+      "destination_label": "11",
+      "source_position": "10",
+      "destination_position": "11",
+      "source_descriptor": "Get Started button",
+      "destination_descriptor": "Asics brand card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[2] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[3]",
+      "source_label": "11",
+      "destination_label": "12",
+      "source_position": "11",
+      "destination_position": "12",
+      "source_descriptor": "Asics brand card",
+      "destination_descriptor": "Snipes brand card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[3] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[4]",
+      "source_label": "12",
+      "destination_label": "13",
+      "source_position": "12",
+      "destination_position": "13",
+      "source_descriptor": "Snipes brand card",
+      "destination_descriptor": "HelloFresh brand card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[4] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[5]",
+      "source_label": "13",
+      "destination_label": "14",
+      "source_position": "13",
+      "destination_position": "14",
+      "source_descriptor": "HelloFresh brand card",
+      "destination_descriptor": "Instacart brand card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[5] -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[6]",
+      "source_label": "14",
+      "destination_label": "15",
+      "source_position": "14",
+      "destination_position": "15",
+      "source_descriptor": "Instacart brand card",
+      "destination_descriptor": "Nordstrom brand card",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "FP",
+      "transition": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[3]/div[1]/div[1]/a[6] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "15",
+      "destination_label": "16",
+      "source_position": "15",
+      "destination_position": "16",
+      "source_descriptor": "Nordstrom brand card",
+      "destination_descriptor": "Footer Forter logo link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "FP",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "16",
+      "destination_label": "17",
+      "source_position": "16",
+      "destination_position": "17",
+      "source_descriptor": "Footer Forter logo link",
+      "destination_descriptor": "Privacy & Security link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/div[2]/div[2]/div[1]/select[1]",
+      "source_label": "17",
+      "destination_label": "18",
+      "source_position": "17",
+      "destination_position": "18",
+      "source_descriptor": "Privacy & Security link",
+      "destination_descriptor": "Language selector",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "Browser -> /html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+      "source_label": "",
+      "destination_label": "1",
+      "source_position": "",
+      "destination_position": "1",
+      "source_descriptor": "Virtual Browser boundary",
+      "destination_descriptor": "Forter logo link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "True"
+    }
+  ],
+  "screenshot_paths": [
+    "/Users/lance/Downloads/Empirical_Study_Results/forter/forter1.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/forter/forter2.jpg"
+  ]
+}

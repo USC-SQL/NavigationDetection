@@ -1,0 +1,80 @@
+{
+  "subject" : "github",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG contains a direct TAB edge from /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1] (Forgot password? link) to /html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1] (Create an account link). In the screenshot, both are nearby links under the sign-in area and both serve secondary account/support functions rather than primary form entry or submission."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P09",
+      "evidence" : "The KFG shows a direct TAB edge from /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12] (Sign in button, position 4) to /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1] (Forgot password? link, position 3). Both controls are in the same localized sign-in form cluster shown in the screenshot, and the transition moves backward in inferred meaningful order."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ {
+      "pattern_id" : "P06",
+      "evidence" : "The KFG includes a direct TAB edge from /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[1] (Password input) to /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/input[12] (Sign in button). The screenshot and navigation JSON show a separate focusable helper/recovery link, /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1] (Forgot password? link), visually associated with the password field group near the destination area."
+    }, {
+      "pattern_id" : "P08",
+      "evidence" : "The KFG verifies a direct TAB transition from the primary Password input (position 2) to the later primary Sign in button (position 4) within the same sign-in module. The navigation JSON identifies an intermediate visible focusable control at position 3, /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/div[1]/a[1] (Forgot password? link), and the screenshot shows it in the same local form area between the password field and button."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P07", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "The KFG shows a direct TAB edge from /html[1]/body[1]/div[3]/main[1]/div[1]/p[1]/a[1] (Create an account link, position 5) to /html[1]/body[1]/div[4]/ul[1]/li[1]/a[1] (Terms link, position 6). The destination position is exactly one greater than the source, and the screenshot/DOM show a region boundary from the account/sign-in area in main content to the footer links section under /html/body/div[4]/ul."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct TAB transition in the KFG from the account-area link (Create an account) to the first footer policy link (Terms). The navigation positions are consecutive (5 to 6), and the screenshot indicates distinct functional subgroups: the account call-to-action block versus the footer utility-links list."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG contains a direct TAB edge from /html[1]/body[1]/div[4]/ul[1]/li[1]/a[1] (Terms link) to /html[1]/body[1]/div[4]/ul[1]/li[2]/a[1] (Privacy link). In the screenshot, these are adjacent footer policy/support links within the same local footer links group, and both are secondary utility controls."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG verifies a direct TAB edge from /html[1]/body[1]/div[4]/ul[1]/li[2]/a[1] (Privacy link) to /html[1]/body[1]/div[4]/ul[1]/li[3]/a[1] (Security link). The screenshot shows both in the same footer utility-links cluster, and both function as secondary policy/support links."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "The KFG verifies a direct TAB edge from /html[1]/body[1]/div[4]/ul[1]/li[3]/a[1] (Security link) to /html[1]/body[1]/div[4]/ul[1]/li[4]/a[1] (Contact GitHub link). The screenshot places them side by side in the same footer utility/support link list, and both are secondary support/utility controls."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly modeled as Browser -> /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2]. The KFG v_special marks /html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/form[1]/input[2] as both v_0 and v_entry, matching a browser-to-page entry to the first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "The observed keyboard pattern on this GitHub sign-in page is mostly a straightforward forward TAB sequence through the sign-in form, then to the account link, then through footer utility links. Matches are supported for browser entry, local auxiliary-link progressions among support/footer links, a backward local transition from the Sign in button to the Forgot password? link, a field-to-button transition near an embedded recovery link that also bypasses that local link in the specific direct edge, and a consecutive cross-region/cross-subgroup move from the account area to the footer."
+}

@@ -1,0 +1,21 @@
+Pattern: FN06
+Name: Backward local reversals within forms or content clusters missed
+Error type: FN
+Subject: samsclub
+
+Summary: The detector also misses short backward moves where TAB lands on an earlier meaningful control within the same local form row, option cluster, or content block.
+
+Matching criteria: The implemented TAB edge goes from a later meaningful position to an earlier one, the move stays within the same local page module, and the case is classified FN.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E049
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[2]/a[1]
+Source: Password input
+Destination: Forgot email link
+Positions: 6 -> 5
+Supporting evidence: Ground truth marks this transition as Slightly severe. navigation_order gives Password input as position 6 and Forgot email link as position 5. KFG contains TAB from /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/input[1] to /html[1]/body[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/form[1]/div[2]/a[1]. Screenshots place Forgot email above Password, making the tab move a visual/structural backtrack.
+Confidence: medium
+Requires review: False

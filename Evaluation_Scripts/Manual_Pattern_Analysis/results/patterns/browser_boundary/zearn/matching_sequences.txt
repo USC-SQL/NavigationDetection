@@ -1,0 +1,4 @@
+Pattern: FN01 - Browser-boundary omission
+Subject: zearn
+Classification: TN
+Transition: Browser -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]

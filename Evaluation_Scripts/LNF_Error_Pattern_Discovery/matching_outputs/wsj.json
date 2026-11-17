@@ -1,0 +1,409 @@
+{
+  "subject" : "wsj",
+  "transition_assessments" : [ {
+    "transition_id" : "T0001",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are header links ('WSJ.COM' and 'SIGN IN'), but the evidence does not establish that both are genuinely secondary utility/support controls; the site-name link especially has unclear auxiliary status."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0002",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG has a direct TAB edge from header link 'SIGN IN' (position 2) to main content 'Search input' (position 3). Screenshot shows these in distinct regions: header bar vs main help-center content."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0003",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0004",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The two endpoints are nearby 'Popular search' links, but the evidence does not clearly show that both should be classified as secondary utility/help/recovery controls rather than ordinary content links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0005",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are adjacent popular-search links within the same row, but their precise role as auxiliary/support controls is not independently established."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0006",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "This is an adjacent move between popular-search links, but available evidence is insufficient to confirm both links are genuinely auxiliary/support controls under the pattern definition."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0007",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are nearby 'Popular search' links, but the evidence does not clearly establish their classification as secondary utility/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0008",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from 'Popular search: Renew Subscription' (position 8) to 'Register' (position 9). Screenshot and navigation JSON place these in distinct adjacent main-content regions: the popular-search area and the 'Accounts & Registration' panel."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The source is the last link in the popular-search subgroup and the destination is the first link in the 'Accounts & Registration' subgroup; destination position 9 is exactly one greater than source position 8, and the KFG verifies a direct TAB edge."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Although the source is a support-related popular-search link, the destination 'Register' is not clearly a secondary auxiliary control."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0009",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "'Register' and 'For Registered User' are adjacent within one panel, but the evidence does not establish both endpoints as genuinely secondary utility/recovery/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0010",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "'For Registered User' appears to be a heading-like link and 'Sign In' is workflow-related; the evidence is insufficient to classify both endpoints as auxiliary/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0011",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The destination 'Retrieve Username' is a recovery link, but the source 'Sign In' is not clearly an auxiliary/support control, so both endpoints' auxiliary status is not established."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0012",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG verifies a direct TAB edge from 'Retrieve Username' to 'Password Reset'. In the screenshot both are nearby links within the 'Accounts & Registration' help panel and both are recovery/support actions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0013",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG contains the direct TAB edge from 'Password Reset' (position 13) to 'Verify Email Address' (position 14). Both are nearby support/account-recovery links within the same 'Accounts & Registration' group in the screenshot."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0014",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG verifies a direct TAB edge from 'Verify Email Address' to 'Supported Browsers'. In the screenshot both are nearby links inside the 'Accounts & Registration' support list, serving secondary support/help functions."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0015",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "A direct TAB edge is present in the KFG from 'Supported Browsers' (position 15) to 'Update Print Subscription' (position 16). Screenshot shows these are in adjacent visual panels: 'Accounts & Registration' and 'Manage Subscriptions'."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The transition moves directly between distinct subgroups/panels, from the last item of 'Accounts & Registration' to the first item of 'Manage Subscriptions'; the destination position is exactly one greater than the source, and the KFG confirms the direct TAB edge."
+    } ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The source is a support link, but the destination is a subscription-management action, so both endpoints are not clearly auxiliary/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P02", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0016",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0017",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from 'Update Billing Address' (position 26) to 'The Wall Street Journal' (position 27). Screenshot shows a region change from the 'Manage Subscriptions' panel to the adjacent 'Product Information' panel."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a direct transition between distinct page subgroups: end of 'Manage Subscriptions' to start of 'Product Information', with consecutive positions 26 and 27 and a verified TAB edge in the KFG."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0018",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0019",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0020",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0021",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "These are adjacent links inside 'Manage Subscriptions', but the evidence does not clearly establish both 'Suspend/Resume Delivery' and 'School Donation Program' as secondary auxiliary/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0022",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "'Receipt' may be a support/account utility, but 'School Donation Program' is not clearly auxiliary/support; evidence is insufficient for both endpoints."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0023",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The destination 'Report Delivery Issue' is support-related, but the source 'Receipt' is not clearly established as an auxiliary/support control from the supplied evidence."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0024",
+    "matches" : [ {
+      "pattern_id" : "P03",
+      "evidence" : "KFG verifies a direct TAB edge from 'Report Delivery Issue' to 'Change Email Address'. In the 'Manage Subscriptions' panel these are nearby secondary account/support tasks."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0025",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "'Change Email Address' looks like an account utility, but 'Update Delivery Address' may be part of primary subscription management rather than secondary support; endpoint roles are not clear enough."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0026",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The endpoints are adjacent subscription-management links, but the evidence does not establish both as secondary utility/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0027",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0028",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0029",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG confirms a direct TAB edge from 'MarketWatch' (position 29) to 'Download Apps' (position 30). Screenshot shows movement between adjacent panels: 'Product Information' to 'Mobile Apps'."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a consecutive direct move between distinct subgroups, from the last item in 'Product Information' to the first item in 'Mobile Apps', with positions 29 and 30 and a verified TAB edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0030",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0031",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0032",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0033",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0034",
+    "matches" : [ ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0035",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG shows a direct TAB edge from 'MarketWatch Apps for iOS and Android' (position 35) to 'Subscriber Agreement & Terms of Use' (position 36). Screenshot places them in distinct adjacent panels: 'Mobile Apps' and 'Policies'."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "The transition goes directly from the last item of the 'Mobile Apps' subgroup to the first item of the 'Policies' subgroup; the positions are consecutive (35 to 36) and the KFG verifies the TAB edge."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0036",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "These are nearby policy links, but the evidence does not clearly establish both as secondary utility/help/support controls rather than ordinary legal/policy content links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0037",
+    "matches" : [ {
+      "pattern_id" : "P01",
+      "evidence" : "KFG has a direct TAB edge from 'Privacy Policy' (position 46) to footer link 'Advertise' (position 47). Screenshot and DOM show a region boundary from main-content 'Policies' section to the footer links."
+    }, {
+      "pattern_id" : "P05",
+      "evidence" : "This is a verified direct transition between distinct subgroups/regions, from the final policy link to the first footer link, with consecutive positions 46 and 47."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P02", "P03", "P04", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0038",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Adjacent policy links are visible in one panel, but the evidence does not establish both endpoints as auxiliary help/support controls under the pattern definition."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0039",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The endpoints are two nearby policy links, but their classification as secondary utility/support controls is not clearly supported by the supplied evidence."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0040",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "This is a direct move between adjacent cancellation-policy links, but the evidence is insufficient to confirm both are auxiliary/support controls rather than standard content links."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0041",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are policy links in the same panel, but the evidence does not clearly establish the specific auxiliary/support role required by P03."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0042",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Nearby policy links are present, but the supplied evidence does not clearly show that both links function as secondary utility/help/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0043",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The transition is between adjacent cancellation-policy links, but their qualification as auxiliary/support controls is not established."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0044",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both endpoints are policy links within the same local list, but the evidence does not clearly satisfy P03's requirement that both are genuinely secondary utility/help/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0045",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "This is a local progression between policy links, but the evidence is insufficient to confirm the auxiliary/support role of both endpoints."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0046",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The endpoints are adjacent policy links, but the supplied evidence does not clearly establish both as secondary utility/help/support controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0047",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "Both footer links are nearby, but 'Advertise' is not clearly a secondary utility/support control, so the required endpoint roles are not established."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0048",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "'Help Center' appears auxiliary, but 'Privacy Notice' is a policy link; the evidence does not clearly show both endpoints are secondary support/help controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0049",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "This is a local footer transition between policy links, but the evidence does not clearly establish both endpoints as auxiliary support/help controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0050",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "The endpoints are nearby footer links, but the evidence is insufficient to classify both 'Cookie Notice' and 'Terms of Use' as support/help/recovery controls."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0051",
+    "matches" : [ ],
+    "uncertain" : [ {
+      "pattern_id" : "P03",
+      "reason" : "'Contact Us' may be support-related, but 'Terms of Use' is a policy link; both endpoints are not clearly auxiliary/support controls from the supplied evidence."
+    } ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P04", "P05", "P06", "P07", "P08", "P09" ]
+  }, {
+    "transition_id" : "T0052",
+    "matches" : [ {
+      "pattern_id" : "P04",
+      "evidence" : "This candidate is explicitly modeled as 'Browser -> WSJ.COM', and the KFG special nodes identify the header 'WSJ.COM' link as v_entry / first focused webpage control."
+    } ],
+    "uncertain" : [ ],
+    "no_match_pattern_ids" : [ "P01", "P02", "P03", "P05", "P06", "P07", "P08", "P09" ]
+  } ],
+  "subject_summary" : "Observed verified TAB traversal largely follows consecutive order within lists and panels. Clear matches appear for Browser-to-page entry (P04) and cross-region/cross-subgroup continuations at boundaries between header, major main-content panels, and footer (P01, P05). Several local support-account transitions in 'Accounts & Registration' and some support-task links in 'Manage Subscriptions' match or approach P03, but many other adjacent link transitions remain uncertain because the supplied evidence does not clearly establish both endpoints as auxiliary/support controls. No supplied candidate showed evidence for wraparound/cyclic navigation, field-to-field with helper-link structure, auxiliary-link jumps across workflow controls, primary-control skips over local controls, or backward local TAB transitions."
+}

@@ -1,0 +1,21 @@
+Pattern: FN03
+Name: Field-to-field progression skips embedded helper link
+Error type: FN
+Subject: researchgate
+
+Summary: A recurring miss occurs when focus moves directly between primary form fields while a visible helper or recovery link associated with the field group occupies an intermediate meaningful position.
+
+Matching criteria: The source and destination are major form fields, usually adjacent-looking inputs, but a separately focusable inline helper/recovery link in the same form region is documented between them or tied to the field group; the case is classified FN.
+
+MATCHED ERROR TRANSITIONS
+============================================================
+
+Case ID: E044
+Classification: FN
+Transition: /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]
+Source: Email input
+Destination: Password input
+Positions: 3 -> 5
+Supporting evidence: Ground truth includes this exact transition as Neutral severity. Navigation order places Email input at position 3 and Password input at position 5, with Forgot password link at position 4. KFG contains the actual edges Email input -> Password input and Forgot password link -> Email field label. Screenshot numbering shows label 3 on the Email input, label 1 on Forgot password, and label 4 on the Password input.
+Confidence: medium
+Requires review: False

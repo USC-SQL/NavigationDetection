@@ -1,0 +1,1144 @@
+{
+  "subject": "arxiv",
+  "evidence_description": {
+    "original_predictions": "Original Stage 2 detected LNF transitions.",
+    "ground_truth": "Reference LNF transitions.",
+    "navigation_order": "Stage 1 inferred meaningful order and implemented keyboard labels.",
+    "kfg": "Original keyboard focus graph JSON.",
+    "evaluated_transitions": "Original prediction-vs-ground-truth classification inventory. TN labels are provisional within the modeled candidate set.",
+    "screenshot_paths": "Local annotated screenshot paths to be attached as images during the API request."
+  },
+  "original_predictions": [
+    "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1]",
+    "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1] -> /html[1]/body[1]/header[1]/div[3]/div[1]/a[1]"
+  ],
+  "ground_truth": [
+    "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1]",
+    "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1]",
+    "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1] -> /html[1]/body[1]/header[1]/div[3]/div[1]/a[1]"
+  ],
+  "ground_truth_severity": {
+    "Strongly": [
+      "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1]",
+      "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1]",
+      "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1] -> /html[1]/body[1]/header[1]/div[3]/div[1]/a[1]"
+    ],
+    "Slightly": [],
+    "Neutral": []
+  },
+  "navigation_order": {
+    "navigation_order": [
+      {
+        "position": 1,
+        "label": 1,
+        "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/a[1]",
+        "descriptor": "Cornell University link/logo"
+      },
+      {
+        "position": 2,
+        "label": 2,
+        "xpath": "/html[1]/body[1]/header[1]/div[1]/div[2]/p[1]/a[1]",
+        "descriptor": "Simons Foundation/member institutions support link"
+      },
+      {
+        "position": 3,
+        "label": 3,
+        "xpath": "/html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/a[1]",
+        "descriptor": "arXiv home link/logo"
+      },
+      {
+        "position": 4,
+        "label": 4,
+        "xpath": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1]",
+        "descriptor": "Search input"
+      },
+      {
+        "position": 5,
+        "label": 5,
+        "xpath": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1]",
+        "descriptor": "Help link"
+      },
+      {
+        "position": 6,
+        "label": 6,
+        "xpath": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2]",
+        "descriptor": "Advanced Search link"
+      },
+      {
+        "position": 7,
+        "label": 7,
+        "xpath": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1]",
+        "descriptor": "Search scope dropdown"
+      },
+      {
+        "position": 8,
+        "label": 8,
+        "xpath": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1]",
+        "descriptor": "Search button"
+      },
+      {
+        "position": 9,
+        "label": 9,
+        "xpath": "/html[1]/body[1]/header[1]/div[3]/div[1]/a[1]",
+        "descriptor": "Login link"
+      },
+      {
+        "position": 10,
+        "label": 10,
+        "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/span[1]/a[1]",
+        "descriptor": "Accounts v0.4.2 released 2020-03-10 link"
+      },
+      {
+        "position": 11,
+        "label": 11,
+        "xpath": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]",
+        "descriptor": "Username or e-mail input"
+      },
+      {
+        "position": 12,
+        "label": 12,
+        "xpath": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]",
+        "descriptor": "Password input"
+      },
+      {
+        "position": 13,
+        "label": 13,
+        "xpath": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/p[1]/a[1]",
+        "descriptor": "Forgot your password? link"
+      },
+      {
+        "position": 14,
+        "label": 14,
+        "xpath": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[3]/div[1]/input[1]",
+        "descriptor": "Submit button"
+      },
+      {
+        "position": 15,
+        "label": 15,
+        "xpath": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/p[1]/a[1]",
+        "descriptor": "Register for the first time link"
+      },
+      {
+        "position": 16,
+        "label": 16,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "About link"
+      },
+      {
+        "position": 17,
+        "label": 17,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Help link"
+      },
+      {
+        "position": 18,
+        "label": 18,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+        "descriptor": "Contact link"
+      },
+      {
+        "position": 19,
+        "label": 19,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+        "descriptor": "Subscribe link"
+      },
+      {
+        "position": 20,
+        "label": 20,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+        "descriptor": "Copyright link"
+      },
+      {
+        "position": 21,
+        "label": 21,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+        "descriptor": "Privacy Policy link"
+      },
+      {
+        "position": 22,
+        "label": 22,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+        "descriptor": "Web Accessibility Assistance link"
+      },
+      {
+        "position": 23,
+        "label": 23,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[1]",
+        "descriptor": "arXiv Operational Status link"
+      },
+      {
+        "position": 24,
+        "label": 24,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[2]",
+        "descriptor": "email notifications via link"
+      },
+      {
+        "position": 25,
+        "label": 25,
+        "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[3]",
+        "descriptor": "or slack link"
+      }
+    ]
+  },
+  "kfg": {
+    "UIGraphStates": [
+      {
+        "v_exit": [],
+        "nodes": [
+          {
+            "xpath": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[3]/div[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "290,513,69,31",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1485,58,163,26",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "502,889,45,23",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[1]/div[2]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1545,9,298,32",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "28,889,35,23",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1391,889,164,23",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "3,3,200,44",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1516,936,44,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "937,912,78,23",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1485,91,24,15",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "290,364,610,39",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "502,912,57,23",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/div[1]/div[2]/span[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1373,175,197,15",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1784,58,57,26",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "290,486,121,15",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[3]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1566,110,32,17",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "275,657,185,31",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1648,58,137,26",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "10,68,85,26",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "290,441,610,39",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "28,912,27,23",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1391,916,154,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "937,889,57,23",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[3]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1576,936,43,16",
+            "I'": "null"
+          },
+          {
+            "xpath": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2]",
+            "minAreaBaseline2b": "null",
+            "minAreaBaseline1b": "null",
+            "MBRContent": "null",
+            "minAreaBaseline1": "null",
+            "I": "null",
+            "minAreaBaseline2": "null",
+            "MBR": "1519,91,93,15",
+            "I'": "null"
+          }
+        ],
+        "v_special": [
+          {
+            "v_0": "/html[1]/body[1]/header[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "v_entry": "/html[1]/body[1]/header[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "v_entry_successor": "null"
+          }
+        ],
+        "v_n": [],
+        "edges_inAndOutsideDialog": [],
+        "visibleCtrlDomInsideDialogSequence": [],
+        "visibleCtrlDomSequence": [
+          {
+            "0": "/html[1]/body[1]/header[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "1": "/html[1]/body[1]/header[1]/div[1]/div[2]/p[1]/a[1]"
+          },
+          {
+            "2": "/html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/a[1]"
+          },
+          {
+            "3": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1]"
+          },
+          {
+            "4": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "5": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2]"
+          },
+          {
+            "6": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1]"
+          },
+          {
+            "7": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1]"
+          },
+          {
+            "8": "/html[1]/body[1]/header[1]/div[3]/div[1]/a[1]"
+          },
+          {
+            "9": "/html[1]/body[1]/main[1]/div[1]/div[2]/span[1]/a[1]"
+          },
+          {
+            "10": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]"
+          },
+          {
+            "11": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]"
+          },
+          {
+            "12": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/p[1]/a[1]"
+          },
+          {
+            "13": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[3]/div[1]/input[1]"
+          },
+          {
+            "14": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "15": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "16": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "17": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "18": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "19": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "20": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "21": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "22": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[1]"
+          },
+          {
+            "23": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[2]"
+          },
+          {
+            "24": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[3]"
+          }
+        ],
+        "edges": [
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[1]/div[2]/span[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[3]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[3]/div[1]/input[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[3]/div[1]/input[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[1]/div[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[1]/div[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/div[1]/div[2]/span[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[3]/div[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[3]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[3]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[1]/div[2]/span[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[3]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[3]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[3]/div[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[3]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[2]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[3]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[3]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1]",
+            "v_s": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[2]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[3]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[3]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]",
+            "v_s": "/html[1]/body[1]/main[1]/div[1]/div[2]/span[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+          },
+          {
+            "phi": "TAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/p[1]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]"
+          },
+          {
+            "phi": "SHIFTTAB",
+            "v_t": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+            "v_s": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]"
+          }
+        ],
+        "stateTransition": [],
+        "state_properties": [
+          {
+            "type": "KFFG"
+          },
+          {
+            "phase": "INITIAL_PHASE"
+          },
+          {
+            "thisStateID": 0
+          },
+          {
+            "parentStateID": -1
+          }
+        ],
+        "ctrlClusters": [],
+        "dialogStateProperties": [
+          {
+            "isADialogState": "0"
+          },
+          {
+            "triggerNodeLeadingToState": "null"
+          },
+          {
+            "postModalTriggerRoot": "null",
+            "preModalTriggerRoot": "null"
+          }
+        ]
+      }
+    ]
+  },
+  "evaluated_transitions": [
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+      "source_label": "16",
+      "destination_label": "17",
+      "source_position": "16",
+      "destination_position": "17",
+      "source_descriptor": "About link",
+      "destination_descriptor": "Help link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+      "source_label": "17",
+      "destination_label": "18",
+      "source_position": "17",
+      "destination_position": "18",
+      "source_descriptor": "Help link",
+      "destination_descriptor": "Contact link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+      "source_label": "18",
+      "destination_label": "19",
+      "source_position": "18",
+      "destination_position": "19",
+      "source_descriptor": "Contact link",
+      "destination_descriptor": "Subscribe link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "19",
+      "destination_label": "20",
+      "source_position": "19",
+      "destination_position": "20",
+      "source_descriptor": "Subscribe link",
+      "destination_descriptor": "Copyright link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+      "source_label": "20",
+      "destination_label": "21",
+      "source_position": "20",
+      "destination_position": "21",
+      "source_descriptor": "Copyright link",
+      "destination_descriptor": "Privacy Policy link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+      "source_label": "21",
+      "destination_label": "22",
+      "source_position": "21",
+      "destination_position": "22",
+      "source_descriptor": "Privacy Policy link",
+      "destination_descriptor": "Web Accessibility Assistance link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[1]",
+      "source_label": "22",
+      "destination_label": "23",
+      "source_position": "22",
+      "destination_position": "23",
+      "source_descriptor": "Web Accessibility Assistance link",
+      "destination_descriptor": "arXiv Operational Status link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[2]",
+      "source_label": "23",
+      "destination_label": "24",
+      "source_position": "23",
+      "destination_position": "24",
+      "source_descriptor": "arXiv Operational Status link",
+      "destination_descriptor": "email notifications via link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[2] -> /html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]/p[1]/a[3]",
+      "source_label": "24",
+      "destination_label": "25",
+      "source_position": "24",
+      "destination_position": "25",
+      "source_descriptor": "email notifications via link",
+      "destination_descriptor": "or slack link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/header[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/header[1]/div[1]/div[2]/p[1]/a[1]",
+      "source_label": "1",
+      "destination_label": "2",
+      "source_position": "1",
+      "destination_position": "2",
+      "source_descriptor": "Cornell University link/logo",
+      "destination_descriptor": "Simons Foundation/member institutions support link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/header[1]/div[1]/div[2]/p[1]/a[1] -> /html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/a[1]",
+      "source_label": "2",
+      "destination_label": "3",
+      "source_position": "2",
+      "destination_position": "3",
+      "source_descriptor": "Simons Foundation/member institutions support link",
+      "destination_descriptor": "arXiv home link/logo",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/a[1] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1]",
+      "source_label": "3",
+      "destination_label": "4",
+      "source_position": "3",
+      "destination_position": "4",
+      "source_descriptor": "arXiv home link/logo",
+      "destination_descriptor": "Search input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TP",
+      "transition": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1] -> /html[1]/body[1]/header[1]/div[3]/div[1]/a[1]",
+      "source_label": "8",
+      "destination_label": "9",
+      "source_position": "8",
+      "destination_position": "9",
+      "source_descriptor": "Search button",
+      "destination_descriptor": "Login link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "FN",
+      "transition": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1]",
+      "source_label": "4",
+      "destination_label": "5",
+      "source_position": "4",
+      "destination_position": "5",
+      "source_descriptor": "Search input",
+      "destination_descriptor": "Help link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[1] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2]",
+      "source_label": "5",
+      "destination_label": "6",
+      "source_position": "5",
+      "destination_position": "6",
+      "source_descriptor": "Help link",
+      "destination_descriptor": "Advanced Search link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TP",
+      "transition": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[1]/p[1]/a[2] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1]",
+      "source_label": "6",
+      "destination_label": "7",
+      "source_position": "6",
+      "destination_position": "7",
+      "source_descriptor": "Advanced Search link",
+      "destination_descriptor": "Search scope dropdown",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/select[1] -> /html[1]/body[1]/header[1]/div[2]/div[2]/form[1]/div[1]/button[1]",
+      "source_label": "7",
+      "destination_label": "8",
+      "source_position": "7",
+      "destination_position": "8",
+      "source_descriptor": "Search scope dropdown",
+      "destination_descriptor": "Search button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/header[1]/div[3]/div[1]/a[1] -> /html[1]/body[1]/main[1]/div[1]/div[2]/span[1]/a[1]",
+      "source_label": "9",
+      "destination_label": "10",
+      "source_position": "9",
+      "destination_position": "10",
+      "source_descriptor": "Login link",
+      "destination_descriptor": "Accounts v0.4.2 released 2020-03-10 link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1] -> /html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1]",
+      "source_label": "11",
+      "destination_label": "12",
+      "source_position": "11",
+      "destination_position": "12",
+      "source_descriptor": "Username or e-mail input",
+      "destination_descriptor": "Password input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/input[1] -> /html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/p[1]/a[1]",
+      "source_label": "12",
+      "destination_label": "13",
+      "source_position": "12",
+      "destination_position": "13",
+      "source_descriptor": "Password input",
+      "destination_descriptor": "Forgot your password? link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[2]/div[1]/p[1]/a[1] -> /html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[3]/div[1]/input[1]",
+      "source_label": "13",
+      "destination_label": "14",
+      "source_position": "13",
+      "destination_position": "14",
+      "source_descriptor": "Forgot your password? link",
+      "destination_descriptor": "Submit button",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[3]/div[1]/input[1] -> /html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/p[1]/a[1]",
+      "source_label": "14",
+      "destination_label": "15",
+      "source_position": "14",
+      "destination_position": "15",
+      "source_descriptor": "Submit button",
+      "destination_descriptor": "Register for the first time link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/p[1]/a[1] -> /html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+      "source_label": "15",
+      "destination_label": "16",
+      "source_position": "15",
+      "destination_position": "16",
+      "source_descriptor": "Register for the first time link",
+      "destination_descriptor": "About link",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "/html[1]/body[1]/main[1]/div[1]/div[2]/span[1]/a[1] -> /html[1]/body[1]/main[1]/content[1]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]",
+      "source_label": "10",
+      "destination_label": "11",
+      "source_position": "10",
+      "destination_position": "11",
+      "source_descriptor": "Accounts v0.4.2 released 2020-03-10 link",
+      "destination_descriptor": "Username or e-mail input",
+      "observed_in_stage1": "True",
+      "browser_boundary": "False"
+    },
+    {
+      "classification": "TN",
+      "transition": "Browser -> /html[1]/body[1]/header[1]/div[1]/div[1]/a[1]",
+      "source_label": "",
+      "destination_label": "1",
+      "source_position": "",
+      "destination_position": "1",
+      "source_descriptor": "Virtual Browser boundary",
+      "destination_descriptor": "Cornell University link/logo",
+      "observed_in_stage1": "True",
+      "browser_boundary": "True"
+    }
+  ],
+  "screenshot_paths": [
+    "/Users/lance/Downloads/Empirical_Study_Results/arxiv/arxiv1.jpg",
+    "/Users/lance/Downloads/Empirical_Study_Results/arxiv/arxiv2.jpg"
+  ]
+}

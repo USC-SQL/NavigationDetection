@@ -1,0 +1,86 @@
+{
+  "subject" : "mozilla",
+  "error_analyses" : [ {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/nav[1]/ul[1]/li[4]/a[1] -> /html[1]/body[1]/div[3]/div[1]/article[1]/main[1]/section[3]/p[2]/a[1]",
+    "classification" : "FP",
+    "pattern_hypothesis" : "Main-content jump before side navigation",
+    "observable_characteristics" : "The implemented TAB sequence moves from the last top navigation item \"Innovation\" to an in-article link labeled \"here\". In the navigation_order, these controls have implemented labels 6 and 7, but their inferred meaningful positions are 6 and 26. Screenshots show a left sidebar of many links visually present before the article link sequence, so the implemented focus order does not match a simple top-to-bottom reading order. However, this exact transition is not labeled as an LNF in the reference data.",
+    "matching_criteria" : "A transition where TAB moves from a global/header navigation item into a main-content link while another visually present region such as a sidebar appears elsewhere on screen, and the transition is still part of the page's implemented sequential focus order without being labeled a true failure.",
+    "possible_cause" : "Observed evidence shows a large mismatch between inferred position and implemented label. A likely detector error is over-reliance on inferred meaningful-position gaps or visual reading-order assumptions, treating the move from header navigation into article content as a failure without sufficient evidence that meaning or operability is broken.",
+    "supporting_evidence" : "evaluated_transitions marks this as FP and observed_in_stage1=True. navigation_order lists source as position 6/label 6 (Innovation) and destination as position 26/label 7 (here). kfg visibleCtrlDomSequence places these elements consecutively at indices 5 and 6, and includes a TAB edge from /html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/nav[1]/ul[1]/li[4]/a[1] to /html[1]/body[1]/div[3]/div[1]/article[1]/main[1]/section[3]/p[2]/a[1]. Screenshot evidence shows the sidebar exists visually, but does not by itself establish a WCAG 2.4.3 failure.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[3]/div[1]/article[1]/footer[1]/div[1]/section[1]/p[4]/a[1] -> /html[1]/body[1]/div[3]/div[1]/aside[1]/nav[1]/section[2]/h4[1]/a[1]",
+    "classification" : "FP",
+    "pattern_hypothesis" : "Article footer to related sidebar return",
+    "observable_characteristics" : "The implemented sequence moves from the article footer link \"our forums\" to the sidebar heading link \"Mozilla Privacy\". In inferred positions this goes from 30 back to 7, but in implemented labels it is a normal consecutive step from 11 to 12. Screenshots show the article content and sidebar coexist in a two-column layout, making a leftward or earlier-position move plausible structurally even though it differs from inferred order. This transition is not labeled as an LNF in the reference data.",
+    "matching_criteria" : "A transition where focus moves from a content/footer link into a nearby sidebar or related-navigation region, with consecutive implemented focus labels but a backward jump in inferred meaningful positions.",
+    "possible_cause" : "The detector likely interpreted the backward inferred-position jump as evidence of reordering. Observed data instead suggests the detector may not have accounted for multi-column layouts where implemented focus intentionally completes one region before entering another. Whether the implemented order is ideal is separate from why this specific transition was classified FP.",
+    "supporting_evidence" : "evaluated_transitions marks this transition FP. navigation_order shows source label 11 position 30 (our forums) and destination label 12 position 7 (Mozilla Privacy). kfg visibleCtrlDomSequence places them consecutively at indices 10 and 11, with an explicit TAB edge between the same XPaths. Screenshots show a left sidebar navigation block and central article/footer content arranged in separate visual regions.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/nav[1]/ul[1]/li[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Header CTA before primary nav",
+    "observable_characteristics" : "Focus moves from the prominent header call-to-action \"Download Firefox\" to the first primary navigation item \"Firefox Browsers\". This is an implemented consecutive step near the top of the page and is labeled as an LNF in the ground truth with Slightly severity. Screenshots show the CTA visually appears to the right of the nav items while focus reaches it before the navigation menu.",
+    "matching_criteria" : "A transition in the page header where a standalone call-to-action button or link is reached before the main navigation list, and TAB then continues into the nav list even though visual/structural expectations suggest the nav should come first.",
+    "possible_cause" : "The detector may have treated this as acceptable because the destination is the next focusable item and the inferred positions are consecutive (2 to 3), so gap-based heuristics would not flag it. The error likely comes from missing a functional-grouping issue within the header rather than from skipped controls.",
+    "supporting_evidence" : "ground_truth includes this exact transition. evaluated_transitions marks it FN. navigation_order shows source position 2 label 2 (Download Firefox) and destination position 3 label 3 (Firefox Browsers), so no positional gap exists. kfg visibleCtrlDomSequence places them consecutively at indices 1 and 2, with a TAB edge between them. Screenshots of the header show the menu items arranged across the top and the Download Firefox control at the far right.",
+    "confidence" : "high",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[3]/footer[1]/div[1]/nav[1]/div[1]/section[5]/ul[2]/li[3]/a[1] -> /html[1]/body[1]/div[3]/footer[1]/div[1]/nav[2]/div[1]/form[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Footer social icons to language control boundary",
+    "observable_characteristics" : "Focus moves from the last social-media link in the first footer navigation block to the language control label in a second footer navigation block. This transition is labeled a Strongly severity LNF in the ground truth. Although the source and destination are consecutive in both implemented labels and inferred positions (53 to 54), screenshots show a structural boundary between clusters: social-follow icons and a separate language-selection block.",
+    "matching_criteria" : "A transition between adjacent footer clusters that are visually and functionally distinct, especially from the last icon-style social link to the first control of a settings/language widget, with no skipped elements but a possibly disruptive grouping change.",
+    "possible_cause" : "Because there is no position gap and the controls are consecutive in the modeled sequence, the detector likely missed this transition by relying on discontinuity or distance signals rather than detecting a cross-group semantic boundary inside the footer.",
+    "supporting_evidence" : "ground_truth marks this transition as an LNF with Strongly severity. evaluated_transitions marks it FN. navigation_order shows source label 53 position 53 (Follow @Firefox link 3) and destination label 54 position 54 (Language). kfg visibleCtrlDomSequence places them consecutively at indices 52 and 53, and includes a TAB edge from the source XPath to /html[1]/body[1]/div[3]/footer[1]/div[1]/nav[2]/div[1]/form[1]/a[1]. Screenshot 5 shows social icons in one footer area and the language selector in another.",
+    "confidence" : "medium",
+    "requires_review" : false
+  }, {
+    "transition" : "/html[1]/body[1]/div[3]/footer[1]/div[1]/nav[2]/div[1]/form[1]/select[1] -> /html[1]/body[1]/div[3]/footer[1]/div[1]/nav[2]/div[2]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Form control to footer logo boundary",
+    "observable_characteristics" : "Focus moves from the language select control to the Mozilla footer logo/home link. The reference labels this as a Strongly severity LNF. Implemented order and inferred positions are consecutive (55 to 56), so the issue is not a skipped element but a questionable semantic progression from an active form control to a branding link.",
+    "matching_criteria" : "A transition where TAB leaves a form widget and lands on a branding or logo link in the footer, with consecutive focus order but a strong change in function or user task context.",
+    "possible_cause" : "The detector likely missed this because its signals favored large reordering or skipped-position patterns. Since this transition is fully consecutive in both kfg and navigation_order, a detector not modeling control-type or functional-context shifts would fail to flag it.",
+    "supporting_evidence" : "ground_truth includes this exact transition with Strongly severity. evaluated_transitions marks it FN. navigation_order lists source position 55 label 55 (Language select) and destination position 56 label 56 (Mozilla footer logo/home). kfg visibleCtrlDomSequence places them consecutively at indices 54 and 55, and contains a TAB edge between the same XPaths. Screenshot 5 shows the language selector and footer logo as separate functional elements within the lower footer.",
+    "confidence" : "high",
+    "requires_review" : false
+  }, {
+    "transition" : "Browser -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+    "classification" : "FN",
+    "pattern_hypothesis" : "Browser-entry boundary omission",
+    "observable_characteristics" : "The ground truth includes the virtual Browser boundary entering the first page focus target, the Mozilla logo/home link. This is marked Neutral severity. The KFG special state marks the same logo link as v_entry and v_0, indicating it is the first focusable element in the modeled page sequence.",
+    "matching_criteria" : "A ground-truth transition whose source is the virtual Browser boundary rather than a DOM element, entering the first focusable page control.",
+    "possible_cause" : "The detector may have ignored or filtered virtual boundary transitions, focusing only on DOM-to-DOM transitions. Because the Browser boundary is explicitly not an ordinary DOM element, the omission could be a modeling limitation rather than a failure to recognize on-page ordering.",
+    "supporting_evidence" : "ground_truth includes Browser -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/a[1]. evaluated_transitions marks it FN with browser_boundary=True. In kfg v_special, both v_0 and v_entry are /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/a[1], and visibleCtrlDomSequence begins with that same XPath.",
+    "confidence" : "high",
+    "requires_review" : false
+  } ],
+  "correct_transition_examples" : [ {
+    "transition" : "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/a[1] -> /html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]",
+    "classification" : "TP",
+    "relevant_characteristic" : "Useful comparison for header-level LNF detection because it is a detected and ground-truth-positive transition adjacent to the missed header CTA-to-nav FN."
+  }, {
+    "transition" : "/html[1]/body[1]/div[3]/div[1]/aside[1]/section[4]/h2[1]/a[1] -> /html[1]/body[1]/div[3]/footer[1]/div[1]/nav[1]/div[1]/section[1]/ul[1]/li[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Shows another region-to-region move that was not treated as an LNF, useful when comparing against the FP involving article footer to sidebar."
+  }, {
+    "transition" : "/html[1]/body[1]/div[3]/footer[1]/div[1]/nav[2]/div[1]/form[1]/a[1] -> /html[1]/body[1]/div[3]/footer[1]/div[1]/nav[2]/div[1]/form[1]/select[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison within the footer language widget because it is a consecutive footer transition not labeled as an LNF, adjacent to the missed footer select-to-logo FN."
+  }, {
+    "transition" : "/html[1]/body[1]/div[3]/footer[1]/div[1]/nav[2]/div[2]/a[1] -> /html[1]/body[1]/div[3]/footer[1]/div[1]/nav[2]/div[3]/ul[1]/li[1]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison for footer cluster boundaries because it crosses from logo to legal links without being labeled as a failure."
+  }, {
+    "transition" : "/html[1]/body[1]/div[3]/footer[1]/div[1]/nav[1]/div[1]/section[5]/ul[2]/li[2]/a[1] -> /html[1]/body[1]/div[3]/footer[1]/div[1]/nav[1]/div[1]/section[5]/ul[2]/li[3]/a[1]",
+    "classification" : "TN",
+    "relevant_characteristic" : "Useful comparison for the missed footer social-to-language FN because it is the immediately preceding social-icon transition and is not labeled as an LNF."
+  } ],
+  "subject_summary" : "The main recurring error pattern on this subject is that several ground-truth LNFs occur between consecutive focusable elements, so detectors based mainly on gaps, skipped nodes, or large inferred-position jumps miss them. The false positives show the opposite problem: the detector appears to overinterpret inferred reading-order mismatches in a multi-region layout, especially when moving between header, article, and sidebar regions. Evidence strongly supports a boundary/modeling omission for the Browser entry transition. Some footer and header misses appear to depend on functional-grouping judgments rather than simple sequence discontinuities."
+}
